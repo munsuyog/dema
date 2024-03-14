@@ -11,15 +11,15 @@ services:
       - NODE_ENV=development
       - "NEXT_WEBPACK_USEPOLLING=1"
     volumes:
-      - ./frontend:/web
-      - /web/node_modules
-      - /web/.next
+      - ./frontend:/app
+      - /app/node_modules
+      - /app/.next
     ports:
       - "30001:3000"
 
   dema-cms:
     container_name: dema-cms
-    build: ./dema-cms
+    build: .
     image: dema-cms:latest
     restart: unless-stopped
     env_file: ./dema-cms/.env
@@ -42,7 +42,7 @@ services:
       - ./dema-cms/.env:/opt/app/.env
       - ./dema-cms/public/uploads:/opt/app/public/uploads
     ports:
-      - '30002:1337'
+      - '1337:1337'
     networks:
       - dema-cms
     depends_on:
