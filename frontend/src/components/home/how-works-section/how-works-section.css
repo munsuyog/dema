@@ -1,0 +1,105 @@
+.how-works-section {
+    width: 100%;
+    position: relative;
+    padding-top: 10%;
+}
+.how-works-section::before {
+    content: '';
+    position: absolute;
+    top: 60px; /* Adjust as needed */
+    bottom: -10px; /* Adjust as needed */
+    left: -50px; /* Adjust as needed */
+    right: -10px; /* Adjust as needed */
+    background-color: var(--secondary-500);
+    transform: rotate(-2deg);
+    transform-origin: 0 0;
+    z-index: -1;
+}
+.how-works-title {
+    color: white;
+    font-family: var(--font-open-sans);
+    font-size: 50px !important;
+}
+.question-mark {
+    position: absolute;
+    top: -40px;
+}
+.triangle-vector {
+    position: absolute;
+    top: 125px;
+    left: 100px;
+}
+.arrow-vector {
+    position: absolute;
+    bottom: -180px;
+    right: 380px;
+}
+.how-works-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 12%;
+    margin-bottom: 5%;
+    align-items: center;
+}
+.how-works-image-container {
+    transform: skew(-5deg);
+    border-radius: 20px;
+}
+.how-works-image-container img {
+    border-radius: 20px;
+}
+.no-signup-squiggle {
+    position: absolute;
+    right: -75px;
+    top: 60px;
+}
+.how-works-features-wrapper {
+    position: relative;
+}
+.how-works-flower {
+    position: absolute;
+    top: 250px;
+    right: 200px;
+}
+.how-works-image-container video {
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .how-works-section {
+        padding-top: 25%;
+        padding-bottom: 25%;
+    }
+    .how-works-container {
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+    .how-works-image-container video {
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+    }
+    .how-works-title {
+        font-size: 28px !important;
+    }
+    .arrow-vector {
+        right: auto;
+        width: 100px;
+        bottom: -120px;
+    }
+    .no-signup-squiggle {
+        width: 100px;
+        height: 70px;
+        right: -65px;
+        top: 50px;
+    }
+    .triangle-vector {
+        display: none;
+    }
+    .how-works-flower {
+        left: 0;
+        top: 70px;
+        width: 30px;
+    }
+    
+}

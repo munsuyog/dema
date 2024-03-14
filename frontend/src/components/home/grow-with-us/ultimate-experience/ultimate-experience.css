@@ -1,0 +1,148 @@
+.ultimate-experience {
+    width: 1140px;
+    height: 550px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #FEF7EB;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.splitContainer {
+    --box-width: 1140px
+}
+.ultimate-experience.contrast {
+    background-color: var(--secondary-500) !important;
+}
+.ultimate-experience.contrast h2 {
+    color: white;
+}
+.ultimate-experience.contrast .card {
+    background-color: white;
+}
+.bullet-points {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.point {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.card-title {
+    font-family: var(--font-open-sans);
+    font-size: 24px;
+}
+.point-text {
+    font-family: var(--font-open-sans);
+    font-size: 14px;
+}
+.cards-container-amazon, .cards-container-dema {
+    display: flex;
+    margin-top: 2%;
+    gap: 32px;
+    overflow: hidden;
+}
+.card {
+    flex: 0 0 auto; 
+    width: 20%;
+    height: 227px;
+    background-color: rgba(243, 167, 54, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+    border-radius: 12px;
+    position: relative;
+}
+.splitContainer {
+    width: 1140px;
+    height: 100%;
+}
+
+.headPos {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content {
+    display: grid;
+    place-items: center;
+}
+.grid {
+    display: grid;
+}
+.absolute {
+    position: absolute;
+}
+.relative {
+    position: relative;
+}
+.gray {
+    background: gray;
+}
+
+.flex {
+    display: flex;
+}
+
+.wide-66 {
+    width: 66%;
+}
+
+.wide-33 {
+    width: 33%;
+}
+
+.wide {
+    width: 100%;
+}
+
+.center {
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+}
+.box-content {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+  .card {
+    flex: 0 0 auto;
+    width: 200px; /* Adjust card width as needed */
+    margin-right: 20px; /* Adjust card spacing as needed */
+  }
+
+@media screen and (max-width: 768px) {
+    .splitContainer {
+        --box-width: 440px !important
+    }
+    .ultimate-experience {
+        width: auto;
+        height: 300px;
+    }
+    .card-title {
+        font-size: 14px;
+    }
+    .point-text {
+        font-size: 10px;
+    }
+    .card {
+        width: 130px;
+        height: 140px;
+        padding: 10px;
+    }
+    .card img {
+        width: 25px;
+        height: auto;
+    }
+    .point .card-image {
+        width: 7px;
+        height: auto;
+    }
+}

@@ -1,0 +1,196 @@
+.grow-with-us {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    padding-top: 3%;
+    padding-bottom: 15%;
+}
+.grow-with-us::before {
+    content: '';
+    position: absolute;
+    top: 0px; /* Adjust as needed */
+    bottom: -10px; /* Adjust as needed */
+    left: -50px; /* Adjust as needed */
+    right: -10px; /* Adjust as needed */
+    background: linear-gradient(to bottom, rgba(56, 48, 201, 0.36) 0%, rgba(151, 148, 212, 0)50%);
+    transform: rotate(-2deg);
+    transform-origin: 0 0;
+    z-index: -1;
+}
+.grow-with-us-title {
+    font-size: 50px;
+    font-family: var(--font-open-sans);
+}
+.grow-with-us-container {
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-around;
+}
+.grow-with-us-users-stat, .grow-with-us-purchases-stat, .grow-with-us-savings-stat {
+    width: 400px;
+    height: 200px;
+    border-radius: 20px;
+    background-color: white;
+    padding: 4%;
+    position: relative;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 17px 15px -13px rgba(0,136,255,0.1);
+}
+.stats-header {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.stats-title {
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+}
+.stats-number {
+    font-size: 40px;
+    font-family: var(--font-open-sans);
+    font-weight: bold;
+}
+.stats-type {
+    font-family: var(--font-open-sans);
+    font-size: 18px;
+}
+.users-stats-image {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+}
+.text-checkout {
+    font-size: 22px;
+    font-family: var(--font-open-sans);
+    margin-left: 7%;
+    margin-top: 20px;
+    font-weight: 500;
+    display: block;
+}
+.ultimate-experience-wrapper {
+    position: relative;
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+}
+.ultimate-arrow-top {
+    position: absolute;
+    top: -100px;
+    left: 50px;
+}
+.ultimate-arrow-left {
+    position: absolute;
+    left: 80px;
+    bottom: 10px;
+}
+.ultimate-squiggle {
+    position: absolute;
+    right: 80px;
+    top: -35px;
+    z-index: -1;
+}
+/*  */
+.grow-with-us-users-stat .star-vector {
+    position: absolute;
+    left: 100px;
+    top: 90px;
+}
+.grow-with-us-users-stat .star-light-vector {
+    position: absolute;
+    right: 50px;
+    top: 25px;
+}
+.grow-with-us-users-stat .flower-light-vector-1 {
+    position: absolute;
+    left: 40px;
+    bottom: 30px;
+}
+.grow-with-us-users-stat .flower-light-vector-2 {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+.live-arrow {
+    position: absolute;
+    top: -45px;
+    left: 150px;
+}
+
+/*  */
+.grow-with-us-purchases-stat .star-vector {
+    position: absolute;
+    right: 60px;
+    top: 60px;
+}
+.grow-with-us-purchases-stat .flower-light-vector-1 {
+    position: absolute;
+    left: 200px;
+    top:10px;
+}
+/*  */
+.grow-with-us-savings-stat .star-vector {
+    position: absolute;
+    right: 80px;
+    top: 50px;
+}
+.grow-with-us-savings-stat .star-light-vector {
+    position: absolute;
+    right: 50px;
+    top: 25px;
+}
+.grow-with-us-savings-stat .flower-light-vector-1 {
+    position: absolute;
+    right: 10px;
+    top: 100px;
+}
+.grow-with-us-savings-stat .flower-light-vector-2 {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+.live-vector {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+@media screen and (max-width: 768px) {
+    .grow-with-us-title {
+        font-size: 24px;
+        padding-left: 20%;
+        padding-right: 20%;
+        text-align: center;
+    }
+    .grow-with-us-container {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    .ultimate-arrow-left {
+        display: none;
+    }
+    .ultimate-squiggle {
+        display: none;
+    }
+    .ultimate-arrow-top {
+        display: none;
+    }
+    .grow-with-us-users-stat, .grow-with-us-purchases-stat, .grow-with-us-savings-stat {
+        width: 350px;
+        height: 180px;
+    }
+    .users-stats-image {
+        width: 350px;
+    }
+    .stats-header {
+        font-size: 14px;
+    }
+    .stats-number {
+        font-size: 20px;
+    }
+    .user-stats-header-image {
+        width: 40px;
+        height: 40px;
+    }
+}

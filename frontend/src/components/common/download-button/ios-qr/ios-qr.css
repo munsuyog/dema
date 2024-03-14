@@ -1,0 +1,32 @@
+.qr-e-word {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px green;
+}
+.ios-qr-container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+}
+#ios-qr {
+    width: 145px;
+    background-image: url('/images/common/download-btn/btn-background.svg');
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    height: 196px;
+    gap: 10px;
+    user-select: none;
+}
+.ios-title {
+    font-family: var(--font-open-sans);
+    font-size: 16px;
+    text-align: center;
+}
+.ios-subtitle {
+    font-size: 12px;
+    font-family: var(--font-open-sans);
+    font-weight: 600;
+    text-align: center;
+}

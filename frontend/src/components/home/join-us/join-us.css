@@ -1,0 +1,39 @@
+#join-us-section {
+    position: relative;
+    height: 380px;
+}
+.join-us-section .section-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+@keyframes paths {
+    0%,
+    50%,
+    100% {
+        d: path(
+            'M-125 461 C137.395 113.119 852.749 -373.915 1615 461H-125Z'
+        );
+    }
+    25% {
+        d: path(
+            'M-125 461 C900 113.119 1200 -373.915 1615 461H-125Z'
+        );
+    }
+
+    75% {
+        d: path(
+            'M-125 461 C-500.395 113.119 200 -373.915 1615 461H-125Z'
+        );
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #join-us-section h2 {
+        font-size: 16px !important;
+    }
+    #join-us-section {
+        height: auto !important;
+    }
+}

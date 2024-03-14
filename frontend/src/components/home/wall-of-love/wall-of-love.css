@@ -1,0 +1,81 @@
+.wall-of-love {
+    width: 100%;
+    position: relative;
+    padding-top: 10%;
+    padding-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.wall-of-love::before {
+    content: '';
+    position: absolute;
+    top: 60px; /* Adjust as needed */
+    bottom: -10px; /* Adjust as needed */
+    left: -350px; /* Adjust as needed */
+    right: -300px; /* Adjust as needed */
+    background: linear-gradient(to bottom, rgba(227, 225, 255, 1) 0%, rgba(155,150, 255, 0.3 ) 59%, rgba(155, 150, 255, 0) 100%);
+    border-top-right-radius: 100%;
+    border-top-left-radius: 100%;
+    transform-origin: 0 0;
+    z-index: -1;
+}
+.wall-of-love .section-subtitle {
+    font-weight: 600;
+}
+.wall-title-squiggle {
+    position: absolute;
+    top: -20px;
+    left: -10px;
+    z-index: -1;
+}
+.title-shop-save-own {
+    position: relative;
+    z-index: 1;
+}
+.testimonials-wrapper {
+    position: relative;
+}
+.wall-ellipse {
+    position: absolute;
+    top: -80px;
+    z-index: -1;
+    left: 30%;
+}
+.wall-ellipse-heart {
+    position: absolute;
+    top: 27px;
+    left: 53%;
+}
+.wall-heart-1 {
+    position: absolute;
+    right: 300px;
+    top: -5px;
+}
+.wall-heart-2 {
+    position: absolute;
+    left: -30px;
+    top: 300px;
+    z-index: -1;
+    opacity: 0.7;
+}
+.wall-heart-3 {
+    position: absolute;
+    bottom: -10px;
+    left: 400px;
+    rotate:-40deg;
+    opacity: 0.5;
+}
+@media screen and (max-width: 768px) {
+    .section-title h2 {
+        font-size: 24px;
+    }
+    .wall-title-squiggle {
+        width: 250px;
+        height: auto;
+        top: -5px
+    }
+    .wall-of-love {
+        padding-top: 25%;
+    }
+}

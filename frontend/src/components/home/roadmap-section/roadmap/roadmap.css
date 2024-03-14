@@ -1,0 +1,121 @@
+.card-header h3 {
+    font-size: 24px;
+    font-family: var(--font-open-sans);
+    font-weight: 800;
+}
+.card-header {
+    display: flex;
+    width: 376px;
+    align-items: center;
+    gap: 10px;
+}
+.roadmap-card1 {
+    font-family: var(--font-open-sans);
+    font-size: 20px;
+    position: absolute;
+    right: 35%;
+    display: flex;
+    align-items: center;
+    top: 0%;
+    gap: 20px;
+}
+.roadmap-card1,.roadmap-card2,.roadmap-card3 p {
+    font-weight: 400;
+    font-size: 20px;
+}
+.roadmap-card1:nth-child(1) {
+    width: 376px;
+}
+.title-more-bold {
+    font-family: var(--font-open-sans);
+    font-weight: 600;
+    font-size: 22px;
+}
+.roadmap-card2 {
+    font-family: var(--font-open-sans);
+    font-size: 20px;
+    position: absolute;
+    right: 10%;
+    top: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.roadmap-card3 {
+    font-family: var(--font-open-sans);
+    font-size: 20px;
+    position: absolute;
+    left: 10%;
+    top: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.card2-image{
+    position: relative;
+    left: 40px;
+}
+.card3-image{
+    position: relative;
+    right: 70px;
+}
+.card2 {
+    width: 376px;
+}
+.roadmap-star-dark-vector {
+    position: absolute;
+    left: 50%;
+    top: 400px;
+}
+.roadmap-triangle-vector {
+    position: absolute;
+    bottom: 250px;
+    left: 55%;
+}
+.roadmap-star-light-bottom {
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+}
+.card-header h3 {
+    font-weight: 800;
+}
+
+@media screen and (max-width: 768px) {
+    .card-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .card-header img {
+        width: 48px;
+        height: 48px;
+    }
+    .card-header h3 {
+        font-weight: 800 !important;
+        font-size: 22px;
+    }
+    .roadmap-card1,.roadmap-card2, .roadmap-card3 p {
+        font-size: 16px;
+    }
+    .title-more-bold {
+        font-size: 16px;
+    }
+    .roadmap-card1 {
+        top: 5%;
+        left: 2%;
+        flex-direction: column;
+    }
+    .roadmap-card2 {
+        top: 40%;
+        right: 2%;
+    }
+    .roadmap-card2 .card2-image {
+        width: 303px;
+        height: auto;
+    }
+    .roadmap-card3 {
+        top: 70%;
+    }
+}
