@@ -15,7 +15,7 @@ services:
       - /web/node_modules
       - /web/.next
     ports:
-      - "3000:3000"
+      - "30001:3000"
 
   dema-cms:
     container_name: dema-cms
@@ -42,7 +42,7 @@ services:
       - ./dema-cms/.env:/opt/app/.env
       - ./dema-cms/public/uploads:/opt/app/public/uploads
     ports:
-      - '1337:1337'
+      - '30002:1337'
     networks:
       - dema-cms
     depends_on:
