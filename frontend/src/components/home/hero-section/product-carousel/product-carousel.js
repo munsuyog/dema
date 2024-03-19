@@ -52,7 +52,7 @@ const ProductCarousel = () => {
                         </div>
                     </div>
                     <div className={`product-carousel-container ${index === currentProductIndex ? 'animate' : ''}`}>
-                        <Image src={`http://localhost:1337${product.attributes.productImage.data.attributes.url}`} width={590} height={290} className='product-image' />
+                        <img src={`http://154.53.59.178:30002${product.attributes.productImage.data.attributes.url}`} width={590} height={290} className='product-image' />
                     </div>
                     <div className={`product-carousel-points-info ${index === currentProductIndex ? 'animate' : ''}`}>
                         <div className='header-icon'>

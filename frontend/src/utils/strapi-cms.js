@@ -1,8 +1,8 @@
 
   export const getTweets = async () => {
-    const accessToken = '396250188711bd0302df8d0ad7e6c60e064462aaf3e547d927d8b42a03c5ca6965ee0f32bd4cbba3358c2111bd914c43f09d4ba1d08ad1cc3c298c3e658d181492e51fd8ff6d381f57d2ca34523ae04e9e536d50a747295864ba6c06cf288fcf5033fd24c29dd623268f25dd68437c203d414acd2c98252106c8ef193510e6da'; // Replace with your actual access token
+    const accessToken = '4b488384c7bd5d1a30ff2d0190bb639e31a042f2dbcbeb330879e179c1b627b473045f52edcb242cc512842457c8205396a8e892cf65659b6d5ace7066b73b5cf2237a0c59961dc0b1f379c359441086e2f7c7a1f15359625deae7902e24b4fcf7bab46d30c9017f21b7526e52d2cef366298e11688caf176e5868edaf1260b9';
     try {
-      const response = await fetch('http://localhost:30002/api/tweets?populate=*', {
+      const response = await fetch('http://154.53.59.178:30002/api/tweets?populate=*', {
         headers: {
           Authorization: `Bearer ${accessToken}`,
         },
@@ -21,9 +21,9 @@
   };
 
   export const getProducts = async () => {
-    const accessToken = '396250188711bd0302df8d0ad7e6c60e064462aaf3e547d927d8b42a03c5ca6965ee0f32bd4cbba3358c2111bd914c43f09d4ba1d08ad1cc3c298c3e658d181492e51fd8ff6d381f57d2ca34523ae04e9e536d50a747295864ba6c06cf288fcf5033fd24c29dd623268f25dd68437c203d414acd2c98252106c8ef193510e6da'; // Replace with your actual access token
+    const accessToken = '4b488384c7bd5d1a30ff2d0190bb639e31a042f2dbcbeb330879e179c1b627b473045f52edcb242cc512842457c8205396a8e892cf65659b6d5ace7066b73b5cf2237a0c59961dc0b1f379c359441086e2f7c7a1f15359625deae7902e24b4fcf7bab46d30c9017f21b7526e52d2cef366298e11688caf176e5868edaf1260b9';
     try {
-      const response = await fetch('http://localhost:30002/api/heroproducts?populate=*', {
+      const response = await fetch('http://154.53.59.178:30002/api/hero-products?populate=*', {
         headers: {
           Authorization: `Bearer ${accessToken}`,
         },
