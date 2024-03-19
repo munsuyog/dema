@@ -83,9 +83,9 @@ const Roadmap = () => {
         this.svgHeight = this.path.getBoundingClientRect().height;
         if (this.svgHeight >= innerHeight) {
           this.scrollContainer.parentNode.style.height =
-            this.svgHeight * 3 + "px";
+            this.svgHeight * (isMobile ? 1.2 : 3) + "px";
         } else {
-          const dynamicHeight = this.svgHeight * 3;
+          const dynamicHeight = this.svgHeight * (isMobile ? 1.2 : 3);
 
           this.scrollContainer.parentNode.style.height = dynamicHeight + "px";
         }
@@ -108,7 +108,7 @@ const Roadmap = () => {
           let scrollPos = Math.max(0, Math.min(1, scrollPercentage));
 
           if (scrollPercentage < 3.5 && scrollPercentage > -0.01) {
-            let drawLength = this.pathLength * scrollPercentage * 1;
+            let drawLength = this.pathLength * scrollPercentage * (isMobile ? 1 : 1);
 
             this.path.style.strokeDashoffset = this.pathLength - drawLength;
           }
@@ -167,7 +167,7 @@ const Roadmap = () => {
 
   const pathSpring = useSpring({
     strokeDashoffset: 0,
-    from: { strokeDashoffset: 3876 },
+    from: { strokeDashoffset: 4500 },
     config: { tension: 300, friction: 10, duration: 2000 },
   });
 
@@ -182,7 +182,7 @@ const Roadmap = () => {
       <animated.div
         className="roadmap-card1 absolute opacityTransition"
         fadeonscroll=""
-        threshhold={isMobile ? ".2" : ".3"}
+        threshhold={isMobile ? ".03" : ".3"}
         style={{ opacity: 0 }}
       >
         <div>
@@ -213,7 +213,7 @@ const Roadmap = () => {
       <animated.div
         className="roadmap-card2 absolute opacityTransition"
         fadeonscroll=""
-        threshhold={isMobile ? ".4" : ".5"}
+        threshhold={isMobile ? ".35" : ".5"}
         style={{ opacity: 0 }}
       >
         <div className="card2">
@@ -239,7 +239,7 @@ const Roadmap = () => {
       <animated.div
         className="roadmap-card3 absolute opacityTransition"
         fadeonscroll=""
-        threshhold={isMobile ? ".6" : ".7"}
+        threshhold={isMobile ? ".55" : ".7"}
         style={{ opacity: 0 }}
       >
         <div className="card2">
@@ -276,7 +276,7 @@ const Roadmap = () => {
           strokeOpacity="0.8"
           strokeWidth="21"
           className="scrollPath"
-          style={{ strokeDasharray: "3876", ...pathSpring }}
+          style={{ strokeDasharray: "4500", ...pathSpring }}
           ref={pathRef}
         />
         <defs>

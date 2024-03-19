@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ["154.53.59.178"]
+    domains: ["154.53.59.178", "pbs.twimg.com"]
   },
   reactStrictMode: true,
   swcMinify: true,

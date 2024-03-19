@@ -5,25 +5,44 @@
     margin-top: 5%;
 }
 .testimonial-md {
+    border: 1px solid #F5F5F5;
     width: 339px;
+    height: 410px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 .testimonial-sm {
+    border: 1px solid #F5F5F5;
     width: 339px;
+    /* height: 211px; */
+    background-color: white;
+    border-radius: 20px;
+    padding: 5%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 .testimonial-xs {
+    border: 1px solid #F5F5F5;
     width: 256px;
+    height: 211px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 .testimonial-lg {
     width: 538.24px;
+    height: 273px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -78,14 +97,41 @@
     display: flex;
     justify-content: space-between;
 }
-.react-tweet-theme p {
-    font-size: 14px;
-}
 
-@media screen and (max-width: 768px) {
-    .react-tweet-theme {
-        min-width: 220px !important
+@keyframes mediumTestimonialAnimation {
+    0% {
+      opacity: 0; /* Adjust initial translation as needed */
     }
+    100% {
+      opacity: 1; /* Adjust final translation as needed */
+    }
+  }
+  
+  /* Apply animation to medium testimonial */
+  .testimonial-md {
+    animation: mediumTestimonialAnimation 0.5s ease-in-out; /* Adjust duration and easing as needed */
+  }
+  .testimonial-lg {
+    animation: mediumTestimonialAnimation 1s ease-in-out; /* Adjust duration and easing as needed */
+  }
+  .testimonial-sm {
+    animation: mediumTestimonialAnimation 0.5s ease-in-out; /* Adjust duration and easing as needed */
+  }
+  .testimonial-xs {
+    animation: mediumTestimonialAnimation 2s ease-in-out; /* Adjust duration and easing as needed */
+  }
+@keyframes tweetAnim {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@media screen and (max-width: 768px) {
     .testimonial-sm {
         width: 400px;
     }
@@ -106,9 +152,7 @@
         align-items: center;
     }
     .testimonial-xs {
-        width: 220px;
-        overflow: hidden;
-        border-radius: 20px;
+        width: 190px;
     }
     .testimonial-sub-row {
         gap: 10px;

@@ -6,15 +6,20 @@ import useIntersectionObserver from "@/animations/useIntersectionObserver";
 import {motion} from 'framer-motion'
 
 const SaveOnSection = () => {
-  const [highlightedFeature, setHighlightedFeature] = useState(1);
+  const [highlightedFeature, setHighlightedFeature] = useState(0);
+  const features = [
+    {id: 1, title: "Auto-select the lowest price seller", video: "/images/home/free-ownership/video1.mp4" },
+    {id: 2, title: "Auto-select the lowest price seller", video: "/images/home/free-ownership/video2.mp4" },
+    {id: 3, title: `Get <span class='dema-font'>d<span class='title-blue'>e</span>ma</span>'s 5% savings`, video: "/images/home/free-ownership/video3.mp4" }
+  ]
+  console.log(highlightedFeature)
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setHighlightedFeature((prevFeature) => (prevFeature + 1)%3);
+  //   }, 7000);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setHighlightedFeature((prevFeature) => (prevFeature % 3) + 1);
-    }, 7000);
-
-    return () => clearInterval(interval);
-  }, []);
+  //   return () => clearInterval(interval);
+  // }, []);
   const pendulumAnim = {
     "--delay": "200ms",
     "--time": "3s",
@@ -27,6 +32,10 @@ const SaveOnSection = () => {
     },
     { threshold: 0.3 }
   );
+
+  const handleFeatureClick = (index) => {
+    setHighlightedFeature(index);
+  };
   return (
     <section id="save-on-section">
       <div className="save-on-section section-padding">
@@ -94,167 +103,49 @@ const SaveOnSection = () => {
           </div>
         </div>
         <div className="save-on-container">
-          <div className="save-on-features-container">
+        <div className="save-on-features-container">
             <div className="save-on-features">
-              <div className="save-on-feature">
-                <div className="save-on-feature-number-container">
-                  {highlightedFeature == 1 ? (
+              {features.map((feature, index) => (
+                <div className="save-on-feature" key={index} onClick={() => handleFeatureClick(index)}>
+                  <div className="save-on-feature-number-container">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="66"
                       height="60"
                       viewBox="0 0 66 60"
                       fill="none"
-                      style={{transition: 'all 1s ease'}}
                     >
                       <path
+                        style={{ transition: 'fill 200ms ease' }}
                         d="M58.884 25.1802C64.3531 34.3419 53.9178 47.1732 41.3158 49.1739C28.2073 51.2551 15.2087 52.8752 9.73963 43.7135C4.27058 34.5518 12.6306 16.449 23.0614 10.3952C33.4922 4.34143 48.4804 15.6087 58.884 25.1802Z"
-                        fill="#22E393"
+                        fill={highlightedFeature === index ? "#22E393" : "#3830C9"}
                       />
                       <path
+                        style={{ transition: 'fill 200ms ease' }}
                         d="M55.204 26.4685C59.8668 34.2796 50.9699 45.2193 40.2256 46.9252C29.0495 48.6995 17.967 50.0808 13.3042 42.2696C8.64132 34.4585 15.769 19.0243 24.6621 13.863C33.5552 8.70159 46.334 18.3079 55.204 26.4685Z"
-                        fill="#3830C9"
+                        fill={highlightedFeature === index ? "#3830C9" : "white"}
                       />
                     </svg>
-                  ) : (
-                    <svg
-                      width="70"
-                      height="62"
-                      viewBox="0 0 70 62"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
+                    <div
+                      className={
+                        highlightedFeature === index
+                          ? "save-on-feature-number-highlight"
+                          : "save-on-feature-number"
+                      }
                     >
-                      <path
-                        d="M55.4357 19.0199C61.7899 29.6644 74.2855 36.2859 62.1665 43.3195C50.0474 50.3531 15.0124 53.4575 8.65814 42.813C2.30391 32.1685 16.4824 17.3502 28.6014 10.3166C40.7205 3.28299 49.0815 8.37538 55.4357 19.0199Z"
-                        fill="#3830C9"
-                      />
-                      <path
-                        d="M51.1737 21.4619C56.3237 30.0891 66.4512 35.4557 56.6289 41.1563C46.8067 46.8569 18.4113 49.373 13.2614 40.7458C8.11137 32.1186 19.6028 20.1086 29.4251 14.408C39.2473 8.70741 46.0237 12.8347 51.1737 21.4619Z"
-                        fill="white"
-                      />
-                    </svg>
-                  )}
-                  <div
-                    className={
-                      highlightedFeature == 1
-                        ? "save-on-feature-number-highlight"
-                        : "save-on-feature-number"
-                    }
-                  >
-                    1
+                      {index + 1}
+                    </div>
                   </div>
-                </div>
-                <h3
-                  className={
-                    highlightedFeature == 1
-                      ? "save-on-feature-title-highlight"
-                      : "save-on-feature-title"
-                  }
-                >
-                  Auto-select the lowest price seller
-                </h3>
-              </div>
-              <div className="save-on-feature">
-                <div className="save-on-feature-number-container">
-                  {highlightedFeature == 2 ? (
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="66"
-                      height="60"
-                      viewBox="0 0 66 60"
-                      fill="none"
-                      style={{transition: 'all 1s ease'}}
-                    >
-                      <path
-                        d="M58.884 25.1802C64.3531 34.3419 53.9178 47.1732 41.3158 49.1739C28.2073 51.2551 15.2087 52.8752 9.73963 43.7135C4.27058 34.5518 12.6306 16.449 23.0614 10.3952C33.4922 4.34143 48.4804 15.6087 58.884 25.1802Z"
-                        fill={"#22E393"}
-                      />
-                      <path
-                        d="M55.204 26.4685C59.8668 34.2796 50.9699 45.2193 40.2256 46.9252C29.0495 48.6995 17.967 50.0808 13.3042 42.2696C8.64132 34.4585 15.769 19.0243 24.6621 13.863C33.5552 8.70159 46.334 18.3079 55.204 26.4685Z"
-                        fill={"#3830C9"}
-                      />
-                    </svg>
-                  ) : (
-                    <svg
-                      width="70"
-                      height="62"
-                      viewBox="0 0 70 62"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M58.884 25.1802C64.3531 34.3419 53.9178 47.1732 41.3158 49.1739C28.2073 51.2551 15.2087 52.8752 9.73963 43.7135C4.27058 34.5518 12.6306 16.449 23.0614 10.3952C33.4922 4.34143 48.4804 15.6087 58.884 25.1802Z"
-                        fill={highlightedFeature==2 ? "#22E393": "#3830C9"}
-                      />
-                      <path
-                        d="M55.204 26.4685C59.8668 34.2796 50.9699 45.2193 40.2256 46.9252C29.0495 48.6995 17.967 50.0808 13.3042 42.2696C8.64132 34.4585 15.769 19.0243 24.6621 13.863C33.5552 8.70159 46.334 18.3079 55.204 26.4685Z"
-                        fill={highlightedFeature == 2 ? "#3830C9": "white"}
-                      />
-                    </svg>
-                  )}
-                  <div
+                  <h3
                     className={
-                      highlightedFeature == 2
-                        ? "save-on-feature-number-highlight"
-                        : "save-on-feature-number"
+                      highlightedFeature === index
+                        ? "save-on-feature-title highlight"
+                        : "save-on-feature-title"
                     }
-                  >
-                    2
-                  </div>
+                    dangerouslySetInnerHTML={{ __html: feature.title }}
+                  />
                 </div>
-                <h3
-                  className={
-                    highlightedFeature == 2
-                      ? "save-on-feature-title-highlight"
-                      : "save-on-feature-title"
-                  }
-                >
-                  Auto-select the lowest price seller
-                </h3>
-              </div>
-              <div className="save-on-feature">
-                <div className="save-on-feature-number-container">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="66"
-                      height="60"
-                      viewBox="0 0 66 60"
-                      fill="none"
-                      style={{transition: 'all 1s ease'}}
-                    >
-                      <path
-                        d="M58.884 25.1802C64.3531 34.3419 53.9178 47.1732 41.3158 49.1739C28.2073 51.2551 15.2087 52.8752 9.73963 43.7135C4.27058 34.5518 12.6306 16.449 23.0614 10.3952C33.4922 4.34143 48.4804 15.6087 58.884 25.1802Z"
-                        fill={highlightedFeature==3 ? "#22E393": "#3830C9"}
-                      />
-                      <path
-                        d="M55.204 26.4685C59.8668 34.2796 50.9699 45.2193 40.2256 46.9252C29.0495 48.6995 17.967 50.0808 13.3042 42.2696C8.64132 34.4585 15.769 19.0243 24.6621 13.863C33.5552 8.70159 46.334 18.3079 55.204 26.4685Z"
-                        fill={highlightedFeature == 3 ? "#3830C9": "white"}
-                      />
-                    </svg>
-                  <div
-                    className={
-                      highlightedFeature == 3
-                        ? "save-on-feature-number-highlight"
-                        : "save-on-feature-number"
-                    }
-                  >
-                    3
-                  </div>
-                </div>
-                <h3
-                  className={
-                    highlightedFeature == 3
-                      ? "save-on-feature-title-highlight"
-                      : "save-on-feature-title"
-                  }
-                >
-                  Get{" "}
-                  <span className="dema-font">
-                    d<span className="title-blue">e</span>ma
-                  </span>
-                  's 5% savings
-                </h3>
-              </div>
+              ))}
             </div>
             <div className="discount-coupon-desktop">
               <div className="discount-coupon">
@@ -279,10 +170,10 @@ const SaveOnSection = () => {
             <div className="save-on-video">
               <video
                 className="video"
-                src="/images/home/save-on-section/video.mp4"
+                src={features[highlightedFeature].video}
                 autoPlay
                 muted
-                loop
+                onEnded={() => {setHighlightedFeature((prevIndex) => (prevIndex+1)%3)}}
               />
             </div>
           </div>

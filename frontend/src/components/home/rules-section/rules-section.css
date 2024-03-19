@@ -23,6 +23,9 @@
     align-items: center;
     margin-top: 5%;
     justify-content: center;
+    height: 496px;
+    gap: 10px;
+
 }
 .rule-number-background {
     position: relative;
@@ -36,7 +39,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    transition: height 0.3s, background-color 0.3s, color 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    user-select: none;
+    transition: all 0.5s ease;
 
 }
 .rule:nth-child(1) {
@@ -94,7 +98,7 @@
     color: white;
 }
 .rule:hover p {
-    color: white !important;
+    color: rgba(255, 255, 255, 0.7) !important;
 }
 .rule-paragraph {
     font-size: 18px;
@@ -104,6 +108,7 @@
 
 @media screen and (min-width: 1200px) {
     .rule:hover {
+        width: 32%;
         height: 496px;
         background-color: var(--secondary-500);
         color: white !important;
@@ -154,6 +159,7 @@
         scroll-snap-type: x mandatory;
         -webkit-overflow-scrolling: touch;
         scroll-behavior: smooth;
+        height: 496px;
       }
       .rule {
         flex: 0 0 auto;

@@ -95,6 +95,11 @@
 span.relative {
     position: relative;
 }
+@media only screen and (max-width: 1300px) {
+    .hero-section-heading {
+        font-size: 2.5rem;
+    }
+}
   @media only screen and (max-width: 768px) {
     #hero-section {
         display: flex;

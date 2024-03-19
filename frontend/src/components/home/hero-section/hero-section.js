@@ -92,6 +92,7 @@ const HeroSection = () => {
             <span>
               <Image src="/images/home/hero-section/title-icon02.svg" width={48} height={48} className="title-icon" />
             </span>
+            <br/>
              {" "}Save {" "}
              <span>
               <Image src="/images/home/hero-section/title-icon03.svg" width={40} height={40} className="title-icon" />
