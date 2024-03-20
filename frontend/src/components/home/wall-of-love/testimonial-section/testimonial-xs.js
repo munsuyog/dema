@@ -35,7 +35,7 @@ const TestimonialXS = ({ tweetId }) => {
         <div className={`testimonial-xs ${isLoading ? 'loading' : 'active'}`}>
             <div className="testimonial-header">
                 <div className="testimonial-profile">
-                    <Image
+                    <img
                         src={tweet?.user.profile_image_url_https}
                         width={45}
                         height={45}

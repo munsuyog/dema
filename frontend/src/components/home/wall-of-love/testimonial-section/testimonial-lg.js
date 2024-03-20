@@ -35,7 +35,7 @@ const TestimonialLarge = ({ tweetId }) => {
         <div className={`testimonial-lg ${isLoading ? 'loading' : 'active'}`}>
             <div className="testimonial-header">
                 <div className="testimonial-profile">
-                    <Image
+                    <img
                         src={tweet?.user.profile_image_url_https}
                         width={45}
                         height={45}

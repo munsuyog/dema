@@ -60,11 +60,11 @@ const TestimonialSection = ({ testimonials }) => {
     // Function to rotate medium and small testimonials every 5 seconds
     const rotateTestimonials = setInterval(() => {
       setCurrentMediumIndex(prevIndex => (prevIndex + 1) % mediumTestimonials.length);
-    }, 5000);
+    }, 6000);
   
     const loadSmallTestimonials = setInterval(() => {
       setCurrentSmallIndex(prevIndex => (prevIndex + 1) % smallTestimonials.length);
-    }, 5000);
+    }, 6000);
   
     // Function to load different extra small testimonials every 5 seconds
     const loadExtraSmallTestimonials = setInterval(() => {
@@ -88,20 +88,35 @@ const TestimonialSection = ({ testimonials }) => {
     testimonials && (
       <div className="testimonial-section">
         <div className="testimonial-row">
-          {mediumTestimonials[currentMediumIndex]}
-          {smallTestimonials[currentSmallIndex]}
-        </div>
-        <div className="testimonial-row">
-          {largeTestimonials[currentLargeIndex]}
-          <div className="testimonial-sub-row">
-            {/* Render two extra-small size testimonials */}
-            {extraSmallTestimonials[currentExtraSmallIndex]}
-            {extraSmallTestimonials[(currentExtraSmallIndex + 1) % extraSmallTestimonials.length]}
+          <div className="testimonial-md-container">
+            {mediumTestimonials[currentMediumIndex]}
+          </div>
+          <div className="testimonial-sm-container">
+            {smallTestimonials[currentSmallIndex]}
           </div>
         </div>
         <div className="testimonial-row">
+          <div className="testimonial-lg-container">
+          {largeTestimonials[currentLargeIndex]}
+          </div>
+          <div className="testimonial-sub-row">
+            {/* Render two extra-small size testimonials */}
+            <div className="testimonial-xs-container">
+            {extraSmallTestimonials[currentExtraSmallIndex]}
+            </div>
+            <div className="testimonial-xs-container">
+            {extraSmallTestimonials[(currentExtraSmallIndex + 1) % extraSmallTestimonials.length]}
+            </div>
+          </div>
+        </div>
+        <div className="testimonial-row">
+          <div className="testimonial-md-container">
           {mediumTestimonials[(currentMediumIndex + 1) % mediumTestimonials.length]}
+          </div>
+          <div className="testimonial-sm-container">
           {smallTestimonials[(currentSmallIndex + 1) % smallTestimonials.length]}
+
+          </div>
         </div>
       </div>
     )
