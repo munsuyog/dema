@@ -1,0 +1,114 @@
+.learn-other-faq {
+    padding: 2%;
+    border: 0.5px solid rgba(20, 13, 49, 0.1);
+    border-radius: 10px;
+    position: relative;
+    width: 90%;
+}
+.learn-other-subfaq-leaf-arrow {
+    position: absolute;
+    right: -60px;
+    top: 60px;
+    opacity: 0;
+
+}
+.learn-other-subfaq-leaf-arrow.active {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+.learn-other-faq.active {
+    background: linear-gradient(rgba(239, 247, 255, 1),rgba(239, 247, 255, 0) 90%);
+}
+.learn-other-faq-title {
+    font-size: 20px;
+    font-family: var(--font-open-sans);
+    font-weight: 600;
+}
+.learn-other-subfaq {
+    margin-left: 3%;
+    margin-right: 3%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-bottom: 1px solid rgba(13, 13, 13, 0.1);
+}
+.learn-other-subfaq-header {
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+    user-select: none;
+}
+.learn-other-subfaq-dropdown.active {
+    rotate: 180deg;
+}
+.learn-other-subfaq-answer-wrapper {
+    margin-left: 4%;
+    color: rgba(13, 13, 13, 0.6);
+    margin-top: 1%;
+    opacity: 0;
+    max-height: 0;
+    animation: dropdownAnimReverse 0.5s ease;
+}
+.learn-other-subfaq-answer-wrapper.active {
+    opacity: 1;
+    max-height: 500px;
+    animation: dropdownAnim 1s ease;
+}
+.learn-other-subfaq:last-child {
+    border-bottom: none;
+}
+.learn-other-faq-header {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    user-select: none;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.learn-other-faqs-wrapper {
+    opacity: 0;
+    max-height: 0;
+    animation: dropdownAnimReverse 0.5s ease;
+}
+.learn-other-faqs-wrapper.active {
+    opacity: 1;
+    max-height: 500px;
+    animation: dropdownAnim 1s ease;
+}
+
+@keyframes dropdownAnim {
+    0% {
+        opacity: 0;
+        max-height: 0;
+    }
+    100% {
+        opacity: 1;
+        max-height: 500px;
+    }
+}
+@keyframes dropdownAnimReverse {
+    0% {
+        opacity: 1;
+        max-height: 500px;
+    }
+    100% {
+        opacity: 0;
+        max-height: 0;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .learn-other-faq-title {
+        font-size: 14px;
+    }   
+    .learn-other-faq-header {
+        align-items: center;
+    }
+    .learn-other-subfaq-answer-wrapper {
+        margin-left: 10%;
+    }
+    .learn-other-subfaq-header {
+        align-items: center;
+    }
+}

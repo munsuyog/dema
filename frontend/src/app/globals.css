@@ -83,16 +83,23 @@ a {
   text-decoration: none;
 }
 h1 {
-  font-size: 36px;
+  font-family: var(--font-open-sans);
+  font-size: 50px;
 }
 h2 {
   font-size: 28px;
 }
 h3 {
-  font-size: 20px;
+  font-size: 36px;
+  font-family: var(--font-open-sans);
+}
+h4 {
+  font-size: 24px;
+  font-family: var(--font-open-sans);
 }
 .paragraph-regular {
   font-size: 16px;
+  font-family: var(--font-open-sans);
 }
 .poragraph-sm {
   font-size: 12px;
@@ -127,12 +134,26 @@ h3 {
   position: relative;
   text-align: center;
 }
-
+p {
+  font-family: var(--font-open-sans);
+}
 @media screen and (max-width: 768px) {
   .section-padding {
     padding: 5% 4%;
   }
   body, html {
     overflow-x: hidden;
+  }
+  p {
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 28px
+  }
+  h3 {
+    font-size: 30px;
+  }
+  .paragraph-regular {
+    font-size: 14px;
   }
 }

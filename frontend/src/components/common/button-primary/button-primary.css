@@ -1,0 +1,11 @@
+.button-primary {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: var(--secondary-500);
+    margin-top: 10px;
+    color: white;
+    font-family: var(--font-open-sans);
+    font-size: 16px;
+    border-radius: 10px;
+    text-align: center;
+}

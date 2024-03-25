@@ -1,0 +1,148 @@
+.learn-faq-container {
+    width: 100%;
+    position: relative;
+    padding: 5%;
+    margin-bottom: 15%;
+}
+.learn-faq-points-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 5%;
+}
+.learn-faq-points-title-section {
+    position: relative;
+}
+.learn-faq-points-title-vector {
+    position: absolute;
+    top: -40px;
+    left: -40px;
+}
+.learn-faq-point {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.learn-faq-points-container {
+    margin: 5%;
+    padding: 5%;
+    margin-bottom: 15%;
+}
+.highlighted {
+    position: relative;
+}
+.highlighted-points-title {
+    position: relative;
+}
+.highlighted svg {
+    position: absolute;
+    left: -7%;
+    top: -40%;
+    width:110%; 
+    height: 200%;
+}
+.highlighted-points-title svg {
+    position: absolute;
+    left: 0%;
+    top: 5%;
+    width:100%; 
+    height: 200%;
+}
+.learn-faq-title-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 60%;
+}
+.learn-faq-header-title-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.learn-faq-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.learn-faq-header-dropdown {
+    cursor: pointer;
+    transform: rotate(180deg);
+    transition: transform 0.5s ease-in-out;
+}
+.learn-faq-header-dropdown.active svg {
+    cursor: pointer;
+    transform: rotate(180deg);
+}
+.learn-faq-card-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    opacity: 0;
+    max-height: 0;
+    animation: dropdownAnimReverse 1s ease;
+
+}
+.learn-faq-card-container.active {
+    opacity: 1;
+    max-height: 1000px;
+    animation: dropdownAnim 1s ease;
+}
+.learn-faq-container-before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    bottom: 20px;
+    left: -50px;
+    right: -50px;
+    background: linear-gradient(rgba(239, 247, 255, 1),rgba(239, 247, 255, 0) 70%);
+    transform: rotate(2deg);
+    transform-origin: 0 0;
+    z-index: -1;
+}
+
+@media screen and (max-width: 768px) {
+    .learn-faq-header-image {
+        width: 75px;
+        height: 75px
+    }
+    .learn-faq-title-wrapper {
+        width: 100%;
+    }
+    .learn-faq-card-container {
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 5%;
+    }
+    .learn-faq-card {
+        width: 100% !important;
+    }
+    .learn-faq-card-image-container {
+        width: 100%;
+    }
+    .learn-faq-points-title-vector {
+        width: 50;
+        height: auto;
+    }
+}
+
+@keyframes dropdownAnim {
+    0% {
+        opacity: 0;
+        max-height: 0;
+    }
+    100% {
+        opacity: 1;
+        max-height: 500px;
+    }
+}
+@keyframes dropdownAnimReverse {
+    0% {
+        opacity: 1;
+        max-height: 500px;
+    }
+    100% {
+        opacity: 0;
+        max-height: 0;
+    }
+
+}

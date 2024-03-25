@@ -1,0 +1,21 @@
+.learn-other-faqs {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.learn-other-faqs-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.learn-other-faqs-title-wrapper {
+    position: relative;
+}
+.other-faqs-squiggle {
+    rotate: 215deg;
+    transform: scaleX(-1);
+    position: absolute;
+    left: 220px;
+    top: 20px;
+}
