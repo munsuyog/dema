@@ -3,14 +3,96 @@
     gap: 20px;
     align-items: center;
     margin-top: 5%;
+    overflow: hidden;
+    height: 800px;
+    justify-content: center;
 }
+.testimonial-left, .testimonial-center, .testimonial-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    animation: marquee 80s linear infinite;
+    width: 350px;
+}
+.testimonial-center {
+    animation: marqueeReverse 200s linear infinite;
+}
+@keyframes marquee {
+    0% {
+      transform: translateY(0%);
+    }
+    100% {
+      transform: translateY(-50%); /* Adjust distance as needed */
+    }
+  }
+  @keyframes marqueeReverse {
+    0% {
+      transform: translateY(0%);
+    }
+    100% {
+      transform: translateY(50%); /* Adjust distance as needed */
+    }
+  }
+
+/* Test */
+.testimonial-section-horizontal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 20px;
+    margin-top: 15%;
+}
+.testimonial-top, .testimonial-bottom {
+    display: flex;
+    width: 90%;
+    flex-shrink: 0;
+    gap: 20px;
+}
+.testimonial-top .testimonial-md {
+    width: 339px;
+    flex-shrink: 0;
+    height: 400px;
+    animation: marqueeH 20s linear infinite;
+}
+.testimonial-bottom .testimonial-md {
+    width: 339px;
+    flex-shrink: 0;
+    height: 400px;
+    animation: marqueeH 20s linear infinite;
+
+}
+@keyframes marqueeH {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%); /* Adjust distance as needed */
+    }
+  }
+  @keyframes marqueeHReverse {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(50%); /* Adjust distance as needed */
+    }
+  }
+
+
+/* ENd of Test */
+
 .testimonial-md {
     border: 1px solid #F5F5F5;
-    width: 339px;
-    height: 410px;
+    width: 100%;
+    height: auto;
+    gap: 20px;
     background-color: white;
     border-radius: 20px;
-    padding: 5%;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

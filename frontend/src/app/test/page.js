@@ -1,8 +1,8 @@
 'use client'
 import React, { useState } from "react";
-import "./wall-of-love.css";
+import "./../../components/home/wall-of-love/wall-of-love.css";
 import Image from "next/image";
-import TestimonialSection from "./testimonial-section/testimonial-section";
+import TestTestimonials from "@/components/home/wall-of-love/testimonial-section/TestTestimonials";
 import { useEffect } from "react";
 import { getTweets } from "@/utils/strapi-cms";
 
@@ -129,7 +129,7 @@ const WallOfLove = () => {
           </h2>
         </div>
         <div className="testimonials-wrapper">
-            <TestimonialSection testimonials={tweets} />
+            <TestTestimonials testimonials={tweets} />
             <Image
                 src="/images/home/wall-of-love/ellipse.svg"
                 width={509}

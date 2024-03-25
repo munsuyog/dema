@@ -4,6 +4,7 @@ import "./testimonial-section.css";
 import { TweetMedia } from "react-tweet";
 
 const TestimonialMedium = ({ tweetId }) => {
+    console.log(tweetId)
     const [tweet, setTweet] = useState(null);
     const [isLoading, setIsLoading] = useState(true);
     const formatLikes = Intl.NumberFormat('en-US', {
