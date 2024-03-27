@@ -1,0 +1,59 @@
+#about-hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(239, 247, 255, 1);
+    position: relative;
+}
+.title-squiggle {
+    position: absolute;
+    top: -5px;
+    right: -15px;
+    width: 110%;
+    height: auto;
+}
+h1 span {
+    position: relative;
+    z-index: 2;
+}
+.title-vector {
+    position: absolute;
+    bottom: -10px;
+    right: -25px;
+    z-index: -1;
+}
+.about-hero-title-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+}
+.about-hero-title-section p {
+    font-size: 18px;
+    width: 85%;
+}
+.about-badge-wrapper {
+    position: relative;
+}
+.about-badge-squiggle {
+    position: absolute;
+    left: 120px;
+    top: 10px;
+    transform: scaleX(-1);
+    rotate: 220deg;
+}
+
+@media screen and (max-width: 768px) {
+    #about-hero {
+        flex-direction: column;
+    }
+    .about-hero-title-section {
+        width: 100%;
+    }
+    .about-hero-title-section p {
+        font-size: 14px;
+    }
+    .about-hero-banner {
+        width: 100%;
+    }
+}

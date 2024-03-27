@@ -82,3 +82,65 @@ const URL = 'http://154.53.59.178:30002'
       return [];
     }
   }
+
+  // Mission Section
+
+  export const getMissions = async () => {
+    try {
+      const response = await fetch('http://154.53.59.178:30002/api/about-missions?sort=id&populate=*', {
+        headers: {
+          Authorization: `Bearer ${accessToken}`,
+        },
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to fetch Missions: ' + response.statusText);
+      }
+      const data = await response.json()
+      return data;
+    }
+    catch(error) {
+      console.error(error);
+      return [];
+    }
+  }
+
+  export const getValues = async () => {
+    try {
+      const response = await fetch('http://154.53.59.178:30002/api/about-values?sort=id&populate=*', {
+        headers: {
+          Authorization: `Bearer ${accessToken}`,
+        },
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to fetch Missions: ' + response.statusText);
+      }
+      const data = await response.json()
+      return data;
+    }
+    catch(error) {
+      console.error(error);
+      return [];
+    }
+  }
+
+  export const getTeams = async () => {
+    try {
+      const response = await fetch('http://154.53.59.178:30002/api/about-teams?sort=id&populate=*', {
+        headers: {
+          Authorization: `Bearer ${accessToken}`,
+        },
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to fetch Teams: ' + response.statusText);
+      }
+      const data = await response.json()
+      return data;
+    }
+    catch(error) {
+      console.error(error);
+      return [];
+    }
+  }

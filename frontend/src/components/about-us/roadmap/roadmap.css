@@ -1,0 +1,92 @@
+
+.scroll-div {
+    height: 5000px;
+    margin-bottom: 30%;
+}
+.scrollPath {
+    stroke-dashoffset: 6876;
+    stroke-dasharray: 6876;
+}
+.roadmap-card1 {
+    display: flex;
+    align-items: center;
+    padding: 5%;
+    margin: 5%;
+    background: linear-gradient(to bottom,rgba(231, 255, 250, 0.9) 30%, rgba(242, 251, 249, 0));
+    height: 600px;
+}
+.roadmap-card1 p {
+    line-height: 28.8px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+}
+.roadmap-card2 p {
+    line-height: 28.8px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.roadmap-card1 h2 {
+    position: relative;
+}
+.roadmap-card2 {
+    top: 620px;
+    display: flex;
+    align-items: center;
+    padding: 5%;
+    margin: 5%;
+    background: linear-gradient(to bottom, rgba(239, 247, 255, 0.9) 30%,rgba(239, 247, 255, 0));
+    height: 600px;
+}
+.roadmap-card3 {
+    height: 600px;
+    top: 1240px;
+    display: flex;
+    align-items: center;
+    padding: 5%;
+    margin: 5%;
+    background: linear-gradient(to bottom,rgba(231, 255, 250, 0.9) 30%, rgba(242, 251, 249, 0));
+}
+.roadmap-card2-title {
+    display: flex;
+}
+.roadmap-card3 p {
+    line-height: 28.8px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.roadmap-title-arrow {
+    position: absolute;
+    bottom: -20px;
+}
+
+@media screen and (max-width: 768px) {
+    .roadmap-card1, .roadmap-card2, .roadmap-card3 {
+        flex-direction: column;
+        margin: 1%;
+        padding: 1%;
+        height: 590px;
+    }
+    .roadmap-card1 p {
+        font-size: 12px;
+        line-height: 19.2px;
+    }
+    .roadmap-card2 p {
+        font-size: 12px;
+        line-height: 19.2px;
+    }
+    .roadmap-card3 p {
+        font-size: 12px;
+        line-height: 19.2px;
+    }
+    .roadmap-title-arrow {
+        width: 35%;
+    }
+    .roadmap-card2 {
+        top: 600px;
+        width: 100%;
+    }
+    .roadmap-card-image {
+        width: 300px;
+    }
+}

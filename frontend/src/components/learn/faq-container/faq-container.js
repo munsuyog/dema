@@ -18,32 +18,41 @@ const FaqContainer = ({ faq, theme }) => {
 
   // Function to highlight the specified word
   const highlightWord = (text, word) => {
-    return text.replace(
-      new RegExp(
-        `(${word.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")})([?.!,;:"]?)`,
-        "gi"
-      ),
-      `<span class="highlighted">
-        $1$2
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 145 76" fill="none">
-          <path d="M134.651 51.6261C94.8866 64.7921 13.2223 81.4097 4.68372 42.5514C-5.9895 -6.02137 129.64 -8.39449 140.194 31.4078C147.216 57.892 122.256 71.8645 113.077 72.1071" stroke='${theme == 'secondary' ?  "#22E393" : "#3830C9"}' stroke-width="7"/>
-        </svg>
-      </span>`
-    );
+    if(!word) {
+      return text;
+    }
+    else {
+      return text.replace(
+        new RegExp(
+          `(${word.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")})([?.!,;:"]?)`,
+          "gi"
+        ),
+        `<span class="highlighted">
+          $1$2
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 145 76" fill="none">
+            <path d="M134.651 51.6261C94.8866 64.7921 13.2223 81.4097 4.68372 42.5514C-5.9895 -6.02137 129.64 -8.39449 140.194 31.4078C147.216 57.892 122.256 71.8645 113.077 72.1071" stroke='${theme == 'secondary' ?  "#22E393" : "#3830C9"}' stroke-width="7"/>
+          </svg>
+        </span>`
+      );
+    }
   };
   const highlightWordPoints = (text, word) => {
-    return text.replace(
-      new RegExp(
-        `(${word.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")})([?.!,;:"]?)`,
-        "gi"
-      ),
-      `<span class="highlighted-points-title">
-        $1$2
-        <svg xmlns="http://www.w3.org/2000/svg" width="217" height="17" viewBox="0 0 217 17" fill="none">
-          <path d="M216 8.32432L100.902 2L166.753 15L0.999998 2" stroke="#3830C9" stroke-width="4"/>
-        </svg>
-      </span>`
-    );
+    if(!word) {
+      return text
+    } else {
+      return text.replace(
+        new RegExp(
+          `(${word.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")})([?.!,;:"]?)`,
+          "gi"
+        ),
+        `<span class="highlighted-points-title">
+          $1$2
+          <svg xmlns="http://www.w3.org/2000/svg" width="217" height="17" viewBox="0 0 217 17" fill="none">
+            <path d="M216 8.32432L100.902 2L166.753 15L0.999998 2" stroke="#3830C9" stroke-width="4"/>
+          </svg>
+        </span>`
+      );
+    }
   };
 
   // Apply the wrapping and highlighting

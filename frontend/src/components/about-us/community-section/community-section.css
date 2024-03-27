@@ -1,0 +1,43 @@
+#community-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.community-desc-section {
+    width: 50%;
+}
+.community-desc-section p {
+    line-height: 28.8px;
+    margin-top: 2%;
+}
+.community-image-section {
+    background: linear-gradient(rgba(56, 48, 201, 0.1),rgba(34, 227, 147, 0.1));
+    border-radius: 20px;
+}
+.community-button-wrapper {
+    margin-top: 5%;
+}
+.community-image-section {
+    position: relative;
+}
+.community-image-section svg {
+    position: absolute;
+    left: -50px;
+    transform: scaleX(-1);
+    bottom: 0px;
+}
+
+@media screen and (max-width: 768px) {
+    #community-section {
+        flex-direction: column;
+    }
+    .community-desc-section {
+        width: 100%;
+    }
+    .community-image-section svg {
+        display: none;
+    }
+    .community-image-section img {
+        width: 90%;
+    }
+}

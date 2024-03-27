@@ -2,15 +2,15 @@ import React from 'react'
 import './hero-section.css'
 import Image from 'next/image'
 import ButtonPrimary from '@/components/common/button-primary/button-primary'
+import TitleBadge from '@/components/common/title-badge/title-badge'
 
 const LearnHero = () => {
   return (
     <section id='learn-hero'>
         <div className='learn-hero section-padding'>
             <div className='learn-hero-title'>
-                <div className='learn-hero-badge'>
-                    <Image src="/images/learn/hero-section/learn-badge.svg" width={12} height={20} alt='learn-badge' className='learn-hero-badge-vector' />
-                    <span>Learn Hub</span>
+                <div>
+                    <TitleBadge title="Learn Hub" secondary />
                 </div>
                 <div className='learn-hero-title-section'>
                     <div className='learn-hero-title-wrapper'>

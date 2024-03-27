@@ -1,0 +1,34 @@
+.learn-hero-badge span {
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(to right,rgba(56, 48, 201, 1), rgba(34, 227, 147, 1));
+    background-clip: text;
+    font-family: var(--font-open-sans);
+}
+.learn-hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(1, 67, 190, 0.36);
+    border-radius: 20px;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    font-family: var(--font-open-sans);
+    font-size: 15px;
+    font-weight: 600;
+    background: linear-gradient(to right, rgba(56, 48, 201, 0.04),rgba(34, 227, 147, 0.04));
+}
+
+@media screen and (max-width: 768px) {
+    .learn-hero-badge span {
+        font-size: 10px;
+    }
+    .learn-hero-badge-vector {
+        width: 10px;
+        height: auto;
+    }
+    .learn-hero-badge {
+        padding: 8px 12px;
+    }
+}

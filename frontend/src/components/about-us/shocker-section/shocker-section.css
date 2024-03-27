@@ -1,0 +1,77 @@
+#shocker-section {
+    background: linear-gradient(rgba(239, 247, 255, 1),rgba(255, 255, 255, 1));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    position: relative;
+}
+.shocker-triangle-vector {
+    position: absolute;
+    left: 10%;
+    top: 15%;
+}
+.shocker-title-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.shocker-title-section h2 {
+    text-align: center;
+}
+.shocker-title-section p {
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+}
+.shocker-graph-desktop img {
+    user-select: none;
+}
+.shocker-title-section span {
+    position: relative;
+}
+.shocker-title-vector {
+    position: absolute;
+    left: -40px;
+    top: -40px;
+}
+.shocker-flower-vector {
+    position: absolute;
+    right: 10%;
+    top: 20%;
+}
+.shocker-graph-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .shocker-title-section .title-blue {
+        display: block;
+    }
+    .shocker-title-vector {
+        position: absolute;
+        left: 25%;
+        top: -40px;
+        width: 50px;
+    }
+    .shocker-title-section p {
+        font-size: 14px;
+    }
+    .shocker-graph-desktop {
+        display: none;
+    }
+    .shocker-graph-mobile {
+        display: block;
+    }
+    .shocker-triangle-vector {
+        width: 40px;
+        left: 20px;
+        top: 10px;
+    }
+    .shocker-flower-vector {
+        right: 20px;
+        top: 150px;
+        width: 50px;
+    }
+}
