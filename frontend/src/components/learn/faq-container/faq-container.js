@@ -74,13 +74,15 @@ if(!faq.attributes.isPointsFAQ) {
               }}
             ></p>
           </div>
-          <Image
-            src={`http://154.53.59.178:30002${faq.attributes.headerImage.data.attributes.url}`}
-            width={200}
-            height={200}
-            alt="header-image"
-            className="learn-faq-header-image"
-          />
+          { 
+              faq.attributes.headerImage.data && (<Image
+                src={`http://154.53.59.178:30002${faq.attributes.headerImage.data.attributes.url}`}
+                width={200}
+                height={200}
+                alt="header-image"
+                className="learn-faq-header-image"
+              />)
+          }
         </div>
         <div>
           <a className={`learn-faq-header-dropdown ${isOpen ? 'active' : ''}`} onClick={() => {setIsOpen(!isOpen)}}>
