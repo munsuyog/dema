@@ -9,14 +9,12 @@ import React from 'react'
 
 
 const BlogDetailPage = async ({params}) => {
-  console.log(params.slug)
-  const blogs = await getBlogs();
-  const blog = await getBlogBySlug(params.slug)
+  const slug = params.slug;
   return (
     <>
     <Navbar />
-    {blog && <BlogDetails blog={blog} />}
-    {blogs && <RecentBlogs blogs={blogs} />}
+    {slug && <BlogDetails slug={slug} />}
+    <RecentBlogs />
     <TryDemaCard />
     <NewsletterSection />
     <Footer />

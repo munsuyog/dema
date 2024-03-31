@@ -9,19 +9,14 @@ import { getBlogs } from '@/utils/strapi-cms'
 import React from 'react'
 
 const Blog = async () => {
-  const blogs = await getBlogs();
   return (
     <>
     <Navbar />
     <BlogTitleSection />
-    {
-      blogs && (
         <>
-      <BlogCards blogs={blogs} />
-      <RecentBlogs blogs={blogs} />
+      <BlogCards />
+      <RecentBlogs />
         </>
-      )
-    }
     <TryDemaCard />
     <NewsletterSection />
     <Footer />

@@ -2,8 +2,10 @@
 import React, { useState, useEffect } from 'react';
 import './recent-blogs.css';
 import RecentBlogsCard from './recent-blogs-card/recent-blogs-card';
+import { getBlogs } from '@/utils/strapi-cms';
 
-const RecentBlogs = ({ blogs }) => {
+const RecentBlogs = () => {
+  const [blogs, setBlogs] = useState(null);
   const [currentPage, setCurrentPage] = useState(1);
   const [isMobile, setMobile] = useState(false);
 
@@ -21,12 +23,26 @@ const RecentBlogs = ({ blogs }) => {
     handleResize();
   }, []);
 
+  useEffect(() => {
+    const fetchBlogs = async () => {
+      try {
+        const blogs = await getBlogs();
+        setBlogs(blogs);
+      }
+      catch(error) {
+        console.error(error);
+      }
+    }
+    fetchBlogs();
+  },[])
+
   const blogsPerPage = 3;
 
   // Logic to calculate the index of the first and last blog on the current page
   const indexOfLastBlog = currentPage * blogsPerPage;
   const indexOfFirstBlog = indexOfLastBlog - blogsPerPage;
-  const currentBlogs = (blogs.data ?? []).slice(indexOfFirstBlog, indexOfLastBlog);
+  const currentBlogs = (blogs && blogs.data) ? blogs.data.slice(indexOfFirstBlog, indexOfLastBlog) : [];
+
 
 
   // Logic to change page

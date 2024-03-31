@@ -2,8 +2,10 @@
 import React, { useState, useEffect } from "react";
 import "./blog-cards.css";
 import BlogCard from "./blog-card/blog-card";
+import { getBlogs } from "@/utils/strapi-cms";
 
-const BlogCards = ({ blogs }) => {
+const BlogCards = () => {
+  const [blogs, setBlogs] = useState({});
   const [selectedFilter, setSelectedFilter] = useState("All");
   const [currentPage, setCurrentPage] = useState(1); // Track the current page
 
@@ -28,10 +30,20 @@ const BlogCards = ({ blogs }) => {
     // Cleanup on component unmount
     return () => window.removeEventListener('resize', handleResize);
   }, []);
-  const itemsPerPage = 5; // Number of blogs per page
 
-  // Calculate total pages and handle edge cases
-  const totalPages = Math.ceil((blogs && blogs.data && blogs.data.length) || 0 / itemsPerPage);
+  useEffect(() => {
+    const fetchBlogs = async () => {
+      try {
+        const blogs = await getBlogs();
+        setBlogs(blogs);
+      }
+      catch(error) {
+        console.error(error);
+      }
+    }
+    fetchBlogs();
+  },[])
+  const itemsPerPage = 5; // Number of blogs per page
 
   const handlePageChange = (pageNumber) => {
     // Prevent out-of-bounds page changes
@@ -50,14 +62,17 @@ const BlogCards = ({ blogs }) => {
     "Points",
   ];
 
-  const filteredBlogs = blogs.data
-  ? selectedFilter === "All"
-    ? blogs.data.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage)
-    : blogs.data.filter((blog) => blog.attributes.tags.includes(selectedFilter)).slice(
-        (currentPage - 1) * itemsPerPage,
-        currentPage * itemsPerPage
-      )
-  : [];
+  const totalPages = Math.ceil((blogs && blogs.data ? blogs.data.length : 0) / itemsPerPage);
+
+  const filteredBlogs = (blogs && blogs.data)
+    ? selectedFilter === "All"
+      ? blogs.data.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage)
+      : blogs.data.filter((blog) => blog.attributes.tags.includes(selectedFilter)).slice(
+          (currentPage - 1) * itemsPerPage,
+          currentPage * itemsPerPage
+        )
+    : [];
+  
 
   const handleFilterChange = (filter) => {
     setSelectedFilter(filter);
