@@ -26,7 +26,7 @@ const RecentBlogs = ({ blogs }) => {
   // Logic to calculate the index of the first and last blog on the current page
   const indexOfLastBlog = currentPage * blogsPerPage;
   const indexOfFirstBlog = indexOfLastBlog - blogsPerPage;
-  const currentBlogs = blogs.data.slice(indexOfFirstBlog, indexOfLastBlog);
+  const currentBlogs = blogs.data && blogs.data.slice(indexOfFirstBlog, indexOfLastBlog);
 
   // Logic to change page
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
