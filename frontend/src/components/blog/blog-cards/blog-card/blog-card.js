@@ -21,7 +21,7 @@ const BlogCard = ({ blog }) => {
         <p>{`${month} ${day}, ${year}`}</p>
       </div>
       <div className='blog-card-summary-wrapper'>
-        <Image src={`http://154.53.59.178:30002${blog.attributes.featuredImage.data.attributes.url}`} width={848} height={485} alt='blog-card-image' className='blog-card-image' />
+        <img src={`http://154.53.59.178:30002${blog.attributes.featuredImage.data.attributes.url}`} width={848} height={485} alt='blog-card-image' className='blog-card-image' />
         <p dangerouslySetInnerHTML={{__html: blog.attributes.summary}}></p>
         {
             tags && (tags.map((tag, index) => (
