@@ -50,13 +50,14 @@ const BlogCards = ({ blogs }) => {
     "Points",
   ];
 
-  const filteredBlogs =
-    selectedFilter === "All"
-      ? blogs.data.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage)
-      : blogs.data.filter((blog) => blog.attributes.tags.includes(selectedFilter)).slice(
-          (currentPage - 1) * itemsPerPage,
-          currentPage * itemsPerPage
-        );
+  const filteredBlogs = blogs.data
+  ? selectedFilter === "All"
+    ? blogs.data.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage)
+    : blogs.data.filter((blog) => blog.attributes.tags.includes(selectedFilter)).slice(
+        (currentPage - 1) * itemsPerPage,
+        currentPage * itemsPerPage
+      )
+  : [];
 
   const handleFilterChange = (filter) => {
     setSelectedFilter(filter);
