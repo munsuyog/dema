@@ -20,13 +20,13 @@ const DownloadButton = () => {
         <div className='download-btn-front-border'>
           <div className='download-btn-front'>
             <div className='download-btn-front-qr'>
-              <Image src="/images/common/navbar/qr.svg" width={48} height={48} className='qr-image' />
+              <Image src="/images/common/navbar/qr.svg" width={48} height={48} className='qr-image' alt='qr-image' />
             </div>
             <div className='download-btn-title-wrapper'>
-              <Image src="/images/common/navbar/squiggle.svg" width={55} height={18} className='squiggle-arrow' />
-              <Image src="/images/common/navbar/triangle.svg" width={18} height={18} className='triangle-image' />
+              <Image src="/images/common/navbar/squiggle.svg" width={55} height={18} className='squiggle-arrow' alt='vector' />
+              <Image src="/images/common/navbar/triangle.svg" width={18} height={18} className='triangle-image' alt='vector' />
               <div className='download-btn-title-container'>
-                <Image src="/images/common/navbar/arrow-text.svg" width={30} height={24} className='arrow-text-image' />
+                <Image src="/images/common/navbar/arrow-text.svg" width={30} height={24} className='arrow-text-image' alt='vector' />
                 <div className='download-btn-title'>Download</div>
               </div>
             </div>

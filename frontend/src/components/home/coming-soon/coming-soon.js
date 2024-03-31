@@ -75,6 +75,7 @@ const ComingSoon = () => {
                   src="/images/home/coming-soon/amazon-logo.svg"
                   width={140}
                   height={42}
+                  alt="amazon-logo"
                 />
               </div>
             </div>
@@ -89,21 +90,25 @@ const ComingSoon = () => {
                   src="/images/home/coming-soon/walmart-logo.svg"
                   width={140}
                   height={42}
+                  alt="walmart"
                 />
                 <Image
                   src="/images/home/coming-soon/ebay-logo.svg"
                   width={140}
                   height={42}
+                  alt="ebay"
                 />
                 <Image
                   src="/images/home/coming-soon/temu-logo.svg"
                   width={60}
                   height={60}
+                  alt="temu"
                 />
                 <Image
                   src="/images/home/coming-soon/etsy-logo.svg"
                   width={140}
                   height={42}
+                  alt="etsy"
                 />
               </div>
             </div>

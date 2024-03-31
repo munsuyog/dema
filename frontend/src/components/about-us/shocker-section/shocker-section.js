@@ -103,8 +103,8 @@ const ShockerSection = () => {
                <g class="info-text" fade="">
                    
                    <text y="1692" x="5104" fill="black">
-                       <tspan font-size="180">Dema doesn't generate any profit,</tspan>
-                       <tspan x="5104" dy="230" font-size="180">it's core aim is to serve shoppers and sellers (6% -&gt; 0%)</tspan>
+                        <tspan font-size="180">Dema doesn&apos;t generate any profit,</tspan>
+                       <tspan x="5104" dy="230" font-size="180">it&apos;s core aim is to serve shoppers and sellers (6% -&gt; 0%)</tspan>
                    </text>
                </g>
            </g>
@@ -156,7 +156,7 @@ const ShockerSection = () => {
                <g class="info-text" fade="">
                   
                    <text y="4180" x="9250" fill="black">
-                       <tspan font-size="180">We don't let Visa, Chase, BoFA to </tspan>
+                       <tspan font-size="180">We don&apos;t let Visa, Chase, BoFA to </tspan>
                        <tspan x="9250" dy="230" font-size="180">collect toll on every order</tspan>
                    </text>
                </g>

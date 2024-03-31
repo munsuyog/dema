@@ -57,11 +57,11 @@ const OtherFAQs = ({faq}) => {
                     <stop offset="0.815" stop-color="#22E393"></stop>
                   </lineargradient>
                 </defs>
-              </motion.svg>
+        </motion.svg>
         </div>
         <div className='learn-other-faqs-container'>
         {faq.length > 0 && faq.map((faq, index) => (
-            <OtherFAQ faq={faq} />
+            <OtherFAQ key={index} faq={faq} />
         )) }
         </div>
     </div>

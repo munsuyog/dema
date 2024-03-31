@@ -9,7 +9,7 @@ const TryDemaCard = () => {
     <section id="try-dema-card" className="section-padding">
       <div className="try-dema-card-title-section">
         <h1>
-          Try Dema - It's Free
+          Try Dema - It&apos;s Free
           <br />
           Card
         </h1>

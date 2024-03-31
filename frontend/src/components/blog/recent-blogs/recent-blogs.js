@@ -31,7 +31,7 @@ const RecentBlogs = ({ blogs }) => {
   // Logic to change page
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
-  const totalPages = Math.ceil(blogs.data.length / blogsPerPage);
+  const totalPages = blogs && blogs.data ? Math.ceil(blogs.data.length / blogsPerPage) : 0;
 
   return (
     <section id='recent-blogs' className='section-padding'>

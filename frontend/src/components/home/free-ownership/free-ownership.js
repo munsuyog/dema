@@ -183,18 +183,21 @@ const FreeOwnership = () => {
         width={44}
         height={44}
         className="free-flower-top"
+        alt="vector"
       />
       <Image
         src="/images/home/free-ownership/star01.svg"
         width={50}
         height={56}
         className="free-star-bottom"
+        alt="vector"
       />
       <Image
         src="/images/home/free-ownership/star01.svg"
         width={50}
         height={56}
         className="free-star-bottom-right"
+        alt="vector"
       />
     </section>
   );

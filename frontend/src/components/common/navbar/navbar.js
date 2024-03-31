@@ -30,7 +30,7 @@ const Navbar = () => {
   return (
     <div id='navbar'>
       <div>
-        <Image className='navbar_logo' src='/images/common/navbar/logomark.svg' width={58.8} height={33.6} />
+        <Image className='navbar_logo' src='/images/common/navbar/logomark.svg' width={58.8} height={33.6} alt='logo' />
       </div>
       <div className='navbar_center' ref={navbarRef}>
         <div className='navbar_toggle' onClick={toggleMenu}>
