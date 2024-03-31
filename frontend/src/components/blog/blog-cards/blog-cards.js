@@ -31,7 +31,7 @@ const BlogCards = ({ blogs }) => {
   const itemsPerPage = 5; // Number of blogs per page
 
   // Calculate total pages and handle edge cases
-  const totalPages = Math.ceil(blogs.data.length / itemsPerPage);
+  const totalPages = Math.ceil((blogs && blogs.data && blogs.data.length) || 0 / itemsPerPage);
 
   const handlePageChange = (pageNumber) => {
     // Prevent out-of-bounds page changes
