@@ -180,7 +180,7 @@ const Roadmap = () => {
       <animated.div
         className="roadmap-card1 absolute opacityTransition"
         fadeonscroll=""
-        threshhold={isMobile ? ".03" : ".3"}
+        threshhold={isMobile ? ".03" : ".05"}
         style={{ opacity: 0 }}
       >
         <Image src="/images/about/roadmap/card1.svg" width={500} height={540} alt="card1" className="roadmap-card-image" />

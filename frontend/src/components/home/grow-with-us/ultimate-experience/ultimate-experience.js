@@ -71,28 +71,42 @@ const UltimateExperience = () => {
     });
 
     const initializeInfiniteScroll = (container) => {
-        const cards = container.querySelectorAll(".card");
-        let cardWidth = 0;
+      let cardWidth = 0;
+      const cards = container.querySelectorAll(".card");
+      cards.forEach((card) => {
+        cardWidth += card.offsetWidth;
+      });
+    
+      // Clone the cards and calculate the number of clones needed to fill the container
+      const numClonesNeeded = Math.ceil(container.offsetWidth / cardWidth);
+      const clonedCards = [];
+      for (let i = 0; i < numClonesNeeded; i++) {
         cards.forEach((card) => {
-          cardWidth += card.offsetWidth;
-        });
-        const clonedCards = Array.from(cards).map((card) => card.cloneNode(true));
-        clonedCards.forEach((clonedCard) => {
+          const clonedCard = card.cloneNode(true);
+          clonedCards.push(clonedCard);
           container.appendChild(clonedCard);
         });
-        let scrollPosition = 0;
-        const scrollContainer = () => {
-          scrollPosition += 1;
-          container.style.transform = `translateX(-${scrollPosition}px)`;
-          if (scrollPosition >= cardWidth) {
-            scrollPosition = 0;
-            container.style.transition = "none";
-          }
-          requestAnimationFrame(scrollContainer);
-        };
+      }
+    
+      let scrollPosition = 0;
+    
+      const scrollContainer = () => {
+        scrollPosition += 1;
+        container.style.transform = `translateX(-${scrollPosition}px)`;
+    
+        // Check if the scroll position has reached beyond the sum of card widths
+        if (scrollPosition >= cardWidth * numClonesNeeded) {
+          // Reset the scroll position to maintain smooth scrolling
+          scrollPosition = 0;
+        }
+    
         requestAnimationFrame(scrollContainer);
       };
-  
+    
+      requestAnimationFrame(scrollContainer);
+    };
+    
+    
       const leftContainer = document.querySelector(".cards-container-amazon");
       const rightContainer = document.querySelector(".cards-container-dema");
       function handleResize() {

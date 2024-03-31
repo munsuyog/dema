@@ -7,7 +7,7 @@ const GrowWithUs = () => {
   return (
     <section id='grow-with-us'>
         <div className='grow-with-us section-padding'>
-            <div className='section-title-wrapper'>
+            {/* <div className='section-title-wrapper'>
                 <h2 className='grow-with-us-title'>We’re growing! Grow with us!</h2>
             </div>
             <div className='grow-with-us-container'>
@@ -72,7 +72,7 @@ const GrowWithUs = () => {
                     </div>
                 </div>
             </div>
-            <a href='#' className='text-checkout'>Checkout out the dashboard</a>
+            <a href='#' className='text-checkout'>Checkout out the dashboard</a> */}
             <div className='ultimate-experience-wrapper'>
                 <UltimateExperience />
                 <Image src="/images/home/grow-with-us/ultimate-experience/arrow-top.svg" width={130} height={126} className='ultimate-arrow-top' alt='arrow' />

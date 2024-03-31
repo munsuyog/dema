@@ -1,0 +1,13 @@
+.button-ios, .button-android {
+    background-color: white;
+    display: inline-flex;
+    gap: 10px;
+    align-items: center;
+    padding: 12px 20px;
+    border-radius: 40px;
+}
+.button-ios-title, .button-android-title {
+    color: var(--secondary-500) !important;
+    width: auto !important;
+    font-weight: 600;
+}

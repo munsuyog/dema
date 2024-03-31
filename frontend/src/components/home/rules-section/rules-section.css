@@ -4,7 +4,7 @@
 .rules-section-title {
     font-family: var(--font-open-sans);
     font-size: 50px;
-    font-weight: bold;
+    font-weight: 700;
 }
 .title-operator {
     position: relative;
@@ -92,18 +92,26 @@
 .rule-subtitle {
     font-size: 24px;
     font-family: var(--font-open-sans);
-    font-weight: 500;
+    font-weight: 600;
+}
+.rule:hover .rule-title {
+    font-weight: 800;
 }
 .rule:hover h3 {
     color: white;
+    font-weight: 700;
 }
 .rule:hover p {
     color: rgba(255, 255, 255, 0.7) !important;
 }
 .rule-paragraph {
-    font-size: 18px;
+    font-size: 16px;
     color: rgba(77, 77, 77, 0.7);
     font-family: var(--font-open-sans);
+}
+.rule:hover .rule-paragraph {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.7);
 }
 
 @media screen and (min-width: 1200px) {

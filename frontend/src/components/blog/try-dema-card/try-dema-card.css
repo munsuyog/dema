@@ -1,0 +1,109 @@
+#try-dema-card {
+    width: 100%;
+    position: relative;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#try-dema-card::before {
+    content: '';
+    position: absolute;
+    top: 60px; /* Adjust as needed */
+    bottom: -10px; /* Adjust as needed */
+    left: -350px; /* Adjust as needed */
+    right: -300px; /* Adjust as needed */
+    background-color: var(--secondary-500); /* Set your background color */
+    transform-origin: 0 0;
+    z-index: -1;
+    transform: skewY(-2deg);
+}
+
+#try-dema-card h1 {
+    color: white;
+}
+#try-dema-card p {
+    color: rgba(255, 255, 255, 0.8);
+    width: 500px;
+}
+
+.try-dema-card-image-wrapper {
+    width: 580px;
+    height: 500px;
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    transform:skewX(-8deg);
+    border: 8px solid rgba(13, 13, 13, 0.1);
+    border-radius: 20px;
+    position: relative;
+}
+.try-dema-card-image {
+    width: 372px;
+    height: auto;
+    position: relative;
+    bottom: -25%;
+    transform:skewX(8deg);
+
+}
+.try-dema-card-btn-wrapper {
+    display: flex;
+    gap: 20px;
+    margin-top: 5%;
+}
+.try-dema-card-flower-vector {
+    position: absolute;
+    bottom: 20%;
+    left: 45%;
+}
+.try-dema-card-triangle-vector {
+    position: absolute;
+    left: 5%;
+    top: 10%;
+}
+.try-dema-card-yellow-vector {
+    position: absolute;
+    top: 14%;
+    right: 50%;
+}
+.try-dema-card-image-blue-vector {
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
+}
+.try-dema-card-image-triangle-vector {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+}
+
+@media screen and (max-width: 768px) {
+    #try-dema-card {
+        flex-direction: column;
+        padding-top: 50%;
+        gap: 50px;
+    }
+    .try-dema-card-image-wrapper {
+        width: 90%;
+        height: auto;
+        padding-top: 5%;
+    }
+    #try-dema-card p {
+        width: auto;
+        text-align: center;
+    }
+    #try-dema-card h1 {
+        color: white;
+        text-align: center;
+    }
+    .try-dema-card-btn-wrapper {
+        justify-content: center;
+    }
+    .try-dema-card-image-wrapper img {
+        width: 80%;
+        height: auto;
+        bottom: 0;
+    }
+}

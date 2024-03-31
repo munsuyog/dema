@@ -85,6 +85,7 @@
 .learn-faq-card-container.active {
     opacity: 1;
     max-height: 1000px;
+    margin-top: 5%;
     animation: dropdownAnim 1s ease;
 }
 .learn-faq-container-before {
@@ -94,7 +95,7 @@
     bottom: 20px;
     left: -50px;
     right: -50px;
-    background: linear-gradient(rgba(239, 247, 255, 1),rgba(239, 247, 255, 0) 70%);
+    background: linear-gradient(0deg, rgba(242, 251, 249, 0) 0%, #E7FFFA 98.04%);
     transform: rotate(2deg);
     transform-origin: 0 0;
     z-index: -1;

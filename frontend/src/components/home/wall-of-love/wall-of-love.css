@@ -68,9 +68,6 @@
     opacity: 0.5;
 }
 @media screen and (max-width: 768px) {
-    .wall-of-love {
-        height: 2500px;
-    }
     .section-title h2 {
         font-size: 24px;
     }

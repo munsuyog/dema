@@ -144,3 +144,43 @@ const URL = 'http://154.53.59.178:30002'
       return [];
     }
   }
+
+  export const getBlogs = async () => {
+    try {
+      const response = await fetch('http://154.53.59.178:30002/api/blogs?sort=id&populate=*', {
+        headers: {
+          Authorization: `Bearer ${accessToken}`,
+        },
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to fetch Teams: ' + response.statusText);
+      }
+      const data = await response.json()
+      return data;
+    }
+    catch(error) {
+      console.error(error);
+      return [];
+    }
+  }
+
+  export const getBlogBySlug = async (slug) => {
+    try {
+      const response = await fetch(`http://154.53.59.178:30002/api/blogs?filters[slug][$eq]=${slug}&populate=author, author.avatar, featuredImage`, {
+        headers: {
+          Authorization: `Bearer ${accessToken}`,
+        },
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to fetch Teams: ' + response.statusText);
+      }
+      const data = await response.json()
+      return data;
+    }
+    catch(error) {
+      console.error(error);
+      return [];
+    }
+  }

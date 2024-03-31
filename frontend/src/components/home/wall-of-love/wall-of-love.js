@@ -129,7 +129,7 @@ const WallOfLove = () => {
           </h2>
         </div>
         <div className="testimonials-wrapper">
-            <TestimonialSection testimonials={tweets} />
+          {tweets.length > 0 && <TestimonialSection testimonials={tweets} />}
             <Image
                 src="/images/home/wall-of-love/ellipse.svg"
                 width={509}
