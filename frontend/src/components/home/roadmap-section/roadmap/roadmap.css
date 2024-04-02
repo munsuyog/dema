@@ -20,8 +20,9 @@
     gap: 20px;
 }
 .roadmap-card1,.roadmap-card2,.roadmap-card3 p {
-    font-weight: 400;
+    font-weight: 600;
     font-size: 20px;
+    line-height: 32px;
 }
 .roadmap-card1:nth-child(1) {
     width: 376px;

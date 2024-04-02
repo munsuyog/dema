@@ -34,6 +34,21 @@
     border: 1px solid rgba(1, 67, 190, 0.1);
     color: white;
 }
+.blog-card-title-wrapper .highlighted {
+    color: var(--primary-500);
+}
+.blog-card-title-wrapper p {
+    font-size: 14px;
+    margin-top: 5%;
+}
+.blog-card-title-wrapper h3 {
+    position: relative;
+}
+.blog-card-title-svg {
+    position: absolute;
+    bottom: -10px;
+}
+
 
 @media screen and (max-width: 768px) {
     .blog-card {

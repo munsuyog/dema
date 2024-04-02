@@ -1,5 +1,6 @@
 #values-section {
     background: linear-gradient(rgba(239, 247, 255, 1),rgba(239, 247, 255, 0.09));
+    padding: 5%;
 }
 .values-title-section {
     position: relative;

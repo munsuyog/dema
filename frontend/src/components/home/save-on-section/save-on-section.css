@@ -20,7 +20,6 @@
 .save-on-title-wrapper {
     display: flex;
     flex-direction: column;
-    
 }
 .save-on-title {
     font-size: 50px;
@@ -112,7 +111,7 @@
     position: relative;
     margin-left: 40px;
     margin-top: 40px;
-    box-shadow: 3px 2px 9px 0 rgb(0 0 0 / 50%);
+    filter: drop-shadow(3px 2px 5px rgb(0 0 0 / 50%));
     overflow: hidden;
 }
 .e-vector1 {

@@ -205,7 +205,7 @@ const Roadmap = () => {
       >
         <div>
           <div className="roadmap-card2-title">
-            <h2><span className="title-blue">Decentralize!</span> Or be sure promises will break again!</h2>
+            <h2><span className="title-blue">Decentralize!</span> Or be sure <br/> promises will break again!</h2>
             <Image src="/images/about/roadmap/emoji.png" width={86} height={95} alt="card2" />
           </div>
           <p>We’re old & young enough to know about Sears’ ‘70s heyday, Walmart’s ‘90s rise to dominance & others tha have since broken to be replaced with the new promises of eBay, Amazon, Etsy, etc... Still,the cycle is already repeating itself. We studied the root cause going as far back as the Grand Bazaar of Istanbul. 
@@ -221,7 +221,7 @@ const Roadmap = () => {
       >
         <Image src="/images/about/roadmap/card3.svg" width={500} height={540} alt="card3" className="roadmap-card-image" />
         <div>
-            <h2>Our journey to near no-change UX, low cost & <span className="title-blue">day 1 incentives?</span></h2>
+            <h2>Our journey to near no-change<br/>UX, low cost & <span className="title-blue">day 1 incentives?</span></h2>
             <p>While we knew of the rising prices, fees and ad costs, ~300 sellers & shoppers interviews later, they told  us they didn’t want to set up new accounts, new storefronts or get used to new policies. They wanted lower fees & discounts <b>starting day one</b>. We’re users so we understood! Some work later & it turns out we could deliver and lower prices/fees over time... So we got to building!</p>
             <ButtonPrimary text="Learn More" />
         </div>

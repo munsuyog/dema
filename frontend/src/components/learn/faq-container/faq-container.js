@@ -66,8 +66,8 @@ if(!faq.attributes.isPointsFAQ) {
         style={{
           background: `${
             theme == "secondary"
-              ? "linear-gradient(0deg, rgba(242, 251, 249, 0) 0%, #E7FFFA 98.04%)"
-              : "linear-gradient(to bottom,rgba(239, 247, 255, 1),rgba(239, 247, 255, 0) 70%)"
+              ? "linear-gradient(0deg, rgba(242, 251, 249, 0) 60%, #E7FFFA 98.04%)"
+              : "linear-gradient(to bottom,rgba(239, 247, 255, 1),rgba(239, 247, 255, 0) 80%)"
           }`,
           transform: `${theme == "secondary" ? 'rotate(-2deg)' : 'rotate(2deg)'}`
         }}

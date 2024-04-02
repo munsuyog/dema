@@ -148,7 +148,7 @@ const SaveOnSection = () => {
               ))}
             </div>
             <div className="discount-coupon-desktop">
-              <div className="discount-coupon">
+              <motion.div initial={{x: -50, opacity: 0}} whileInView={{x: 0, opacity:1}} transition={{duration: 0.5}} viewport={{once: true}} className="discount-coupon">
                 <span className="e-vector1">e</span>
                 <span className="e-vector2">e</span>
                 <div className="discount-coupon-container">
@@ -163,7 +163,7 @@ const SaveOnSection = () => {
                     className="barcode"
                   />
                 </div>
-              </div>
+              </motion.div>
             </div>
           </div>
           <div className="save-on-video-container">

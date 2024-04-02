@@ -5,6 +5,7 @@
     align-items: center;
     gap: 50px;
     position: relative;
+    padding: 5% 5%;
 }
 .shocker-triangle-vector {
     position: absolute;

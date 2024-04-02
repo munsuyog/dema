@@ -18,10 +18,23 @@
 }
 .blog-title-wrapper {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bitcoin-svg {
+    position: absolute;
+    bottom: -100%;
 }
 
 @media screen and (max-width: 768px) {
     .blog-title-section {
         height: 300px;
     }
+    .bitcoin-svg {
+        position: absolute;
+        bottom: -250%;
+        width: 100px;
+    }
+    
 }

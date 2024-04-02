@@ -19,12 +19,13 @@
     line-height: 28.8px;
     margin-top: 5%;
     margin-bottom: 5%;
-
+    padding-right: 15%;
 }
 .roadmap-card2 p {
     line-height: 28.8px;
     margin-top: 5%;
     margin-bottom: 5%;
+    margin-right: 15%;
 }
 .roadmap-card1 h2 {
     position: relative;
@@ -54,6 +55,7 @@
     line-height: 28.8px;
     margin-top: 5%;
     margin-bottom: 5%;
+    padding-right: 15%;
 }
 .roadmap-title-arrow {
     position: absolute;

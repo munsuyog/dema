@@ -250,9 +250,9 @@ const Roadmap = () => {
               height={93}
               alt="card1-header"
             />
-            <h3>Buy 2+ of the same item & save more</h3>
+            <h3>More auto-pilot savings & features</h3>
           </div>
-          <p>How? Sellers get fee incentives & earn ownership too! Win-Win!</p>
+          <p>Reputation-based pricing, community vol discounts, “Get it nearby” & more</p>
         </div>
         <Image
           src="/images/home/roadmap-section/roadmap/card3-image.svg"

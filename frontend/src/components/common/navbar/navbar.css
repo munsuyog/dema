@@ -64,6 +64,9 @@
 .nav-arrow.open {
     rotate: 180deg;
 }
+.navbar_toggle {
+    cursor: pointer;
+}
 
 @media screen and (max-width: 440px) {
     .navbar_logo {
