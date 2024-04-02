@@ -173,11 +173,10 @@
 }
 .product-carousel-progress {
     display: flex;
-    width: 217px;
+    width: 250px;
     align-items: center;
     position: absolute;
     bottom: 0;
-    right: 40%;
     justify-content: space-between;
 }
 .carousel-progress-number {
@@ -186,15 +185,17 @@
     font-family: var(--font-open-sans);
 }
 .carousel-progress {
-    width: 142px;
+    width: 250px;
     background-color: #ECECEE;
-    height: 2px;
+    height: 8px;
+    border-radius: 10px;
 }
 .carousel-current-progress {
     width: 74px;
     background-color: var(--secondary-500);
-    height: 2px;
-    transition: width 0.4s ease;
+    height: 8px;
+    transition: width 1s ease;
+    border-radius: 10px;
 }
 
 @media screen and (max-width: 768px) {

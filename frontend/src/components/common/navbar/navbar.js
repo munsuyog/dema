@@ -15,6 +15,9 @@ const Navbar = () => {
   const closeMenu = () => {
     setMenuOpen(false)
   }
+  const openMenu = () => {
+    setMenuOpen(true)
+  }
 
   useEffect(() => {
     const handleOutsideClick = (event) => {
@@ -36,7 +39,7 @@ const Navbar = () => {
         <Link href="/"><Image className='navbar_logo' src='/images/common/navbar/logomark.svg' width={58.8} height={33.6} alt='logo' /></Link>
       </div>
       <div className='navbar_center' ref={navbarRef}>
-        <div className='navbar_toggle' onClick={toggleMenu}>
+        <div className='navbar_toggle' onClick={toggleMenu} onMouseEnter={openMenu}>
           <span className='navbar_menu_title'>Explore</span>
           <Image src='/images/common/navbar/downArrow.svg' width={12} height={8} alt='downArrow' className={`nav-arrow ${menuOpen ? 'open' : ''}`} />
         </div>

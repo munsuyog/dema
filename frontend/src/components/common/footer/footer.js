@@ -1,13 +1,14 @@
 import React from 'react'
 import './footer.css'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const Footer = () => {
   return (
     <footer id='footer'>
         <div className='footer'>
             <div className='footer-logo-container'>
-                <Image src="/images/common/footer/logo.svg" width={183} height={124} alt='logo' className='footer-logo' />
+                <Link href="/"><Image src="/images/common/footer/logo.svg" width={183} height={124} alt='logo' className='footer-logo' /></Link>
             </div>
             <div className='footer-links-container'>
                 <div className='footer-links-col'>
@@ -35,16 +36,16 @@ const Footer = () => {
                     <div className='footer-links-col'>
                     <div className='footer-title'>Explore</div>
                     <div className='footer-link'>
-                            <a href='#'>Protocol</a>
+                            <Link href='#'>Protocol</Link>
                     </div>
                     <div className='footer-link'>
-                            <a href='#'>Learn</a>
+                            <Link href='/learn'>Learn</Link>
                     </div>
                     <div className='footer-link'>
-                            <a href='#'>About</a>
+                            <Link href='/about-us'>About</Link>
                     </div>
                     <div className='footer-link'>
-                            <a href='#'>Blog</a>
+                            <Link href='/blog'>Blog</Link>
                     </div>
                     <div className='footer-link'>
                             <a href='#'>Sell on <span className='title-dema'>d<span className='title-blue'>e</span>ma</span></a>

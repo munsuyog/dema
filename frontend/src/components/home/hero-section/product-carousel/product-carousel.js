@@ -69,14 +69,8 @@ const ProductCarousel = () => {
                 </div>
             ))}
             <div className='product-carousel-progress'>
-                <div className='carousel-progress-number active'>
-                    {currentProductIndex + 1}
-                </div>
                 <div className='carousel-progress'>
                     <div className='carousel-current-progress' style={{ width: progressBarWidth }}></div>
-                </div>
-                <div className='carousel-progress-number active'>
-                    {products.length}
                 </div>
             </div>
         </div>
