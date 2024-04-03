@@ -65,7 +65,7 @@ const FaqCard = ({ tab, theme }) => {
         />
       </div>
       <div className="learn-faq-card-button-wrapper">
-        <ButtonPrimary text={tab.buttonText} fontSize="14px" width="90%" />
+        <ButtonPrimary text={tab.buttonText} fontSize="14px" width="90%" link={tab.buttonHref ? tab.buttonHref : ""} />
       </div>
     </div>
   );

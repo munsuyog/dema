@@ -147,7 +147,7 @@ const URL = 'http://154.53.59.178:30002'
 
   export const getBlogs = async () => {
     try {
-      const response = await fetch('http://154.53.59.178:30002/api/blogs?sort=id&populate=*', {
+      const response = await fetch('http://154.53.59.178:30002/api/blogs?sort=createdAt:desc&populate=*', {
         headers: {
           Authorization: `Bearer ${accessToken}`,
         },

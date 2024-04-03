@@ -28,12 +28,33 @@
     bottom: 0px;
 }
 
+@media screen and (max-width: 1250px) {
+    .community-desc-section h2 {
+        font-size: 30px;
+    }
+    .community-image-section {
+        width: 30%;
+        aspect-ratio: 1/1;
+    }
+    .community-image-section img {
+        width: 100%;
+        height: auto;
+    }
+}
+
 @media screen and (max-width: 768px) {
     #community-section {
         flex-direction: column;
+        gap: 50px;
     }
     .community-desc-section {
         width: 100%;
+    }
+    .community-desc-section h2 {
+        font-size: 26px;
+    }
+    .community-image-section {
+        width: 90% !important;
     }
     .community-image-section svg {
         display: none;

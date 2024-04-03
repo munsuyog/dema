@@ -46,6 +46,12 @@
     font-weight: 600;
 }
 
+@media screen and (max-width: 1250px) {
+    .missions-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
 @media screen and (max-width: 768px) {
     .missions-container {

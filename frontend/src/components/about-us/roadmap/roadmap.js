@@ -178,7 +178,7 @@ const Roadmap = () => {
     <div className="scroll-div">
       <div className="scrollContainer" ref={scrollContainerRef}>
       <animated.div
-        className="roadmap-card1 absolute opacityTransition"
+        className="roadmap-about-card1 absolute opacityTransition"
         fadeonscroll=""
         threshhold={isMobile ? ".03" : ".05"}
         style={{ opacity: 0 }}
@@ -198,13 +198,13 @@ const Roadmap = () => {
         </div>
       </animated.div>
       <animated.div
-        className="roadmap-card2 absolute opacityTransition"
+        className="roadmap-about-card2 absolute opacityTransition"
         fadeonscroll=""
         threshhold={isMobile ? "0.3" : ".5"}
         style={{ opacity: 0 }}
       >
         <div>
-          <div className="roadmap-card2-title">
+          <div className="roadmap-about-card2-title">
             <h2><span className="title-blue">Decentralize!</span> Or be sure <br/> promises will break again!</h2>
             <Image src="/images/about/roadmap/emoji.png" width={86} height={95} alt="card2" />
           </div>
@@ -214,7 +214,7 @@ const Roadmap = () => {
         <Image src="/images/about/roadmap/card2.svg" width={500} height={540} alt="card2" className="roadmap-card-image" />
       </animated.div>
       <animated.div
-        className="roadmap-card3 absolute opacityTransition"
+        className="roadmap-about-card3 absolute opacityTransition"
         fadeonscroll=""
         threshhold={isMobile ? ".55" : "0.8"}
         style={{ opacity: 0 }}
