@@ -23,6 +23,7 @@
     top: 0;
     right: 0;
     width: 90%;
+    object-fit: contain;
     height: 90%;
     rotate: 22deg;
 }
