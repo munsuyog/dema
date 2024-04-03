@@ -1,11 +1,14 @@
+'use client'
 import React from "react";
 import "./shocker-section.css";
-import Image from "next/image";
+import { useInView } from 'react-intersection-observer';
 
 const ShockerSection = () => {
+  const [ref, inView] = useInView({ threshold: 0.1 ,triggerOnce: true });
+
   return (
     <section id="shocker-section" className="section-padding">
-      <div className="shocker-title-section">
+      <div className="shocker-title-section" ref={ref}>
         <h2>
           <span className="title-blue">
             Shocker! 🙀
@@ -63,7 +66,7 @@ const ShockerSection = () => {
         />
       </svg>
       <div className="shocker-graph-desktop">
-      <svg id="viewbox" viewBox="0 0 13758 4935" fill="none" xmlns="http://www.w3.org/2000/svg">     
+      <svg id="viewbox" viewBox="0 0 13758 4935" fill="none" xmlns="http://www.w3.org/2000/svg" style={{display: inView ? 'block' : 'none'}}>     
            <g>
 
                <rect fade="" style={{ '--k': 0, 'rx': 'var(--rounded-corners)' }} width="1342" height="4885" fill="#CCCCCC"></rect>
