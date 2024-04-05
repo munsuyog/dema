@@ -84,7 +84,7 @@
 }
 .learn-faq-card-container.active {
     opacity: 1;
-    max-height: 1000px;
+    max-height: 100000px;
     margin-top: 5%;
     animation: dropdownAnim 1s ease;
 }
