@@ -7,7 +7,7 @@ import SkewedButton from "@/components/common/skewed-button/skewed-button";
 import { useSpring, animated } from "react-spring";
 
 const FreeOwnership = () => {
-  const [highlightedFeatureIndex, setHighlightedFeatureIndex] = useState(2);
+  const [highlightedFeatureIndex, setHighlightedFeatureIndex] = useState(0);
   const features = [
     {
       id: 1,

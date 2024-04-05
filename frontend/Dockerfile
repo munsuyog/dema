@@ -1,5 +1,5 @@
 # Use the official Node.js image as the base image
-FROM node:latest as dev
+FROM node:latest as production
 
 # Set the working directory inside the container
 WORKDIR /app
@@ -13,8 +13,11 @@ RUN npm install
 # Copy the rest of the application code to the container
 COPY . .
 
+# Build the Next.js application for production
+RUN npm run build
+
 # Expose the port that Next.js will run on
 EXPOSE 30001
 
-# Start the Next.js application
-CMD ["npx", "next", "dev", "-p", "30001", "-H", "0.0.0.0"]
+# Start the Next.js application in production mode
+CMD ["npx", "next", "start", "-p", "30001", "-H", "0.0.0.0"]

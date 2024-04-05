@@ -7,6 +7,13 @@ import Navbar from '@/components/common/navbar/navbar'
 import { getBlogBySlug, getBlogs } from '@/utils/strapi-cms'
 import React from 'react'
 
+export async function generateStaticParams() {
+  const posts = await getBlogs();
+ 
+  return posts.data.map((post) => ({
+    slug: post.attributes.slug,
+  }))
+}
 
 const BlogDetailPage = async ({params}) => {
   const slug = params.slug;
