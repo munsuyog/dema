@@ -1,13 +1,14 @@
 #items-section {
     width: 100%;
-    height: 800px;
     overflow: hidden;
     position: relative;
     margin-top: -40px;
 }
 .items-section {
+    padding: 10% 4%;
+}
+#items-section {
     width: 100%;
-    height: 800px;
     position: relative;
 }
 
@@ -20,10 +21,10 @@
     justify-content: space-between; /* Adjust as needed */
 }
 
-.items-section::before {
+#items-section::before {
     content: '';
     position: absolute;
-    top: 60px; /* Adjust as needed */
+    top: 10%; /* Adjust as needed */
     bottom: -10px; /* Adjust as needed */
     left: -50px; /* Adjust as needed */
     right: -10px; /* Adjust as needed */
@@ -37,7 +38,7 @@
     position: absolute; /* Adjust as needed */
     z-index: 1;
     left: -16px;
-    top: 50px;
+    top: 9%;
     transform: rotate(-2deg);
 
 }
@@ -103,7 +104,7 @@
 }
 .flower-1 {
     position: absolute;
-    top: 80px;
+    top: 15%;
     z-index: 1;
 }
 .flower-2 {
@@ -128,6 +129,7 @@
 @media screen and (max-width: 768px) {
     #items-section {
         height: 600px;
+        margin-top: -60px;
     }
     .items-section {
         height: 600px;
@@ -160,6 +162,7 @@
     }
     .bottom-line {
         top: 80px;
+        height:85px;
     }
     .circle-top-left {
         top: -30px;
@@ -191,6 +194,6 @@
         left: 10px;
     }.top-line {
         height: 400px;
-        top: -400px;
+        top: -380px;
     }
 }

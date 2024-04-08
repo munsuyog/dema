@@ -10,7 +10,6 @@
     right: -60px;
     top: 60px;
     opacity: 0;
-
 }
 .learn-other-subfaq-leaf-arrow.active {
     opacity: 1;
@@ -36,6 +35,9 @@
     gap: 10px;
     cursor: pointer;
     user-select: none;
+}
+.learn-other-subfaq.active .learn-other-subfaq-question {
+    font-weight: 500;
 }
 .learn-other-subfaq-dropdown.active {
     rotate: 180deg;
@@ -110,5 +112,19 @@
     }
     .learn-other-subfaq-header {
         align-items: center;
+    }
+    .learn-other-faq {
+        width: 100%;
+    }
+    .learn-other-subfaq-leaf-arrow {
+        width: 20px !important;
+        height: auto;
+        right: -20px;
+    }
+    .learn-other-subfaq-answer {
+        line-height: 25.2px;
+    }
+    .learn-other-subfaq {
+        margin-top: 2%;
     }
 }

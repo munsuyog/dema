@@ -38,7 +38,7 @@ const SaveOnSection = () => {
   };
   return (
     <section id="save-on-section">
-      <div className="save-on-section section-padding">
+      <div className="save-on-section fixed-width section-padding">
         <div className="section-title-wrapper">
           <h4 className="section-subtitle">SAVE ON ANY PRICE</h4>
           <h2 className="save-on-title">

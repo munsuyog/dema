@@ -1,12 +1,16 @@
+'use client'
 import React from 'react'
 import './grow-with-us.css'
 import Image from 'next/image'
 import UltimateExperience from './ultimate-experience/ultimate-experience'
+import SplitContainer from './ultimate-experience/split'
+import { useDevice } from '@/utils/DeviceContext'
 
 const GrowWithUs = () => {
+    const {device} = useDevice();
   return (
     <section id='grow-with-us'>
-        <div className='grow-with-us section-padding'>
+        <div className={device != 'desktop' ? "grow-with-us" : 'grow-with-us fixed-width section-padding'}>
             {/* <div className='section-title-wrapper'>
                 <h2 className='grow-with-us-title'>We’re growing! Grow with us!</h2>
             </div>
@@ -74,7 +78,7 @@ const GrowWithUs = () => {
             </div>
             <a href='#' className='text-checkout'>Checkout out the dashboard</a> */}
             <div className='ultimate-experience-wrapper'>
-                <UltimateExperience />
+                <SplitContainer />
                 <Image src="/images/home/grow-with-us/ultimate-experience/arrow-top.svg" width={130} height={126} className='ultimate-arrow-top' alt='arrow' />
                 <Image src="/images/home/grow-with-us/ultimate-experience/arrow-left.svg" width={53} height={150} className='ultimate-arrow-left' alt='arrow' />
                 <Image src="/images/home/grow-with-us/ultimate-experience/squiggle.svg" width={190} height={152} className='ultimate-squiggle' alt='arrow' />

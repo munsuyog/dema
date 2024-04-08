@@ -22,17 +22,19 @@ const ProductCarousel = () => {
 
     useEffect(() => {
         const interval = setInterval(() => {
-            setCurrentProductIndex((prevIndex) => (prevIndex + 1) % products.length);
+            if(products) {
+                setCurrentProductIndex((prevIndex) => (prevIndex + 1) % products.length)
+            }
         }, 5000);
 
         return () => clearInterval(interval);
     }, [products]);
 
-    const progressBarWidth = ((currentProductIndex + 1) / products.length) * 100 + '%';
+    const progressBarWidth = products ? ((currentProductIndex + 1) / products.length) * 100 + '%' : 0;
 
     return (
         <div id='product-carousel'>
-            {products.map((product, index) => (
+            {products && products.map((product, index) => (
                 <div key={index} className={`product-container ${index === currentProductIndex ? 'show' : ''}`} style={{ display: index === currentProductIndex ? 'block' : 'none' }}>
                     <div className={`product-bought-info ${index === currentProductIndex ? 'animate' : ''}`}>
                         <div className='product-bought-info_header'>

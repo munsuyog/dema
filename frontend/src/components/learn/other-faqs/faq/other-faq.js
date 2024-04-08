@@ -27,10 +27,10 @@ const SubFAQ = ({faq}) => {
     const [isOpen, setIsOpen] = useState(true);
     console.log(faq)
     return (
-        <div className='learn-other-subfaq'>
+        <div className={isOpen ? 'learn-other-subfaq active' : 'learn-other-subfaq'}>
             <div className='learn-other-subfaq-header' onClick={() => {setIsOpen(!isOpen)}}>
                 <Image src="/images/learn/learn-section/faq/subfaq-dropdown.svg" width={24} height={24} className={isOpen ? 'learn-other-subfaq-dropdown active' : 'learn-other-subfaq-dropdown'} alt='dropdown' />
-                <p>{faq.question}</p>
+                <p className='learn-other-subfaq-question'>{faq.question}</p>
             </div>
             <div className={isOpen ? 'learn-other-subfaq-answer-wrapper active' : 'learn-other-subfaq-answer-wrapper'}>
                 <p className='learn-other-subfaq-answer'>{faq.answer}</p>

@@ -14,7 +14,7 @@ const HowWorksSection = () => {
 
     return (
         <section id='how-works-section'>
-            <div className='how-works-section section-padding'>
+            <div className='how-works-section fixed-width section-padding'>
                 <div className='section-title-wrapper'>
                     <h2 className='how-works-title'>How does it work?</h2>
                     <Image src="/images/home/how-works-section/question-mark.svg" width={45} height={45} className="question-mark" />

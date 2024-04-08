@@ -184,3 +184,23 @@ const URL = 'http://154.53.59.178:30002'
       return [];
     }
   }
+
+  export const getBlogsByAuthor = async (author) => {
+    try {
+      const response = await fetch(`http://154.53.59.178:30002/api/blogs?filters[author][name][$eqi]=${author}&populate=author,author.avatar,featuredImage`, {
+        headers: {
+          Authorization: `Bearer ${accessToken}`,
+        },
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to fetch Authors Blogs: ' + response.statusText);
+      }
+      const data = await response.json()
+      return data;
+    }
+    catch(error) {
+      console.error(error);
+      return [];
+    }
+  }

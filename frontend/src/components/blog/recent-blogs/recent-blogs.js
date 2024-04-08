@@ -51,7 +51,8 @@ const RecentBlogs = () => {
   const totalPages = blogs && blogs.data ? Math.ceil(blogs.data.length / blogsPerPage) : 0;
 
   return (
-    <section id='recent-blogs' className='section-padding'>
+    <section id='recent-blogs'>
+      <div className='recent-blogs section-padding'>
       <h2 className='recent-blogs-title'>
         Recent <span> Blog
           <svg width="124" height="75" viewBox="0 0 124 75" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -91,6 +92,7 @@ const RecentBlogs = () => {
             </svg>
           ) : "Next"}
         </button>
+      </div>
       </div>
     </section>
   );

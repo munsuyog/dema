@@ -78,7 +78,7 @@ const LearnSection = () => {
       <div className="learn-section">
         <div className="learn-faq-section">
           <div className="learn-faq-wrapper">
-            {faqs.length > 0 &&
+            {faqs && faqs.length > 0 &&
               faqs.map((faq, index) => (
                 <FaqContainer
                   key={index}
@@ -199,7 +199,7 @@ const LearnSection = () => {
               </a>
             </div>
             <div className="learn-section-nav-links">
-              {faqs.length > 0 &&
+              {faqs && faqs.length > 0 &&
                 faqs.map((faq, index) => (
                   <a
                     key={index}

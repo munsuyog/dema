@@ -1144,7 +1144,7 @@ const BlogTitleSection = () => {
               style={{
                 position: "absolute",
                 top: isMobile ? 20 : -20,
-                left: -20,
+                left: isMobile ? -10 : -20,
                 width: "100%",
                 height: "auto",
               }}

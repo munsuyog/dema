@@ -147,3 +147,29 @@
     }
 
 }
+
+@media screen and (max-width: 768px) {
+    .learn-faq-points-container {
+        padding: 15% 5%;
+    }
+    .learn-faq-container {
+        padding: 15% 5%;
+    }
+    .learn-faq-title-wrapper p {
+        line-height: 22px;
+    }
+    .learn-faq-header-dropdown svg {
+        width: 25px;
+        height: 25px;
+    }
+    .learn-faq-card-title {
+        font-size: 16px !important;
+    }
+    .learn-faq-card-subtitle {
+        font-size: 12px !important;
+        line-height: 22px;
+    }
+    .learn-faq-title-wrapper p {
+        font-size: 12px;
+    }
+}

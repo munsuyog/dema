@@ -1,11 +1,11 @@
-.grow-with-us {
+#grow-with-us {
     width: 100%;
     position: relative;
     z-index: 1;
     padding-top: 3%;
     padding-bottom: 15%;
 }
-.grow-with-us::before {
+#grow-with-us::before {
     content: '';
     position: absolute;
     top: 0px; /* Adjust as needed */
@@ -78,16 +78,16 @@
 .ultimate-arrow-top {
     position: absolute;
     top: -100px;
-    left: 50px;
+    left: 0%;
 }
 .ultimate-arrow-left {
     position: absolute;
-    left: 80px;
+    left: 0%;
     bottom: 10px;
 }
 .ultimate-squiggle {
     position: absolute;
-    right: 80px;
+    right: 0%;
     top: -35px;
     z-index: -1;
 }

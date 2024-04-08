@@ -1,0 +1,40 @@
+.test {
+    width: 1140px; /* Adjust as needed */
+    height: 400px; /* Adjust as needed */
+    position: relative;
+}
+
+.top {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1140px; /* Adjust as needed */
+    height: 400px;
+    background-color: #1b1a27;
+    color: #fff;
+    z-index: 1;
+}
+
+.bottom {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 1140px; /* Adjust as needed */
+    height: 400px; /* Adjust as needed */
+    background-color: aliceblue;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dragger {
+    position: absolute;
+    left: 50%; /* Adjust initial position */
+    top: 0;
+    width: 20px; /* Adjust as needed */
+    height: 100%;
+    cursor: pointer; /* Add cursor style */
+    background-color: #ccc; /* Add color for visibility */
+    z-index: 1;
+}

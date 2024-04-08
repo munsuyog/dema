@@ -9,6 +9,9 @@
     flex-direction: column;
     gap: 20px;
 }
+.blog-details-avatar-image {
+    border-radius: 100px;
+}
 .blog-details-title-section p {
     font-size: 18px;
     line-height: 28.8px;

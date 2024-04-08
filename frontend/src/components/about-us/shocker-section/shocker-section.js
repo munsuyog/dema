@@ -7,7 +7,8 @@ const ShockerSection = () => {
   const [ref, inView] = useInView({ threshold: 0.1 ,triggerOnce: true });
 
   return (
-    <section id="shocker-section" className="section-padding">
+    <section id="shocker-section">
+      <div className="shocker-section fixed-width section-padding">
       <div className="shocker-title-section" ref={ref}>
         <h2>
           <span className="title-blue">
@@ -302,6 +303,7 @@ const ShockerSection = () => {
           </clipPath>
         </defs>
       </svg>
+      </div>
     </section>
   );
 };

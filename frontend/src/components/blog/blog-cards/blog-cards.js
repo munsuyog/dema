@@ -2,9 +2,9 @@
 import React, { useState, useEffect } from "react";
 import "./blog-cards.css";
 import BlogCard from "./blog-card/blog-card";
-import { getBlogs } from "@/utils/strapi-cms";
+import { getBlogs, getBlogsByAuthor } from "@/utils/strapi-cms";
 
-const BlogCards = () => {
+const BlogCards = ({author}) => {
   const [blogs, setBlogs] = useState({});
   const [selectedFilter, setSelectedFilter] = useState("All");
   const [currentPage, setCurrentPage] = useState(1); // Track the current page
@@ -34,8 +34,14 @@ const BlogCards = () => {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const blogs = await getBlogs();
-        setBlogs(blogs);
+        if(author) {
+          const blogs = await getBlogsByAuthor(author);
+          setBlogs(blogs)
+        }
+        else {
+          const blogs = await getBlogs();
+          setBlogs(blogs);
+        }
       }
       catch(error) {
         console.error(error);

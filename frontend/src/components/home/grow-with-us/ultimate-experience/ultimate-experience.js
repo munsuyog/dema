@@ -5,6 +5,8 @@ import "./ultimate-experience.css";
 
 const UltimateExperience = () => {
   const [dimensions, setDimensions] = useState({ width: '1140px', height: '550px' });
+  const [points, setPoints] = useState(null);
+  console.log(points)
   useEffect(() => {
 
     class SplitBox {
@@ -21,7 +23,7 @@ const UltimateExperience = () => {
           let value = e.clientX - this.box.getBoundingClientRect().left;
 
           this.top.style.width = `${Math.max(
-            Math.min((value / this.box.clientWidth) * 100, 99),
+            Math.min((value / this.box.clientWidth) * 100, 100),
             1
           )}%`;
         });
@@ -409,7 +411,8 @@ const UltimateExperience = () => {
 
       {/* Up */}
       <div className="box-content" style={{position: 'absolute'}}>
-      <div className="ultimate-experience content">
+      <div className="ultimate-experience content" style={{position: 'relative'}}>
+      <div style={{position: "absolute", right: "0%", height: "100%", width: 5, backgroundColor: 'red', zIndex: 1000000}} draggable onDrag={(e) => setPoints({x: e.clientX, y:e.clientY})}  ></div>
           <div className="section-title">
             <h2>
               Your Ultimate Shopping <br />

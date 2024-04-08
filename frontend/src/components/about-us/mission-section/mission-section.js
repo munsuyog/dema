@@ -19,7 +19,8 @@ const MissionSection = () => {
         fetchMissions();
     },[])
   return (
-    <section id="mission-section" className="section-padding">
+    <section id="mission-section">
+      <div className="mission-section section-padding fixed-width">
       <div className="mission-title-section">
         <h2>
           Our Mission{" "}
@@ -166,6 +167,7 @@ const MissionSection = () => {
                 <ButtonPrimary text="Learn More" bgColor="#22E393" color="black" width="100%" />
             </div>
         ))}
+      </div>
       </div>
     </section>
   );

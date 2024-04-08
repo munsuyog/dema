@@ -28,4 +28,11 @@
     .recent-blogs-card {
         width: 100%;
     }
+    .recent-blogs-card h4 {
+        font-size: 18px;
+    }
+    .recent-blogs-card-image {
+        height: 145px;
+        object-fit: cover;
+    }
 }

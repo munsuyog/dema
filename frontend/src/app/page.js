@@ -11,10 +11,11 @@ import RoadmapSection from "@/components/home/roadmap-section/roadmap-section";
 import RulesSection from "@/components/home/rules-section/rules-section";
 import SaveOnSection from "@/components/home/save-on-section/save-on-section";
 import WallOfLove from "@/components/home/wall-of-love/wall-of-love";
+import { DeviceProvider } from "@/utils/DeviceContext";
 
 export default function Home() {
   return (
-    <div>
+    <DeviceProvider>
       <Navbar />
       <HeroSection />
       <ComingSoon />
@@ -28,6 +29,6 @@ export default function Home() {
       <GrowWithUs />
       <JoinUs />
       <Footer />
-    </div>
+    </DeviceProvider>
   );
 }

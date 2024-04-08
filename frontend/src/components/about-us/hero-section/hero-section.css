@@ -1,9 +1,14 @@
 #about-hero {
+    background: rgba(239, 247, 255, 1);
+}
+.about-hero {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: rgba(239, 247, 255, 1);
     position: relative;
+    height: 90vh;
+
 }
 .title-squiggle {
     position: absolute;
@@ -44,8 +49,9 @@ h1 span {
 }
 
 @media screen and (max-width: 768px) {
-    #about-hero {
+    .about-hero {
         flex-direction: column;
+        height: auto;
     }
     .about-hero-title-section {
         width: 100%;

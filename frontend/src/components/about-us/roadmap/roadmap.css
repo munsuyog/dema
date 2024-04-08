@@ -1,7 +1,7 @@
 
 .scroll-div {
     height: 5000px;
-    margin-bottom: 15%;
+    margin-bottom:10%;
 }
 .scrollPath {
     stroke-dashoffset: 6876;
@@ -106,7 +106,7 @@
     .roadmap-about-card1, .roadmap-about-card2, .roadmap-about-card3 {
         flex-direction: column;
         margin: 1%;
-        padding: 1%;
+        padding: 4%;
         height: 590px;
     }
     .roadmap-about-card1 p {
@@ -125,10 +125,36 @@
         width: 35%;
     }
     .roadmap-about-card2 {
-        top: 600px;
+        top: 620px;
+        width: 100%;
+    }
+    .roadmap-about-card3 {
+        top: 1280px;
         width: 100%;
     }
     .roadmap-card-image {
         width: 300px;
+    }
+    .roadmap-about-card1 h2 {
+        font-size: 24px;
+    }
+    .roadmap-about-card2 h2 {
+        font-size: 24px;
+    }
+    .roadmap-about-card3 h2 {
+        font-size: 24px;
+    }
+    .roadmap-about-card1 .button-primary {
+        font-size: 12px !important;
+    }
+    .roadmap-about-card2 .button-primary {
+        font-size: 12px !important;
+    }
+    .roadmap-about-card3 .button-primary {
+        font-size: 12px !important;
+    }
+    .roadmap-about-card2-title img {
+        width: 30px;
+        height: 30px;
     }
 }

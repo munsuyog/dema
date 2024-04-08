@@ -1,14 +1,14 @@
-.shop-anywhere {
+#coming-soon {
     width: 100%;
     position: relative;
     padding-top: 7%;
     padding-bottom: 7%;
 }
-.shop-anywhere::before {
+#coming-soon::before {
     content: '';
     position: absolute;
     top: 60px; /* Adjust as needed */
-    bottom: -10px; /* Adjust as needed */
+    bottom: -50%; /* Adjust as needed */
     left: -350px; /* Adjust as needed */
     right: -300px; /* Adjust as needed */
     background-color: #EFF7FF; /* Set your background color */
@@ -100,6 +100,10 @@
 }
 
 @media screen and (max-width: 768px) {
+    #coming-soon {
+        padding-top: 15%;
+        padding-bottom: 10%;
+    }
     .shop-anywhere-flex {
         align-items: flex-start;
     }

@@ -26,4 +26,10 @@
         display: flex;
         justify-content: center;
     }
+    .learn-faq-card {
+        padding: 6%;
+    }
+    .learn-faq-card .button-primary {
+        font-size: 12px !important;
+    }
 }

@@ -60,7 +60,7 @@ const OtherFAQs = ({faq}) => {
         </motion.svg>
         </div>
         <div className='learn-other-faqs-container'>
-        {faq.length > 0 && faq.map((faq, index) => (
+        {faq && faq.length > 0 && faq.map((faq, index) => (
             <OtherFAQ key={index} faq={faq} />
         )) }
         </div>

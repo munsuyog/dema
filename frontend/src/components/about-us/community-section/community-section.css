@@ -1,4 +1,4 @@
-#community-section {
+.community-section {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -41,9 +41,16 @@
         height: auto;
     }
 }
-
+.real-community-text-squiggle {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+}
+.title-blue {
+    position: relative;
+}
 @media screen and (max-width: 768px) {
-    #community-section {
+    .community-section {
         flex-direction: column;
         gap: 50px;
     }

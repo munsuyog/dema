@@ -1,13 +1,13 @@
 #free-ownership {
     position: relative;
 }
-.free-ownership {
+#free-ownership {
     width: 100%;
     position: relative;
     z-index: 1;
     padding-bottom: 7%;
 }
-.free-ownership::before {
+#free-ownership::before {
     content: '';
     position: absolute;
     top: 0px; /* Adjust as needed */
@@ -173,10 +173,10 @@
         height: auto;
     }
     .free-squiggle-sm {
-        bottom: -20px;
+        bottom: -40px;
     }
     .free-ownership-skewed-btn {
-        bottom: -50px;
+        bottom: -20px;
     }
     .free-squiggle {
         width: 100px;

@@ -8,7 +8,8 @@ import ButtonPrimary from "@/components/common/button-primary/button-primary";
 
 const AboutHero = () => {
   return (
-    <section id="about-hero" className="section-padding">
+    <section id="about-hero">
+      <div className="about-hero section-padding fixed-width">
       <div className="about-hero-title-section">
         <div className="about-badge-wrapper">
           <TitleBadge title="About Us" primary />
@@ -114,6 +115,7 @@ const AboutHero = () => {
       </div>
       <div>
         <Image src="/images/about/hero-section/hero-banner.svg" width={594} height={482} alt="hero-banner" className="about-hero-banner" />
+      </div>
       </div>
     </section>
   );

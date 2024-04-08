@@ -165,12 +165,20 @@
         height: 300px;
         flex-shrink: 0;
     }
+    .rule.active {
+        display: flex;
+        flex-direction: column;
+        height: 325px;
+        background-color: var(--secondary-500);
+        color: white !important;
+        border-radius: 10px;
+        box-shadow: 5px 5px 33px 5px rgba(150, 144, 255, 0.7);
+        width: 280px;
+        justify-content: space-around;
+    }    
     .rule-number-background {
         width: 90px;
         height: auto;
-    }
-    .rule-number-wrapper {
-
     }
     .rule-number {
         left: 20px;
@@ -198,13 +206,30 @@
         scroll-behavior: smooth;
         height: 496px;
       }
+      .rules-container {
+        display: flex;
+        transition: transform 0.5s ease; /* Add smooth transition */
+      }
       .rule {
-        flex: 0 0 auto;
         margin-right: 20px;
         scroll-snap-align: start;
+        padding: 10px;
       }
       .operator-squiggle {
         width: 83px;
         top: -15px;
       }
+      .forever-trust-svg-top {
+        width: 200px;
+        height: auto;
+      }
+      .rule.active p {
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 12px;
+        line-height: 18px !important;
+      }
+      .rule.active .rule-number h3 {
+        color: white;
+      }
+
 }

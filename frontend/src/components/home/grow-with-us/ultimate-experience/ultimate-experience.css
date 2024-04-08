@@ -7,17 +7,70 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    position: relative;
 }
 .splitContainer {
     --box-width: 1140px
 }
-.ultimate-experience.contrast {
-    background-color: var(--secondary-500) !important;
+.top {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1140px; /* Adjust as needed */
+    height: 550px;
+    background-color: #eae3d7;
+    z-index: 1;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0%;
+    right: 0%;
 }
-.ultimate-experience.contrast h2 {
+
+.bottom {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 1140px; /* Adjust as needed */
+    height: 550px; /* Adjust as needed */
+    background-color: rgba(56, 48, 201, 1);
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.top-child {
+    width: 1140px;
+    height: 550px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dragger {
+    position: absolute;
+    left: 50%; /* Adjust initial position */
+    top: 0;
+    width: 2px; /* Adjust as needed */
+    height: 100%;
+    cursor: pointer; /* Add cursor style */
+    background-color: #ccc; /* Add color for visibility */
+    z-index: 1;
+    display: none;
+}
+
+.bottom-child h2 {
     color: white;
 }
-.ultimate-experience.contrast .card {
+.bottom-child .card {
     background-color: white;
 }
 .bullet-points {
@@ -43,6 +96,7 @@
     margin-top: 2%;
     gap: 32px;
     overflow: hidden;
+    width: 1140px;
 }
 .card {
     flex: 0 0 auto; 
@@ -119,11 +173,68 @@
   }
 
 @media screen and (max-width: 768px) {
-    .splitContainer {
-        --box-width: 440px !important
+    .cards-container-amazon, .cards-container-dema {
+        width: 100vw;
+    }
+    .top {
+        width: 100vw; /* Adjust as needed */
+        height: 100%;
+        background-color: #eae3d7;
+        z-index: 1;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        left: 0%;
+        right: 0%;
+        transition: width 100ms ease;
+    }
+    .card-header-image svg {
+        width: 32px;
+        height: 32px;
+    }
+    .bottom {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100vw; /* Adjust as needed */
+        height: 100%; /* Adjust as needed */
+        background-color: rgba(56, 48, 201, 1);
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        z-index: 0;
+    }
+    
+    .top-child {
+        width: 100vw;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .dragger {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: visible;
+    }
+    .dragger svg {
+        width: 20px;
+        height: 20px;
+        flex-shrink: 0;
+        position: absolute;
+        z-index: 3;
     }
     .ultimate-experience {
-        width: auto;
+        width: 100vw;
         height: 300px;
     }
     .card-title {

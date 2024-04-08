@@ -1,3 +1,8 @@
+#blog-cards {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
 .blog-filter-btn {
     background-color: rgba(1, 67, 190, 0.04);
     text-decoration: none;
@@ -127,5 +132,8 @@
     .filter-buttons {
         margin-left: auto;
         flex-wrap: wrap;
+    }
+    .blog-filter-btn {
+        font-size: 14px;
     }
 }

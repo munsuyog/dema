@@ -1,9 +1,9 @@
-.how-works-section {
+#how-works-section {
     width: 100%;
     position: relative;
     padding-top: 10%;
 }
-.how-works-section::before {
+#how-works-section::before {
     content: '';
     position: absolute;
     top: 60px; /* Adjust as needed */
