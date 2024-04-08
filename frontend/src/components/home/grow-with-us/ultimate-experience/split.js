@@ -3,7 +3,7 @@ import React, { useState, useEffect, useRef } from "react";
 import "./ultimate-experience.css";
 import Image from 'next/image';
 import { demaCards, AmazonCards } from "./cards";
-import Marquee from "react-fast-marquee";
+import Marquee from 'react-fast-marquee'
 
 const SplitContainer = () => {
   const [width, setWidth] = useState(100);

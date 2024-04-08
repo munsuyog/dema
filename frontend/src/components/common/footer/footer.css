@@ -75,6 +75,10 @@
         display: flex;
         justify-content: center;
     }
+    .footer-logo-container img {
+        width: 130px;
+        height: auto;
+    }
     .footer-links-container {
         height: auto;
     }
