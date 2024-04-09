@@ -97,24 +97,11 @@
     font-family: var(--font-open-sans);
     font-weight: 600;
 }
-.rule:hover .rule-title {
-    font-weight: 800;
-}
-.rule:hover h3 {
-    color: white;
-    font-weight: 700;
-}
-.rule:hover p {
-    color: rgba(255, 255, 255, 0.7) !important;
-}
+
 .rule-paragraph {
     font-size: 1vw;
     color: rgba(77, 77, 77, 0.7);
     font-family: var(--font-open-sans);
-}
-.rule:hover .rule-paragraph {
-    font-size: 1.1vw;
-    color: rgba(255, 255, 255, 0.7);
 }
 
 .no-mystery-svg {
@@ -154,6 +141,21 @@
         border-radius: 10px;
         box-shadow: 5px 5px 33px 5px rgba(150, 144, 255, 0.7);
     }    
+    .rule:hover .rule-paragraph {
+        font-size: 1.1vw;
+        color: rgba(255, 255, 255, 0.7);
+    }
+    .rule:hover .rule-title {
+        font-weight: 800;
+    }
+    .rule:hover h3 {
+        color: white;
+        font-weight: 700;
+    }
+    .rule:hover p {
+        color: rgba(255, 255, 255, 0.7) !important;
+    }
+    
 }
 @media screen and (max-width: 768px) {
     .rules-section-title {
@@ -206,7 +208,7 @@
         scroll-snap-type: x mandatory;
         -webkit-overflow-scrolling: touch;
         scroll-behavior: smooth;
-        height: 496px;
+        height: 400px;
       }
       .rules-container {
         display: flex;
@@ -218,8 +220,8 @@
         padding: 10px;
       }
       .operator-squiggle {
-        width: 83px;
-        top: -15px;
+        width: 100%;
+        top: 0;
       }
       .forever-trust-svg-top {
         width: 200px;

@@ -48,11 +48,13 @@
     margin-top: 1%;
     opacity: 0;
     max-height: 0;
+    visibility: hidden;
     animation: dropdownAnimReverse 0.5s ease;
 }
 .learn-other-subfaq-answer-wrapper.active {
     opacity: 1;
-    max-height: 500px;
+    max-height: 2000px;
+    visibility: visible;
     animation: dropdownAnim 1s ease;
 }
 .learn-other-subfaq:last-child {
@@ -74,7 +76,7 @@
 }
 .learn-other-faqs-wrapper.active {
     opacity: 1;
-    max-height: 500px;
+    max-height: 2000px;
     animation: dropdownAnim 1s ease;
 }
 
@@ -126,5 +128,11 @@
     }
     .learn-other-subfaq {
         margin-top: 2%;
+    }
+    .learn-other-subfaq-question {
+        line-height: 25px;
+    }
+    .learn-other-subfaq-answer {
+        line-height: 25px;
     }
 }

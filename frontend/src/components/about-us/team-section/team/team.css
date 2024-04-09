@@ -57,6 +57,12 @@
     box-shadow: 0 17px 15px -13px rgba(0, 136, 255, 0.2);
 }
 
+@media screen and (max-width: 1250px) {
+    .team-info-container {
+        padding-top: 5% !important;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .team-info-container {
         width: 278px;
@@ -77,11 +83,17 @@
     .team-profile {
         width: 80px;
         height: 80px;
+        border-radius: 80px;
         top: 50px;
     }
     .team-profile img {
         width: 70px;
         height: 70px;
     }
-    
+    .team-info-container {
+        padding-top: 15% !important ;
+    }
+    .team-bottom-line {
+        width: 100%;
+    }
 }

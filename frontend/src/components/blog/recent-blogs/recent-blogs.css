@@ -108,6 +108,14 @@
     .pagination-previous path {
         fill: white;
     }
+    .pagination-number {
+        padding: 12px 18px;
+        font-size: 16px;
+    }
+    .pagination-number.active {
+        padding: 12px 18px;
+        font-size: 16px;
+    }
     .pagination-next, .pagination-previous {
         background-color: rgba(56, 48, 201, 1);
         text-decoration: none;
@@ -117,11 +125,11 @@
         text-align: center;
         text-decoration: none;
         display: inline-block;
-        font-size: 1vw;
+        font-size: 16px;
         font-family: var(--font-open-sans);
         border-radius: 5px;
         border: 1px solid rgba(20, 13, 49, 0.02) !important;
-        height: 2.5vw;
+        height: 40px;
     }
     .recent-blogs-cards-wrapper {
         flex-direction: column;

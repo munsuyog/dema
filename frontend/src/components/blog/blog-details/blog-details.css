@@ -62,6 +62,7 @@
     }
     .blog-details-title-section p {
         font-size: 14px;
+        line-height: 22px;
     }
     .blog-details-author-name {
         font-size: 14px;
@@ -70,8 +71,9 @@
         width: 32px;
         height: 32px;
     }
-    .blog-details-body{
+    .blog-details-body p{
         font-size: 14px;
+        line-height: 22px;
     }
     .blog-details-body img {
         width: 100%;

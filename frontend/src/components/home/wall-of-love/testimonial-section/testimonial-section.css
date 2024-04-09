@@ -274,4 +274,18 @@ ul li .content {
     .testimonial-container {
         height: 800px;
     }
+    .testimonial-section {
+        height: 800px;
+    }
+    .testimonial-name {
+        font-size: 16px;
+    }
+    .testimonial-userid {
+        font-size: 12px;
+    }
+    .testimonial-userImage {
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+    }
 }

@@ -86,17 +86,17 @@
 }
 .how-works-feature-progress {
     background-color: #3454be;
-    width: 17px;
+    width: 12px;
     border-radius: 10px;
-    height: 6vw;
+    height: 5vw;
     margin-top: -10px;
     margin-bottom: -10px;
 }
 .how-works-feature.highlight .how-works-feature-progress {
     background-color: var(--primary-500);
-    width: 17px;
+    width: 12px;
     border-radius: 10px;
-    height: 6vw;
+    height: 5vw;
     margin-top: -10px;
     margin-bottom: -10px;
     z-index: 1;
@@ -104,7 +104,7 @@
 
 }
 .how-works-feature h2 {
-    font-size: 2.5vw !important;
+    font-size: 1.5vw !important;
     font-family: var(--font-open-sans);
     color: white;
     font-weight: 700;
@@ -124,8 +124,9 @@
 }
 .signup-squiggle {
     position: absolute;
-    top: -20px;
+    top: -25px;
     left: 157px;
+    width: 50px;
 }
 .feature-progress-current {
     width: 17px;

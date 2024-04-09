@@ -36,4 +36,7 @@
         height: 145px;
         object-fit: cover;
     }
+    .recent-blogs-card p {
+        font-size: 12px;
+    }
 }

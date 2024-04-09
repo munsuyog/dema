@@ -126,7 +126,7 @@ const SplitContainer = () => {
         <div className="top-child">
         <div className="section-title">
             <h2>
-              <span dangerouslySetInnerHTML={{__html: ultimateExperienceSVGs.amazonCart}}></span>Your Ultimate Shopping <br />
+              <span dangerouslySetInnerHTML={{__html: ultimateExperienceSVGs.amazonCart}} className="amazon-cart-vector"></span>Your Ultimate Shopping <br />
               <span className="experience-text-amazon">Experience Begins on Amazon</span>
             </h2>
           </div>
@@ -161,7 +161,7 @@ const SplitContainer = () => {
         <div className="bottom-child">
         <div className="section-title">
             <h2>
-              <span dangerouslySetInnerHTML={{__html: ultimateExperienceSVGs.demaCart}}></span>Your Ultimate Shopping <br />
+              <span className="dema-cart-vector" dangerouslySetInnerHTML={{__html: ultimateExperienceSVGs.demaCart}}></span>Your Ultimate Shopping <br />
               Experience Begins on <span className="title-dema">dema</span>
             </h2>
           </div>

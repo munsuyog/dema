@@ -71,9 +71,11 @@
     }
     .learn-hero-subtitle {
         font-size: 14px;
+        width: 100%;
     }
     .learn-hero-banner {
         width: 100%;
+        height: auto;
     }
     .learn-hero-squiggle {
         width: 15%;

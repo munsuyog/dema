@@ -1,6 +1,6 @@
 .ultimate-experience {
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
     margin-right: auto;
     margin-left: auto;
     background-color: #FEF7EB;
@@ -17,7 +17,7 @@
     left: 0;
     top: 0;
     width: 100vw; /* Adjust as needed */
-    height: 100vh;
+    height: 80vh;
     background-color: #FEF7EB;
     z-index: 1;
     overflow: hidden;
@@ -33,7 +33,7 @@
     left: 0;
     bottom: 0;
     width: 100vw; /* Adjust as needed */
-    height: 100vh; /* Adjust as needed */
+    height: 80vh; /* Adjust as needed */
     background-color: rgba(56, 48, 201, 1);
     color: black;
     display: flex;
@@ -45,7 +45,7 @@
 
 .top-child {
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
     position: absolute;
     left: 0;
     right: 0;
@@ -252,7 +252,7 @@
         font-size: 10px;
     }
     .card {
-        width: 130px;
+        width: 140px;
         height: 140px;
         padding: 10px;
     }
@@ -263,5 +263,13 @@
     .point .card-image {
         width: 7px;
         height: auto;
+    }
+    .amazon-cart-vector svg {
+        width: 30px;
+        height: 30px;
+    }
+    .dema-cart-vector svg {
+        width: 30px;
+        height: 30px;
     }
 }

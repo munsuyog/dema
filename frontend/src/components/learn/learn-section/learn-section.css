@@ -100,7 +100,8 @@
     }
 
     .learn-section-nav-title {
-        font-size: 16px;
+        font-size: 14px;
+        padding: 8px 12px;
     }
     .learn-section-nav-title-section {
         margin-bottom: 5%;

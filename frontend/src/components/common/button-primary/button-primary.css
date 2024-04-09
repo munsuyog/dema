@@ -9,3 +9,10 @@
     border-radius: 0.7vw;
     text-align: center;
 }
+@media screen and (max-width: 768px) {
+    .button-primary {
+        padding: 8px 12px;
+        border-radius: 10px;
+        font-size: 12px;
+    }
+}

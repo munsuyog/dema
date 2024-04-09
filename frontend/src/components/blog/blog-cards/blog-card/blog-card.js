@@ -2,7 +2,7 @@ import React from 'react';
 import './blog-card.css';
 import Image from 'next/image';
 
-const BlogCard = ({ blog }) => {
+const BlogCard = ({ blog, setCategory }) => {
   const months = [
     'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'
   ];
@@ -55,27 +55,31 @@ const BlogCard = ({ blog }) => {
   const randomIndex = Math.floor(Math.random() * randomSvg.length);
   const randomSvgElement = randomSvg[randomIndex];
   return (
-    <a href={`/blog/${blog.attributes.slug}`} className='blog-card'>
-      <div className='blog-card-title-wrapper'>
+    <div className='blog-card'>
+      <a href={`/blog/${blog.attributes.slug}`} className='blog-card-title-wrapper'>
       <h3 className='title-blue'>
         <span dangerouslySetInnerHTML={{__html: highlightWord(blog.attributes.title, blog.attributes.highlightWord)}}></span>
         <span className='blog-card-title-svg' dangerouslySetInnerHTML={{__html: randomSvgElement}}></span>
       </h3>
 
         <p>{`${month} ${day}, ${year}`}</p>
-      </div>
+      </a>
       <div className='blog-card-summary-wrapper'>
+        <a href={`/blog/${blog.attributes.slug}`}>
         <img src={`http://154.53.59.178:30002${blog.attributes.featuredImage.data.attributes.url}`} width={848} height={485} alt='blog-card-image' className='blog-card-image' />
         <p dangerouslySetInnerHTML={{__html: blog.attributes.summary}}></p>
+        </a>
+        <div className='blog-card-tags-wrapper'>
         {
             tags && (tags.map((tag, index) => (
-                <div key={index} className='blog-card-tag'>
+                <div key={index} className='blog-card-tag' onClick={() => setCategory(tag)}>
                     {tag}
                 </div>
             )))
         }
+        </div>
       </div>
-    </a>
+    </div>
   );
 };
 

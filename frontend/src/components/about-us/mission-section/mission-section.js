@@ -4,8 +4,10 @@ import "./mission-section.css";
 import { getMissions } from "@/utils/strapi-cms";
 import Image from "next/image";
 import ButtonPrimary from "@/components/common/button-primary/button-primary";
+import { useDevice } from "@/utils/DeviceContext";
 
 const MissionSection = () => {
+    const {device} = useDevice();
     const [missions, setMissions] = useState(null);
     useEffect(() => {
         const fetchMissions = async () => {
@@ -164,7 +166,7 @@ const MissionSection = () => {
             <div className="mission" key={index}>
                 <Image src={`http://154.53.59.178:30002${mission.attributes.image.data.attributes.url}`} width={220} height={220} alt="mission-image" className="mission-image" />
                 <p className="mission-text">{mission.attributes.text}</p>
-                <ButtonPrimary text="Learn More" bgColor="#22E393" color="black" width="100%" fontSize="0.9vw"/>
+                <ButtonPrimary text="Learn More" bgColor="#22E393" color="black" width="100%" fontSize={device != 'desktop' ? "12px" :"0.9vw"}/>
             </div>
         ))}
       </div>

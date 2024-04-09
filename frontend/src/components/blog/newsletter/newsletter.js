@@ -2,9 +2,11 @@
 import React, { useEffect, useState } from "react";
 import "./newsletter.css";
 import ButtonPrimary from "@/components/common/button-primary/button-primary";
+import { useDevice } from "@/utils/DeviceContext";
 
 const NewsletterSection = () => {
   const [isMobile, setMobile] = useState(false);
+  const {device} = useDevice();
 
   useEffect(() => {
     const handleResize = () => {
@@ -40,8 +42,8 @@ const NewsletterSection = () => {
         </div>
         <ButtonPrimary
           text="Our emails are like unicorns – rare, magical, and no spam included!"
-          width="35%"
-          fontSize="0.9vw"
+          width={device != 'desktop' ? "80%" : "35%"}
+          fontSize={device != 'desktop' ? "10px" : "0.9vw"}
         />
       </div>
       <svg

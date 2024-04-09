@@ -17,7 +17,7 @@
 .filter-buttons {
     display: flex;
     gap: 10px;
-    margin-left: 30%;
+    margin-left: 35%;
     margin-bottom: 2%;
 }
 .pagination-previous:disabled {
@@ -109,6 +109,12 @@
     .pagination-previous path {
         fill: white;
     }
+    .pagination-number {
+        font-size: 16px !important;
+    }
+    .pagination-number.active {
+        font-size: 16px !important;
+    }
     .pagination-next, .pagination-previous {
         background-color: rgba(56, 48, 201, 1);
         text-decoration: none;
@@ -118,11 +124,11 @@
         text-align: center;
         text-decoration: none;
         display: inline-block;
-        font-size: 1vw;
+        font-size: 16px;
         font-family: var(--font-open-sans);
         border-radius: 5px;
         border: 1px solid rgba(20, 13, 49, 0.02) !important;
-        height: 2.5vw;
+        height: 40px;
     }
     .filter-buttons {
         margin-left: auto;
@@ -130,5 +136,8 @@
     }
     .blog-filter-btn {
         font-size: 14px;
+    }
+    .blog-filter-btn {
+        padding: 5px 8px;
     }
 }

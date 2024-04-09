@@ -36,4 +36,8 @@
     .learn-faq-card .button-primary {
         font-size: 12px !important;
     }
+    .learn-faq-card-image {
+        width: 40% !important;
+        height: auto !important;
+    }
 }

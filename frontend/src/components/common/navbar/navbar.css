@@ -80,4 +80,7 @@
     .navbar_center {
         margin-right: 15%;
     }
+    #navbar {
+        height: 100px;
+    }
 }

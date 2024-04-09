@@ -102,7 +102,7 @@ const BlogCards = ({author}) => {
         ))}
       </div>
       {filteredBlogs.map((blog, index) => (
-        <BlogCard key={index} blog={blog} />
+        <BlogCard key={index} blog={blog} setCategory={setSelectedFilter} />
       ))}
       <div className="pagination">
         <button disabled={currentPage === 1} className="pagination-previous" onClick={() => handlePageChange(currentPage - 1)}>

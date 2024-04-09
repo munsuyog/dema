@@ -7,11 +7,12 @@ import TeamSection from '@/components/about-us/team-section/team-section'
 import ValuesSection from '@/components/about-us/values-section/values-section'
 import Footer from '@/components/common/footer/footer'
 import Navbar from '@/components/common/navbar/navbar'
+import { DeviceProvider } from '@/utils/DeviceContext'
 import React from 'react'
 
 const AboutUs = () => {
   return (
-    <>
+    <DeviceProvider>
     <Navbar />
     <AboutHero />
     <Roadmap />
@@ -21,7 +22,7 @@ const AboutUs = () => {
     <ValuesSection />
     <TeamSection />
     <Footer />
-    </>
+    </DeviceProvider>
   )
 }
 

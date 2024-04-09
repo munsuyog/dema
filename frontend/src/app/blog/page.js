@@ -5,12 +5,13 @@ import RecentBlogs from '@/components/blog/recent-blogs/recent-blogs'
 import TryDemaCard from '@/components/blog/try-dema-card/try-dema-card'
 import Footer from '@/components/common/footer/footer'
 import Navbar from '@/components/common/navbar/navbar'
+import { DeviceProvider } from '@/utils/DeviceContext'
 import { getBlogs } from '@/utils/strapi-cms'
 import React from 'react'
 
 const Blog = async () => {
   return (
-    <>
+    <DeviceProvider>
     <Navbar />
     <BlogTitleSection />
         <>
@@ -20,7 +21,7 @@ const Blog = async () => {
     <TryDemaCard />
     <NewsletterSection />
     <Footer />
-    </>
+    </DeviceProvider>
   )
 }
 

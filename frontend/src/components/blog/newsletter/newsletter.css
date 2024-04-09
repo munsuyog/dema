@@ -68,17 +68,24 @@
 }
 
 @media screen and (max-width: 768px) {
+    #newsletter-section {
+        height: 250px;
+    }
     .newsletter-input-container {
         width: 300px;
         padding: 2px 5px;
     }
-    .newsletter-input-container .button-primary {
-        font-size: 14px !important;
+    .newsletter-input-container input {
+        font-size: 12px;
     }
-    .newsletter-container .button-primary {
-        width: 300px !important;
+    .newsletter-input-container .button-primary {
+        font-size: 12px !important;
+        padding: 5px 5px !important;
+    }
+    .newsletter-input-container .button-primary {
+        width: 150px !important;
     }
     .newsletter-container {
-        top: 60%;
+        top: 30%;
     }
 }

@@ -78,4 +78,7 @@
     .value-subtitle {
         font-size: 12px;
     }
+    .value {
+        width: 250px;
+    }
 }
