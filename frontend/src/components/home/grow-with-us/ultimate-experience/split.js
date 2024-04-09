@@ -4,9 +4,10 @@ import "./ultimate-experience.css";
 import Image from 'next/image';
 import { demaCards, AmazonCards } from "./cards";
 import Marquee from 'react-fast-marquee'
+import { ultimateExperienceSVGs } from "@/constants/VectorSVGs";
 
 const SplitContainer = () => {
-  const [width, setWidth] = useState(100);
+  const [width, setWidth] = useState(50);
   const top = useRef(null);
   const box = useRef(null);
   const dragger = useRef(null);
@@ -120,17 +121,17 @@ const SplitContainer = () => {
 </svg>
 
       </div>
-      <div className="top" ref={top}>
+      <div className="top" ref={top} style={{width: '50%'}}>
         {/* Amazon */}
         <div className="top-child">
         <div className="section-title">
             <h2>
-              Your Ultimate Shopping <br />
-              Experience Begins on Amazon
+              <span dangerouslySetInnerHTML={{__html: ultimateExperienceSVGs.amazonCart}}></span>Your Ultimate Shopping <br />
+              <span className="experience-text-amazon">Experience Begins on Amazon</span>
             </h2>
           </div>
             <div className="cards-container-amazon">
-                <Marquee>
+                <Marquee autoFill>
                 {AmazonCards.map((card, index) => (
            <div className="card" key={index}>
             <span className="card-header-image" dangerouslySetInnerHTML={{__html: card.image}}></span>
@@ -160,12 +161,12 @@ const SplitContainer = () => {
         <div className="bottom-child">
         <div className="section-title">
             <h2>
-              Your Ultimate Shopping <br />
+              <span dangerouslySetInnerHTML={{__html: ultimateExperienceSVGs.demaCart}}></span>Your Ultimate Shopping <br />
               Experience Begins on <span className="title-dema">dema</span>
             </h2>
           </div>
             <div className="cards-container-dema">
-                <Marquee>
+                <Marquee autoFill>
                 {demaCards.map((card, index) => (
            <div className="card" key={index}>
             <span className="card-header-image" dangerouslySetInnerHTML={{__html: card.image}}></span>

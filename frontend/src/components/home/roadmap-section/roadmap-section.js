@@ -10,7 +10,7 @@ const RoadmapSection = () => {
     <section id="roadmap-section">
       <div className="roadmap-section">
         <div className="section-title-wrapper">
-          <h2 className="roadmap-section-title">
+          <h1 className="roadmap-section-title">
             A marketplace roadmap <br />
             where <span className="title-green">you</span> are{" "}
             <span className="title-priority title-blue">
@@ -20,7 +20,7 @@ const RoadmapSection = () => {
 </motion.svg>
 
             </span>
-          </h2>
+          </h1>
           <Image
             src="/images/home/roadmap-section/squiggle.svg"
             width={84}

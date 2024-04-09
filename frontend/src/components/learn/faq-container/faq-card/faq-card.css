@@ -10,7 +10,7 @@
     margin-top: 1%;
 }
 .learn-faq-card-title {
-    font-size: 22px;
+    font-size: 1.375vw;
 }
 .learn-faq-card-image-container {
     display: flex;
@@ -19,6 +19,10 @@
 }
 .learn-faq-card-svg {
     position: absolute;
+}
+.learn-faq-card-image-container .learn-faq-card-image {
+    width: 9.375vw;
+    height: auto;
 }
 @media screen and (max-width: 768px) {
     .learn-faq-card-button-wrapper {

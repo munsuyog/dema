@@ -39,6 +39,7 @@ const FaqCard = ({ tab, theme }) => {
             width={150}
             height={150}
             alt="card-image"
+            className="learn-faq-card-image"
           />
         )}
         <img
@@ -65,7 +66,7 @@ const FaqCard = ({ tab, theme }) => {
         />
       </div>
       <div className="learn-faq-card-button-wrapper">
-        <ButtonPrimary text={tab.buttonText} fontSize="14px" width="90%" link={tab.buttonHref ? tab.buttonHref : ""} />
+        <ButtonPrimary text={tab.buttonText} fontSize="0.875vw" width="90%" link={tab.buttonHref ? tab.buttonHref : ""} />
       </div>
     </div>
   );

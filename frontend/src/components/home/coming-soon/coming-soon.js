@@ -10,8 +10,8 @@ const ComingSoon = () => {
   const ref = useRef()
   return (
     <section id="coming-soon">
-      <div className="fixed-width">
-        <div className="shop-anywhere section-padding">
+      <div>
+        <div className="shop-anywhere">
           <div className="shop-anywhere-flex">
             <div className="shop-anywhere-container">
               <div className="shop-anywhere-wrapper">

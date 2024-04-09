@@ -7,8 +7,7 @@
     align-items: center;
     background: rgba(239, 247, 255, 1);
     position: relative;
-    height: 90vh;
-
+    padding: 5% 5%;
 }
 .title-squiggle {
     position: absolute;
@@ -34,7 +33,7 @@ h1 span {
     width: 50%;
 }
 .about-hero-title-section p {
-    font-size: 18px;
+    font-size: 1.1vw;
     width: 85%;
 }
 .about-badge-wrapper {
@@ -42,10 +41,16 @@ h1 span {
 }
 .about-badge-squiggle {
     position: absolute;
-    left: 120px;
+    left: 7.5vw;
     top: 10px;
     transform: scaleX(-1);
     rotate: 220deg;
+    width:5.125vw;
+    height: auto;
+}
+.about-hero-banner {
+    width: 30vw;
+    height: auto;
 }
 
 @media screen and (max-width: 768px) {

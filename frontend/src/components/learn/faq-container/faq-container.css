@@ -100,7 +100,10 @@
     transform-origin: 0 0;
     z-index: -1;
 }
-
+.learn-faq-header-image {
+    width: 12.5vw;
+    height: auto;
+}
 @media screen and (max-width: 768px) {
     .learn-faq-header-image {
         width: 75px;

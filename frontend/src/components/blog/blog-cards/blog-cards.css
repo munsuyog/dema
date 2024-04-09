@@ -1,17 +1,12 @@
-#blog-cards {
-    max-width: 1400px;
-    margin-left: auto;
-    margin-right: auto;
-}
 .blog-filter-btn {
     background-color: rgba(1, 67, 190, 0.04);
     text-decoration: none;
     color: rgba(56, 48, 201, 1);
-    padding: 5px 15px;
+    padding: 0.3vw 0.9vw;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 1vw;
     border-radius: 20px;
     border: 1px solid rgba(1, 67, 190, 0.1);
 }
@@ -33,11 +28,11 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 1vw;
     font-family: var(--font-open-sans);
     border-radius: 5px;
     border: 1px solid rgba(13, 13, 13, 1);
-    height: 42px;
+    height: 2.5vw;
 }
 .pagination-next:disabled {
     background-color: white;
@@ -47,11 +42,11 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 1vw;
     font-family: var(--font-open-sans);
     border-radius: 5px;
     border: 1px solid rgba(13, 13, 13, 1);
-    height: 42px;
+    height: 2.5vw;
 }
 
 .pagination-next, .pagination-previous {
@@ -62,11 +57,11 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 1vw;
     font-family: var(--font-open-sans);
     border-radius: 5px;
     border: 1px solid rgba(13, 13, 13, 1);
-    height: 42px;
+    height: 2.5vw;
 }
 .pagination-number {
     background-color: white;
@@ -76,7 +71,7 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 1vw;
     font-family: var(--font-open-sans);
     border-radius: 5px;
     border: none;
@@ -89,7 +84,7 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 1vw;
     font-family: var(--font-open-sans);
     border-radius: 5px;
 }
@@ -123,11 +118,11 @@
         text-align: center;
         text-decoration: none;
         display: inline-block;
-        font-size: 16px;
+        font-size: 1vw;
         font-family: var(--font-open-sans);
         border-radius: 5px;
         border: 1px solid rgba(20, 13, 49, 0.02) !important;
-        height: 42px;
+        height: 2.5vw;
     }
     .filter-buttons {
         margin-left: auto;

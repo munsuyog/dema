@@ -21,23 +21,27 @@
 }
 
 .free-ownership-title {
-    font-size: 50px;
+    /* font-size: 50px; */
     font-family: var(--font-open-sans);
 }
 .title-free {
     position: relative;
 }
+.title-free svg {
+    width: 120%;
+    height: auto;
+}
 .free-squiggle {
     position: absolute;
     top: 0;
-    left: -10px;
+    left: -10%;
     width: 150px;
 }
 .free-ownership-video-container {
     position: relative;
     overflow: hidden;
-    width: 50%;
-    min-height: 400px;
+    width: 50vw;
+    min-height: 25vw;
     border-radius: 10px;
 }
 .free-ownership-video {
@@ -66,13 +70,13 @@
 }
 .free-ownership-skewed-btn {
     position: absolute;
-    right:-10px;
+    right:-10%;
     bottom: -30px;
 }
 .free-squiggle-sm {
     position: absolute;
     bottom: -30px;
-    right: 150px;
+    right: 7vw;
 }
 .free-flower-top {
     position: absolute; 
@@ -112,7 +116,7 @@
     background-color: var(--secondary-500);
     width: 6px;
     border-radius: 10px;
-    height: 65px;
+    height: 3.5vw;
     position: relative;
     z-index: 1;
     transition: background-color 500ms ease;
@@ -133,14 +137,14 @@
     background-color: #ececee;
     width: 6px;
     border-radius: 10px;
-    height: 65px;
+    height: 4.5vw;
     position:relative;
     z-index: -1;
     margin-top: -30px;
     margin-bottom: -30px;
 }
 .free-ownership-feature-title {
-    font-size: 1.825rem;
+    font-size: 1.6vw;
     font-family: var(--font-open-sans);
     color: #0d0d0d;
     font-weight: 600;
@@ -177,6 +181,7 @@
     }
     .free-ownership-skewed-btn {
         bottom: -20px;
+        right: -2%;
     }
     .free-squiggle {
         width: 100px;
@@ -212,5 +217,8 @@
     }
     .free-ownership-video-container {
         min-height: 220px;
+    }
+    .free-star-bottom-right {
+        display: none;
     }
 }

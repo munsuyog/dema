@@ -84,22 +84,22 @@ a {
 }
 h1 {
   font-family: var(--font-open-sans);
-  font-size: 50px;
+  font-size: 3.1vw;
 }
 h2 {
-  font-size: 40px;
+  font-size: 2.5vw;
   font-family: var(--font-open-sans);
 }
 h3 {
-  font-size: 36px;
+  font-size: 2.25vw;
   font-family: var(--font-open-sans);
 }
 h4 {
-  font-size: 24px;
+  font-size: 1.5vw;
   font-family: var(--font-open-sans);
 }
 .paragraph-regular {
-  font-size: 16px;
+  font-size: 1vw;
   font-family: var(--font-open-sans);
 }
 .poragraph-sm {
@@ -109,7 +109,7 @@ h4 {
   padding: 2% 4%;
 }
 .fixed-width {
-  max-width: 1440px;
+  max-width: 1800px;
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
@@ -124,6 +124,7 @@ h4 {
 .section-subtitle {
   color: var(--secondary-500);
   font-family: var(--font-open-sans);
+  font-size: 1vw;
 }
 .title-blue {
   color: var(--secondary-500);
@@ -137,12 +138,13 @@ h4 {
 }
 .section-title h2 {
   font-family: var(--font-open-sans);
-  font-size: 50px;
+  font-size: 3.2vw;
   position: relative;
   text-align: center;
 }
 p {
   font-family: var(--font-open-sans);
+  font-size: 1vw;
 }
 @media screen and (max-width: 768px) {
   .section-padding {
@@ -164,6 +166,8 @@ p {
     font-size: 30px;
   }
   .paragraph-regular {
+    font-size: 14px;
+  }.section-subtitle {
     font-size: 14px;
   }
 }

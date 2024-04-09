@@ -182,7 +182,7 @@ const Roadmap = () => {
       <animated.div
         className="roadmap-card1 absolute opacityTransition"
         fadeonscroll=""
-        threshhold={isMobile ? ".03" : ".3"}
+        threshhold={isMobile ? ".03" : ".2"}
         style={{ opacity: 0 }}
       >
         <div>
@@ -208,6 +208,7 @@ const Roadmap = () => {
           width={310}
           height={317}
           alt="card1-image"
+          className="card1-image"
         />
       </animated.div>
       <animated.div

@@ -5,10 +5,25 @@ import './blog-details.css'
 import Image from 'next/image'
 import Markdown from 'react-markdown'
 import { getBlogBySlug } from '@/utils/strapi-cms'
+import { randomBlogVectors } from '@/constants/VectorSVGs'
 
 const BlogDetails = ({slug}) => {
     const [blog, setBlog] = useState(null);
+    const [randomSVGs, setRandomSVGs] = useState([]);
 
+    const randomVector = randomBlogVectors[Math.floor(Math.random() * randomBlogVectors.length)]
+
+    useEffect(() => {
+        const generateRandomSVGs = () => {
+            const randomSVGList = [];
+            for (let i = 0; i < 10; i++) {
+                const randomIndex = Math.floor(Math.random() * randomBlogVectors.length);
+                randomSVGList.push(randomBlogVectors[randomIndex]);
+            }
+            setRandomSVGs(randomSVGList);
+        };
+        generateRandomSVGs();
+    }, []);
     useEffect(() => {
         const fetchBlog = async () => {
             try {
@@ -39,6 +54,14 @@ const BlogDetails = ({slug}) => {
                 </div>
                 <div className='blog-details-body'>
                     <Markdown>{blog.data[0].attributes.body}</Markdown>
+                </div>
+                <div className='blog-details-random-svgs'>
+                {randomSVGs.map((svg, index) => (
+                        <span style={{position: 'absolute', left: `${Math.random() * 15}%`, top: `${Math.random() * 100}%`}} key={index} dangerouslySetInnerHTML={{ __html: svg }} />
+                    ))}
+                {randomSVGs.map((svg, index) => (
+                        <span style={{position: 'absolute', right: `${Math.random() * 15}%`, top: `${Math.random() * 100}%`}} key={index} dangerouslySetInnerHTML={{ __html: svg }} />
+                    ))}
                 </div>
             </section>
           )

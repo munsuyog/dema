@@ -20,7 +20,7 @@ const MissionSection = () => {
     },[])
   return (
     <section id="mission-section">
-      <div className="mission-section section-padding fixed-width">
+      <div className="mission-section section-padding">
       <div className="mission-title-section">
         <h2>
           Our Mission{" "}
@@ -164,7 +164,7 @@ const MissionSection = () => {
             <div className="mission" key={index}>
                 <Image src={`http://154.53.59.178:30002${mission.attributes.image.data.attributes.url}`} width={220} height={220} alt="mission-image" className="mission-image" />
                 <p className="mission-text">{mission.attributes.text}</p>
-                <ButtonPrimary text="Learn More" bgColor="#22E393" color="black" width="100%" />
+                <ButtonPrimary text="Learn More" bgColor="#22E393" color="black" width="100%" fontSize="0.9vw"/>
             </div>
         ))}
       </div>

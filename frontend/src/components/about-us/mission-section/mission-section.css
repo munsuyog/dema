@@ -29,10 +29,10 @@
     display: flex;
     justify-content: space-evenly;
     width: 100%;
-    margin-top: 10%;
+    margin-top: 2%;
 }
 .mission {
-    width: 330px;
+    width: 20vw;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -40,12 +40,15 @@
 }
 .mission-text {
     text-align: center;
-    font-size: 22px;
+    font-size: 1.3vw;
     font-weight: 600;
 }
 .mission .button-primary {
-    font-size: 15px;
     font-weight: 600;
+}
+.mission-image {
+    width: 13.75vw;
+    height: auto;
 }
 
 @media screen and (max-width: 1250px) {

@@ -1,6 +1,6 @@
 .ultimate-experience {
-    width: 1140px;
-    height: 550px;
+    width: 100vw;
+    height: 100vh;
     margin-right: auto;
     margin-left: auto;
     background-color: #FEF7EB;
@@ -16,9 +16,9 @@
     position: absolute;
     left: 0;
     top: 0;
-    width: 1140px; /* Adjust as needed */
-    height: 550px;
-    background-color: #eae3d7;
+    width: 100vw; /* Adjust as needed */
+    height: 100vh;
+    background-color: #FEF7EB;
     z-index: 1;
     overflow: hidden;
     display: flex;
@@ -32,8 +32,8 @@
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 1140px; /* Adjust as needed */
-    height: 550px; /* Adjust as needed */
+    width: 100vw; /* Adjust as needed */
+    height: 100vh; /* Adjust as needed */
     background-color: rgba(56, 48, 201, 1);
     color: black;
     display: flex;
@@ -44,8 +44,8 @@
 }
 
 .top-child {
-    width: 1140px;
-    height: 550px;
+    width: 100vw;
+    height: 100vh;
     position: absolute;
     left: 0;
     right: 0;
@@ -53,8 +53,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 5vh;
 }
-
+.experience-text-amazon {
+    margin-left: 4vw;
+}
 .dragger {
     position: absolute;
     left: 50%; /* Adjust initial position */
@@ -73,6 +76,13 @@
 .bottom-child .card {
     background-color: white;
 }
+.bottom-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+}
 .bullet-points {
     display: flex;
     flex-direction: column;
@@ -85,23 +95,23 @@
 }
 .card-title {
     font-family: var(--font-open-sans);
-    font-size: 24px;
+    font-size: 1.5vw;
 }
 .point-text {
     font-family: var(--font-open-sans);
-    font-size: 14px;
+    font-size: 0.9vw;
 }
 .cards-container-amazon, .cards-container-dema {
     display: flex;
     margin-top: 2%;
     gap: 32px;
     overflow: hidden;
-    width: 1140px;
+    width: 100vw;
 }
 .card {
     flex: 0 0 auto; 
-    width: 20%;
-    height: 227px;
+    width: 15vw;
+    height: 17vw;
     background-color: rgba(243, 167, 54, 0.2);
     display: flex;
     flex-direction: column;
@@ -109,12 +119,13 @@
     padding: 20px;
     border-radius: 12px;
     position: relative;
+    flex: 0 0 auto;
+    margin-right: 20px; /* Adjust card spacing as needed */
 }
 .splitContainer {
     width: 1140px;
     height: 100%;
 }
-
 .headPos {
     position: absolute;
     left: 50%;
@@ -164,13 +175,10 @@
     height: 100%;
     overflow: hidden;
 }
-
-
-  .card {
-    flex: 0 0 auto;
-    width: 200px; /* Adjust card width as needed */
-    margin-right: 20px; /* Adjust card spacing as needed */
-  }
+.card-header-image svg {
+    width: 4vw;
+    height: 4vw;
+}
 
 @media screen and (max-width: 768px) {
     .cards-container-amazon, .cards-container-dema {

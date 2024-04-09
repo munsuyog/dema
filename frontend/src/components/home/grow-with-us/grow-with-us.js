@@ -10,7 +10,7 @@ const GrowWithUs = () => {
     const {device} = useDevice();
   return (
     <section id='grow-with-us'>
-        <div className={device != 'desktop' ? "grow-with-us" : 'grow-with-us fixed-width section-padding'}>
+        <div className={device != 'desktop' ? "grow-with-us" : 'grow-with-us'}>
             {/* <div className='section-title-wrapper'>
                 <h2 className='grow-with-us-title'>We’re growing! Grow with us!</h2>
             </div>

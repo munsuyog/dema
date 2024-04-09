@@ -9,7 +9,7 @@
 }
 .blog-card-image {
     width: 100%;
-    height: 400px !important;
+    height: 25vw !important;
     object-fit: cover;
     border-radius: 20px;
 }
@@ -17,12 +17,11 @@
     width: 70%;
 }
 .blog-card-summary-wrapper p {
-    font-size: 18px;
     color: rgba(13, 13, 13, 0.8);
-    line-height: 28.8px;
+    line-height: 1.8vw;
 }
 .blog-card-tag {
-    font-size: 14px;
+    font-size: 0.875vw;
     font-family: var(--font-open-sans);
     background-color: rgba(56, 48, 201, 1);
     text-align: center;

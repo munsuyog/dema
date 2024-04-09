@@ -79,17 +79,20 @@
     position: absolute;
     top: -100px;
     left: 0%;
+    display: none;
 }
 .ultimate-arrow-left {
     position: absolute;
     left: 0%;
     bottom: 10px;
+    display: none;
 }
 .ultimate-squiggle {
     position: absolute;
     right: 0%;
     top: -35px;
     z-index: -1;
+    display: none;
 }
 /*  */
 .grow-with-us-users-stat .star-vector {

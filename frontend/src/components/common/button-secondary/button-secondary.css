@@ -1,12 +1,12 @@
 .button-secondary  {
     text-decoration: none;
-    width: 184px;
-    height: 64px;
+    width: 11.5vw;
+    height: 4vw;
     border-radius: 10px;
     background: var(--secondary-500);
     color: white;
     font-family: var(--font-open-sans);
-    font-size: 20px;
+    font-size: 1.25vw;
     display: flex;
     align-items: center;
     justify-content: center;

@@ -42,9 +42,11 @@
     font-weight: 600;
 }
 .learn-hero-subtitle {
-    font-size: 20px;
+    font-size: 1.125vw;
     color: #0d0d0d;
     font-family: var(--font-open-sans);
+    width: 37vw;
+    line-height: 1.8vw;
 }
 .learn-hero-title-section {
     display: flex;

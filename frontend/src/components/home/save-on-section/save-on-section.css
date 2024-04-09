@@ -22,7 +22,6 @@
     flex-direction: column;
 }
 .save-on-title {
-    font-size: 50px;
     font-family: var(--font-open-sans);
     text-align: center;
     line-height: 1;
@@ -30,20 +29,22 @@
     color: #0d0d0d;
 }
 .title-even-after-wrapper {
-    font-size: 36px;
+    font-size: 2vw;
 }
 .title-even-after {
     position: relative; 
 }
 .even-after-squiggle {
     position: absolute;
-    top: -25px;
-    left: -15px;
+    top: -1.3vw;
+    left: -0.7vw;
     z-index: -1;
+    width: 110%;
+    height: auto;
 }
 .sale-tag {
     position: absolute;
-    bottom: -60px;
+    top: 2vw;
     left: 20px;
     z-index: -1;
 }
@@ -60,11 +61,11 @@
 .save-on-feature-title.highlight {
     color: var(--secondary-500);
     font-family: var(--font-open-sans);
-    font-size: 20px;
+    font-size: 1.3vw;
     transition: color 500ms ease;
 }
 .save-on-feature-title {
-    font-size: 20px;
+    font-size: 1.3vw;
     font-family: var(--font-open-sans);
     font-weight: 600;
 }
@@ -76,6 +77,9 @@
 }
 .save-on-features-container {
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .save-on-feature-number-container {
     position: relative;
@@ -156,22 +160,24 @@
 .save-on-video-container {
     position: relative;
     overflow: hidden;
-    width: 570px;
-    height: 332px;
+    width: 50vw;
+    height: 25vw;
     border-radius: 20px;
 }
 .save-on-video {
     position: absolute;
-    width: 595px;
-    height: 422px;
+    width: 50vw;
+    height: 30vw;
 }
 .save-on-video video {
     position: absolute;
     right: -40px;
-    bottom: 90px;
+    bottom: 5vw;
     border-radius: 20px;
-    width: 595px;
+    width: 50vw;
     transform: skewY(0deg) skewX(-10deg);
+    object-fit: cover;
+    height: 25vw;
 }
 .discount-coupon-mobile {
     display: none;
@@ -179,13 +185,18 @@
 .discount-coupon-desktop {
     margin-top: 10%;
 }
+.save-on-features {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
 
 @media screen and (max-width: 768px) {
     .save-on-section {
         padding-top: 15%;
     }
     .sale-tag {
-        bottom: -50px;
+        bottom: -100px;
     }
     .title-blue {
         font-weight: 700;

@@ -38,10 +38,10 @@ const SaveOnSection = () => {
   };
   return (
     <section id="save-on-section">
-      <div className="save-on-section fixed-width section-padding">
+      <div className="save-on-section section-padding">
         <div className="section-title-wrapper">
           <h4 className="section-subtitle">SAVE ON ANY PRICE</h4>
-          <h2 className="save-on-title">
+          <h1 className="save-on-title">
             <span className="title-blue">save 5%</span> or more <br />
             <span className="title-even-after-wrapper">
               <span className="title-even-after">
@@ -76,7 +76,7 @@ const SaveOnSection = () => {
               </span>{" "}
               discounts & coupons
             </span>
-          </h2>
+          </h1>
           <Image
             src="/images/home/save-on-section/dotted-squiggle.svg"
             width={191}

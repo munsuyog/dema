@@ -10,7 +10,7 @@ import { homeSVGs } from "@/constants/VectorSVGs";
 const HeroSection = () => {
   return (
     <section id="hero-section" className="section-padding">
-      <div className="hero-section fixed-width">
+      <div className="hero-section">
       <div className="hero-section-title-wrapper">
         <div className="hero-section-subtitle-wrapper">
           <h4 className="hero-section-subtitle">

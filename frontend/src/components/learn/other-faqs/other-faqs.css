@@ -16,8 +16,10 @@
     rotate: 215deg;
     transform: scaleX(-1);
     position: absolute;
-    left: 220px;
+    left: 13.75vw;
     top: 20px;
+    width: 6.25vw;
+    height: auto;
 }
 
 @media screen and (max-width: 768px) {

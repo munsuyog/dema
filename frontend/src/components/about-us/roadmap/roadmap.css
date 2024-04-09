@@ -1,28 +1,31 @@
 
 .scroll-div {
     height: 5000px;
-    margin-bottom:10%;
+    margin-bottom:3%;
 }
 .scrollPath {
     stroke-dashoffset: 6876;
     stroke-dasharray: 6876;
 }
+.scrollContainer {
+    margin-top: 0;
+}
 .roadmap-about-card1 {
     display: flex;
     align-items: center;
-    padding: 5%;
+    padding: 5vw;
     margin: 5%;
     background: linear-gradient(to bottom,rgba(231, 255, 250, 0.9) 30%, rgba(242, 251, 249, 0));
-    height: 600px;
+    height: 35vw;
 }
 .roadmap-about-card1 p {
-    line-height: 28.8px;
+    line-height: 1.8vw;
     margin-top: 5%;
     margin-bottom: 5%;
     padding-right: 15%;
 }
 .roadmap-about-card2 p {
-    line-height: 28.8px;
+    line-height: 1.8vw;
     margin-top: 5%;
     margin-bottom: 5%;
     margin-right: 15%;
@@ -31,20 +34,20 @@
     position: relative;
 }
 .roadmap-about-card2 {
-    top: 620px;
+    top: 36vw;
     display: flex;
     align-items: center;
-    padding: 5%;
+    padding: 5vw;
     margin: 5%;
     background: linear-gradient(to bottom, rgba(239, 247, 255, 0.9) 30%,rgba(239, 247, 255, 0));
-    height: 600px;
+    height: 35vw;
 }
 .roadmap-about-card3 {
-    height: 600px;
-    top: 1240px;
+    height: 35vw;
+    top: 72vw;
     display: flex;
     align-items: center;
-    padding: 5%;
+    padding: 5vw;
     margin: 5%;
     background: linear-gradient(to bottom,rgba(231, 255, 250, 0.9) 30%, rgba(242, 251, 249, 0));
 }
@@ -52,7 +55,7 @@
     display: flex;
 }
 .roadmap-about-card3 p {
-    line-height: 28.8px;
+    line-height: 1.8vw;
     margin-top: 5%;
     margin-bottom: 5%;
     padding-right: 15%;

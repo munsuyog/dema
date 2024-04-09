@@ -18,11 +18,12 @@
 }
 .recent-blogs-card-image {
     width: 100%;
-    height: auto;
+    height: 14vw;
+    object-fit: cover;
     border-radius: 20px;
 }
 .recent-blogs-card p {
-    font-size: 14px;
+    font-size: 0.9vw;
 }
 @media screen and (max-width: 768px) {
     .recent-blogs-card {

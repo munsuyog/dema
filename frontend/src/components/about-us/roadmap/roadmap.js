@@ -180,7 +180,7 @@ const Roadmap = () => {
       <animated.div
         className="roadmap-about-card1 absolute opacityTransition"
         fadeonscroll=""
-        threshhold={isMobile ? ".03" : ".05"}
+        threshhold={isMobile ? ".03" : ".02"}
         style={{ opacity: 0 }}
       >
         <Image src="/images/about/roadmap/card1.svg" width={500} height={540} alt="card1" className="roadmap-card-image" />
@@ -242,7 +242,7 @@ const Roadmap = () => {
           className="scrollPath"
           style={{ strokeDasharray: "7500", ...pathSpring }}
           pathLength={7500}
-          speed={0.7}
+          speed={0.5}
           stay={0.7}
           ref={pathRef}
         />

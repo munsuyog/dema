@@ -8,7 +8,7 @@ import {motion} from 'framer-motion'
 const CommunitySection = () => {
   return (
     <section id='community-section'>
-        <div className='community-section section-padding fixed-width'>
+        <div className='community-section section-padding'>
         <div className='community-desc-section'>
             <h2>
                 <span className='title-blue'>Real community <motion.svg className="real-community-text-squiggle" width="236" height="15" viewBox="0 0 236 15" fill="none" xmlns="http://www.w3.org/2000/svg">

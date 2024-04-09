@@ -5,7 +5,7 @@
     margin-top: -40px;
 }
 .items-section {
-    padding: 10% 4%;
+    padding: 10% 10%;
 }
 #items-section {
     width: 100%;
@@ -67,13 +67,14 @@
 .top-line, .bottom-line {
     position: absolute;
     width: 30px;
-    height:350px;
-    top: -350px;
+    height:25vw;
+    top: -22vw;
     background-color: white;
     z-index: -1;
 }
 .bottom-line {
-    top: 180px;
+    top: 5vw;
+    height: 25vw;
 }
 .circle-top-left, .circle-top-right, .circle-bottom-left, .circle-bottom-right {
     width: 30px;
@@ -124,6 +125,9 @@
     border-color: rgb(126,119,255, 0.7);
     border-width: 10px;
     border-style: solid;
+    width: 40vw;
+    height: auto;
+    object-fit: cover;
 }
 
 @media screen and (max-width: 768px) {

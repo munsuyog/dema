@@ -41,7 +41,7 @@ const NewsletterSection = () => {
         <ButtonPrimary
           text="Our emails are like unicorns – rare, magical, and no spam included!"
           width="35%"
-          fontSize={14}
+          fontSize="0.9vw"
         />
       </div>
       <svg

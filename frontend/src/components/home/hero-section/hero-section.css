@@ -9,11 +9,11 @@
 .hero-section-subtitle {
     font-family: var(--font-open-sans);
     font-weight: 600;
-    font-size: 15px;
+    font-size: 1vw;
 }
 .subtitle-icon-wrapper {
-    width: 36px;
-    height: 36px;
+    width: 2vw;
+    height: 2vw;
     border-radius: 100%;
     overflow: hidden;
     background: linear-gradient(to right, rgba(1, 67, 190, 0.06), rgba(34, 227, 147, 0.06));
@@ -23,13 +23,17 @@
 }
 
 .subtitle-icon-container {
-    width: 28px;
-    height: 28px;
+    width: 1.7vw;
+    height: 1.7vw;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: white;
     border-radius: 100%;
+}
+.subtitle-icon-container img {
+    width: 1.2vw;
+    height: 1.2vw;
 }
 .subtitle-icon-wrapper:nth-child(2) {
     margin-left: -5px;
@@ -46,7 +50,7 @@
 }
 .hero-section-heading {
     font-family: var(--font-open-sans);
-    font-size: 56px;
+    font-size: 3vw;
     font-weight: 600;
 }
 .hero-section-heading span:nth-child(1) {
@@ -96,8 +100,12 @@ span.relative {
     position: relative;
 }
 .title-icon svg {
-    width: 60px;
-    height: 60px;
+    width: 3vw;
+    height: 3vw;
+}
+.title-cart-vector svg {
+    width: 3vw;
+    height: 3vw;
 }
 @media only screen and (max-width: 1300px) {
     .hero-section-heading {

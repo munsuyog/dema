@@ -25,7 +25,7 @@
     text-align: center;
 }
 .shocker-title-section p {
-    font-size: 22px;
+    font-size: 1.3vw;
     font-weight: 600;
     text-align: center;
 }
@@ -67,9 +67,6 @@
     }
     .shocker-title-section p {
         font-size: 14px;
-    }
-    .shocker-graph-desktop {
-        display: none;
     }
     .shocker-graph-mobile {
         display: block;

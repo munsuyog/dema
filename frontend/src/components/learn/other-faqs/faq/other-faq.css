@@ -19,7 +19,7 @@
     background: linear-gradient(rgba(239, 247, 255, 1),rgba(239, 247, 255, 0) 90%);
 }
 .learn-other-faq-title {
-    font-size: 20px;
+    font-size: 1.25vw;
     font-family: var(--font-open-sans);
     font-weight: 600;
 }

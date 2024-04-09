@@ -5,6 +5,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import SkewedButton from "@/components/common/skewed-button/skewed-button";
 import { useSpring, animated } from "react-spring";
+import { useDevice } from "@/utils/DeviceContext";
 
 const FreeOwnership = () => {
   const [highlightedFeatureIndex, setHighlightedFeatureIndex] = useState(0);
@@ -25,6 +26,7 @@ const FreeOwnership = () => {
       video: "/images/home/free-ownership/video3.mp4",
     },
   ];
+  const {device} = useDevice();
 
   const springConfig = {
     type: "spring",
@@ -43,10 +45,10 @@ const FreeOwnership = () => {
 
   return (
     <section id="free-ownership">
-      <div className="free-ownership fixed-width section-padding">
+      <div className="free-ownership section-padding">
         <div className="section-title-wrapper">
           <h4 className="section-subtitle">FREE OWNERSHIP</h4>
-          <h2 className="free-ownership-title">
+          <h1 className="free-ownership-title">
             help <span className="title-blue">build it </span> & get <br />
             to <span className="title-blue">own it for </span>{" "}
             <span className="title-free">
@@ -67,7 +69,7 @@ const FreeOwnership = () => {
               </motion.svg>
               FREE<span className="title-blue">!</span>
             </span>
-          </h2>
+          </h1>
         </div>
         <div className="free-ownership-container">
           <div className="free-ownership-video-container">
@@ -170,9 +172,9 @@ const FreeOwnership = () => {
             <motion.div initial={{opacity: 0}} whileInView={{opacity:1}} viewport={{once:true}} transition={{duration: 2, delay: 2}} className="free-ownership-skewed-btn">
               <SkewedButton
                 text="Even sellers can get in on the action"
-                fontSize="12px"
-                width="140px"
-                height="60px"
+                fontSize={device != 'desktop' ? "12px" : "0.7vw"}
+                width={device!= 'desktop' ? "140px" : "8.5vw"}
+                height={device != 'desktop' ? "60px" : "3vw"}
               />
             </motion.div>
           </div>

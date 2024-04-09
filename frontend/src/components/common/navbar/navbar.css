@@ -4,7 +4,7 @@
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #F2F2F2;
-    height: 100px;
+    height: 6.125vw;
     background-color: white;
 }
 .navbar_center {
@@ -21,7 +21,7 @@
 .navbar_menu_title {
     font-family: var(--font-open-sans);
     font-weight: 600;
-    font-size: 16px;
+    font-size: 1vw;
 }
 .navbar_right {
     position: fixed;;

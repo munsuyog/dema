@@ -21,7 +21,7 @@ const LearnHero = () => {
                             Get to know <span className='title-dema'>d<span className='title-blue'>e</span>ma</span>
                         </h1>
                     </div>
-                    <p className='learn-hero-subtitle'>What is de-centralized e-commerce? How does it work? Why is it needed? All this and more... </p>
+                    <p className='learn-hero-subtitle'>Your educational guide to Decentralised e-commerce. Learn how Dema works, how we reduce costs, how everyone benefits, what is Dema wallet,  what is on-chain reputation, how and why they are critical to a well functioning marketplace. </p>
                     <ButtonPrimary text="Let's Get Started" link="#" width={device != 'desktop' ? "250px" : "25%"} />
                 </div>
             </div>

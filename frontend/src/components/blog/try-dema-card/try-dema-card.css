@@ -25,12 +25,12 @@
 }
 #try-dema-card p {
     color: rgba(255, 255, 255, 0.8);
-    width: 500px;
+    width: 31.25vw;
 }
 
 .try-dema-card-image-wrapper {
-    width: 580px;
-    height: 500px;
+    width: 36vw;
+    height: 31vw;
     background-color: white;
     overflow: hidden;
     display: flex;
@@ -41,7 +41,7 @@
     position: relative;
 }
 .try-dema-card-image {
-    width: 372px;
+    width: 23.25vw;
     height: auto;
     position: relative;
     bottom: -25%;

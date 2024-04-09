@@ -50,9 +50,9 @@ const RulesSection = () => {
   }, []);
   return (
     <section id="rules-section">
-      <div className="rules-section fixed-width section-padding" ref={carouselRef}>
+      <div className="rules-section section-padding" ref={carouselRef}>
         <div className="section-title-wrapper">
-          <h2 className="rules-section-title">
+          <h1 className="rules-section-title">
             Rules decided by{" "}
             <span className="title-operator">
               Operator{" "}
@@ -78,7 +78,7 @@ const RulesSection = () => {
               </motion.svg>
             </span>{" "}
             <span className="title-you">You!</span>
-          </h2>
+          </h1>
         </div>
         <div className="rules-container">
           {rules.map((rule, index) => (

@@ -9,7 +9,7 @@ import ButtonPrimary from "@/components/common/button-primary/button-primary";
 const AboutHero = () => {
   return (
     <section id="about-hero">
-      <div className="about-hero section-padding fixed-width">
+      <div className="about-hero section-padding">
       <div className="about-hero-title-section">
         <div className="about-badge-wrapper">
           <TitleBadge title="About Us" primary />

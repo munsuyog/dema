@@ -18,11 +18,13 @@
 .how-works-title {
     color: white;
     font-family: var(--font-open-sans);
-    font-size: 50px !important;
+    /* font-size: 50px !important; */
 }
 .question-mark {
     position: absolute;
-    top: -40px;
+    top: -4vw;
+    width: 3vw;
+    height: auto;
 }
 .triangle-vector {
     position: absolute;
@@ -44,6 +46,10 @@
 .how-works-image-container {
     transform: skew(-5deg);
     border-radius: 20px;
+}
+.how-works-image-container video {
+    width: 45vw;
+    transition: all 0.5s ease;
 }
 .how-works-image-container img {
     border-radius: 20px;
@@ -82,7 +88,7 @@
     background-color: #3454be;
     width: 17px;
     border-radius: 10px;
-    height: 100px;
+    height: 6vw;
     margin-top: -10px;
     margin-bottom: -10px;
 }
@@ -90,7 +96,7 @@
     background-color: var(--primary-500);
     width: 17px;
     border-radius: 10px;
-    height: 100px;
+    height: 6vw;
     margin-top: -10px;
     margin-bottom: -10px;
     z-index: 1;
@@ -98,7 +104,7 @@
 
 }
 .how-works-feature h2 {
-    font-size: 40px !important;
+    font-size: 2.5vw !important;
     font-family: var(--font-open-sans);
     color: white;
     font-weight: 700;
