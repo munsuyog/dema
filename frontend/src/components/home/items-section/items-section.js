@@ -5,7 +5,7 @@ import Image from 'next/image'
 const ItemsSection = () => {
   return (
     <section id='items-section'>
-        <div className='items-section section-padding'>
+        <div className='items-section section-padding fixed-width'>
             <div className='items-wrapper'>
                 <Image src="/images/home/items-section/heart.svg" width={567} height={524} className='heart-image' />
                 <Image src="/images/home/items-section/flower01.svg" width={42} height={42} className='flower-1' />

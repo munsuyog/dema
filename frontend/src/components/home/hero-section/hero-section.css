@@ -9,11 +9,11 @@
 .hero-section-subtitle {
     font-family: var(--font-open-sans);
     font-weight: 600;
-    font-size: 1vw;
+    font-size: 15px;
 }
 .subtitle-icon-wrapper {
-    width: 2vw;
-    height: 2vw;
+    width: 36px;
+    height: 36px;
     border-radius: 100%;
     overflow: hidden;
     background: linear-gradient(to right, rgba(1, 67, 190, 0.06), rgba(34, 227, 147, 0.06));
@@ -23,17 +23,13 @@
 }
 
 .subtitle-icon-container {
-    width: 1.7vw;
-    height: 1.7vw;
+    width: 28px;
+    height: 28px;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: white;
     border-radius: 100%;
-}
-.subtitle-icon-container img {
-    width: 1.2vw;
-    height: 1.2vw;
 }
 .subtitle-icon-wrapper:nth-child(2) {
     margin-left: -5px;
@@ -50,7 +46,7 @@
 }
 .hero-section-heading {
     font-family: var(--font-open-sans);
-    font-size: 3vw;
+    font-size: 56px;
     font-weight: 600;
 }
 .hero-section-heading span:nth-child(1) {
@@ -100,12 +96,8 @@ span.relative {
     position: relative;
 }
 .title-icon svg {
-    width: 3vw;
-    height: 3vw;
-}
-.title-cart-vector svg {
-    width: 3vw;
-    height: 3vw;
+    width: 60px;
+    height: 60px;
 }
 @media only screen and (max-width: 1300px) {
     .hero-section-heading {
@@ -129,7 +121,7 @@ span.relative {
         font-size: 32px;
         line-height:50px
     }
-    .title-cart-vector svg {
+    .title-cart-vector {
         width: 30px;
         height: 30px;
     }

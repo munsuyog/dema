@@ -6,7 +6,7 @@ import Link from 'next/link'
 const Footer = () => {
   return (
     <footer id='footer'>
-        <div className='footer'>
+        <div className='footer fixed-width'>
             <div className='footer-logo-container'>
                 <Link href="/"><Image src="/images/common/footer/logo.svg" width={183} height={124} alt='logo' className='footer-logo' /></Link>
             </div>

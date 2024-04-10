@@ -45,7 +45,7 @@ const FreeOwnership = () => {
 
   return (
     <section id="free-ownership">
-      <div className="free-ownership section-padding">
+      <div className="free-ownership section-padding fixed-width">
         <div className="section-title-wrapper">
           <h4 className="section-subtitle">FREE OWNERSHIP</h4>
           <h1 className="free-ownership-title">
