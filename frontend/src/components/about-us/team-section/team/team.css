@@ -9,41 +9,36 @@
     background-color: var(--primary-500);
     display: flex;
     align-items: flex-end;
-    border-radius: 7.5vw;
+    border-radius: 60px;
     overflow: hidden;
-    width: 7.5vw;
-    height: 7.5vw;
+    width: 120px;
+    height: 120px;
     position: relative;
-    top: 3.75vw;
+    top: 60px;
     z-index: 1;
     justify-content: center;
 }
-.team-profile img {
-    width: 6.875vw;
-    height: 6.875vw;
-
-}
 .team-info-name {
-    font-size: 1.375vw;
+    font-size: 22px;
     font-weight: 700;
     text-align: center;
 }
 .team-info-position {
     color: rgba(13, 13, 13, 0.8);
     text-align: center;
-    font-size: 0.875vw;
+    font-size: 14px;
 }
 .team-bottom-line {
     height: 10px;
-    width: 25vw;
+    width: 400px;
     background-color: var(--secondary-500);
     z-index: 0;
     position: absolute;
     bottom: 0;
 }
 .team-info-container {
-    width: 25vw;
-    height: 16.6vw;
+    width: 400px;
+    height: 265px;
     overflow: hidden;
     padding-top: 18%;
     border: 2px solid rgba(0, 136, 255, 0.15);
@@ -57,18 +52,12 @@
     box-shadow: 0 17px 15px -13px rgba(0, 136, 255, 0.2);
 }
 
-@media screen and (max-width: 1250px) {
-    .team-info-container {
-        padding-top: 5% !important;
-    }
-}
-
 @media screen and (max-width: 768px) {
     .team-info-container {
         width: 278px;
         height: 182px;
         gap: 10px;
-        padding-top: 15%;
+        padding-top: 15% !important;
     }
     .team-info-container svg {
         width: 32px;
@@ -83,17 +72,11 @@
     .team-profile {
         width: 80px;
         height: 80px;
-        border-radius: 80px;
         top: 50px;
     }
     .team-profile img {
         width: 70px;
         height: 70px;
     }
-    .team-info-container {
-        padding-top: 15% !important ;
-    }
-    .team-bottom-line {
-        width: 100%;
-    }
+    
 }

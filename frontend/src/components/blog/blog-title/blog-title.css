@@ -23,7 +23,13 @@
     position: absolute;
     bottom: -100%;
 }
-
+.blog-title-shopper-squiggle {
+        position: absolute;
+        top: -20px;
+        left: -20px;
+        width: 100%;
+        height: "auto",
+}
 @media screen and (max-width: 768px) {
     .blog-title-section {
         height: 300px;
@@ -33,5 +39,10 @@
         bottom: -250%;
         width: 100px;
     }
-    
+    .blog-title-shopper-squiggle {
+        width: 100%;
+        height: auto;
+        top: -10px;
+        left: -10px;
+    }
 }

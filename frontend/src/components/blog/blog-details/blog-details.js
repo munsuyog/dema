@@ -24,19 +24,25 @@ const BlogDetails = ({slug}) => {
         };
         generateRandomSVGs();
     }, []);
+
     useEffect(() => {
         const fetchBlog = async () => {
             try {
                 const blog = await getBlogBySlug(slug);
                 setBlog(blog);
+                console.log(blog)
             }
             catch(err) {
                 console.error(err)
             }
         }
         fetchBlog()
-    },[])
+    },[]);
+
+
     if(blog) {
+        const tags = blog.data[0].attributes.tags.split(",")
+
         return (
             <section id='blog-details'>
                 <div className='blog-details-title-section'>
@@ -47,6 +53,11 @@ const BlogDetails = ({slug}) => {
                     <img src={`http://154.53.59.178:30002${blog.data[0].attributes.author.avatar.data.attributes.url}`} width={60} height={60} alt='avatar' className='blog-details-avatar-image' />
                     <div>
                         <h4 className='blog-details-author-name'>{blog.data[0].attributes.author.name}</h4>
+                        <p className='blog-details-author-date'>{(new Date(blog.data[0].attributes.updatedAt)).toLocaleDateString('en-US', { 
+    year: 'numeric', 
+    month: 'long', 
+    day: 'numeric' 
+})}</p>
                     </div>
                 </a>
                 <div className='blog-details-featured-image-wrapper'>
@@ -55,6 +66,15 @@ const BlogDetails = ({slug}) => {
                 <div className='blog-details-body'>
                     <Markdown>{blog.data[0].attributes.body}</Markdown>
                 </div>
+                <div className='blog-card-tags-wrapper'>
+        {
+            tags && (tags.map((tag, index) => (
+                <div key={index} className='blog-card-tag'>
+                    {tag}
+                </div>
+            )))
+        }
+        </div>
                 <div className='blog-details-random-svgs'>
                 {randomSVGs.map((svg, index) => (
                         <span style={{position: 'absolute', left: `${Math.random() * 15}%`, top: `${Math.random() * 100}%`}} key={index} dangerouslySetInnerHTML={{ __html: svg }} />

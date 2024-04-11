@@ -1,13 +1,10 @@
 #values-section {
     background: linear-gradient(rgba(239, 247, 255, 1),rgba(239, 247, 255, 0.09));
-
-}
-.values-section {
     padding: 5%;
 }
 .values-title-section {
     position: relative;
-    margin-bottom: 2%;
+    margin-bottom: 7%;
 }
 .values-title-arrow {
     position: absolute;
@@ -32,23 +29,19 @@
     justify-content: space-evenly;
 }
 .value {
-    width: 14vw;
+    width: 266px;
     display: flex;
     flex-direction: column;
     gap: 20px;
     align-items: center;
 }
 .value-title {
-    font-size: 1.3vw;
+    font-size: 22px;
     font-weight: 600 !important;
 }
 .value-subtitle {
-    font-size: 0.875vw;
+    font-size: 14px;
     text-align: center;
-}
-.value-image {
-    width: 13.75vw;
-    height: auto;
 }
 
 @media screen and (max-width: 1250px) {
@@ -77,8 +70,5 @@
     }
     .value-subtitle {
         font-size: 12px;
-    }
-    .value {
-        width: 250px;
     }
 }

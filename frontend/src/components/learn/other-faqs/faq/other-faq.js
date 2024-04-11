@@ -3,7 +3,7 @@ import './other-faq.css'
 import Image from 'next/image';
 
 const OtherFAQ = ({faq}) => {
-    const [isOpen, setIsOpen] = useState(true);
+    const [isOpen, setIsOpen] = useState(false);
   return (
     <div className={`learn-other-faq ${isOpen ? 'active' : ''}`}>
         <div className='learn-other-faq-header' onClick={() => {setIsOpen(!isOpen)}}>
@@ -24,7 +24,7 @@ const OtherFAQ = ({faq}) => {
 }
 
 const SubFAQ = ({faq}) => {
-    const [isOpen, setIsOpen] = useState(true);
+    const [isOpen, setIsOpen] = useState(false);
     console.log(faq)
     return (
         <div className={isOpen ? 'learn-other-subfaq active' : 'learn-other-subfaq'}>

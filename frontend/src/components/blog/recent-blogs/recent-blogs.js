@@ -52,7 +52,7 @@ const RecentBlogs = () => {
 
   return (
     <section id='recent-blogs'>
-      <div className='recent-blogs section-padding'>
+      <div className='recent-blogs section-padding fixed-width'>
       <h2 className='recent-blogs-title'>
         Recent <span> Blog
           <svg width="124" height="75" viewBox="0 0 124 75" fill="none" xmlns="http://www.w3.org/2000/svg">

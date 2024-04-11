@@ -1,4 +1,4 @@
-.learn-hero::before {
+#learn-hero::before {
     content: '';
     position: absolute;
     top: -60px;
@@ -10,11 +10,13 @@
     transform-origin: 0 0;
     z-index: -1;
 }
+#learn-hero {
+    position: relative;
+}
 .learn-hero {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative;
 }
 .learn-hero-title {
     width: 50%;
@@ -42,11 +44,9 @@
     font-weight: 600;
 }
 .learn-hero-subtitle {
-    font-size: 1.125vw;
+    font-size: 20px;
     color: #0d0d0d;
     font-family: var(--font-open-sans);
-    width: 37vw;
-    line-height: 1.8vw;
 }
 .learn-hero-title-section {
     display: flex;
@@ -59,9 +59,7 @@
     right: 47%;
     top: 25%;
 }
-.learn-title-badge-wrapper {
-    margin-bottom: 5%;
-}
+
 @media screen and (max-width: 768px) {
     .learn-hero {
         flex-direction: column;
@@ -71,11 +69,10 @@
     }
     .learn-hero-subtitle {
         font-size: 14px;
-        width: 100%;
+        line-height: 22.8px;
     }
     .learn-hero-banner {
         width: 100%;
-        height: auto;
     }
     .learn-hero-squiggle {
         width: 15%;
@@ -93,19 +90,5 @@
     }
     .learn-hero {
         padding: 4% 6%;
-    }
-    .learn-hero-title-wrapper h1 {
-        font-size: 28px;
-        font-weight: 600;
-    }
-    .learn-hero-subtitle {
-        line-height: 22.4px;
-    }
-    .learn-hero-title-section .button-primary {
-        width: 50% !important;
-        font-size: 14px;
-    }
-    .learn-hero-squiggle {
-        left: 55%;
     }
 }

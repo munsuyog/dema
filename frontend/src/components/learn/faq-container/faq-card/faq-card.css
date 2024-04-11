@@ -10,7 +10,7 @@
     margin-top: 1%;
 }
 .learn-faq-card-title {
-    font-size: 1.375vw;
+    font-size: 22px;
 }
 .learn-faq-card-image-container {
     display: flex;
@@ -20,10 +20,6 @@
 .learn-faq-card-svg {
     position: absolute;
 }
-.learn-faq-card-image-container .learn-faq-card-image {
-    width: 9.375vw;
-    height: auto;
-}
 @media screen and (max-width: 768px) {
     .learn-faq-card-button-wrapper {
         width: 100%;
@@ -31,13 +27,6 @@
         justify-content: center;
     }
     .learn-faq-card {
-        padding: 6%;
-    }
-    .learn-faq-card .button-primary {
-        font-size: 12px !important;
-    }
-    .learn-faq-card-image {
-        width: 40% !important;
-        height: auto !important;
+        padding: 5%;
     }
 }

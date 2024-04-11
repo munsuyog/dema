@@ -66,7 +66,7 @@
 }
 .free-ownership-skewed-btn {
     position: absolute;
-    right:-10px;
+    right:-5%;
     bottom: -30px;
 }
 .free-squiggle-sm {
@@ -159,6 +159,9 @@
 }
 
 @media screen and (max-width: 768px) {
+    .free-ownership-features-container {
+        margin-top: 5%;
+    }
     .free-ownership-feature-title {
         font-size: 16px;
     }
@@ -166,7 +169,7 @@
         z-index: 10000;
     }
     .free-ownership-title {
-        font-size: 28px;
+        font-size: 24px;
     }
     .free-ownership-squiggle {
         width: 80px;
@@ -179,7 +182,7 @@
         bottom: -20px;
     }
     .free-squiggle {
-        width: 100px;
+        width: 130%;
         height: auto;
     }
     .free-ownership-container {
@@ -192,7 +195,6 @@
         width: 120%;
         left: -80px;
         transform: skewY(0deg) skewX(0deg);
-
     }
     .free-ownership-animation {
         width: 100%;

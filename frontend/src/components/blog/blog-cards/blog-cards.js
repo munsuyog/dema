@@ -85,7 +85,7 @@ const BlogCards = ({author}) => {
   };
 
   return (
-    <section id="blog-cards" className="section-padding">
+    <section id="blog-cards" className="section-padding fixed-width">
       <div className="filter-buttons">
         {filters.map((filter, index) => (
           <button

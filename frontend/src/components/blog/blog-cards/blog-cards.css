@@ -1,12 +1,17 @@
+#blog-cards {
+    /* max-width: 1400px; */
+    margin-left: auto;
+    margin-right: auto;
+}
 .blog-filter-btn {
     background-color: rgba(1, 67, 190, 0.04);
     text-decoration: none;
     color: rgba(56, 48, 201, 1);
-    padding: 0.3vw 0.9vw;
+    padding: 5px 15px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 1vw;
+    font-size: 16px;
     border-radius: 20px;
     border: 1px solid rgba(1, 67, 190, 0.1);
 }
@@ -17,8 +22,8 @@
 .filter-buttons {
     display: flex;
     gap: 10px;
-    margin-left: 35%;
-    margin-bottom: 2%;
+    margin-left: 40%;
+    margin-bottom: 1%;
 }
 .pagination-previous:disabled {
     background-color: white;
@@ -28,11 +33,11 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 1vw;
+    font-size: 16px;
     font-family: var(--font-open-sans);
     border-radius: 5px;
     border: 1px solid rgba(13, 13, 13, 1);
-    height: 2.5vw;
+    height: 42px;
 }
 .pagination-next:disabled {
     background-color: white;
@@ -42,11 +47,11 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 1vw;
+    font-size: 16px;
     font-family: var(--font-open-sans);
     border-radius: 5px;
     border: 1px solid rgba(13, 13, 13, 1);
-    height: 2.5vw;
+    height: 42px;
 }
 
 .pagination-next, .pagination-previous {
@@ -57,11 +62,11 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 1vw;
+    font-size: 16px;
     font-family: var(--font-open-sans);
     border-radius: 5px;
     border: 1px solid rgba(13, 13, 13, 1);
-    height: 2.5vw;
+    height: 42px;
 }
 .pagination-number {
     background-color: white;
@@ -71,7 +76,7 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 1vw;
+    font-size: 16px;
     font-family: var(--font-open-sans);
     border-radius: 5px;
     border: none;
@@ -84,7 +89,7 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 1vw;
+    font-size: 16px;
     font-family: var(--font-open-sans);
     border-radius: 5px;
 }
@@ -109,12 +114,6 @@
     .pagination-previous path {
         fill: white;
     }
-    .pagination-number {
-        font-size: 16px !important;
-    }
-    .pagination-number.active {
-        font-size: 16px !important;
-    }
     .pagination-next, .pagination-previous {
         background-color: rgba(56, 48, 201, 1);
         text-decoration: none;
@@ -128,16 +127,16 @@
         font-family: var(--font-open-sans);
         border-radius: 5px;
         border: 1px solid rgba(20, 13, 49, 0.02) !important;
-        height: 40px;
+        height: 42px;
     }
     .filter-buttons {
         margin-left: auto;
         flex-wrap: wrap;
     }
     .blog-filter-btn {
-        font-size: 14px;
+        font-size: 12px;
     }
-    .blog-filter-btn {
-        padding: 5px 8px;
+    .blog-card-title-wrapper p {
+        font-size: 12px !important;
     }
 }

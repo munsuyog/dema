@@ -2,9 +2,11 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import TypingAnimation from "./typing-animation";
+import { useDevice } from "@/utils/DeviceContext";
 
 const BlogTitleSection = () => {
   const [isMobile, setMobile] = useState(null);
+  const {device} = useDevice();
 
   useEffect(() => {
     const mediaQuery = window.matchMedia("(max-width: 768px)");
@@ -1141,13 +1143,7 @@ const BlogTitleSection = () => {
               viewBox="0 0 391 140"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              style={{
-                position: "absolute",
-                top: isMobile ? 20 : -20,
-                left: isMobile ? -10 : -20,
-                width: "100%",
-                height: "auto",
-              }}
+              className="blog-title-shopper-squiggle"
             >
               <motion.path
                 initial={{ pathLength: 0, opacity: 0 }}

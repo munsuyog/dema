@@ -3,7 +3,7 @@
 }
 .rules-section-title {
     font-family: var(--font-open-sans);
-    /* font-size: 50px; */
+    font-size: 50px;
     font-weight: 700;
 }
 .title-operator {
@@ -13,8 +13,6 @@
     position: absolute;
     bottom: -10px;
     left: 0;
-    width: 90%;
-    height: auto
 }
 .title-you {
     color: var(--primary-500);
@@ -25,7 +23,7 @@
     align-items: center;
     margin-top: 5%;
     justify-content: center;
-    height: 32vw;
+    height: 496px;
     gap: 10px;
 
 }
@@ -33,8 +31,8 @@
     position: relative;
 }
 .rule {
-    width: 27vw;
-    height: 30vw;
+    width: 30%;
+    height: 417px;
     position: relative;
     z-index: 0;
     padding: 2%;
@@ -81,7 +79,7 @@
 .rule-title {
     position: relative;
     font-family: var(--font-open-sans);
-    font-size: 1.8vw;
+    font-size: 30px;
 }
 .rule-title span {
     position: relative;
@@ -93,15 +91,28 @@
     z-index: -1;
 }
 .rule-subtitle {
-    font-size: 1.5vw;
+    font-size: 24px;
     font-family: var(--font-open-sans);
     font-weight: 600;
 }
-
+.rule:hover .rule-title {
+    font-weight: 800;
+}
+.rule:hover h3 {
+    color: white;
+    font-weight: 700;
+}
+.rule:hover p {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
 .rule-paragraph {
-    font-size: 1vw;
+    font-size: 16px;
     color: rgba(77, 77, 77, 0.7);
     font-family: var(--font-open-sans);
+}
+.rule:hover .rule-paragraph {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .no-mystery-svg {
@@ -134,30 +145,18 @@
 }
 @media screen and (min-width: 1200px) {
     .rule:hover {
-        width: 28vw;
-        height: 33vw;
+        width: 32%;
+        height: 496px;
         background-color: var(--secondary-500);
         color: white !important;
         border-radius: 10px;
         box-shadow: 5px 5px 33px 5px rgba(150, 144, 255, 0.7);
     }    
-    .rule:hover .rule-paragraph {
-        font-size: 1.1vw;
-        color: rgba(255, 255, 255, 0.7);
-    }
-    .rule:hover .rule-title {
-        font-weight: 800;
-    }
-    .rule:hover h3 {
-        color: white;
-        font-weight: 700;
-    }
-    .rule:hover p {
-        color: rgba(255, 255, 255, 0.7) !important;
-    }
-    
 }
 @media screen and (max-width: 768px) {
+    #rules-section {
+        padding-top: 0;
+    }
     .rules-section-title {
         font-size: 22px;
     }
@@ -208,7 +207,7 @@
         scroll-snap-type: x mandatory;
         -webkit-overflow-scrolling: touch;
         scroll-behavior: smooth;
-        height: 400px;
+        height: 496px;
       }
       .rules-container {
         display: flex;
@@ -220,8 +219,8 @@
         padding: 10px;
       }
       .operator-squiggle {
-        width: 100%;
-        top: 0;
+        width: 83px;
+        top: -15px;
       }
       .forever-trust-svg-top {
         width: 200px;

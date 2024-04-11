@@ -50,7 +50,7 @@ const RulesSection = () => {
   }, []);
   return (
     <section id="rules-section">
-      <div className="rules-section section-padding" ref={carouselRef}>
+      <div className="rules-section section-padding fixed-width" ref={carouselRef}>
         <div className="section-title-wrapper">
           <h1 className="rules-section-title">
             Rules decided by{" "}

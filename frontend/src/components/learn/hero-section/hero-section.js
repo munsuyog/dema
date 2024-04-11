@@ -10,7 +10,7 @@ const LearnHero = () => {
     const {device} = useDevice();
   return (
     <section id='learn-hero'>
-        <div className='learn-hero section-padding'>
+        <div className='learn-hero section-padding fixed-width'>
             <div className='learn-hero-title'>
                 <div className='learn-title-badge-wrapper'>
                     <TitleBadge title="Learn Hub" secondary />

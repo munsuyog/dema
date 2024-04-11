@@ -19,57 +19,17 @@ const ComingSoon = () => {
                   <span>Shop Anywhere</span>
                 </div>
               </div>
-              <motion.svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="187"
-                height="97"
-                viewBox="0 0 187 97"
-                fill="none"
-                className="shop-anywhere-squiggle"
-                ref={ref}
-              >
-                <motion.path
-                  initial={{ pathLength: 0 }}
-                  whileInView={{ pathLength: 1 }}
-                  viewport={{ once: true }}
-                  transition={{
-                    duration: 2,
-                    ease: "easeInOut",
-                  }}
-                  d="M4 30.8606C37.8142 110.659 127 37.7597 80 30.8606C33 23.9615 63 103.861 182 62.8605"
-                  stroke="url(#paint0_linear_1_6137)"
-                  stroke-width="8"
-                  stroke-linecap="round"
-                ></motion.path>
-                <motion.path
-                  initial={{ pathLength: 0, opacity: 0 }}
-                  whileInView={{ pathLength: 1, opacity: 1 }}
-                  viewport={{once: true}}
-                  transition={{
-                    duration: 1,
-                    ease: "easeInOut",
-                    delay: 1.6
-                  }}
-                  d="M169.433 55.4229C169.433 55.4229 181.518 59.0801
-                    182.5 63.5C183.5 68 174.628 76.5121 174.628 76.5121"
-                  stroke="#3830C9"
-                  stroke-width="8"
-                  stroke-linecap="round"
-                ></motion.path>
-                <defs>
-                  <lineargradient
-                    id="paint0_linear_1_6137"
-                    x1="191"
-                    y1="42.3605"
-                    x2="-10.5"
-                    y2="42.4637"
-                    gradientUnits="userSpaceOnUse"
-                  >
-                    <stop offset="0.415" stop-color="#3830C9"></stop>
-                    <stop offset="0.815" stop-color="#22E393"></stop>
-                  </lineargradient>
-                </defs>
-              </motion.svg>
+              <motion.svg className="shop-anywhere-squiggle" width="187" height="97" viewBox="0 0 187 97" fill="none" xmlns="http://www.w3.org/2000/svg">
+<motion.path initial={{pathLength: 0}} whileInView={{pathLength: 1}} viewport={{once:true}} transition={{duration: 2}} d="M4 30.8613C37.8142 110.659 127 37.7604 80 30.8613C33 23.9622 63 103.861 182 62.8612" stroke="url(#paint0_linear_2571_6271)" stroke-width="8" stroke-linecap="round"/>
+<motion.path initial={{pathLength: 0}} whileInView={{pathLength: 1}} viewport={{once:true}} transition={{duration: 1, delay: 1.6}} d="M169.432 55.4238C169.432 55.4238 181.518 59.0811 182.5 63.501C183.5 68.001 174.628 76.5131 174.628 76.5131" stroke="#3830C9" stroke-width="8" stroke-linecap="round"/>
+<defs>
+<linearGradient id="paint0_linear_2571_6271" x1="191" y1="42.3613" x2="-10.5" y2="42.4644" gradientUnits="userSpaceOnUse">
+<stop offset="0.415" stop-color="#3830C9"/>
+<stop offset="0.815" stop-color="#22E393"/>
+</linearGradient>
+</defs>
+</motion.svg>
+
               <div className="shop-anywhere-logo-active">
                 <Image
                   src="/images/home/coming-soon/amazon-logo.svg"

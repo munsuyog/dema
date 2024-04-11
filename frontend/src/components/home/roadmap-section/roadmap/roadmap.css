@@ -1,5 +1,5 @@
 .card-header h3 {
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     font-family: var(--font-open-sans);
     font-weight: 800;
     line-height: 2vw;
@@ -28,12 +28,12 @@
 }
 .roadmap-card1,.roadmap-card2,.roadmap-card3 p {
     font-weight: 600;
-    font-size: 1.2vw;
+    font-size: 1vw;
     line-height: 2vw;
 }
 .roadmap-card2 p {
     font-weight: 600;
-    font-size: 1.2vw;
+    font-size: 1vw;
     line-height: 2vw;
 }
 .roadmap-card1:nth-child(1) {
@@ -42,7 +42,7 @@
 .title-more-bold {
     font-family: var(--font-open-sans);
     font-weight: 600;
-    font-size: 1.2vw;
+    font-size: 1vw;
 }
 .roadmap-card2 {
     font-family: var(--font-open-sans);

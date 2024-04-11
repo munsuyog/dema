@@ -8,7 +8,7 @@ const ShockerSection = () => {
 
   return (
     <section id="shocker-section">
-      <div className="shocker-section section-padding">
+      <div className="shocker-section section-padding fixed-width">
       <div className="shocker-title-section" ref={ref}>
         <h2>
           <span className="title-blue">

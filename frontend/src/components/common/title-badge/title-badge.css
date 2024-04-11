@@ -11,17 +11,13 @@
     border-width: 1px;
     border-style: solid;
     border-color: rgba(1, 67, 190, 0.36);
-    border-radius: 100px;
-    padding: 0.5vw 1vw;
+    border-radius: 20px;
+    padding: 10px 15px;
     box-sizing: border-box;
     font-family: var(--font-open-sans);
-    font-size: 1vw;
+    font-size: 15px;
     font-weight: 600;
     background: linear-gradient(to right, rgba(56, 48, 201, 0.04),rgba(34, 227, 147, 0.04));
-}
-.learn-hero-badge-vector {
-    width: 0.7vw;
-    height: auto;
 }
 
 @media screen and (max-width: 768px) {

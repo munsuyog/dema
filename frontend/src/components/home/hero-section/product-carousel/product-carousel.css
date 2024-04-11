@@ -127,7 +127,7 @@
 .product-carousel-points-info {
     width: 126px;
     position: absolute;
-    bottom: 0;
+    bottom: -20px;
     right: 60px;
     display: flex;
     flex-direction: column;
@@ -205,15 +205,14 @@
     }
     .product-image {
         width: 80%;
-        height: auto;
-        top: 15%;
-        left: 5%;
+        height: 80%;
+        position: relative;
+        top: 5%;
+        left: auto;
+        object-fit: contain;
     }
     .product-carousel-progress {
         right: auto;
-    }
-    .product-carousel-points-info {
-        bottom: 50px;
     }
     .saved-points-wrapper {
         font-size: 12px;
@@ -241,5 +240,13 @@
     .header-icon img {
         width: 20px;
         height: 20px;
+    }
+    .product-carousel-container {
+        position: relative;
+        width: 450px;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }

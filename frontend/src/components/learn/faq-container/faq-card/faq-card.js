@@ -2,8 +2,10 @@ import React from "react";
 import "./faq-card.css";
 import Image from "next/image";
 import ButtonPrimary from "@/components/common/button-primary/button-primary";
+import { useDevice } from "@/utils/DeviceContext";
 
 const FaqCard = ({ tab, theme }) => {
+  const {device} = useDevice();
   if (!tab) return null; // Return null if tab is not defined
 
   const wrapDema = (text) => {
@@ -66,7 +68,7 @@ const FaqCard = ({ tab, theme }) => {
         />
       </div>
       <div className="learn-faq-card-button-wrapper">
-        <ButtonPrimary text={tab.buttonText} fontSize="0.875vw" width="90%" link={tab.buttonHref ? tab.buttonHref : ""} />
+        <ButtonPrimary text={tab.buttonText} fontSize={device != "desktop" ? "12px" : "14px"} width="90%" link={tab.buttonHref ? tab.buttonHref : ""} />
       </div>
     </div>
   );

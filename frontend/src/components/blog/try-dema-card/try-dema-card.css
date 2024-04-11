@@ -1,11 +1,13 @@
 #try-dema-card {
     width: 100%;
     position: relative;
-    padding-top: 7%;
-    padding-bottom: 7%;
+}
+.try-dema-card {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 #try-dema-card::before {
     content: '';
@@ -25,12 +27,12 @@
 }
 #try-dema-card p {
     color: rgba(255, 255, 255, 0.8);
-    width: 31.25vw;
+    width: 500px;
 }
 
 .try-dema-card-image-wrapper {
-    width: 36vw;
-    height: 31vw;
+    width: 580px;
+    height: 500px;
     background-color: white;
     overflow: hidden;
     display: flex;
@@ -41,7 +43,7 @@
     position: relative;
 }
 .try-dema-card-image {
-    width: 23.25vw;
+    width: 372px;
     height: auto;
     position: relative;
     bottom: -25%;
@@ -80,7 +82,7 @@
 }
 
 @media screen and (max-width: 768px) {
-    #try-dema-card {
+    .try-dema-card {
         flex-direction: column;
         padding-top: 50%;
         gap: 50px;

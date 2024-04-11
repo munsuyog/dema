@@ -5,11 +5,13 @@ import "./hero-section.css";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import ButtonPrimary from "@/components/common/button-primary/button-primary";
+import { useDevice } from "@/utils/DeviceContext";
 
 const AboutHero = () => {
+  const {device} = useDevice();
   return (
     <section id="about-hero">
-      <div className="about-hero section-padding">
+      <div className="about-hero section-padding fixed-width">
       <div className="about-hero-title-section">
         <div className="about-badge-wrapper">
           <TitleBadge title="About Us" primary />
@@ -110,7 +112,7 @@ const AboutHero = () => {
         </h1>
         <p>We got tired of marketplace intermediaries, buzzwords, rising prices, higher selling costs, captive walled gardens & increasingly less seamless experiences.</p>
         <div>
-        <ButtonPrimary text="Learn more" />
+        <ButtonPrimary text="Learn more" fontSize={device != "desktop" ? "12px" : "16px"} />
       </div>
       </div>
       <div>

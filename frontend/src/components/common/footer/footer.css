@@ -98,4 +98,8 @@
     .footer-link-contact a {
         font-size: 14px;
     }
+    .footer-logo {
+        width: 120px;
+        height: auto;
+    }
 }

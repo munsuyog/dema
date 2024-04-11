@@ -22,53 +22,53 @@
     background-color: white;
     text-decoration: none;
     color: black;
-    padding: 0.5vw 2vw;
+    padding: 8px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 1vw;
+    font-size: 16px;
     font-family: var(--font-open-sans);
     border-radius: 5px;
     border: 1px solid rgba(13, 13, 13, 1);
-    height: 2.5vw;
+    height: 42px;
 }
 .pagination-next:disabled {
     background-color: white;
     text-decoration: none;
     color: black;
-    padding: 0.5vw 2vw;
+    padding: 8px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 1vw;
+    font-size: 16px;
     font-family: var(--font-open-sans);
     border-radius: 5px;
     border: 1px solid rgba(13, 13, 13, 1);
-    height: 2.5vw;
+    height: 42px;
 }
 .pagination-next, .pagination-previous {
     background-color: rgba(56, 48, 201, 1);
     text-decoration: none;
     color: white;
-    padding: 0.5vw 2vw;
+    padding: 8px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 1vw;
+    font-size: 16px;
     font-family: var(--font-open-sans);
     border-radius: 5px;
     border: 1px solid rgba(13, 13, 13, 1);
-    height: 2.5vw;
+    height: 42px;
 }
 .pagination-number {
     background-color: white;
     text-decoration: none;
     color: black;
-    padding: 0.8vw 1.2vw;
+    padding: 12px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 1vw;
+    font-size: 16px;
     font-family: var(--font-open-sans);
     border-radius: 5px;
     border: none;
@@ -77,11 +77,11 @@
     background-color: rgba(56, 48, 201, 0.04);
     text-decoration: none;
     color: black;
-    padding: 0.8vw 1.2vw;
+    padding: 12px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 1vw;
+    font-size: 16px;
     font-family: var(--font-open-sans);
     border-radius: 5px;
 }
@@ -108,14 +108,6 @@
     .pagination-previous path {
         fill: white;
     }
-    .pagination-number {
-        padding: 12px 18px;
-        font-size: 16px;
-    }
-    .pagination-number.active {
-        padding: 12px 18px;
-        font-size: 16px;
-    }
     .pagination-next, .pagination-previous {
         background-color: rgba(56, 48, 201, 1);
         text-decoration: none;
@@ -129,7 +121,7 @@
         font-family: var(--font-open-sans);
         border-radius: 5px;
         border: 1px solid rgba(20, 13, 49, 0.02) !important;
-        height: 40px;
+        height: 42px;
     }
     .recent-blogs-cards-wrapper {
         flex-direction: column;
@@ -140,5 +132,4 @@
         left: -10px;
         height: auto;
     }
-
 }

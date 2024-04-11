@@ -6,7 +6,8 @@ import ButtonPlatform from "@/components/common/button-platform/button-platform"
 
 const TryDemaCard = () => {
   return (
-    <section id="try-dema-card" className="section-padding">
+    <section id="try-dema-card">
+      <div className="try-dema-card section-padding fixed-width">
       <div className="try-dema-card-title-section">
         <h1>
           Try Dema - It&apos;s Free
@@ -119,6 +120,7 @@ const TryDemaCard = () => {
           fill="#E5DD00"
         />
       </svg>
+      </div>
     </section>
   );
 };

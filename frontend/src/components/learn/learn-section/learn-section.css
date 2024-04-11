@@ -1,5 +1,5 @@
 .learn-section-nav {
-    width: 30vw;
+    width: 30%;
     padding: 12px;
     opacity: 0;
     max-width: 0;
@@ -18,9 +18,9 @@
 }
 .learn-section-nav-title {
     display: inline-block;
-    padding: 0.7vw 1.25vw;
+    padding: 12px 20px;
     font-family: var(--font-open-sans);
-    font-size: 1vw;
+    font-size: 16px;
     width: 100%;
     border-radius: 8px;
     border: 0.5px solid rgba(20, 13, 49, 0.1);
@@ -39,7 +39,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 5%;
 }
 .learn-section-nav-hide-btn {
     color: var(--secondary-500);
@@ -98,12 +97,17 @@
         top: 110px;
         width: 30px;
     }
-
-    .learn-section-nav-title {
+    .learn-hero-title-section .button-primary {
+        width: 40% !important;
         font-size: 14px;
-        padding: 8px 12px;
+    }
+    .learn-section-nav-title {
+        font-size: 16px;
     }
     .learn-section-nav-title-section {
         margin-bottom: 5%;
+    }
+    .learn-section-nav-title-wrapper h4 {
+        font-size: 20px;
     }
 }
