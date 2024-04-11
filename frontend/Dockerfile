@@ -1,23 +1,23 @@
-# Use the official Node.js image as the base image
-FROM node:latest as dev
+# Use Node.js version 14 as base image
+FROM node:latest
 
 # Set the working directory inside the container
 WORKDIR /app
 
-# Copy package.json and package-lock.json to the container
+# Copy package.json and package-lock.json to the working directory
 COPY package*.json ./
 
 # Install dependencies
 RUN npm install
 
-# Copy the rest of the application code to the container
+# Copy the rest of the application code
 COPY . .
 
-# Build the Next.js application for production
+# Build the application
 RUN npm run build
 
-# Expose the port that Next.js will run on
+# Expose the port used by your application
 EXPOSE 30001
 
-# Start the Next.js application in production mode
-CMD ["npx", "next", "start", "-p", "30001", "-H", "0.0.0.0"]
+# Define the command to run your application
+CMD ["npm", "run", "preview"]

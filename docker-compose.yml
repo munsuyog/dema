@@ -6,14 +6,12 @@ services:
       context: ./frontend
       target: dev
     restart: always
-    command: npx next dev
+    command: npm run dev
     environment:
       - NODE_ENV=development
       - "NEXT_WEBPACK_USEPOLLING=1"
     volumes:
       - ./frontend:/app
-      - /app/node_modules
-      - /app/.next
     ports:
       - "30001:3000"
 
