@@ -6,7 +6,7 @@ services:
       context: ./frontend
       target: dev
     restart: always
-    command: npm run dev
+    command: npm run preview
     environment:
       - NODE_ENV=development
       - "NEXT_WEBPACK_USEPOLLING=1"
@@ -14,7 +14,7 @@ services:
       - ./frontend:/app
       - /app/node_modules
     ports:
-      - "30001:3000"
+      - "30001:5173"
 
   dema-cms:
     container_name: dema-cms
