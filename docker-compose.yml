@@ -12,8 +12,9 @@ services:
       - "NEXT_WEBPACK_USEPOLLING=1"
     volumes:
       - ./frontend:/app
+      - /app/node_modules
     ports:
-      - "30001:30001"
+      - "30001:3000"
 
   dema-cms:
     container_name: dema-cms
