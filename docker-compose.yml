@@ -13,7 +13,7 @@ services:
     volumes:
       - ./frontend:/app
     ports:
-      - "30001:3000"
+      - "30001:30001"
 
   dema-cms:
     container_name: dema-cms
