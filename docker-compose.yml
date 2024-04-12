@@ -14,7 +14,7 @@ services:
       - ./frontend:/app
       - /app/node_modules
     ports:
-      - "30001:5143"
+      - "30001:4173"
 
   dema-cms:
     container_name: dema-cms
