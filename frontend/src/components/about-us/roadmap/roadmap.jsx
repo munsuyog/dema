@@ -2,11 +2,13 @@ import React, { useRef, useEffect, useState } from "react";
 import "./roadmap.css";
 import { animated, useSpring } from "react-spring";
 import ButtonPrimary from "../../../components/common/button-primary/button-primary";
+import { useDevice } from "../../../utils/DeviceContext";
 
 const Roadmap = () => {
   const scrollContainerRef = useRef(null);
   const pathRef = useRef(null);
   const [isMobile, setMobile] = useState(false);
+  const {device} = useDevice();
 
   useEffect(() => {
     const mediaQuery = window.matchMedia("(max-width: 768px)");
@@ -32,7 +34,7 @@ const Roadmap = () => {
         // Setup Intersection Observer for scroll container
         this.scrollObserver = new IntersectionObserver(
           this.scrollContainerCallback.bind(this),
-          { root: null, rootMargin: "-9%", threshold: [0.01] }
+          { root: null, rootMargin: "-20%", threshold: [0.001] }
         );
 
         this.scrollObserver.observe(this.scrollContainer.parentNode);
@@ -191,7 +193,7 @@ const Roadmap = () => {
           </span>
           </h2>
           <p>As shoppers and sellers, we were close enough but we were still outsiders in the world of e-commerce. What we saw was a vast & growing space getting increasingly less efficient, creating higher fees, prices & barriers to entry with fewer folks in control. We figured if we eliminated human bias by creating a marketplace driven by transparent code describing the rules the community of shoppers & sellers wanted, we’d all be better off.</p>
-          <ButtonPrimary text="Learn More" />
+          <ButtonPrimary text="Learn More" link="/learn" fontSize={device != "desktop" ? "12px" : "14px"} />
 
         </div>
       </animated.div>
@@ -221,7 +223,7 @@ const Roadmap = () => {
         <div>
             <h2>Our journey to near no-change<br/>UX, low cost & <span className="title-blue">day 1 incentives?</span></h2>
             <p>While we knew of the rising prices, fees and ad costs, ~300 sellers & shoppers interviews later, they told  us they didn’t want to set up new accounts, new storefronts or get used to new policies. They wanted lower fees & discounts <b>starting day one</b>. We’re users so we understood! Some work later & it turns out we could deliver and lower prices/fees over time... So we got to building!</p>
-            <ButtonPrimary text="Learn More" />
+            <ButtonPrimary text="Learn More" link="/learn" fontSize={device != "desktop" ? "12px" : "14px"} />
         </div>
       </animated.div>
       <svg

@@ -24,7 +24,7 @@
 #items-section::before {
     content: '';
     position: absolute;
-    top: 10%; /* Adjust as needed */
+    top: 12%; /* Adjust as needed */
     bottom: -10px; /* Adjust as needed */
     left: -50px; /* Adjust as needed */
     right: -10px; /* Adjust as needed */
@@ -38,7 +38,7 @@
     position: absolute; /* Adjust as needed */
     z-index: 1;
     left: -16px;
-    top: 9%;
+    top: 11%;
     transform: rotate(-2deg);
 
 }
@@ -67,8 +67,8 @@
 .top-line, .bottom-line {
     position: absolute;
     width: 30px;
-    height:25vw;
-    top: -22vw;
+    height:400px;
+    top: -340px;
     background-color: white;
     z-index: -1;
 }
@@ -151,7 +151,7 @@
     .heart-image {
         width: 169px;
         height: auto;
-        top: 57px;
+        top: 70px;
     }
     .items-insights {
         width: 180px;
@@ -198,6 +198,6 @@
         left: 10px;
     }.top-line {
         height: 400px;
-        top: -380px;
+        top: -363px;
     }
 }

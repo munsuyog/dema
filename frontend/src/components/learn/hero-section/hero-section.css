@@ -12,6 +12,7 @@
 }
 #learn-hero {
     position: relative;
+    overflow: hidden;
 }
 .learn-hero {
     display: flex;

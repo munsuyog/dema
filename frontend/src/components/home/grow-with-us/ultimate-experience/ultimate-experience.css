@@ -86,7 +86,7 @@
 .bullet-points {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    /* gap: 10px; */
 }
 .point {
     display: flex;
@@ -195,7 +195,6 @@
         align-items: center;
         left: 0%;
         right: 0%;
-        transition: width 100ms ease;
     }
     .card-header-image svg {
         width: 32px;

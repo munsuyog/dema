@@ -9,6 +9,7 @@ import AboutUs from "./pages/AboutUs.jsx";
 import Blog from "./pages/blog/Blog.jsx";
 import BlogDetailPage from "./pages/blog/BlogDetails.jsx";
 import AuthorPage from "./pages/blog/author/AuthorBlogs.jsx";
+import '../public/fonts/dema/bold.ttf'
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>

@@ -2,13 +2,21 @@ import React, { useState, useEffect } from "react";
 import "./blog-cards.css";
 import BlogCard from "./blog-card/blog-card";
 import { getBlogs, getBlogsByAuthor } from "../../../utils/strapi-cms";
+import { useParams, useSearchParams } from "react-router-dom";
 
 const BlogCards = ({author}) => {
   const [blogs, setBlogs] = useState({});
   const [selectedFilter, setSelectedFilter] = useState("All");
   const [currentPage, setCurrentPage] = useState(1); // Track the current page
-
   const [isMobile, setMobile] = useState(false);
+  const [searchParams] = useSearchParams();
+  const filter = searchParams.get("filter");
+
+  useEffect(() => {
+    if(filter) {
+      setSelectedFilter(filter)
+    }
+  },[filter])
 
   useEffect(() => {
     const handleResize = () => {

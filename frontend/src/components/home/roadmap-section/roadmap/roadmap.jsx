@@ -128,7 +128,7 @@ const Roadmap = () => {
 
           // Implement additional logic for fading in elements based on scroll path length
           // fade in Element
-          if (scrollPercentage >= 0.5) {
+          if (scrollPercentage >= 0.6) {
             this.scrollContainer.style.top = "-300px";
           }
           this.elements.forEach((element) => {
@@ -180,7 +180,7 @@ const Roadmap = () => {
       <animated.div
         className="roadmap-card1 absolute opacityTransition"
         fadeonscroll=""
-        threshhold={isMobile ? ".03" : ".2"}
+        threshhold={isMobile ? ".03" : ".1"}
         style={{ opacity: 0 }}
       >
         <div>
@@ -212,7 +212,7 @@ const Roadmap = () => {
       <animated.div
         className="roadmap-card2 absolute opacityTransition"
         fadeonscroll=""
-        threshhold={isMobile ? ".35" : ".5"}
+        threshhold={isMobile ? ".35" : ".45"}
         style={{ opacity: 0 }}
       >
         <div className="card2">

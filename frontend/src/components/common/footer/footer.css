@@ -50,14 +50,14 @@
     padding-top: 3%;
 }
 .footer-copyright p {
-    font-family: var(--font-inter);
+    font-family: var(--font-open-sans);
     color: rgba(255,255,255,0.5);
     text-align: center;
     font-size: 14px;
 }
 .footer-links-row {
     display: flex;
-    gap: 80px;
+    gap: 100px;
     width: 100%;
 }
 
@@ -96,7 +96,7 @@
         padding: 20px;
     }
     .footer-link-contact a {
-        font-size: 14px;
+        font-size: 16px;
     }
     .footer-logo {
         width: 120px;

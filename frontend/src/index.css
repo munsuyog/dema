@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@font-face {
+  font-family: 'Dema-Font';
+  src: url('/fonts/dema/bold.ttf');
+}
 :root {
   --max-width: 1440px;
 
@@ -62,6 +67,7 @@
   --caution-700: #BF561D;
 
   --font-open-sans: 'Open Sans', sans-serif;
+  --font-dema: 'Dema-Font'
 
 
 }
@@ -147,6 +153,8 @@ h4 {
 }
 p {
   font-family: var(--font-open-sans);
+  line-height: 28.8px;
+  font-size: 16px;
 }
 @media screen and (max-width: 768px) {
   .section-padding {
@@ -157,6 +165,8 @@ p {
   }
   p {
     font-size: 14px;
+     line-height: 22.8px;
+
   }
   h1 {
     font-size: 28px

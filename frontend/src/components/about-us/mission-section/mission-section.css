@@ -7,7 +7,7 @@
     flex-direction: column;
     align-items: center;
     background: linear-gradient(rgba(231, 255, 250, 1),rgba(231, 255, 250, 0));
-    padding-top: 5%;
+    padding-top: 3%;
 }
 .mission-section h2 {
     display: flex;
@@ -31,7 +31,7 @@
     display: flex;
     justify-content: space-evenly;
     width: 100%;
-    margin-top: 10%;
+    margin-top: 3%;
 }
 .mission {
     width: 330px;
@@ -67,6 +67,7 @@
     }
     .mission-image {
         width: 118px;
+        height: auto;
     }
     .mission {
         width: 250px;

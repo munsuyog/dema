@@ -167,7 +167,7 @@ const URL = 'http://154.53.59.178:30002'
 
   export const getBlogBySlug = async (slug) => {
     try {
-      const response = await fetch(`http://154.53.59.178:30002/api/blogs?filters[slug][$eq]=${slug}&populate=author, author.avatar, featuredImage`, {
+      const response = await fetch(`http://154.53.59.178:30002/api/blogs?filters[slug][$eq]=${slug}&populate=author, author.avatar, featuredImage, Reactions`, {
         headers: {
           Authorization: `Bearer ${accessToken}`,
         },
@@ -204,3 +204,30 @@ const URL = 'http://154.53.59.178:30002'
       return [];
     }
   }
+
+ export const updateClaps = async (id, claps) => {
+    const updatedArticleData = {
+      data: {
+        Reactions: {
+          claps: claps
+        }
+      }
+    };
+  
+    // Send the update request
+    await fetch(`http://154.53.59.178:30002/api/blogs/${id}`, {
+      method: 'PUT',
+      headers: {
+        'Authorization': `Bearer ${accessToken}`,
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(updatedArticleData)
+    })
+    .then(response => response.json())
+    .then(updatedData => {
+      console.log('Article updated successfully:', updatedData);
+    })
+    .catch(error => {
+      console.error('Error updating article:', error);
+    });
+  };

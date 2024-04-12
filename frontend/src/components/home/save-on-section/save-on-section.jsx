@@ -3,13 +3,17 @@ import React, { useState, useEffect } from "react";
 import "./save-on-section.css";
 import useIntersectionObserver from "../../../animations/useIntersectionObserver";
 import {motion} from 'framer-motion'
+import video1 from '/images/home/free-ownership/video1.mp4';
+import video2 from '/images/home/free-ownership/video2.mp4';
+import video3 from '/images/home/free-ownership/video3.mp4';
+
 
 const SaveOnSection = () => {
   const [highlightedFeature, setHighlightedFeature] = useState(0);
   const features = [
-    {id: 1, title: "Auto-select the lowest price seller", video: "/images/home/free-ownership/video1.mp4" },
-    {id: 2, title: "Auto-select the lowest price seller", video: "/images/home/free-ownership/video2.mp4" },
-    {id: 3, title: `Get <span class='dema-font'>d<span class='title-blue'>e</span>ma</span>'s 5% savings`, video: "/images/home/free-ownership/video3.mp4" }
+    {id: 1, title: "Auto-select the lowest price seller", video: <video autoPlay muted onEnded={() => {setHighlightedFeature((prevIndex) => (prevIndex+1)%3)}} src={video1} /> },
+    {id: 2, title: "Auto-select the lowest price seller", video: <video autoPlay muted onEnded={() => {setHighlightedFeature((prevIndex) => (prevIndex+1)%3)}} src={video2}/> },
+    {id: 3, title: `Get <span class='dema-font'>d<span class='title-blue'>e</span>ma</span>'s 5% savings`, video: <video autoPlay muted onEnded={() => {setHighlightedFeature((prevIndex) => (prevIndex+1)%3)}} src={video3} /> }
   ]
   console.log(highlightedFeature)
   // useEffect(() => {
@@ -167,13 +171,7 @@ const SaveOnSection = () => {
           </div>
           <div className="save-on-video-container">
             <div className="save-on-video">
-              <video
-                className="video"
-                src={features[highlightedFeature].video}
-                autoPlay
-                muted
-                onEnded={() => {setHighlightedFeature((prevIndex) => (prevIndex+1)%3)}}
-              />
+              {features[highlightedFeature].video}
             </div>
           </div>
         </div>

@@ -36,6 +36,50 @@ const SplitContainer = () => {
   }, []);
 
   useEffect(() => {
+    const handleDragMove = (e) => {
+      // Prevent default behavior if necessary
+      e.preventDefault();
+  
+      const touch = e.touches[0];
+      const deltaX = touch.clientX - dragger.current.initialX;
+      let newWidth = dragger.current.initialWidth + deltaX;
+      newWidth = Math.max(Math.min(newWidth, box.current.clientWidth), 0); // Ensure width is within bounds
+  
+      // Update both the dragger's position and the top section's width
+      const newWidthPercentage = (newWidth / box.current.clientWidth) * 100;
+      setWidth(newWidthPercentage);
+      dragger.current.style.left = `${newWidthPercentage}%`;
+      top.current.style.width = `${newWidth}px`;
+    };
+    const handleDragStart = (e) => {
+      e.preventDefault(); // Prevent default touch event behavior
+      const touch = e.touches[0];
+      dragger.current.initialX = touch.clientX;
+      dragger.current.initialWidth = parseFloat(
+        getComputedStyle(top.current).width
+      );
+    };
+    const handleDragEnd = () => {
+      dragger.current.initialX = null;
+      dragger.current.initialWidth = null;
+    };
+  
+    const draggerRef = dragger.current;
+  
+    draggerRef.addEventListener('touchmove', handleDragMove, { passive: false });
+    draggerRef.addEventListener('touchstart', handleDragStart, { passive: false });
+    draggerRef.addEventListener('touchend', handleDragEnd, { passive: false });
+
+  
+    return () => {
+      draggerRef.removeEventListener('touchmove', handleDragMove);
+      draggerRef.removeEventListener('touchstart', handleDragStart);
+      draggerRef.removeEventListener('touchend', handleDragEnd);
+
+    };
+  }, []);
+
+  useEffect(() => {
     const update = () => {
       if (box.current) {
         box.current.style.setProperty(
@@ -77,14 +121,7 @@ const SplitContainer = () => {
     top.current.style.width = `${clampedWidth}%`;
   };
 
-  const handleDragStart = (e) => {
-    e.preventDefault(); // Prevent default touch event behavior
-    const touch = e.touches[0];
-    dragger.current.initialX = touch.clientX;
-    dragger.current.initialWidth = parseFloat(
-      getComputedStyle(top.current).width
-    );
-  };
+
 
   const handleDragMove = (e) => {
     e.preventDefault(); // Prevent default touch event behavior
@@ -92,22 +129,21 @@ const SplitContainer = () => {
     const deltaX = touch.clientX - dragger.current.initialX;
     let newWidth = dragger.current.initialWidth + deltaX;
     newWidth = Math.max(Math.min(newWidth, box.current.clientWidth), 0); // Ensure width is within bounds
-    setWidth((newWidth / box.current.clientWidth) * 100);
+  
+    // Update both the dragger's position and the top section's width
+    const newWidthPercentage = (newWidth / box.current.clientWidth) * 100;
+    setWidth(newWidthPercentage);
+    dragger.current.style.left = `${newWidthPercentage}%`;
     top.current.style.width = `${newWidth}px`;
   };
+  
 
-  const handleDragEnd = () => {
-    dragger.current.initialX = null;
-    dragger.current.initialWidth = null;
-  };
+
 
   return (
     <div className="ultimate-experience" ref={box}>
       <div
         className="dragger"
-        onTouchStart={handleDragStart}
-        onTouchMove={handleDragMove}
-        onTouchEnd={handleDragEnd}
         ref={dragger}
         style={{ left: `${width}%` }}
       >

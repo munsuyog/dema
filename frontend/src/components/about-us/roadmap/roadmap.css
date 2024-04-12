@@ -1,7 +1,6 @@
 
 .scroll-div {
     height: 5000px;
-    margin-bottom:10%;
 }
 .scrollPath {
     stroke-dashoffset: 6876;
@@ -85,11 +84,8 @@
         padding: 2%;
         width: 100%;
     }
-    .roadmap-about-card2 {
-        top: 590px;
-    }
     .roadmap-about-card3 {
-        top: 1250px;
+        top: 1350px;
     }
     .roadmap-about-card1 .roadmap-card-image {
         width: 250px;
@@ -125,7 +121,7 @@
         width: 35%;
     }
     .roadmap-about-card2 {
-        top: 620px;
+        top: 720px;
         width: 100%;
     }
     .roadmap-card-image {

@@ -81,12 +81,12 @@
 }
 .free-star-bottom {
     position: absolute;
-    bottom: 200px;
-    right: 700px;
+    bottom: 10px;
+    right: 500px;
 }
 .free-star-bottom-right {
     position: absolute;
-    bottom: 100px;
+    bottom: 60px;
     right: 200px;
 }
 .free-ownership-squiggle {
@@ -106,6 +106,7 @@
     align-items: center;
     margin-top: -8px;
     position: relative;
+    user-select: none;
     cursor: pointer;
 }
 .free-ownership-feature.highlight .feature-progress {
@@ -214,5 +215,8 @@
     }
     .free-ownership-video-container {
         min-height: 220px;
+    }
+    .free-star-bottom-right {
+        display: none;
     }
 }

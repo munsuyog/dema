@@ -75,6 +75,7 @@
     gap: 2%;
     align-items: center;
     cursor: pointer;
+    user-select: none;
 }
 .save-on-features-container {
     width: 50%;

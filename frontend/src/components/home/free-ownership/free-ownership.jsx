@@ -5,6 +5,10 @@ import { motion } from "framer-motion";
 import SkewedButton from "../../../components/common/skewed-button/skewed-button";
 import { useSpring, animated } from "react-spring";
 import { useDevice } from "../../../utils/DeviceContext";
+import video1 from '/images/home/free-ownership/video1.mp4'
+import video2 from '/images/home/free-ownership/video2.mp4'
+import video3 from '/images/home/free-ownership/video3.mp4'
+
 
 const FreeOwnership = () => {
   const [highlightedFeatureIndex, setHighlightedFeatureIndex] = useState(0);
@@ -12,17 +16,17 @@ const FreeOwnership = () => {
     {
       id: 1,
       title: "Shop & Earn",
-      video: "/images/home/free-ownership/video1.mp4",
+      video: <video autoPlay muted onEnded={() => {setHighlightedFeatureIndex((prevIndex) => (prevIndex + 1) % 3);}} src={video1}/>,
     },
     {
       id: 2,
       title: "Refer & Earn",
-      video: "/images/home/free-ownership/video2.mp4",
+      video: <video autoPlay muted onEnded={() => {setHighlightedFeatureIndex((prevIndex) => (prevIndex + 1) % 3);}} src={video2} />,
     },
     {
       id: 3,
       title: "Sell & Earn",
-      video: "/images/home/free-ownership/video3.mp4",
+      video: <video autoPlay muted onEnded={() => {setHighlightedFeatureIndex((prevIndex) => (prevIndex + 1) % 3);}} src={video3} />,
     },
   ];
   const {device} = useDevice();
@@ -80,17 +84,7 @@ const FreeOwnership = () => {
                 className="free-ownership-video"
                 key={highlightedFeatureIndex}
               >
-                <video
-                  className="video"
-                  src={features[highlightedFeatureIndex].video}
-                  autoPlay
-                  muted
-                  onEnded={() => {
-                    setHighlightedFeatureIndex(
-                      (prevIndex) => (prevIndex + 1) % 3
-                    );
-                  }}
-                />
+                {features[highlightedFeatureIndex].video}
               </motion.div>
             </div>
           </div>

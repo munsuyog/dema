@@ -32,7 +32,7 @@ const TestimonialMedium = ({ tweetId }) => {
     }, [tweetId]);
 
     return (
-        <div className={`testimonial-md ${isLoading ? 'loading' : 'active'}`}>
+        <a href={`https://twitter.com/dema/status/${tweetId}`} className={`testimonial-md ${isLoading ? 'loading' : 'active'}`} >
             <div className="testimonial-header">
                 <div className="testimonial-profile">
                     <img
@@ -72,7 +72,7 @@ const TestimonialMedium = ({ tweetId }) => {
                     <p className="testimonial-date">{new Date(tweet?.created_at).toDateString()}</p>
                 </div>
             </div>
-        </div>
+        </a>
     );
 };
 

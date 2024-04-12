@@ -82,6 +82,7 @@
     margin-top: -8px;
     position: relative;
     cursor: pointer;
+    user-select: none;
 }
 .how-works-feature-progress {
     background-color: #3454be;

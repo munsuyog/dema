@@ -99,7 +99,6 @@ add class scrollPath to start using the scrollbased animation
 .scrollContainer {
     width: 100%;
     position: sticky;
-    margin-top: 10%;
     transition: top 1s ease;
 }
 :not(.active) svg.scrollPath {
