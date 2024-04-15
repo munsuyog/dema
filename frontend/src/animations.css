@@ -139,3 +139,9 @@ add class scrollPath to start using the scrollbased animation
     }
 }
 
+@media screen and (max-width: 768px) {
+    .scrollPath {
+        stroke-dashoffset: 3910;
+        stroke-dasharray: 3910;
+    }
+}

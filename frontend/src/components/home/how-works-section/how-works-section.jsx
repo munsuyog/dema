@@ -10,10 +10,10 @@ import video4 from "/images/home/free-ownership/video1.mp4";
 const HowWorksSection = () => {
     const [highlightedFeatureIndex, setHighlightedFeatureIndex] = useState(0);
     const features = [
-        { id: 1, title: "Download the app", video: <video autoPlay muted onEnded={() => {setHighlightedFeatureIndex((prevIndex) => (prevIndex+1)%4)}} width={600} src={video1} type='video/mp4' /> },
-        { id: 2, title: "Browse & Add To Cart", video: <video autoPlay muted onEnded={() => {setHighlightedFeatureIndex((prevIndex) => (prevIndex+1)%4)}} width={600} src={video2} type='video/mp4' /> },
-        { id: 3, title: "Checkout & Pay", video: <video autoPlay muted onEnded={() => {setHighlightedFeatureIndex((prevIndex) => (prevIndex+1)%4)}} width={600} src={video3} type='video/mp4' /> },
-        { id: 4, title: "Save & get free ownership", video: <video autoPlay muted onEnded={() => {setHighlightedFeatureIndex((prevIndex) => (prevIndex+1)%4)}} width={600} src={video4} type='video/mp4' /> }
+        { id: 1, title: "Download the app", video: <video playsInline preload autoPlay muted onEnded={() => {setHighlightedFeatureIndex((prevIndex) => (prevIndex+1)%4)}} width={600} src={video1} type='video/mp4' /> },
+        { id: 2, title: "Browse & Add To Cart", video: <video playsInline preload autoPlay muted onEnded={() => {setHighlightedFeatureIndex((prevIndex) => (prevIndex+1)%4)}} width={600} src={video2} type='video/mp4' /> },
+        { id: 3, title: "Checkout & Pay", video: <video playsInline preload autoPlay muted onEnded={() => {setHighlightedFeatureIndex((prevIndex) => (prevIndex+1)%4)}} width={600} src={video3} type='video/mp4' /> },
+        { id: 4, title: "Save & get free ownership", video: <video playsInline preload autoPlay muted onEnded={() => {setHighlightedFeatureIndex((prevIndex) => (prevIndex+1)%4)}} width={600} src={video4} type='video/mp4' /> }
     ];
 
     return (
@@ -25,9 +25,11 @@ const HowWorksSection = () => {
                     <img src="/images/home/how-works-section/arrow.svg" width={200} height={200} className="arrow-vector" />
                 </div>
                 <div className='how-works-container'>
-                    <div className='how-works-image-container'>
-                        {features[highlightedFeatureIndex].video}
-                    </div>
+                    {features.map((feature, index) => (
+                                            <div className='how-works-image-container' style={highlightedFeatureIndex != index ? {display: "none"} : {}}>
+                                            {feature.video}
+                                        </div>
+                    ))}
                     <div className='how-works-features-wrapper'>
                         <div className='how-works-features'>
                             <div className='how-works-features-container'>

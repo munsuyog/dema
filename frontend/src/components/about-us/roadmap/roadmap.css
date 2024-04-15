@@ -9,41 +9,46 @@
 .roadmap-about-card1 {
     display: flex;
     align-items: center;
-    padding: 5%;
+    padding: 3%;
     margin: 5%;
     background: linear-gradient(to bottom,rgba(231, 255, 250, 0.9) 30%, rgba(242, 251, 249, 0));
-    height: 600px;
+    height: 33.125vw;
+}
+.roadmap-about-card1-title {
+    font-size: 2vw !important;
 }
 .roadmap-about-card1 p {
-    line-height: 28.8px;
+    line-height: 2vw;
+    font-size: 0.9vw;
     margin-top: 5%;
     margin-bottom: 5%;
-    padding-right: 15%;
+    /* padding-right: 15%; */
 }
 .roadmap-about-card2 p {
-    line-height: 28.8px;
+    line-height: 2vw;
     margin-top: 5%;
     margin-bottom: 5%;
-    margin-right: 15%;
+    font-size: 0.9vw;
+    /* margin-right: 15%; */
 }
 .roadmap-about-card1 h2 {
     position: relative;
 }
 .roadmap-about-card2 {
-    top: 620px;
+    top: 32.25vw;
     display: flex;
     align-items: center;
-    padding: 5%;
+    padding: 3%;
     margin: 5%;
     background: linear-gradient(to bottom, rgba(239, 247, 255, 0.9) 30%,rgba(239, 247, 255, 0));
-    height: 600px;
+    height: 36.25vw;
 }
 .roadmap-about-card3 {
-    height: 600px;
-    top: 1240px;
+    height: 37.5vw;
+    top: 63.75vw;
     display: flex;
     align-items: center;
-    padding: 5%;
+    padding: 3%;
     margin: 5%;
     background: linear-gradient(to bottom,rgba(231, 255, 250, 0.9) 30%, rgba(242, 251, 249, 0));
 }
@@ -51,10 +56,12 @@
     display: flex;
 }
 .roadmap-about-card3 p {
-    line-height: 28.8px;
+    line-height: 2vw;
     margin-top: 5%;
     margin-bottom: 5%;
-    padding-right: 15%;
+    font-size: 0.9vw;
+
+    /* padding-right: 15%; */
 }
 .roadmap-title-arrow {
     position: absolute;
@@ -120,8 +127,20 @@
     .roadmap-title-arrow {
         width: 35%;
     }
+    .roadmap-about-card1 img {
+        width: 150px;
+        height: auto;
+    }
+    .roadmap-about-card2 img {
+        width: 150px;
+        height: auto;
+    }
     .roadmap-about-card2 {
-        top: 720px;
+        top: 600px;
+        width: 100%;
+    }
+    .roadmap-about-card3 {
+        top: 1180px;
         width: 100%;
     }
     .roadmap-card-image {

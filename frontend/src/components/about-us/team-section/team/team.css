@@ -53,6 +53,9 @@
 }
 
 @media screen and (max-width: 768px) {
+    .team-card {
+        margin-top: -20px;
+    }
     .team-info-container {
         width: 278px;
         height: 182px;

@@ -1,7 +1,7 @@
 #team-section {
     width: 100%;
     position: relative;
-    padding-top: 10%;
+    /* padding-top: 10%; */
     padding-bottom: 5%;
 }
 .team-section {
@@ -14,11 +14,11 @@
 #team-section::before {
     content: '';
     position: absolute;
-    top: 60px; /* Adjust as needed */
+    top:0px; /* Adjust as needed */
     bottom: -10px; /* Adjust as needed */
     left: -350px; /* Adjust as needed */
     right: -300px; /* Adjust as needed */
-    background: linear-gradient(to bottom, rgba(227, 238, 255, 1) 10%, rgba(244,248, 255, 0.21 ) 20%, rgba(255, 255, 255, 0.02) 10%);
+    background: linear-gradient(to bottom, rgba(227, 238, 255, 0.5) 10%, rgba(244,248, 255, 0.21 ) 30%, rgba(255, 255, 255, 0.02) 40%);
     border-top-right-radius: 100%;
     border-top-left-radius: 100%;
     transform-origin: 0 0;
@@ -63,10 +63,11 @@
         width: 250% !important;
     }
     #team-section {
-        padding-top: 20%;
+        padding-top: 5%;
     }
     .teams-container {
         flex-direction: column;
+        gap: -20px;
     }
     .team-title-section svg {
         display: none;

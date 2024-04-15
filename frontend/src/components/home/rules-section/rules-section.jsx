@@ -5,6 +5,10 @@ import { useRef, useEffect, useState } from "react";
 import { motion, useSpring } from "framer-motion";
 import { rulesTitleSVG } from "../../../constants/VectorSVGs";
 import { useDevice } from "../../../utils/DeviceContext";
+import {Swiper, SwiperSlide} from "swiper/react";
+import { EffectCards, Autoplay } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/effect-cards';
 
 const RulesSection = () => {
   const {device} = useDevice();
@@ -14,7 +18,6 @@ const RulesSection = () => {
     config: { tension: 300, friction: 0, duration: 2000 },
   });
 
-  const [activeRuleIndex, setActiveRuleIndex] = useState(0);
 
   const rules = [
     {
@@ -39,14 +42,6 @@ const RulesSection = () => {
       paragraph: `Secure transactions executed flawlessly by smart contracts. Payment is locked upon purchase and released upon fulfillment, no intermediaries, just code.`,
     },
   ];
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setActiveRuleIndex((prevIndex) => (prevIndex === rules.length - 1 ? 0 : prevIndex + 1));
-    }, 2000);
-
-    return () => clearInterval(interval);
-  }, []);
   return (
     <section id="rules-section">
       <div className="rules-section section-padding fixed-width" ref={carouselRef}>
@@ -79,71 +74,146 @@ const RulesSection = () => {
             <span className="title-you">You!</span>
           </h1>
         </div>
-        <div className="rules-container">
-          {rules.map((rule, index) => (
-            <div key={index} style={device != "desktop" ? {transform: activeRuleIndex == 0 ? "translateX(120%)" : activeRuleIndex == 1 ? "translateX(3%)" : "translateX(-103%)"} : {}} className={`rule ${index === activeRuleIndex ? 'active' : ''}`}>
-              <div className="rule-header">
-                <div className="rule-number-wrapper">
-                  <img
-                    className="rule-number-background"
-                    src="/images/home/rules-section/number-background01.svg"
-                    width={140}
-                    height={120}
-                  />
-                  <div className="rule-number">
+      {device == "desktop" ? (
+                <div className="rules-container">
+                {rules.map((rule, index) => (
+                  <div key={index} className="rule" >
+                    <div className="rule-header">
+                      <div className="rule-number-wrapper">
+                        <img
+                          className="rule-number-background"
+                          src="/images/home/rules-section/number-background01.svg"
+                          width={140}
+                          height={120}
+                        />
+                        <div className="rule-number">
+                          <img
+                            className="rule-number-flower"
+                            src="/images/home/rules-section/flower.svg"
+                            width={27}
+                            height={27}
+                          />
+                          <h3>0{index + 1}</h3>
+                        </div>
+                      </div>
+                      <div className="rule-title-wrapper">
+                        <h2 className="rule-title">
+                          {rule.title}
+                          <span
+                            style={{
+                              position: "absolute",
+                              top: Math.random() * 50,
+                              right: Math.random() * 30,
+                              zIndex: -1,
+                            }}
+                            dangerouslySetInnerHTML={{
+                              __html:
+                                rulesTitleSVG[
+                                  Math.floor(Math.random() * rulesTitleSVG.length)
+                                ],
+                            }}
+                          ></span>
+                        </h2>
+                      </div>
+                    </div>
+                    <div className="rule-subtitle-wrapper">
+                      <h3 className="rule-subtitle">{rule.subtitle}</h3>
+                    </div>
+                    <p
+                      className="rule-paragraph"
+                      dangerouslySetInnerHTML={{ __html: rule.paragraph }}
+                    ></p>
                     <img
-                      className="rule-number-flower"
-                      src="/images/home/rules-section/flower.svg"
-                      width={27}
-                      height={27}
+                      src="/images/home/rules-section/cloud-top-vector.png"
+                      width={350.33}
+                      height={85.64}
+                      alt="vector"
+                      className="forever-trust-svg-top"
                     />
-                    <h3>0{index + 1}</h3>
+                    <img
+                      src="/images/home/rules-section/heart-bottom.png"
+                      width={120}
+                      height={106}
+                      alt="vector"
+                      className="forever-trust-svg-bottom"
+                    />
                   </div>
-                </div>
-                <div className="rule-title-wrapper">
-                  <h2 className="rule-title">
-                    {rule.title}
-                    <span
-                      style={{
-                        position: "absolute",
-                        top: Math.random() * 50,
-                        right: Math.random() * 30,
-                        zIndex: -1,
-                      }}
-                      dangerouslySetInnerHTML={{
-                        __html:
-                          rulesTitleSVG[
-                            Math.floor(Math.random() * rulesTitleSVG.length)
-                          ],
-                      }}
-                    ></span>
-                  </h2>
-                </div>
+                ))}
               </div>
-              <div className="rule-subtitle-wrapper">
-                <h3 className="rule-subtitle">{rule.subtitle}</h3>
-              </div>
-              <p
-                className="rule-paragraph"
-                dangerouslySetInnerHTML={{ __html: rule.paragraph }}
-              ></p>
-              <img
-                src="/images/home/rules-section/cloud-top-vector.png"
-                width={350.33}
-                height={85.64}
-                alt="vector"
-                className="forever-trust-svg-top"
-              />
-              <img
-                src="/images/home/rules-section/heart-bottom.png"
-                width={120}
-                height={106}
-                alt="vector"
-                className="forever-trust-svg-bottom"
-              />
-            </div>
-          ))}
-        </div>
+      ) :
+      (
+        <Swiper effect={'cards'}
+        grabCursor={true}
+        modules={[EffectCards]} className="mySwiper" autoplay={{delay: 2500}}>
+        {rules.map((rule, index) => (
+          <SwiperSlide key={index}>
+            {({isActive}) => (
+                          <div className={isActive ? "rule active" : "rule"}>
+                          <div className="rule-header">
+                            <div className="rule-number-wrapper">
+                              <img
+                                className="rule-number-background"
+                                src="/images/home/rules-section/number-background01.svg"
+                                width={140}
+                                height={120}
+                              />
+                              <div className="rule-number">
+                                <img
+                                  className="rule-number-flower"
+                                  src="/images/home/rules-section/flower.svg"
+                                  width={27}
+                                  height={27}
+                                />
+                                <h3>0{index + 1}</h3>
+                              </div>
+                            </div>
+                            <div className="rule-title-wrapper">
+                              <h2 className="rule-title">
+                                {rule.title}
+                                <span
+                                  style={{
+                                    position: "absolute",
+                                    top: Math.random() * 50,
+                                    right: Math.random() * 30,
+                                    zIndex: -1,
+                                  }}
+                                  dangerouslySetInnerHTML={{
+                                    __html:
+                                      rulesTitleSVG[
+                                        Math.floor(Math.random() * rulesTitleSVG.length)
+                                      ],
+                                  }}
+                                ></span>
+                              </h2>
+                            </div>
+                          </div>
+                          <div className="rule-subtitle-wrapper">
+                            <h3 className="rule-subtitle">{rule.subtitle}</h3>
+                          </div>
+                          <p
+                            className="rule-paragraph"
+                            dangerouslySetInnerHTML={{ __html: rule.paragraph }}
+                          ></p>
+                          <img
+                            src="/images/home/rules-section/cloud-top-vector.png"
+                            width={350.33}
+                            height={85.64}
+                            alt="vector"
+                            className="forever-trust-svg-top"
+                          />
+                          <img
+                            src="/images/home/rules-section/heart-bottom.png"
+                            width={120}
+                            height={106}
+                            alt="vector"
+                            className="forever-trust-svg-bottom"
+                          />
+                          </div>
+            )}
+          </SwiperSlide>
+        ))}
+      </Swiper>
+      )}
       </div>
     </section>
   );

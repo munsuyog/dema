@@ -16,17 +16,17 @@ const FreeOwnership = () => {
     {
       id: 1,
       title: "Shop & Earn",
-      video: <video autoPlay muted onEnded={() => {setHighlightedFeatureIndex((prevIndex) => (prevIndex + 1) % 3);}} src={video1}/>,
+      video: <video autoPlay playsInline preload muted onEnded={() => {setHighlightedFeatureIndex((prevIndex) => (prevIndex + 1) % 3);}} src={video1}/>,
     },
     {
       id: 2,
       title: "Refer & Earn",
-      video: <video autoPlay muted onEnded={() => {setHighlightedFeatureIndex((prevIndex) => (prevIndex + 1) % 3);}} src={video2} />,
+      video: <video autoPlay playsInline muted preload onEnded={() => {setHighlightedFeatureIndex((prevIndex) => (prevIndex + 1) % 3);}} src={video2} />,
     },
     {
       id: 3,
       title: "Sell & Earn",
-      video: <video autoPlay muted onEnded={() => {setHighlightedFeatureIndex((prevIndex) => (prevIndex + 1) % 3);}} src={video3} />,
+      video: <video autoPlay playsInline muted preload onEnded={() => {setHighlightedFeatureIndex((prevIndex) => (prevIndex + 1) % 3);}} src={video3} />,
     },
   ];
   const {device} = useDevice();
@@ -75,19 +75,23 @@ const FreeOwnership = () => {
           </h1>
         </div>
         <div className="free-ownership-container">
-          <div className="free-ownership-video-container">
-            <div className="free-ownership-video">
-              <motion.div
-                initial={{ opacity: 0 }} // Initial opacity set to 0
-                animate={{ opacity: 1 }} // Animate opacity to 1
-                transition={{ duration: 0.5 }} // Transition duration set to 0.5 seconds
-                className="free-ownership-video"
-                key={highlightedFeatureIndex}
-              >
-                {features[highlightedFeatureIndex].video}
-              </motion.div>
+          {
+            features.map((feature, index) => (
+              <div className="free-ownership-video-container" style={index != highlightedFeatureIndex ? {display: "none"}: {}}>
+              <div className="free-ownership-video">
+                <motion.div
+                  initial={{ opacity: 0 }} // Initial opacity set to 0
+                  animate={{ opacity: 1 }} // Animate opacity to 1
+                  transition={{ duration: 0.5 }} // Transition duration set to 0.5 seconds
+                  className="free-ownership-video"
+                  key={highlightedFeatureIndex}
+                >
+                  {feature.video}
+                </motion.div>
+              </div>
             </div>
-          </div>
+            ))
+          }
           <div className="free-ownership-animation">
             <div className="free-ownership-features">
               <div className="free-ownership-features-container">

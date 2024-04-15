@@ -11,9 +11,9 @@ import video3 from '/images/home/free-ownership/video3.mp4';
 const SaveOnSection = () => {
   const [highlightedFeature, setHighlightedFeature] = useState(0);
   const features = [
-    {id: 1, title: "Auto-select the lowest price seller", video: <video autoPlay muted onEnded={() => {setHighlightedFeature((prevIndex) => (prevIndex+1)%3)}} src={video1} /> },
-    {id: 2, title: "Auto-select the lowest price seller", video: <video autoPlay muted onEnded={() => {setHighlightedFeature((prevIndex) => (prevIndex+1)%3)}} src={video2}/> },
-    {id: 3, title: `Get <span class='dema-font'>d<span class='title-blue'>e</span>ma</span>'s 5% savings`, video: <video autoPlay muted onEnded={() => {setHighlightedFeature((prevIndex) => (prevIndex+1)%3)}} src={video3} /> }
+    {id: 1, title: "Auto-select the lowest price seller", video: <video preload playsInline autoPlay muted onEnded={() => {setHighlightedFeature((prevIndex) => (prevIndex+1)%3)}} src={video1} /> },
+    {id: 2, title: "Auto-select the lowest price seller", video: <video preload playsInline autoPlay muted onEnded={() => {setHighlightedFeature((prevIndex) => (prevIndex+1)%3)}} src={video2}/> },
+    {id: 3, title: `Get <span class='dema-font'>d<span class='title-blue'>e</span>ma</span>'s 5% savings`, video: <video preload playsInline autoPlay muted onEnded={() => {setHighlightedFeature((prevIndex) => (prevIndex+1)%3)}} src={video3} /> }
   ]
   console.log(highlightedFeature)
   // useEffect(() => {
@@ -169,11 +169,13 @@ const SaveOnSection = () => {
               </motion.div>
             </div>
           </div>
-          <div className="save-on-video-container">
-            <div className="save-on-video">
-              {features[highlightedFeature].video}
-            </div>
-          </div>
+          {features.map((feature, index) => (
+                      <div className="save-on-video-container" style={highlightedFeature != index ? {display: "none"}: {}}>
+                      <div className="save-on-video">
+                        {feature.video}
+                      </div>
+                    </div>
+          ))}
         </div>
       </div>
     </section>

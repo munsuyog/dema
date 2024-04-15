@@ -10,6 +10,7 @@ import Blog from "./pages/blog/Blog.jsx";
 import BlogDetailPage from "./pages/blog/BlogDetails.jsx";
 import AuthorPage from "./pages/blog/author/AuthorBlogs.jsx";
 import '../public/fonts/dema/bold.ttf'
+import TermsOfService from "./pages/TermsOfService.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -19,6 +20,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/learn" Component={Learn} />
         <Route path="/about-us" Component={AboutUs} />
         <Route path="/blog" Component={Blog} />
+        <Route path="/termsofservice" Component={TermsOfService} />
         <Route path="/blog/:slug" Component={BlogDetailPage} />
         <Route path="/blog/author/:author" Component={AuthorPage} />
       </Routes>

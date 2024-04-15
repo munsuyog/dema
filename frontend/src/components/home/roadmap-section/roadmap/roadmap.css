@@ -124,7 +124,7 @@
         font-size: 16px;
     }
     .roadmap-card1 {
-        top: 5%;
+        top: 10%;
         left: 5%;
         flex-direction: column;
         width: 90% !important;
@@ -137,7 +137,7 @@
         width: 376px;
     }
     .roadmap-card2 {
-        top: 40%;
+        top: 45%;
         right: 2%;
     }
     .roadmap-card2 .card2-image {
@@ -145,7 +145,7 @@
         height: auto;
     }
     .roadmap-card3 {
-        top: 70%;
+        top: 80%;
     }
     .roadmap-card2 p {
         font-weight: 600;

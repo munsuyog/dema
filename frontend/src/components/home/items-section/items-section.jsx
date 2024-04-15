@@ -10,7 +10,7 @@ const ItemsSection = () => {
                 <img src="/images/home/items-section/flower01.svg" width={42} height={42} className='flower-1' />
                 <img src="/images/home/items-section/flower02.svg" width={40} height={40} className='flower-2' />
                 <div className='items-image-wrapper'>
-                    <video src="/images/home/items-section/items-section.mp4" autoPlay muted loop  height={485} className='items-image'></video>
+                    <video src="/images/home/items-section/items-section.mp4" autoPlay muted loop playsInline preload height={485} className='items-image'></video>
                 </div>
                 <div>
                     <div className='items-insights'>

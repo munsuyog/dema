@@ -163,12 +163,6 @@ const Roadmap = () => {
     });
   });
 
-  const pathSpring = useSpring({
-    strokeDashoffset: 0,
-    from: { strokeDashoffset: 4500 },
-    config: { tension: 300, friction: 10, duration: 2000 },
-  });
-
   const cardSpring = useSpring({
     opacity: 1,
     transform: "translateY(0)",
@@ -275,7 +269,7 @@ const Roadmap = () => {
           strokeOpacity="0.8"
           strokeWidth="21"
           className="scrollPath"
-          style={{ strokeDasharray: "4500", ...pathSpring }}
+          style={{ strokeDasharray: "4500" }}
           ref={pathRef}
         />
         <defs>

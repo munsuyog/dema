@@ -162,18 +162,6 @@ const Roadmap = () => {
     });
   });
 
-  const pathSpring = useSpring({
-    strokeDashoffset: 0,
-    from: { strokeDashoffset: 7500 },
-    config: { tension: 300, friction: 10, duration: 2000 },
-  });
-
-  const cardSpring = useSpring({
-    opacity: 1,
-    transform: "translateY(0)",
-    from: { opacity: 0, transform: "translateY(50px)" },
-    delay: 500, // Adjust the delay as needed for the desired effect
-  });
   return (
     <div className="scroll-div">
       <div className="scrollContainer" ref={scrollContainerRef}>
@@ -185,7 +173,7 @@ const Roadmap = () => {
       >
         <img src="/images/about/roadmap/card1.svg" width={500} height={540} alt="card1" className="roadmap-card-image" />
         <div>
-          <h2>Why did we <span>
+          <h2 className="roadmap-about-card1-title">Why did we <span>
           <svg xmlns="http://www.w3.org/2000/svg" width="217" height="17" viewBox="0 0 217 17" fill="none" className="roadmap-title-arrow">
             <path d="M216 8.32432L100.902 2L166.753 15L0.999998 2" stroke="#3830C9" stroke-width="4"></path>
           </svg>
@@ -193,7 +181,7 @@ const Roadmap = () => {
           </span>
           </h2>
           <p>As shoppers and sellers, we were close enough but we were still outsiders in the world of e-commerce. What we saw was a vast & growing space getting increasingly less efficient, creating higher fees, prices & barriers to entry with fewer folks in control. We figured if we eliminated human bias by creating a marketplace driven by transparent code describing the rules the community of shoppers & sellers wanted, we’d all be better off.</p>
-          <ButtonPrimary text="Learn More" link="/learn" fontSize={device != "desktop" ? "12px" : "14px"} />
+          <ButtonPrimary text="Learn More" link="/learn" fontSize={device != "desktop" ? "12px" : "0.8vw"} />
 
         </div>
       </animated.div>
@@ -240,7 +228,7 @@ const Roadmap = () => {
           strokeOpacity="0.8"
           strokeWidth={isMobile ? "14" : "21"}
           className="scrollPath"
-          style={{ strokeDasharray: "7500", ...pathSpring }}
+          style={{ strokeDasharray: "7500" }}
           pathLength={7500}
           speed={0.5}
           stay={0.7}

@@ -214,19 +214,13 @@
         padding-right: 10%;
     }
     .save-on-container {
-        flex-direction: column;
+        flex-direction: column-reverse;
+        gap: 20px;
     }
     .save-on-features-container {
         width: 100%;
     }
     .dotted-squiggle {
-        display: none;
-    }
-    .discount-coupon-mobile {
-        display: flex;
-        justify-content: right;
-    }
-    .discount-coupon-desktop {
         display: none;
     }
     .save-on-video-container {
