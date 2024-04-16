@@ -8,6 +8,7 @@ import { useDevice } from "../../../utils/DeviceContext";
 import video1 from '/images/home/free-ownership/video1.mp4'
 import video2 from '/images/home/free-ownership/video2.mp4'
 import video3 from '/images/home/free-ownership/video3.mp4'
+import VideoComponent from "../../common/VideoComponent/VideoComponent";
 
 
 const FreeOwnership = () => {
@@ -16,17 +17,17 @@ const FreeOwnership = () => {
     {
       id: 1,
       title: "Shop & Earn",
-      video: <video autoPlay playsInline preload muted onEnded={() => {setHighlightedFeatureIndex((prevIndex) => (prevIndex + 1) % 3);}} src={video1}/>,
+      video: <VideoComponent onEnded={() => {setHighlightedFeatureIndex((prevIndex) => (prevIndex+1)%3)}} url={'/images/home/free-ownership/video1.mp4'} />,
     },
     {
       id: 2,
       title: "Refer & Earn",
-      video: <video autoPlay playsInline muted preload onEnded={() => {setHighlightedFeatureIndex((prevIndex) => (prevIndex + 1) % 3);}} src={video2} />,
+      video: <VideoComponent onEnded={() => {setHighlightedFeatureIndex((prevIndex) => (prevIndex+1)%3)}} url={'/images/home/free-ownership/video2.mp4'} />,
     },
     {
       id: 3,
       title: "Sell & Earn",
-      video: <video autoPlay playsInline muted preload onEnded={() => {setHighlightedFeatureIndex((prevIndex) => (prevIndex + 1) % 3);}} src={video3} />,
+      video: <VideoComponent onEnded={() => {setHighlightedFeatureIndex((prevIndex) => (prevIndex+1)%3)}} url={'/images/home/free-ownership/video3.mp4'} />,
     },
   ];
   const {device} = useDevice();

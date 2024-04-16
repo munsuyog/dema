@@ -6,6 +6,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 5%;
+    padding-top: 5%;
 }
 .title-squiggle {
     position: absolute;

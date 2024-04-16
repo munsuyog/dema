@@ -74,7 +74,7 @@
     position: relative;
     right: 70px;
 }
-.card2 {
+.home-roadmap-card2 {
     width: 24vw;
 }
 .roadmap-star-dark-vector {
@@ -133,7 +133,7 @@
         width: 303px;
         height: auto;
     }
-    .card2 {
+    .home-roadmap-card2 {
         width: 376px;
     }
     .roadmap-card2 {

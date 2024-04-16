@@ -167,7 +167,7 @@ const URL = 'http://154.53.59.178:30002'
 
   export const getBlogBySlug = async (slug) => {
     try {
-      const response = await fetch(`http://154.53.59.178:30002/api/blogs?filters[slug][$eq]=${slug}&populate=author, author.avatar, featuredImage, Reactions`, {
+      const response = await fetch(`http://154.53.59.178:30002/api/blogs?filters[slug][$eq]=${slug}&populate=author, author.avatar, featuredImage, Reactions, Reactions.comments`, {
         headers: {
           Authorization: `Bearer ${accessToken}`,
         },
@@ -251,3 +251,55 @@ const URL = 'http://154.53.59.178:30002'
       console.error('Error updating article:', error);
     });
   };
+  export const createComments = async (id, name, comment, existingComments) => {
+    try {
+        // Get the current timestamp
+        const commentedAt = new Date().toISOString();
+
+        // Create a new comment object with the name, comment, and timestamp
+        const newComment = {
+            name: name,
+            comment: comment,
+            commented_at: commentedAt
+        };
+
+        // Create a new comments array by appending the new comment
+        const updatedComments = [
+            ...(existingComments || []),
+            newComment
+        ];
+
+        // Create updated article data with the new comments
+        const updatedArticleData = {
+            data: {
+                Reactions: {
+                    comments: updatedComments
+                }
+            }
+        };
+
+        // Send the update request
+        const updateResponse = await fetch(`http://154.53.59.178:30002/api/blogs/${id}`, {
+            method: 'PUT',
+            headers: {
+                'Authorization': `Bearer ${accessToken}`,
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(updatedArticleData)
+        });
+
+        if (!updateResponse.ok) {
+            throw new Error('Failed to update article data');
+        }
+
+        const updatedData = await updateResponse.json();
+        console.log('Article updated successfully:', updatedData);
+
+        // Return the updated comments array or any other relevant data
+        return updatedComments;
+    } catch (error) {
+        console.error('Error updating article:', error);
+        // Return the existing comments array in case of an error
+        return existingComments;
+    }
+};

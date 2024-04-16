@@ -6,14 +6,15 @@ import {motion} from 'framer-motion'
 import video1 from '/images/home/free-ownership/video1.mp4';
 import video2 from '/images/home/free-ownership/video2.mp4';
 import video3 from '/images/home/free-ownership/video3.mp4';
+import VideoComponent from "../../common/VideoComponent/VideoComponent";
 
 
 const SaveOnSection = () => {
   const [highlightedFeature, setHighlightedFeature] = useState(0);
   const features = [
-    {id: 1, title: "Auto-select the lowest price seller", video: <video preload playsInline autoPlay muted onEnded={() => {setHighlightedFeature((prevIndex) => (prevIndex+1)%3)}} src={video1} /> },
-    {id: 2, title: "Auto-select the lowest price seller", video: <video preload playsInline autoPlay muted onEnded={() => {setHighlightedFeature((prevIndex) => (prevIndex+1)%3)}} src={video2}/> },
-    {id: 3, title: `Get <span class='dema-font'>d<span class='title-blue'>e</span>ma</span>'s 5% savings`, video: <video preload playsInline autoPlay muted onEnded={() => {setHighlightedFeature((prevIndex) => (prevIndex+1)%3)}} src={video3} /> }
+    {id: 1, title: "Auto-select the lowest price seller", video: <VideoComponent onEnded={() => {setHighlightedFeature((prevIndex) => (prevIndex+1)%3)}} url={'/images/home/free-ownership/video1.mp4'} /> },
+    {id: 2, title: "Auto-select the lowest price seller", video: <VideoComponent onEnded={() => {setHighlightedFeature((prevIndex) => (prevIndex+1)%3)}} url={'/images/home/free-ownership/video2.mp4'} /> },
+    {id: 3, title: `Get <span class='dema-font'>d<span class='title-blue'>e</span>ma</span>'s 5% savings`, video: <VideoComponent onEnded={() => {setHighlightedFeature((prevIndex) => (prevIndex+1)%3)}} url={'/images/home/free-ownership/video3.mp4'} /> }
   ]
   console.log(highlightedFeature)
   // useEffect(() => {

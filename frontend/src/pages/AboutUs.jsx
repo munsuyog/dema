@@ -1,3 +1,4 @@
+import CardsReveal from '../components/about-us/CardsReveal/CardsReveal'
 import CommunitySection from '../components/about-us/community-section/community-section'
 import AboutHero from '../components/about-us/hero-section/hero-section'
 import MissionSection from '../components/about-us/mission-section/mission-section'
@@ -15,7 +16,7 @@ const AboutUs = () => {
     <DeviceProvider>
     <Navbar />
     <AboutHero />
-    <Roadmap />
+    <CardsReveal />
     <ShockerSection />
     <CommunitySection />
     <MissionSection />

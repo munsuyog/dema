@@ -209,7 +209,7 @@ const Roadmap = () => {
         threshhold={isMobile ? ".35" : ".45"}
         style={{ opacity: 0 }}
       >
-        <div className="card2">
+        <div className="home-roadmap-card2">
           <div className="card-header">
             <img
               src="/images/home/roadmap-section/roadmap/card2-header.svg"
@@ -235,7 +235,7 @@ const Roadmap = () => {
         threshhold={isMobile ? ".55" : ".7"}
         style={{ opacity: 0 }}
       >
-        <div className="card2">
+        <div className="home-roadmap-card2">
           <div className="card-header">
             <img
               src="/images/home/roadmap-section/roadmap/card3-header.svg"

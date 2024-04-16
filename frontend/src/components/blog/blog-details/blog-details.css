@@ -73,7 +73,11 @@
 .blog-details-author-date {
     font-size: 14px;
 }
-.blog-details-reactions-claps {
+.blog-details-reactions-wrapper {
+    display: flex;
+    gap: 20px;
+}
+.blog-details-reactions-claps, .blog-details-reactions-comments {
     display: flex;
     gap: 10px;
     align-items: center;
@@ -86,7 +90,13 @@
 .clap:hover path {
     fill: black;
 }
-
+.comments path {
+    /* fill: grey; */
+    transition: fill 0.5s ease;
+}
+.comments:hover path {
+    fill: black;
+}
 .claps-text {
     font-size: 16px;
     font-weight: 400;

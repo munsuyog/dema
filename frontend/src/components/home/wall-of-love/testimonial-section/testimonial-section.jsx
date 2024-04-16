@@ -1,60 +1,62 @@
 import React, { useEffect, useRef, useState } from 'react';
 import TestimonialMedium from './testimonial-md.jsx';
+import Marquee from 'react-fast-marquee'
 
 const TestimonialSection = ({ testimonials }) => {
   const [isMobile, setIsMobile] = useState(false);
+  
 
   const leftContainerRef = useRef(null);
   const rightContainerRef = useRef(null);
   const centerContainerRef = useRef(null);
 
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 768); // Adjust the threshold as needed
-    };
+  // useEffect(() => {
+  //   const handleResize = () => {
+  //     setIsMobile(window.innerWidth < 768); // Adjust the threshold as needed
+  //   };
 
-    window.addEventListener('resize', handleResize);
-    handleResize();
+  //   window.addEventListener('resize', handleResize);
+  //   handleResize();
 
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
+  //   return () => window.removeEventListener('resize', handleResize);
+  // }, []);
 
-  useEffect(() => {
-    const options = {
-      root: null, // Use the viewport as the root
-      rootMargin: '0px', // No margin
-      threshold: 0.5 // Trigger when half of the container is visible
-    };
+  // useEffect(() => {
+  //   const options = {
+  //     root: null, // Use the viewport as the root
+  //     rootMargin: '0px', // No margin
+  //     threshold: 0.5 // Trigger when half of the container is visible
+  //   };
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          initializeInfiniteScroll(entry.target);
-          observer.unobserve(entry.target); // Stop observing once initialized
-        }
-      });
-    }, options);
+  //   const observer = new IntersectionObserver((entries) => {
+  //     entries.forEach(entry => {
+  //       if (entry.isIntersecting) {
+  //         initializeInfiniteScroll(entry.target);
+  //         observer.unobserve(entry.target); // Stop observing once initialized
+  //       }
+  //     });
+  //   }, options);
 
-    if (isMobile && centerContainerRef.current) {
-      observer.observe(centerContainerRef.current);
-    }
-    if (!isMobile) {
-      if (leftContainerRef.current) observer.observe(leftContainerRef.current);
-      if (rightContainerRef.current) observer.observe(rightContainerRef.current);
-      if (centerContainerRef.current) observer.observe(centerContainerRef.current);
-    }
+  //   if (isMobile && centerContainerRef.current) {
+  //     observer.observe(centerContainerRef.current);
+  //   }
+  //   if (!isMobile) {
+  //     if (leftContainerRef.current) observer.observe(leftContainerRef.current);
+  //     if (rightContainerRef.current) observer.observe(rightContainerRef.current);
+  //     if (centerContainerRef.current) observer.observe(centerContainerRef.current);
+  //   }
 
-    return () => {
-      if (!isMobile) {
-        if (leftContainerRef.current) observer.unobserve(leftContainerRef.current);
-        if (rightContainerRef.current) observer.unobserve(rightContainerRef.current);
-        if (centerContainerRef.current) observer.unobserve(centerContainerRef.current);
-      }
-      if (isMobile && centerContainerRef.current) {
-        observer.unobserve(centerContainerRef.current);
-      }
-    };
-  }, [isMobile]);
+  //   return () => {
+  //     if (!isMobile) {
+  //       if (leftContainerRef.current) observer.unobserve(leftContainerRef.current);
+  //       if (rightContainerRef.current) observer.unobserve(rightContainerRef.current);
+  //       if (centerContainerRef.current) observer.unobserve(centerContainerRef.current);
+  //     }
+  //     if (isMobile && centerContainerRef.current) {
+  //       observer.unobserve(centerContainerRef.current);
+  //     }
+  //   };
+  // }, [isMobile]);
 
   const initializeInfiniteScroll = (container) => {
     let cardHeight = 0;
@@ -105,33 +107,28 @@ const TestimonialSection = ({ testimonials }) => {
 
   return (
     <div className='testimonial-section'>
-      <div className='blurred-section'></div>
-      <div className='blurred-section-bottom'></div>
-      {isMobile ? (
-        <div className='testimonial-container' ref={centerContainerRef}>
-          {testimonials.map((testimonial, index) => (
-            <TestimonialMedium tweetId={testimonial.tweetId} key={`mobile_${index}`} />
-          ))}
+        <div className='testimonials-wrapper'>
+            <div className='testimonial-left'>
+            <Marquee speed={25} pauseOnHover direction='left' autoFill ref={leftContainerRef}>
+  {testimonialsLeft.map((testimonial, index) => (
+    <div key={`left_${index}`} style={{ marginRight: '20px' }}> {/* Adjust the margin-right as needed */}
+      <TestimonialMedium tweetId={testimonial.tweetId} />
+    </div>
+  ))}
+</Marquee>
+
+              </div>
+            <div className='testimonial-center'>
+            <Marquee speed={25} pauseOnHover direction='right' autoFill ref={centerContainerRef}>
+  {testimonialsCenter.map((testimonial, index) => (
+    <div key={`center_${index}`} style={{ marginRight: '20px' }}> {/* Adjust the margin-right as needed */}
+      <TestimonialMedium tweetId={testimonial.tweetId} />
+    </div>
+  ))}
+</Marquee>
+
+            </div>
         </div>
-      ) : (
-        <>
-          <div className='testimonial-container testimonial-left' ref={leftContainerRef}>
-            {testimonialsLeft.map((testimonial, index) => (
-              <TestimonialMedium tweetId={testimonial.tweetId} key={`left_${index}`} />
-            ))}
-          </div>
-          <div className='testimonial-container testimonial-center' ref={centerContainerRef}>
-            {testimonialsCenter.map((testimonial, index) => (
-              <TestimonialMedium tweetId={testimonial.tweetId} key={`center_${index}`} />
-            ))}
-          </div>
-          <div className='testimonial-container testimonial-right' ref={rightContainerRef}>
-            {testimonialsRight.map((testimonial, index) => (
-              <TestimonialMedium tweetId={testimonial.tweetId} key={`right_${index}`} />
-            ))}
-          </div>
-        </>
-      )}
     </div>
   );
 };
