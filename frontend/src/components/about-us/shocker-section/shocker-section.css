@@ -57,6 +57,9 @@
 }
 
 @media screen and (max-width: 768px) {
+    .shocker-graph-desktop {
+        display: none;
+    }
     .shocker-title-section .title-blue {
         display: block;
     }

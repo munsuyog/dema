@@ -7,7 +7,7 @@ const TermsOfService = () => {
   return (
     <>
         <Navbar />
-        <Tos />
+        <Tos page="toss" title="Terms of Service and Conditions of Use" />
         <Footer />
     </>
   )

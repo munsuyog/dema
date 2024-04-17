@@ -69,7 +69,10 @@
 
 @media screen and (max-width: 768px) {
     .card1 {
-        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+    .card1 svg {
+        width: 80%;
     }
     .card1-left, .card2-left, .card3-left {
         width: 100%;
@@ -78,10 +81,10 @@
         width: 100%;
     }
     .card2 {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     .card3 {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     .reveal-card {
         height: auto;

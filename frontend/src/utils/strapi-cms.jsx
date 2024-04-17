@@ -205,9 +205,9 @@ const URL = 'http://154.53.59.178:30002'
     }
   }
 
-  export const getTos = async (author) => {
+  export const getTos = async (page) => {
     try {
-      const response = await fetch(`http://154.53.59.178:30002/api/toss?sort=id&populate=*`, {
+      const response = await fetch(`http://154.53.59.178:30002/api/${page}?sort=id&populate=*`, {
         headers: {
           Authorization: `Bearer ${accessToken}`,
         },

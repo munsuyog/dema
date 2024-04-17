@@ -1,25 +1,20 @@
 import React from 'react';
-import ReactPlayer from 'react-player';
+// import ReactPlayer from 'react-player';
 
 const VideoComponent = ({ url, onEnded }) => {
   return (
     <div>
-      <ReactPlayer
-        url={url}
+      <video
+        src={url}
         controls={false}
         width="100%"
         height="auto"
-        config={{
-          file: {
-            forceVideo: true,
-          },
-        }}
         playsinline
         muted
         onEnded={onEnded}
-        playing={true}
+        autoPlay
         preload="auto"
-        loop={true}
+        loop
       />
     </div>
   );

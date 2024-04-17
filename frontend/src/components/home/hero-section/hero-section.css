@@ -54,7 +54,7 @@
     align-items: center;
 }
 .title-anywhere {
-    font-family: var(--font-architects-daughter);
+    /* font-family: var(--font-open-sans); */
     color: var(--secondary-500);
     font-weight: 400;
 }
@@ -138,5 +138,9 @@ span.relative {
     .title-icon svg {
         width: 40px;
         height: 40px;
+    }
+    .title-cart-vector svg {
+        width: 40px;
+        height: auto;
     }
   }

@@ -52,19 +52,19 @@ const Footer = () => {
                 <div className='footer-links-col'>
                     <div className='footer-title'>Legal</div>
                     <div className='footer-link'>
-                            <a href='#'>TOS</a>
+                            <a href='/termsofservice'>TOS</a>
                     </div>
                     <div className='footer-link'>
-                            <a href='#'>Privacy</a>
+                            <a href='/privacy'>Privacy</a>
                     </div>
                     <div className='footer-link'>
-                            <a href='#'>Pricing</a>
+                            <a href='/pricing'>Pricing</a>
                     </div>
                     <div className='footer-link'>
-                            <a href='#'>Shipping</a>
+                            <a href='/shipping'>Shipping</a>
                     </div>
                     <div className='footer-link'>
-                            <a href='#'>Returns</a>
+                            <a href='/returns'>Returns</a>
                     </div>
                 </div>
                     </div>

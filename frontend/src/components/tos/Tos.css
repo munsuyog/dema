@@ -1,12 +1,27 @@
 .tos-heading {
-    color: var(--primary-500);
+    color: var(--secondary-500);
     text-align: center;
     margin-top: 5%;
     margin-bottom: 5%;
     font-weight: 600;
 }
+.tos-lastupdated {
+    margin-bottom: 5%;
+    text-align: center;
+    font-size: 14px;
+}
 .tos-title {
     margin-top: 2%;
     margin-bottom: 2%;
-    font-weight: 500 !important;
+    font-weight: 600 !important;
+}
+.tos-body p, li {
+    font-size: 16px;
+    font-family: var(--font-open-sans);
+    line-height: 30px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+ul {
+    margin-left: 2%;
 }

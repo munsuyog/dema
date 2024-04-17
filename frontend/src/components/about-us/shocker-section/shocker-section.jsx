@@ -248,7 +248,10 @@ const ShockerSection = () => {
           
 
        </svg>
-      </div>
+       </div>
+       <div className="shocker-graph-mobile">
+       <img src="/images/about/shocker-section/graph-mobile.svg" width="100%" height="auto" alt="graph" />
+       </div>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="72"

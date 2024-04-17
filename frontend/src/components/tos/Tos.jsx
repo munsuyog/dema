@@ -3,11 +3,11 @@ import './Tos.css'
 import { getTos } from '../../utils/strapi-cms';
 import Markdown from 'react-markdown';
 
-const Tos = () => {
+const Tos = ({page, title}) => {
   const [tos, setTos] = useState();
   useEffect(() => {
     const fetchTos = async () => {
-      const tosData = await getTos();
+      const tosData = await getTos(page);
       console.log(tosData)
       setTos(tosData)
     }
@@ -21,11 +21,11 @@ const Tos = () => {
       };
   return (
     <section className='tos-section section-padding fixed-width'>
-        <h1 className='tos-heading' >Terms of Service</h1>
+        <h1 className='tos-heading' >{title}</h1>
         {tos && tos.data && tos.data.map((tos, index) => (
           <div>
             {tos.attributes.title && (
-            <h2 className='tos-title'>{tos.attributes.title}</h2>
+            <h3 className='tos-title'>{tos.attributes.title}</h3>
             )}
             <Markdown className="tos-body">{tos.attributes.body}</Markdown>
           </div>
