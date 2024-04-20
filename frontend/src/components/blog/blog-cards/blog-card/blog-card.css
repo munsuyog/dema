@@ -9,7 +9,7 @@
 }
 .blog-card-image {
     width: 100%;
-    height: 400px !important;
+    height: 450px !important;
     object-fit: cover;
     border-radius: 20px;
 }
@@ -23,6 +23,7 @@
     font-size: 18px;
     color: rgba(13, 13, 13, 0.8);
     line-height: 28.8px;
+    margin-top: 2%;
 }
 .blog-card-tag {
     font-size: 14px;
@@ -48,7 +49,7 @@
 }
 .blog-card-title-wrapper p {
     font-size: 14px;
-    margin-top: 5%;
+    margin-top: 1%;
 }
 .blog-card-title-wrapper h3 {
     position: relative;

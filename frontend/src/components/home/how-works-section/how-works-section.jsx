@@ -11,10 +11,10 @@ import VideoComponent from '../../common/VideoComponent/VideoComponent';
 const HowWorksSection = () => {
     const [highlightedFeatureIndex, setHighlightedFeatureIndex] = useState(0);
     const features = [
-        { id: 1, title: "Download the app", video: <VideoComponent onEnded={() => {setHighlightedFeatureIndex((prevIndex) => (prevIndex+1)%4)}} url={'/images/home/free-ownership/video1.mp4'} /> },
-        { id: 2, title: "Browse & Add To Cart", video: <VideoComponent onEnded={() => {setHighlightedFeatureIndex((prevIndex) => (prevIndex+1)%4)}} url={"/images/home/free-ownership/video2.mp4"} /> },
-        { id: 3, title: "Checkout & Pay", video: <VideoComponent onEnded={() => {setHighlightedFeatureIndex((prevIndex) => (prevIndex+1)%4)}} url={"/images/home/free-ownership/video3.mp4"} /> },
-        { id: 4, title: "Save & get free ownership", video: <VideoComponent onEnded={() => {setHighlightedFeatureIndex((prevIndex) => (prevIndex+1)%4)}} url={"/images/home/free-ownership/video1.mp4"} /> }
+        { id: 1, title: "Download the app", video: <VideoComponent onEnded={() => {setHighlightedFeatureIndex((prevIndex) => (prevIndex+1)%4)}} url={'/images/home/free-ownership/video1.webm'} /> },
+        { id: 2, title: "Browse & Add To Cart", video: <VideoComponent onEnded={() => {setHighlightedFeatureIndex((prevIndex) => (prevIndex+1)%4)}} url={"/images/home/free-ownership/video2.webm"} /> },
+        { id: 3, title: "Checkout & Pay", video: <VideoComponent onEnded={() => {setHighlightedFeatureIndex((prevIndex) => (prevIndex+1)%4)}} url={"/images/home/free-ownership/video3.webm"} /> },
+        { id: 4, title: "Save & get free ownership", video: <VideoComponent onEnded={() => {setHighlightedFeatureIndex((prevIndex) => (prevIndex+1)%4)}} url={"/images/home/free-ownership/video1.webm"} /> }
     ];
 
     return (

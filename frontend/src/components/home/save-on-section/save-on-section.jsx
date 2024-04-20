@@ -12,9 +12,9 @@ import VideoComponent from "../../common/VideoComponent/VideoComponent";
 const SaveOnSection = () => {
   const [highlightedFeature, setHighlightedFeature] = useState(0);
   const features = [
-    {id: 1, title: "Auto-select the lowest price seller", video: <VideoComponent onEnded={() => {setHighlightedFeature((prevIndex) => (prevIndex+1)%3)}} url={'/images/home/free-ownership/video1.mp4'} /> },
-    {id: 2, title: "Auto-select the lowest price seller", video: <VideoComponent onEnded={() => {setHighlightedFeature((prevIndex) => (prevIndex+1)%3)}} url={'/images/home/free-ownership/video2.mp4'} /> },
-    {id: 3, title: `Get <span class='dema-font'>d<span class='title-blue'>e</span>ma</span>'s 5% savings`, video: <VideoComponent onEnded={() => {setHighlightedFeature((prevIndex) => (prevIndex+1)%3)}} url={'/images/home/free-ownership/video3.mp4'} /> }
+    {id: 1, title: "Auto-select the lowest price seller", video: <VideoComponent onEnded={() => {setHighlightedFeature((prevIndex) => (prevIndex+1)%3)}} url={'/images/home/free-ownership/video1.webm'} /> },
+    {id: 2, title: "Auto-select the lowest price seller", video: <VideoComponent onEnded={() => {setHighlightedFeature((prevIndex) => (prevIndex+1)%3)}} url={'/images/home/free-ownership/video2.webm'} /> },
+    {id: 3, title: `Get <span class='dema-font'>d<span class='title-blue'>e</span>ma</span>'s 5% savings`, video: <VideoComponent onEnded={() => {setHighlightedFeature((prevIndex) => (prevIndex+1)%3)}} url={'/images/home/free-ownership/video3.webm'} /> }
   ]
   console.log(highlightedFeature)
   // useEffect(() => {

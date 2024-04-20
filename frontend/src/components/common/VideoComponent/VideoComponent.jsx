@@ -1,21 +1,22 @@
 import React from 'react';
-// import ReactPlayer from 'react-player';
 
 const VideoComponent = ({ url, onEnded }) => {
   return (
     <div>
       <video
-        src={url}
         controls={false}
         width="100%"
         height="auto"
-        playsinline
+        playsInline
         muted
         onEnded={onEnded}
         autoPlay
         preload="auto"
         loop
-      />
+      >
+        <source src={url} type='video/webm' />
+        Your browser does not support the video tag.
+      </video>
     </div>
   );
 };

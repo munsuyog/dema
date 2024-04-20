@@ -109,7 +109,7 @@ const TestimonialSection = ({ testimonials }) => {
     <div className='testimonial-section'>
         <div className='testimonials-wrapper'>
             <div className='testimonial-left'>
-            <Marquee speed={25} pauseOnHover direction='left' autoFill ref={leftContainerRef}>
+            <Marquee gradient="rgba(248, 251, 253, 1), rgba(248, 251, 253, 0)" gradientWidth="3%" speed={35} pauseOnHover direction='left' autoFill ref={leftContainerRef}>
   {testimonialsLeft.map((testimonial, index) => (
     <div key={`left_${index}`} style={{ marginRight: '20px' }}> {/* Adjust the margin-right as needed */}
       <TestimonialMedium tweetId={testimonial.tweetId} />
@@ -119,7 +119,7 @@ const TestimonialSection = ({ testimonials }) => {
 
               </div>
             <div className='testimonial-center'>
-            <Marquee speed={25} pauseOnHover direction='right' autoFill ref={centerContainerRef}>
+            <Marquee gradient="rgba(248, 251, 253, 1), rgba(248, 251, 253, 0)" gradientWidth="3%" speed={35} pauseOnHover direction='right' autoFill ref={centerContainerRef}>
   {testimonialsCenter.map((testimonial, index) => (
     <div key={`center_${index}`} style={{ marginRight: '20px' }}> {/* Adjust the margin-right as needed */}
       <TestimonialMedium tweetId={testimonial.tweetId} />

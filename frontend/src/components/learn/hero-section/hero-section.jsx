@@ -20,7 +20,7 @@ const LearnHero = () => {
                         </h1>
                     </div>
                     <p className='learn-hero-subtitle'>Your educational guide to Decentralised e-commerce. Learn how Dema works, how we reduce costs, how everyone benefits, what is Dema wallet,  what is on-chain reputation, how and why they are critical to a well functioning marketplace. </p>
-                    <ButtonPrimary text="Let's Get Started" link="#" width={device != 'desktop' ? "250px" : "25%"} />
+                    <ButtonPrimary text="Let's Get Started" link="#" width={device != 'desktop' ? "250px" : "25%"} fontSize={device != "desktop" ? "12px" : "14px"} />
                 </div>
             </div>
             <img src="/images/learn/hero-section/learn-banner.svg" width={550} height={550} alt='learn-badge' className='learn-hero-banner' />

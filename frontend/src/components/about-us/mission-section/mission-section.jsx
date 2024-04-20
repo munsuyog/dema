@@ -164,7 +164,7 @@ const MissionSection = () => {
             <div className="mission" key={index}>
                 <img src={`http://154.53.59.178:30002${mission.attributes.image.data.attributes.url}`} width={220} height={220} alt="mission-image" className="mission-image" />
                 <p className="mission-text">{mission.attributes.text}</p>
-                <ButtonPrimary text="Learn More" bgColor="#22E393" color="black" width="100%" link="/learn" fontSize={device != 'desktop' ? "12px" :"14px"}/>
+                <ButtonPrimary text="Learn More" bgColor="#22E393" color="black" width="100%" link="/learn" fontSize={device != 'desktop' ? "12px" :"16px"}/>
             </div>
         ))}
       </div>

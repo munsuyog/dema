@@ -20,7 +20,7 @@ const CommunitySection = () => {
             </h2>
             <p>Online attention costs have skyrocketed & startups spend a lot of it to build a user base; an approach that ends up treating users as tools. We wanted “real community” so we thought what if we gave users equity just for using the platform. We’re betting they would tell others: More savings, more equity; so we’re giving away {">"}50%!</p>
             <div className='community-button-wrapper'>
-                <ButtonPrimary text="Learn More" fontSize={device != "desktop" ? "12px" : "14px"} link="/learn" />
+                <ButtonPrimary text="Learn More" fontSize={device != "desktop" ? "12px" : "16px"} link="/learn" />
             </div>
         </div>
         <div className='community-image-section'>

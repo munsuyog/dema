@@ -1,6 +1,7 @@
 #about-hero {
     background: rgba(239, 247, 255, 1);
     position: relative;
+    margin-bottom: 10%;
 }
 .about-hero {
     display: flex;

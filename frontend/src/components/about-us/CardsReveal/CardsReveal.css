@@ -23,9 +23,13 @@
 }
 .card2 {
     background: linear-gradient(180deg, #F2F0D5 0%, rgba(239, 247, 255, 1) 100%);
+    position: sticky;
+    top: 0px;
 }
 .card3 {
-    background: linear-gradient(180deg, rgba(222, 226, 250, 1) 0%, rgba(239, 247, 255, 1) 100%);;
+    background: linear-gradient(180deg, rgba(222, 226, 250, 1) 0%, rgba(239, 247, 255, 1) 100%);
+    position: sticky;
+    top: 0px;
 }
 .card1-left, .card2-left, .card3-left {
     width: 50%;

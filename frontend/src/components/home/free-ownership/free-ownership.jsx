@@ -17,17 +17,17 @@ const FreeOwnership = () => {
     {
       id: 1,
       title: "Shop & Earn",
-      video: <VideoComponent onEnded={() => {setHighlightedFeatureIndex((prevIndex) => (prevIndex+1)%3)}} url={'/images/home/free-ownership/video1.mp4'} />,
+      video: <VideoComponent onEnded={() => {setHighlightedFeatureIndex((prevIndex) => (prevIndex+1)%3)}} url={'/images/home/free-ownership/video1.webm'} />,
     },
     {
       id: 2,
       title: "Refer & Earn",
-      video: <VideoComponent onEnded={() => {setHighlightedFeatureIndex((prevIndex) => (prevIndex+1)%3)}} url={'/images/home/free-ownership/video2.mp4'} />,
+      video: <VideoComponent onEnded={() => {setHighlightedFeatureIndex((prevIndex) => (prevIndex+1)%3)}} url={'/images/home/free-ownership/video2.webm'} />,
     },
     {
       id: 3,
       title: "Sell & Earn",
-      video: <VideoComponent onEnded={() => {setHighlightedFeatureIndex((prevIndex) => (prevIndex+1)%3)}} url={'/images/home/free-ownership/video3.mp4'} />,
+      video: <VideoComponent onEnded={() => {setHighlightedFeatureIndex((prevIndex) => (prevIndex+1)%3)}} url={'/images/home/free-ownership/video3.webm'} />,
     },
   ];
   const {device} = useDevice();

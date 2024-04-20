@@ -46,7 +46,7 @@ const Footer = () => {
                             <a href='/blog'>Blog</a>
                     </div>
                     <div className='footer-link'>
-                            <a href='#'>Sell on <span className='title-dema'>d<span className='title-blue'>e</span>ma</span></a>
+                            <a href='#'>Sell on <span className='title-dema'>dema</span></a>
                     </div>
                 </div>
                 <div className='footer-links-col'>
