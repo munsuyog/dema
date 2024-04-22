@@ -18,17 +18,17 @@ socket.on('connect', () => {
     console.log('Socket connected successfully.');
 
     // Listen for blog-related events
-    socket.on('Reactions:create', (data) => {
+    socket.on('Blog:create', (data) => {
         console.log('Blog created!');
         console.log(data);
     });
 
-    socket.on('Reactions:update', (data) => {
+    socket.on('Blog:update', (data) => {
         console.log('Blog updated!');
         console.log(data);
     });
 
-    socket.on('Reactions:delete', (data) => {
+    socket.on('Blog:delete', (data) => {
         console.log('Blog deleted!');
         console.log(data);
     });
