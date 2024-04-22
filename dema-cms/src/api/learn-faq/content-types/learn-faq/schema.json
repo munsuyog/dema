@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "learn_faqs",
+  "info": {
+    "singularName": "learn-faq",
+    "pluralName": "learn-faqs",
+    "displayName": "Learn-FAQ",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": false
+    },
+    "tab": {
+      "displayName": "Tab",
+      "type": "component",
+      "repeatable": true,
+      "component": "tab.tab"
+    },
+    "highlightWord": {
+      "type": "string",
+      "required": false
+    },
+    "headerImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "points": {
+      "displayName": "points",
+      "type": "component",
+      "repeatable": true,
+      "component": "points.points"
+    },
+    "isPointsFAQ": {
+      "type": "boolean",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    }
+  }
+}

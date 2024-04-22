@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "about_missions",
+  "info": {
+    "singularName": "about-mission",
+    "pluralName": "about-missions",
+    "displayName": "About-Mission"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "text": {
+      "type": "text",
+      "required": true
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

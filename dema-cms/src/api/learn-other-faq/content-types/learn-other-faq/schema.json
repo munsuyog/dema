@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "learn_other_faqs",
+  "info": {
+    "singularName": "learn-other-faq",
+    "pluralName": "learn-other-faqs",
+    "displayName": "Learn-OtherFAQ"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "faq": {
+      "displayName": "faq",
+      "type": "component",
+      "repeatable": true,
+      "component": "faq.faq",
+      "required": true
+    }
+  }
+}

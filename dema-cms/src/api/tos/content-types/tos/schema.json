@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "toss",
+  "info": {
+    "singularName": "tos",
+    "pluralName": "toss",
+    "displayName": "TOS",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "body": {
+      "type": "richtext"
+    },
+    "lastUpdated": {
+      "type": "string"
+    }
+  }
+}

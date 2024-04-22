@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_reactions_reactions",
+  "info": {
+    "displayName": "Reactions",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "comments": {
+      "displayName": "Comments",
+      "type": "component",
+      "repeatable": true,
+      "component": "comments.comments"
+    },
+    "claps": {
+      "type": "biginteger"
+    }
+  }
+}
