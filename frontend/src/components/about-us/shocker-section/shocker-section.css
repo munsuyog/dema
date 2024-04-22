@@ -1,6 +1,8 @@
 #shocker-section {
     background: linear-gradient(rgba(239, 247, 255, 1),rgba(255, 255, 255, 1));
     margin-top: 5%;
+    overflow: hidden;
+    transition: all 1s ease;
 }
 .shocker-section {
     background: linear-gradient(rgba(239, 247, 255, 1),rgba(255, 255, 255, 1));
@@ -32,6 +34,8 @@
 }
 .shocker-graph-desktop {
     width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 .shocker-graph-desktop text {
     font-family: var(--font-open-sans);
@@ -55,7 +59,27 @@
 .shocker-graph-mobile {
     display: none;
 }
+.shocker-title {
+    font-size: 65px;
+    cursor: default;
+    user-select: none;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    transition: color 0.3s ease;
+    position: relative;
+}
+.shockers-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 5%;
+}
 
+.shocker-content {
+    width: 25%;
+    font-weight: 600;
+    font-size: 15px;
+    transition: all 0.5s ease;
+}
 @media screen and (max-width: 768px) {
     .shocker-graph-desktop {
         display: none;

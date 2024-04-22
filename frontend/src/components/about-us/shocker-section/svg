@@ -1,0 +1,181 @@
+      <svg id="viewbox" viewBox="0 0 13758 4935" fill="none" xmlns="http://www.w3.org/2000/svg" style={{display: inView ? 'block' : 'none', width: '100%', height: 'auto'}}>     
+           <g>
+
+               <rect fade="" style={{ '--k': 0, 'rx': 'var(--rounded-corners)' }} width="1342" height="4885" fill="#CCCCCC"></rect>
+
+               <text fill="black">
+                   <tspan y="2400" x="425">Amazon</tspan>  
+                   <tspan dy="310" dx="-400">24%</tspan>  
+               </text>
+   
+           </g>
+
+           <g class="group" fade="" style={{"--k":1}}>
+               <g class="rect">
+                   <rect x="1556" y="0" width="1342" height="1200" fill="#FC7434"></rect>
+                   <text fill="black">
+                       <tspan y="600" x="1950">Subsidy</tspan>    
+                       <tspan dy="152" dx="-520">other Biz</tspan>    
+                   </text>
+               </g>
+               <g class="info-text" fade="">
+                   
+                   <text y="600" x="3556" fill="black">
+                       <tspan font-size="180">$40B in Alexa investment.</tspan>
+                       
+                   </text>
+               </g>
+   
+           </g>
+          
+           <g class="group" fade="" style={{"--k":2}}>
+               <g class="rect">
+                   <rect x="3104" y="1222" width="1342" height="1200" rx="24" fill="#FC7434"></rect>
+                   <text fill="black">
+                       <tspan y="1870" x="3610">Profit</tspan>    
+                   </text>
+               </g>
+               <g class="info-text" fade="">
+                   
+                   <text y="1692" x="5104" fill="black">
+                        <tspan font-size="180">Dema doesn&apos;t generate any profit,</tspan>
+                       <tspan x="5104" dy="230" font-size="180">it&apos;s core aim is to serve shoppers and sellers (6% -&gt; 0%)</tspan>
+                   </text>
+               </g>
+           </g>
+           
+           <g class="group" fade="" style={{"--k":3}}>
+               <g class="rect">
+               <rect x="4740" y="2422" width="1342" height="800" rx="24" fill="#D0DD40"></rect>
+               <text fill="black">
+                   <tspan y="2870" x="4964">Sales &amp; Admin</tspan>  
+               </text>
+               </g>
+               <g class="info-text" fade="">
+                   
+                   <text y="2692" x="6540" fill="black">
+                       <tspan font-size="180">Dema streamlines operations without the need</tspan>
+                       <tspan x="6540" dy="230" font-size="180">for 100K+ employees.</tspan>
+                   </text>
+               </g>
+   
+   
+           </g>
+
+           <g class="group" fade="" style={{"--k":4}}>
+               <g class="rect">
+               <rect x="6333" y="3232" width="1342" height="700" rx="24" fill="#D0DD40"></rect>
+               <text fill="black">
+                   <tspan y="3630" x="6864">R&amp;D</tspan>  
+               </text>
+               </g>
+
+               <g class="info-text" fade="">
+                   
+                   <text y="3520" x="8000" fill="black">
+                       <tspan font-size="180">Dema focuses on impactful innovation,</tspan>
+                       <tspan x="8000" dy="230" font-size="180">not incremental changes.</tspan>
+                   </text>
+               </g>
+   
+           </g>
+
+           <g class="group" fade="" style={{"--k":5}}>
+               <g class="rect">
+               <rect x="7813" y="3981" width="1342" height="500" rx="24" fill="#D0DD40"></rect>
+               <text fill="black">
+                   <tspan y="4285" x="8100">Pmt Process</tspan>  
+               </text>
+               </g>
+
+               <g class="info-text" fade="">
+                  
+                   <text y="4180" x="9250" fill="black">
+                       <tspan font-size="180">We don&apos;t let Visa, Chase, BoFA to </tspan>
+                       <tspan x="9250" dy="230" font-size="180">collect toll on every order</tspan>
+                   </text>
+               </g>
+   
+           </g>
+           
+           <g class="group" fade="" style={{"--k":6}}>
+               <g class="rect">
+               <rect x="9294" y="4480" width="1342" height="300" rx="24" fill="#22E393"></rect>
+               <text fill="black">
+                   <tspan y="4685" x="9580">Cust Support</tspan>  
+               </text>
+               </g>
+
+               <g class="info-text" fade="">
+                  
+                   <text y="4180" x="9250" fill="black">
+                       <tspan font-size="180">Dema matches or exceeds </tspan>
+                       <tspan x="9250" dy="230" font-size="180">customer service.</tspan>
+                   </text>
+               </g>
+           </g>
+
+           <g class="group" fade="" style={{"--k":7}}>
+               <g class="rect">
+               <rect x="10797" y="4785" width="1342" height="100" rx="24" fill="#22E393"></rect>
+               <rect x="10797" y="4480" width="1342" height="300" rx="24" fill="transparent"></rect>
+               <text fill="black">
+                   <tspan y="4780" x="11300">Infra</tspan>  
+               </text>
+               </g>
+
+               <g class="info-text" fade="">
+                 
+                   <text y="4180" x="9250" fill="black">
+                       <tspan font-size="180">Dema’s decentralized infra is</tspan>
+                       <tspan x="9250" dy="230" font-size="180">slightly costlier due to redundancy.</tspan>
+
+                   </text>
+               </g>
+   
+           </g>
+    
+
+           <g class="dema-group" style={{"--l":9}}>
+           
+               <rect style={{"--k":1 , "--y":0}} x="12416" width="1342" y="4445" height="2" rx="1" fill="#3830C9"></rect>
+               <rect style={{"--k":2, "--y":1222}} x="12416" y="4445" width="1342" height="2" rx="1" fill="#3830C9" stroke="#3830C9"></rect>
+               <rect style={{"--k":3, "--y":2422}} x="12416" y="4445" width="1342" height="105" rx="24" fill="#3830C9"></rect>
+               <rect style={{"--k":4, "--y":3232}} x="12416" y="4445" width="1342" height="105" rx="24" fill="#3830C9"></rect>
+               <rect style={{"--k":5, "--y":3981}} x="12416" y="4545" width="1342" height="45" rx="20" fill="#3830C9"></rect>
+               <rect style={{"--k":6, "--y":4480}} x="12416" y="4585" width="1342" height="205" rx="24" fill="#3830C9"></rect>
+               <rect style={{"--k":7, "--y":4785}} x="12416" y="4785" width="1342" height="100" rx="24" fill="#3830C9"></rect>
+               
+               
+               <text drop="" fade="" style={{"--k":18, "--y":0}} fill="white">
+                   <tspan y="4500" x="12950">Dema</tspan>  
+                   <tspan y="4780" x="13050">3%</tspan>  
+               </text>
+   
+               
+           </g>
+           <g class="dema-group2" style={{"--k":9}}>
+       
+<rect style={{ '--k': 7, '--y': 0 }} x="12416" width="1342" y="4445" height="2" fill="#3830C9"></rect>
+<rect style={{ '--k': 8, '--y': 1222 }} x="12416" y="4445" width="1342" height="2" fill="#3830C9"></rect>
+<rect style={{ '--k': 9, '--y': 2422 }} x="12416" y="4445" width="1342" height="105" fill="#3830C900"></rect>
+<rect style={{ '--k': 10, '--y': 3232 }} x="12416" y="4445" width="1342" height="105" fill="#3830C9"></rect>
+<rect style={{ '--k': 11, '--y': 3981 }} x="12416" y="4545" width="1342" height="45" fill="#3830C9"></rect>
+<rect style={{ '--k': 12, '--y': 4480 }} x="12416" y="4585" width="1342" height="205" fill="#3830C9"></rect>
+<rect style={{ '--k': 13, '--y': 4785 }} x="12416" y="4785" width="1342" height="100" fill="#3830C9"></rect>
+<rect style={{ '--k': 13, '--y': 4285 }} x="12416" y="4395" width="1342" height="540" drop="" className="test"></rect>
+
+             
+               
+               <text drop="" style={{"--k":18, "--y":0}} fill="white">
+                   <tspan y="4600" x="12950">Dema</tspan>  
+                   <tspan y="4780" x="13050">3%</tspan>  
+               </text>
+   
+               
+           </g>
+           
+           
+          
+
+       </svg>
