@@ -29,6 +29,7 @@
     "react-tweet": "^3.2.1",
     "react-type-animation": "^3.2.0",
     "recharts": "^2.12.5",
+    "socket.io-client": "^4.7.5",
     "swiper": "^11.1.1",
     "victory": "^37.0.2",
     "victory-chart": "^37.0.2"
