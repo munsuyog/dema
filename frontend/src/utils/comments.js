@@ -23,7 +23,7 @@ socket.on('connect', () => {
         console.log(data);
     });
 
-    socket.on('blog::update', (data) => {
+    socket.on('blog:update', (data) => {
         console.log('Blog updated!');
         console.log(data);
     });

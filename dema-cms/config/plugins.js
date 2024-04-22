@@ -4,7 +4,7 @@ module.exports = ({ env }) => ({
 		enabled: true,
 		config: {
 			// This will listen for all supported events on the article content type
-            contentTypes: ['api::blog.Reactions'],
+            contentTypes: [{ uid: 'api:blog.blog', actions: ['create', 'update', 'delete'] }],
               "events":[
           {
             "name": "connection",
