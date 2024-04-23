@@ -54,7 +54,7 @@ const CardsReveal = () => {
               bgColor="var(--primary-500)"
             />
           </div>
-          <motion.div className="card1-right" style={{background: 'linear-gradient(180deg, #E7FFFA 0%, rgba(242, 251, 249, 0) 100%)'}} whileInView={{background: "var(--primary-500)"}} viewport={{amount: 0.5}}>
+          <motion.div className="card1-right" style={{background: 'var(--primary-100)'}} whileInView={{background: "var(--primary-500)"}} viewport={{amount: 0.5}}>
             <svg
               width="100%"
               height="auto"
@@ -742,23 +742,11 @@ const CardsReveal = () => {
         >
           <div className="card3-left">
             <h1>
-              Our journey to near no-change UX, low cost &{" "}
-              <span className="title-blue">day 1 incentives?</span>
+              <span className="title-blue">Shocker</span> 🙀 Marketplaces can run on 3%.
             </h1>
             <p>
-              While we knew of the rising prices, fees and ad costs, ~300
-              sellers & shoppers interviews later, they told us they didn’t want
-              to set up new accounts, new storefronts or get used to new
-              policies. They wanted lower fees & discounts{" "}
-              <b>starting day one</b>. We’re users so we understood! Some work
-              later & it turns out we could deliver and lower prices/fees over
-              time... So we got to building!
+            Charging just enough to run an efficient marketplace reduces fees by {">"}90%.
             </p>
-            <ButtonPrimary
-              text="Learn More"
-              link="/learn"
-              fontSize={device != "desktop" ? "12px" : "0.8vw"}
-            />
           </div>
           <div className="card4-right">
             <CompareAnimation />
