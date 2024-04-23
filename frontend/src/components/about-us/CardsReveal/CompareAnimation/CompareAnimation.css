@@ -1,0 +1,44 @@
+.compare-amazon, .compare-dema {
+    background-image: url('/images/about/CardReveal/Receipt.svg');
+    width: 450px;
+    height: 800px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 6%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.compare-animation {
+    display: flex;
+}
+.compare-logo svg {
+    width: 100px;
+    height: 60px;
+}
+.compare-selling-fees {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.compare-green-tick svg, .compare-red-tick svg{
+    width: 40px;
+    height: auto;
+}
+.selling-fees-text {
+    font-size: 20px;
+}
+.selling-fees-number {
+    font-size: 28px;
+    font-family: var(--font-open-sans);
+    font-weight: 600;
+}
+.compare-marketplace-operations {
+    width: 100%;
+}
+.compare-marketplace-operations .compare-marketplace-operations-head {
+    width: 100%;
+    font-weight: 700;
+    font-size: 18px;
+    color: rgba(112, 112, 112, 1);
+}

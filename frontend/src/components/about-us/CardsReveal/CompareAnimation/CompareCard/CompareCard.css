@@ -1,0 +1,92 @@
+.compare-card {
+    background-image: url('/images/about/CardReveal/Receipt.svg');
+    width: 380px;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 6%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    gap: 5px;
+}
+.compare-animation {
+    display: flex;
+}
+.compare-logo svg {
+    width: 100px;
+    height: 60px;
+}
+.compare-selling-fees {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+.compare-tick svg{
+    width: 40px;
+    height: auto;
+}
+.selling-fees-text {
+    font-size: 18px;
+}
+.selling-fees-number {
+    font-size: 24px;
+    font-family: var(--font-open-sans);
+    font-weight: 700;
+}
+.compare-marketplace-operations {
+    width: 100%;
+}
+.compare-marketplace-operations-head {
+    width: 100%;
+    font-weight: 700;
+    font-size: 14px;
+    color: rgba(112, 112, 112, 1);
+}
+.compare-divider {
+    height: 1.5px;
+    width: 100%;
+    background-color: rgba(237, 237, 237, 1);
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.compare-marketplace-title {
+    font-family: var(--font-open-sans);
+    font-size: 12px;
+    color: rgba(112, 112, 112, 1);
+    font-weight: 600;
+}
+.compare-marketplace-operations {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.compare-marketplace-operation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.compare-marketplace-percent {
+    color: rgba(18, 18, 18, 1);
+    font-family: var(--font-open-sans);
+    font-weight: 700;
+    font-size: 12px;
+}
+.compare-marketplace-highlight-text {
+    font-size: 12px;
+    font-weight: 800;
+    color: rgba(112, 112, 112, 1);
+}
+.compare-marketplace-highlight {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom:70px;
+}
+.compare-dotted-divider {
+    height: 1px;
+    width: 100%;
+    border-top: 1px dotted rgba(237, 237, 237, 1);
+}

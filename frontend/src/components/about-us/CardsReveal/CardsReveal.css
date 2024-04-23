@@ -31,6 +31,11 @@
     position: sticky;
     top: 0px;
 }
+.card4 {
+    background: linear-gradient(180deg, rgba(250, 204, 201, 1) 0%, rgba(239, 247, 255, 1) 100%);
+    position: sticky;
+    top: 0px;
+}
 .card1-left, .card2-left, .card3-left {
     width: 50%;
     padding: 2% 5%;
@@ -52,7 +57,7 @@
 .card1-left p {
     text-align: justify;
 }
-.card1-right, .card2-right, .card3-right {
+.card1-right, .card2-right, .card3-right, .card4-right {
     width: 50%;
     padding: 2%;
     /* background: var(--primary-500); */
@@ -60,12 +65,16 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 .card2-right {
     background: #EFEC9B;
 }
 .card3-right {
     background: var(--secondary-500);
+}
+.card4-right {
+    background: rgba(238, 81, 71, 1);
 }
 .text-decentralize {
     color: rgba(166, 160, 0, 1);

@@ -3,6 +3,7 @@ import "./CardsReveal.css";
 import { delay, motion } from "framer-motion";
 import { useDevice } from "../../../utils/DeviceContext";
 import ButtonPrimary from "../../common/button-primary/button-primary";
+import CompareAnimation from "./CompareAnimation/CompareAnimation";
 
 const CardsReveal = () => {
   const { device } = useDevice();
@@ -733,6 +734,34 @@ const CardsReveal = () => {
                 fill="white"
               />
             </svg>
+          </div>
+        </motion.div>
+        <motion.div
+          className="reveal-card card4"
+          whileInView={{ position: "sticky", top: 0 }}
+        >
+          <div className="card3-left">
+            <h1>
+              Our journey to near no-change UX, low cost &{" "}
+              <span className="title-blue">day 1 incentives?</span>
+            </h1>
+            <p>
+              While we knew of the rising prices, fees and ad costs, ~300
+              sellers & shoppers interviews later, they told us they didn’t want
+              to set up new accounts, new storefronts or get used to new
+              policies. They wanted lower fees & discounts{" "}
+              <b>starting day one</b>. We’re users so we understood! Some work
+              later & it turns out we could deliver and lower prices/fees over
+              time... So we got to building!
+            </p>
+            <ButtonPrimary
+              text="Learn More"
+              link="/learn"
+              fontSize={device != "desktop" ? "12px" : "0.8vw"}
+            />
+          </div>
+          <div className="card4-right">
+            <CompareAnimation />
           </div>
         </motion.div>
       </motion.div>
