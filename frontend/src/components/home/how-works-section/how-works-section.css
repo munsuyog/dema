@@ -20,8 +20,6 @@
 }
 .how-works-title {
     color: white;
-    font-family: var(--font-open-sans);
-    font-size: 50px !important;
 }
 .question-mark {
     position: absolute;

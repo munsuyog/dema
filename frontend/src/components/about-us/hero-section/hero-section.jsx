@@ -1,9 +1,9 @@
 import TitleBadge from "../../common/title-badge/title-badge";
 import React from "react";
 import "./hero-section.css";
-import { motion } from "framer-motion";
 import ButtonPrimary from "../../common/button-primary/button-primary";
 import { useDevice } from "../../../utils/DeviceContext";
+import AnimatedSVG from "../../common/AnimatedSvg/AnimatedSvg";
 
 const AboutHero = () => {
   const {device} = useDevice();
@@ -13,42 +13,34 @@ const AboutHero = () => {
       <div className="about-hero-title-section">
         <div className="about-badge-wrapper">
           <TitleBadge title="About Us" primary />
-          <motion.svg
+          <AnimatedSVG
                 xmlns="http://www.w3.org/2000/svg"
                 width="100"
                 height="50"
                 viewBox="0 0 187 97"
                 fill="none"
-                className="about-badge-squiggle"
+                className="about-badge-squiggle inactive"
               >
-                <motion.path
-                  initial={{ pathLength: 0 }}
-                  whileInView={{ pathLength: 1 }}
-                  viewport={{ once: true }}
-                  transition={{
-                    duration: 2,
-                    ease: "easeInOut",
-                  }}
+                <path
                   d="M4 30.8606C37.8142 110.659 127 37.7597 80 30.8606C33 23.9615 63 103.861 182 62.8605"
                   stroke="#22E393"
                   stroke-width="6"
                   stroke-linecap="round"
-                ></motion.path>
-                <motion.path
-                  initial={{ pathLength: 0, opacity: 0 }}
-                  whileInView={{ pathLength: 1, opacity: 1 }}
-                  viewport={{once: true}}
-                  transition={{
-                    duration: 1,
-                    ease: "easeInOut",
-                    delay: 1.6
-                  }}
+                  time="1s"
+                  style={{"--L": 300.50000000000006, "--time": "1s"}}
+                  className="tracePath"
+                ></path>
+                <path
                   d="M169.433 55.4229C169.433 55.4229 181.518 59.0801
                     182.5 63.5C183.5 68 174.628 76.5121 174.628 76.5121"
                   stroke="#22E393"
                   stroke-width="6"
                   stroke-linecap="round"
-                ></motion.path>
+                  time="1s"
+                  delay="1s"
+                  style={{"--L": 300.50000000000006, "--time": "1s", "--delay": "1s"}}
+                  className="tracePath delayed"
+                ></path>
                 <defs>
                   <lineargradient
                     id="paint0_linear_1_6137"
@@ -62,32 +54,30 @@ const AboutHero = () => {
                     <stop offset="0.815" stop-color="#22E393"></stop>
                   </lineargradient>
                 </defs>
-        </motion.svg>
+        </AnimatedSVG>
         </div>
         <h1>
           Delivering Inexpensive
           <br />
           <span>
             Permissionless
-            <motion.svg
+            <AnimatedSVG
               width="470"
               height="103"
               viewBox="0 0 468 103"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="title-squiggle"
+              className="title-squiggle inactive"
             >
-              <motion.path
-                initial={{ pathLength: 0 }}
-                whileInView={{ pathLength: 1 }}
-                transition={{ duration: 2 }}
-                viewport={{ once: true }}
-                className="squiggle-home-anim"
+              <path
+                className="squiggle-home-anim tracePath" 
+                time="1s"
+                style={{"--L": 1064.50000000000006, "--time": "1s"}}
                 d="M435.891 73.914C295.978 88.1643 13.646 103.396 3.61873 50.3189C-8.91536 -16.027 447.875 -7.35275 464.219 47.1716C475.095 83.4518 384.532 100.084 353.578 99.6072"
                 stroke="#22E393"
                 stroke-width="8"
               />
-            </motion.svg>
+            </AnimatedSVG>
           </span>
           <br />
           Autonomous {" "}

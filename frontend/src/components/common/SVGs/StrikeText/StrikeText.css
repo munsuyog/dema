@@ -1,0 +1,11 @@
+.strike-squiggle {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+}
+@media screen and (max-width: 768px) {
+    .operator-squiggle {
+        width: 83px;
+        top: -15px;
+      }
+}

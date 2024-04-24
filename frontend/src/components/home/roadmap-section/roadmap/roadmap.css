@@ -99,7 +99,6 @@
     width: 4vw;
     height: 4vw;
 }
-
 @media screen and (max-width: 768px) {
     .card-header {
         flex-direction: column;

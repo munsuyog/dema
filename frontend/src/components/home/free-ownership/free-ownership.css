@@ -19,11 +19,6 @@
     transform-origin: 0 0;
     z-index: -1;
 }
-
-.free-ownership-title {
-    font-size: 50px;
-    font-family: var(--font-open-sans);
-}
 .title-free {
     position: relative;
 }
@@ -37,7 +32,7 @@
     position: relative;
     overflow: hidden;
     width: 55%;
-    min-height: 400px;
+    min-height: 600px;
     border-radius: 10px;
 }
 .free-ownership-video {
@@ -50,6 +45,7 @@
     top: -20px;
     border-radius: 20px;
     width: 100%;
+    object-fit: contain;
 }
 .free-ownership-container {
     display: flex;

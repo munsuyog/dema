@@ -24,7 +24,7 @@ const ProductCarousel = () => {
             if(products) {
                 setCurrentProductIndex((prevIndex) => (prevIndex + 1) % products.length)
             }
-        }, 5000);
+        }, 6000);
 
         return () => clearInterval(interval);
     }, [products]);
@@ -41,7 +41,7 @@ const ProductCarousel = () => {
                                 <img src="/images/home/hero-section/favicon.svg" width={24} height={24} />
                             </div>
                             {/* <img src="/images/home/hero-section/dema-logomark.svg" width={64} height={18} alt='logomark' /> */}
-                            <span className='logomark title-dema'>d<span>e</span>ma</span>
+                            <span className='logomark title-dema'>d<span className='title-blue'>e</span>ma</span>
                         </div>
                         <div className={`product-bought-info-container ${index === currentProductIndex ? 'animate' : ''}`}>
                             <p className='product-bought-info-text'>

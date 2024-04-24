@@ -3,6 +3,8 @@ import React, { useRef } from "react";
 import "./coming-soon.css";
 import {motion} from 'framer-motion'
 import { useInView } from "framer-motion";
+import CircleSquiggle from "../../common/SVGs/CircleSquiggle/CircleSquiggle";
+import GradientArrow from "../../common/SVGs/GradientArrow/GradientArrow";
 
 
 const ComingSoon = () => {
@@ -18,17 +20,9 @@ const ComingSoon = () => {
                   <span>Shop Anywhere</span>
                 </div>
               </div>
-              <motion.svg className="shop-anywhere-squiggle" width="187" height="97" viewBox="0 0 187 97" fill="none" xmlns="http://www.w3.org/2000/svg">
-<motion.path initial={{pathLength: 0}} whileInView={{pathLength: 1}} viewport={{once:true}} transition={{duration: 2}} d="M4 30.8613C37.8142 110.659 127 37.7604 80 30.8613C33 23.9622 63 103.861 182 62.8612" stroke="url(#paint0_linear_2571_6271)" stroke-width="8" stroke-linecap="round"/>
-<motion.path initial={{pathLength: 0}} whileInView={{pathLength: 1}} viewport={{once:true}} transition={{duration: 1, delay: 1.6}} d="M169.432 55.4238C169.432 55.4238 181.518 59.0811 182.5 63.501C183.5 68.001 174.628 76.5131 174.628 76.5131" stroke="#3830C9" stroke-width="8" stroke-linecap="round"/>
-<defs>
-<linearGradient id="paint0_linear_2571_6271" x1="191" y1="42.3613" x2="-10.5" y2="42.4644" gradientUnits="userSpaceOnUse">
-<stop offset="0.415" stop-color="#3830C9"/>
-<stop offset="0.815" stop-color="#22E393"/>
-</linearGradient>
-</defs>
-</motion.svg>
-
+              <span className="shop-anywhere-squiggle">
+              <GradientArrow />
+              </span>
               <div className="shop-anywhere-logo-active">
                 <img
                   src="/images/home/coming-soon/amazon-logo.svg"

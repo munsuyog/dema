@@ -5,7 +5,7 @@ import IOSQR from './ios-qr/ios-qr';
 import AndroidQR from './android-qr/android-qr';
 
 
-const DownloadButton = () => {
+const DownloadButton = ({downloadBtn}) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const toggleModal = () => {
@@ -14,7 +14,7 @@ const DownloadButton = () => {
 
   return (
     <>
-      <div id='download-btn' className={isModalOpen ? '' : "active"} onClick={toggleModal}>
+      <div id='download-btn' ref={downloadBtn} className={isModalOpen ? '' : "active"} onClick={toggleModal}>
         <div className='download-btn-front-border'>
           <div className='download-btn-front'>
             <div className='download-btn-front-qr'>

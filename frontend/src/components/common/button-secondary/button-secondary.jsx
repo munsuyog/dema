@@ -1,9 +1,9 @@
 import React from 'react'
 import './button-secondary.css'
 
-const ButtonSecondary = ({title,url}) => {
+const ButtonSecondary = ({title,url, onClick}) => {
   return (
-    <a href='url' className='button-secondary'>
+    <a onClick={onClick ? onClick : () =>{}} className='button-secondary'>
         {title}
     </a>
   )

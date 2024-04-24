@@ -128,9 +128,6 @@ const Roadmap = () => {
 
           // Implement additional logic for fading in elements based on scroll path length
           // fade in Element
-          if (scrollPercentage >= 0.6) {
-            this.scrollContainer.style.top = "-300px";
-          }
           this.elements.forEach((element) => {
             if (
               element.getAttribute("threshhold") * 1 <
@@ -206,7 +203,7 @@ const Roadmap = () => {
       <animated.div
         className="roadmap-card2 absolute opacityTransition"
         fadeonscroll=""
-        threshhold={isMobile ? ".35" : ".45"}
+        threshhold={isMobile ? ".35" : ".5"}
         style={{ opacity: 0 }}
       >
         <div className="home-roadmap-card2">
@@ -255,19 +252,22 @@ const Roadmap = () => {
           className="card3-image"
         />
       </animated.div>
+      
       <svg
         width="100%"
         viewBox={isMobile ? "0 0 375 1716" : "0 0 1401 759"}
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <animated.path
+        <path
           d={ isMobile ? "M0 10.5C173.5 10.5 370 222 352 452C331.17 718.166 43.5 855 20 1032.5C4.44698 1149.97 198 1705 376.5 1705" : 
             "M-0.497355 314.108C161.137 312.414 306.48 277.921 340.848 172.942 C421.562 -73.6029 67.4174 -2.69558 137.777 147.594 C194.065 267.826 757.504 164.784 991.006 95.0645 C1340.99 24.7472 1385.38 340.643 1385.38 340.643 C1426.6 520.277 1191.31 844.019 765.691 720.179 C421.684 620.085 174.601 674.957 -1.01706 722.458"
           }
           stroke="url(#paint0_linear_1_6159)"
           strokeOpacity="0.8"
           strokeWidth="21"
+          speed="2"
+          stay=".7"
           className="scrollPath"
           style={{ strokeDasharray: "4500" }}
           ref={pathRef}

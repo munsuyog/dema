@@ -9,6 +9,7 @@ import video1 from '/images/home/free-ownership/video1.mp4'
 import video2 from '/images/home/free-ownership/video2.mp4'
 import video3 from '/images/home/free-ownership/video3.mp4'
 import VideoComponent from "../../common/VideoComponent/VideoComponent";
+import CircleSquiggle from "../../common/SVGs/CircleSquiggle/CircleSquiggle";
 
 
 const FreeOwnership = () => {
@@ -17,17 +18,20 @@ const FreeOwnership = () => {
     {
       id: 1,
       title: "Shop & Earn",
-      video: <VideoComponent onEnded={() => {setHighlightedFeatureIndex((prevIndex) => (prevIndex+1)%3)}} url={'/images/home/free-ownership/video1.webm'} />,
+      video: <img src="/images/home/free-ownership/gif1.gif" alt="gif" />,
+      duration: 2
     },
     {
       id: 2,
       title: "Refer & Earn",
-      video: <VideoComponent onEnded={() => {setHighlightedFeatureIndex((prevIndex) => (prevIndex+1)%3)}} url={'/images/home/free-ownership/video2.webm'} />,
+      video: <img src="/images/home/free-ownership/gif2.gif" alt="gif" />,
+      duration: 2
     },
     {
       id: 3,
       title: "Sell & Earn",
-      video: <VideoComponent onEnded={() => {setHighlightedFeatureIndex((prevIndex) => (prevIndex+1)%3)}} url={'/images/home/free-ownership/video3.webm'} />,
+      video: <img src="/images/home/free-ownership/gif3.gif" alt="gif" />,
+      duration: 2
     },
   ];
   const {device} = useDevice();
@@ -56,22 +60,8 @@ const FreeOwnership = () => {
             help <span className="title-blue">build it </span> & get <br />
             to <span className="title-blue">own it for </span>{" "}
             <span className="title-free">
-              <motion.svg
-                className="free-squiggle"
-                xmlns="http://www.w3.org/2000/svg"
-                width="190%"
-                viewBox="0 0 156 82"
-                fill="none"
-              >
-                <motion.path
-                  initial={{pathLength: 0}} whileInView={{pathLength: 1}} transition={{duration: 2}} viewport={{once: true}}
-                  d="M142.408 59.1107C98.255 67.6411 8.94169 74.6452 4.91618 34.4178C1.93227 4.59936 58.5 2.45193 93.9999 4.9763C129.5 7.50067 148.505 22.5154 150.968 39.3737C154.996 66.9348 126.534 78.0488 116.708 77.1963"
-                  stroke="#3830C9"
-                  strokeWidth="8"
-                  strokeLinecap="round"
-                ></motion.path>
-              </motion.svg>
-              FREE<span className="title-blue">!</span>
+              <CircleSquiggle width={"200%"} style={{left: -10, top: 0, width: '120%'}} time="3s"  d="M142.408 59.1107C98.255 67.6411 8.94169 74.6452 4.91618 34.4178C1.93227 4.59936 58.5 2.45193 93.9999 4.9763C129.5 7.50067 148.505 22.5154 150.968 39.3737C154.996 66.9348 126.534 78.0488 116.708 77.1963" viewBox="0 0 155 82" color="#3830C9" />
+              free<span className="title-blue">!</span>
             </span>
           </h1>
         </div>
@@ -79,7 +69,6 @@ const FreeOwnership = () => {
           {
             features.map((feature, index) => (
               <div className="free-ownership-video-container" style={index != highlightedFeatureIndex ? {display: "none"}: {}}>
-              <div className="free-ownership-video">
                 <motion.div
                   initial={{ opacity: 0 }} // Initial opacity set to 0
                   animate={{ opacity: 1 }} // Animate opacity to 1
@@ -89,7 +78,6 @@ const FreeOwnership = () => {
                 >
                   {feature.video}
                 </motion.div>
-              </div>
             </div>
             ))
           }

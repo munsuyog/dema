@@ -1,7 +1,7 @@
 .roadmap-section {
     width: 100%;
     position: relative;
-    height: 4000px;
+    height: 2000px;
     z-index: 1;
     padding-top: 3%;
 }
@@ -20,6 +20,7 @@
 .roadmap-section-title{
     font-family: var(--font-open-sans);
     text-align: center;
+    opacity: 0;
 }
 .title-priority {
     position: relative;

@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import Footer from "../components/common/footer/footer"
 import Navbar from "../components/common/navbar/navbar";
 import ComingSoon from "../components/home/coming-soon/coming-soon";
@@ -14,9 +15,10 @@ import WallOfLove from "../components/home/wall-of-love/wall-of-love";
 import { DeviceProvider } from "../utils/DeviceContext";
 
 export default function Home() {
+  const downloadBtn = useRef();
   return (
     <DeviceProvider>
-      <Navbar />
+      <Navbar downloadBtn={downloadBtn} />
       <HeroSection />
       <ComingSoon />
       <ItemsSection />
@@ -27,7 +29,7 @@ export default function Home() {
       <RulesSection />
       <WallOfLove />
       <GrowWithUs />
-      <JoinUs />
+      <JoinUs downloadBtn={downloadBtn} />
       <Footer />
     </DeviceProvider>
   );

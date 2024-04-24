@@ -1,0 +1,13 @@
+.circle-squiggle {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 105%;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .circle-squiggle {
+        left: -10px;
+    }
+}

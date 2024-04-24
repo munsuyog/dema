@@ -4,6 +4,8 @@ import "./hero-section.css";
 import ProductCarousel from "./product-carousel/product-carousel";
 import {motion} from 'framer-motion'
 import { homeSVGs } from "../../../constants/VectorSVGs";
+import AnimatedSVG from "../../common/AnimatedSvg/AnimatedSvg";
+import CircleSquiggle from "../../common/SVGs/CircleSquiggle/CircleSquiggle";
 
 
 const HeroSection = () => {
@@ -55,9 +57,7 @@ const HeroSection = () => {
             </span>{" "}
             <span className="title-anywhere">anywhere<span className="relative"><img src="/images/home/hero-section/title-star.svg" width={22} height={25} className="title-star anywhere" alt="vector" /></span></span><br/> Get{" "}
             <span className="title-free-ownership">
-            <motion.svg width="475" height="110" viewBox="0 0 468 103" fill="none" xmlns="http://www.w3.org/2000/svg" className="title-squiggle">
-<motion.path  initial={{pathLength: 0}} whileInView={{pathLength: 1}} transition={{duration: 2}} viewport={{once: true}} className="squiggle-home-anim" d="M435.891 73.914C295.978 88.1643 13.646 103.396 3.61873 50.3189C-8.91536 -16.027 447.875 -7.35275 464.219 47.1716C475.095 83.4518 384.532 100.084 353.578 99.6072" stroke="#11C57A" stroke-width="8"/>
-</motion.svg>
+              <CircleSquiggle color="#11C57A" />
 
               <strong>
               <span className="title-free">Free </span>{" "}

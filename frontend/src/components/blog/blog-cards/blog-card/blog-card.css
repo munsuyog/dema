@@ -9,7 +9,7 @@
 }
 .blog-card-image {
     width: 100%;
-    height: 450px !important;
+    height: 400px !important;
     object-fit: cover;
     border-radius: 20px;
 }
@@ -43,6 +43,7 @@
 .blog-card-tags-wrapper {
     display: flex;
     gap: 10px;
+    margin-top: 10px;
 }
 .blog-card-title-wrapper .highlighted {
     color: var(--primary-500);

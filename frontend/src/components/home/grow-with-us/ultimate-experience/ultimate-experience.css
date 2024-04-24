@@ -86,6 +86,7 @@
 .bullet-points {
     display: flex;
     flex-direction: column;
+    gap: 0.5vw;
     /* gap: 10px; */
 }
 .point {
@@ -99,7 +100,7 @@
 }
 .point-text {
     font-family: var(--font-open-sans);
-    font-size: 0.9vw;
+    font-size: 1vw;
 }
 .cards-container-amazon, .cards-container-dema {
     display: flex;

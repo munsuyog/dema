@@ -2,17 +2,10 @@
     padding-top: 20%;
 }
 .rules-section-title {
-    font-family: var(--font-open-sans);
-    font-size: 50px;
     font-weight: 700;
 }
 .title-operator {
     position: relative;
-}
-.operator-squiggle {
-    position: absolute;
-    bottom: -10px;
-    left: 0;
 }
 .title-you {
     color: var(--primary-500);
@@ -228,10 +221,6 @@
         margin-right: 20px;
         scroll-snap-align: start;
         padding: 10px;
-      }
-      .operator-squiggle {
-        width: 83px;
-        top: -15px;
       }
       .forever-trust-svg-top {
         width: 200px;

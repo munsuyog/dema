@@ -46,7 +46,7 @@
 }
 .hero-section-heading {
     font-family: var(--font-open-sans);
-    font-size: 56px;
+    font-size: 48px;
     font-weight: 600;
 }
 .hero-section-heading span:nth-child(1) {
@@ -54,7 +54,7 @@
     align-items: center;
 }
 .title-anywhere {
-    /* font-family: var(--font-open-sans); */
+    font-family: var(--font-architects-daughter);
     color: var(--secondary-500);
     font-weight: 400;
 }
@@ -66,13 +66,6 @@
 }
 .title-free-ownership {
     position: relative;
-}
-.title-squiggle {
-    position: absolute;
-    top: -5px;
-    right: -12px;
-    width: 106%;
-    height: auto;
 }
 .title-any {
     color: var(--secondary-500);
@@ -128,9 +121,6 @@ span.relative {
     .title-cart-vector {
         width: 30px;
         height: 30px;
-    }
-    .title-squiggle {
-        left: -10px;
     }
     .title-star.any2 {
         display: none;

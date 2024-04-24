@@ -3,7 +3,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import './navbar.css';
 import DownloadButton from '../download-button/download-button';
 
-const Navbar = () => {
+const Navbar = ({downloadBtn}) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const navbarRef = useRef(null);
 
@@ -50,7 +50,7 @@ const Navbar = () => {
       </div>
       <div>
         <div className='navbar_right'>
-          <DownloadButton />
+          <DownloadButton downloadBtn={downloadBtn} />
         </div>
       </div>
     </div>

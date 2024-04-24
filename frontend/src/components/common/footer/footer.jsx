@@ -34,9 +34,6 @@ const Footer = () => {
                     <div className='footer-links-col'>
                     <div className='footer-title'>Explore</div>
                     <div className='footer-link'>
-                            <a href='#'>Protocol</a>
-                    </div>
-                    <div className='footer-link'>
                             <a href='/learn'>Learn</a>
                     </div>
                     <div className='footer-link'>
@@ -59,9 +56,6 @@ const Footer = () => {
                     </div>
                     <div className='footer-link'>
                             <a href='/pricing'>Pricing</a>
-                    </div>
-                    <div className='footer-link'>
-                            <a href='/shipping'>Shipping</a>
                     </div>
                     <div className='footer-link'>
                             <a href='/returns'>Returns</a>
