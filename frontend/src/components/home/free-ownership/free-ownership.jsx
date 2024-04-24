@@ -1,5 +1,4 @@
-"use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./free-ownership.css";
 import { motion } from "framer-motion";
 import SkewedButton from "../../../components/common/skewed-button/skewed-button";
@@ -34,23 +33,37 @@ const FreeOwnership = () => {
       duration: 2
     },
   ];
-  const {device} = useDevice();
+  const { device } = useDevice();
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setHighlightedFeatureIndex((prevIndex) => (prevIndex + 1) % features.length);
+    }, 5000);
+
+    return () => clearInterval(timer);
+  }, [features.length]);
+
+  let autoChangeTimeout;
+
+  const handleFeatureClick = (index) => {
+    clearTimeout(autoChangeTimeout);
+    setHighlightedFeatureIndex(index);
+    autoChangeTimeout = setTimeout(() => {
+      setHighlightedFeatureIndex((index + 1) % features.length);
+    }, 5000);
+  };
 
   const springConfig = {
     type: "spring",
     damping: 15, // Adjust damping for desired springiness
     stiffness: 200, // Adjust stiffness for desired bounciness
   };
-  const squiggleAnimationProps = useSpring({
-    from: { pathLength: 0 },
-    to: { pathLength: 1 },
-    config: springConfig,
-  });
-
-  const handleFeatureClick = (index) => {
-    setHighlightedFeatureIndex(index);
-  };
-
+  useEffect(() => {
+    // Delay starting the automatic timeout by 5 seconds
+    autoChangeTimeout = setTimeout(() => {
+      setHighlightedFeatureIndex((prevIndex) => (prevIndex + 1) % features.length);
+    }, 5000);
+  }, []); // Run only once on component mount
   return (
     <section id="free-ownership">
       <div className="free-ownership section-padding fixed-width">

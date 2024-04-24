@@ -54,7 +54,7 @@
     display: flex;
     width: 353px;
     height: 180px;
-    background-color: white;
+    background-color: #EFF7FF;
     align-items: center;
     justify-content: center;
     font-family: var(--font-open-sans);
@@ -81,7 +81,7 @@
     height: 30px;
     border-radius: 100%;
     position: absolute;
-    box-shadow: 15px 10px 0px 0px #FFF;
+    box-shadow: 15px 10px 0px 0px #EFF7FF;
 }
 .circle-top-left {
     top: -30px;

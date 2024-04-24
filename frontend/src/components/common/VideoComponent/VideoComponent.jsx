@@ -12,7 +12,6 @@ const VideoComponent = ({ url, onEnded }) => {
         onEnded={onEnded}
         autoPlay
         preload="auto"
-        loop
       >
         <source src={url} type='video/webm' />
         Your browser does not support the video tag.

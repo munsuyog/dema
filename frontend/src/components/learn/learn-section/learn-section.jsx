@@ -73,7 +73,7 @@ const LearnSection = () => {
   
   return (
     <section id="learn-section">
-      <div className="learn-section fixed-width">
+      <div className="learn-section">
         <div className="learn-faq-section">
           <div className="learn-faq-wrapper">
             {faqs && faqs.length > 0 &&

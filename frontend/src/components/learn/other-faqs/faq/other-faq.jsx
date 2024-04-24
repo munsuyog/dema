@@ -24,7 +24,6 @@ const OtherFAQ = ({faq}) => {
 
 const SubFAQ = ({faq}) => {
     const [isOpen, setIsOpen] = useState(false);
-    console.log(faq)
     return (
         <div className={isOpen ? 'learn-other-subfaq active' : 'learn-other-subfaq'}>
             <div className='learn-other-subfaq-header' onClick={() => {setIsOpen(!isOpen)}}>

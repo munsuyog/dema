@@ -11,7 +11,7 @@ import CircleSquiggle from "../../common/SVGs/CircleSquiggle/CircleSquiggle";
 import AnimatedSVG from "../../common/AnimatedSvg/AnimatedSvg";
 
 const SaveOnSection = () => {
-  const [highlightedFeature, setHighlightedFeature] = useState(0);
+  const [highlightedFeatureIndex, setHighlightedFeatureIndex] = useState(0);
   const features = [
     {
       id: 1,
@@ -52,9 +52,30 @@ const SaveOnSection = () => {
     { threshold: 0.3 }
   );
 
-  const handleFeatureChange = () => {
-    setHighlightedFeature((prevIndex) => (prevIndex + 1) % features.length);
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setHighlightedFeatureIndex((prevIndex) => (prevIndex + 1) % features.length);
+    }, 5000);
+
+    return () => clearInterval(timer);
+  }, [features.length]);
+
+  let autoChangeTimeout;
+
+  const handleFeatureClick = (index) => {
+    clearTimeout(autoChangeTimeout);
+    setHighlightedFeatureIndex(index);
+    autoChangeTimeout = setTimeout(() => {
+      setHighlightedFeatureIndex((index + 1) % features.length);
+    }, 5000);
   };
+
+  useEffect(() => {
+    // Delay starting the automatic timeout by 5 seconds
+    autoChangeTimeout = setTimeout(() => {
+      setHighlightedFeatureIndex((prevIndex) => (prevIndex + 1) % features.length);
+    }, 5000);
+  }, []); // Run only once on component mount
 
   return (
     <section id="save-on-section">
@@ -131,7 +152,7 @@ const SaveOnSection = () => {
                 <div
                   className="save-on-feature"
                   key={index}
-                  onClick={() => handleFeatureChange(index)}
+                  onClick={() => handleFeatureClick(index)}
                 >
                   <div className="save-on-feature-number-container">
                     <svg
@@ -145,20 +166,20 @@ const SaveOnSection = () => {
                         style={{ transition: "fill 200ms ease" }}
                         d="M58.884 25.1802C64.3531 34.3419 53.9178 47.1732 41.3158 49.1739C28.2073 51.2551 15.2087 52.8752 9.73963 43.7135C4.27058 34.5518 12.6306 16.449 23.0614 10.3952C33.4922 4.34143 48.4804 15.6087 58.884 25.1802Z"
                         fill={
-                          highlightedFeature === index ? "#22E393" : "#3830C9"
+                          highlightedFeatureIndex === index ? "#22E393" : "#3830C9"
                         }
                       />
                       <path
                         style={{ transition: "fill 200ms ease" }}
                         d="M55.204 26.4685C59.8668 34.2796 50.9699 45.2193 40.2256 46.9252C29.0495 48.6995 17.967 50.0808 13.3042 42.2696C8.64132 34.4585 15.769 19.0243 24.6621 13.863C33.5552 8.70159 46.334 18.3079 55.204 26.4685Z"
                         fill={
-                          highlightedFeature === index ? "#3830C9" : "white"
+                          highlightedFeatureIndex === index ? "#3830C9" : "white"
                         }
                       />
                     </svg>
                     <div
                       className={
-                        highlightedFeature === index
+                        highlightedFeatureIndex === index
                           ? "save-on-feature-number-highlight"
                           : "save-on-feature-number"
                       }
@@ -168,7 +189,7 @@ const SaveOnSection = () => {
                   </div>
                   <h3
                     className={
-                      highlightedFeature === index
+                      highlightedFeatureIndex === index
                         ? "save-on-feature-title highlight"
                         : "save-on-feature-title"
                     }
@@ -205,7 +226,7 @@ const SaveOnSection = () => {
           {features.map((feature, index) => (
             <div
               className="save-on-video-container"
-              style={highlightedFeature != index ? { display: "none" } : {}}
+              style={highlightedFeatureIndex != index ? { display: "none" } : {}}
             >
               <div className="save-on-video">{feature.video}</div>
             </div>

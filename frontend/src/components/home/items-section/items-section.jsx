@@ -1,7 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import './items-section.css';
+import { TypeAnimation } from 'react-type-animation';
+import { useInView } from "react-intersection-observer";
+
 
 const ItemsSection = () => {
+    const {ref, inView} = useInView({threshold: 0.2});
     const [itemIndex, setItemIndex] = useState(0); // State to track the current item index
     const [itemText, setItemText] = useState(null); // State to track the current item text
 
@@ -37,7 +41,7 @@ const ItemsSection = () => {
     }, [itemIndex, items]);
 
     return (
-        <section id='items-section'>
+        <section id='items-section' ref={ref}>
             <div className='items-section section-padding fixed-width'>
                 <div className='items-wrapper'>
                     <img src="/images/home/items-section/heart.svg" width={567} height={524} className='heart-image' />
@@ -48,7 +52,29 @@ const ItemsSection = () => {
                     </div>
                     <div>
                         <div className='items-insights'>
-                            <span className={itemText ? 'fade-in' : ''} style={{fontSize: itemIndex == items.length - 1 ? 48 : 28}} key={itemIndex}>{itemText}</span> {/* Apply fade-in class when itemText is not null */}
+                            {inView && (
+                                                     <TypeAnimation
+                                                     sequence={[
+                                                       'Electronics', // Types 'One'
+                                                       2000,
+                                                       'Home & Kitchen', // Deletes 'One' and types 'Two'
+                                                       2000, // Waits 2s
+                                                       'Beauty & Personal Care',
+                                                       2000, // Types 'Three' without deleting 'Two'
+                                                       'Books',
+                                                       2000, // Types 'Three' without deleting 'Two'
+                                                       'Toys & Games',
+                                                       2000, // Types 'Three' without deleting 'Two'
+                                                       '> 100M Items',
+                                                       2000, // Types 'Three' without deleting 'Two'
+                                                     ]}
+                                                     wrapper="span"
+                                                     cursor={true}
+                                                     repeat={false}
+                                                     speed={200}
+                                                     style={{ fontWeight: 700, display: 'inline-block', fontFamily: 'var(--font-open-sans)', fontSize: 30, textAlign: 'center' }}
+                                                   />
+                            )}
                             <div className='top-line'></div>
                             <div className='bottom-line'></div>
                             <div className='circle-top-left'></div>
