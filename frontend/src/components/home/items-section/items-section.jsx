@@ -72,7 +72,7 @@ const ItemsSection = () => {
                                                      cursor={true}
                                                      repeat={false}
                                                      speed={200}
-                                                     style={{ fontWeight: 700, display: 'inline-block', fontFamily: 'var(--font-open-sans)', fontSize: 30, textAlign: 'center' }}
+                                                     style={{ fontWeight: 700, display: 'inline-block', fontFamily: 'var(--font-open-sans)', fontSize: 30, textAlign: 'center', zIndex: 1, position: 'relative' }}
                                                    />
                             )}
                             <div className='top-line'></div>

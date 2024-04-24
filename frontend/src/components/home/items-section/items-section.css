@@ -67,14 +67,14 @@
 .top-line, .bottom-line {
     position: absolute;
     width: 30px;
-    height:20vw;
-    top: -20vw;
+    height:30vw;
+    top: -30vw;
     background-color: #EFF7FF;
     z-index: 0;
 }
 .bottom-line {
     top: 7vw;
-    height: 25vw;
+    height: 40vw;
 }
 .circle-top-left, .circle-top-right, .circle-bottom-left, .circle-bottom-right {
     width: 30px;
