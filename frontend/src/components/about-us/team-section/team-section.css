@@ -3,6 +3,7 @@
     position: relative;
     /* padding-top: 10%; */
     padding-bottom: 5%;
+    overflow-y: hidden;
 }
 .team-section {
     display: flex;
@@ -53,9 +54,8 @@
 @media screen and (max-width: 1250px) {
     .teams-container {
         flex-direction: column;
-    }
-    .team-info-container {
-        padding-top: 5% !important;
+        gap: 20px;
+        align-items: center;
     }
 }
 
@@ -68,7 +68,8 @@
     }
     .teams-container {
         flex-direction: column;
-        gap: -20px;
+        gap: 20px;
+        align-items: center;
     }
     .team-title-section svg {
         display: none;

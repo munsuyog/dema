@@ -1,7 +1,6 @@
 .community-scroll {
     position: relative;
     background: linear-gradient(180deg, #E7FFFA 0%, rgba(242, 251, 249, 0) 100%);
-
     width: 95vw;
     margin-left: auto;
     margin-right: auto;
@@ -31,4 +30,37 @@
 .scrollPath {
     position: sticky;
     top: 0;
+}
+
+@media screen and (max-width: 1200px) {
+    .community-scroll {
+        height: 150vh;
+    }
+    .community-animation-container {
+        width: 80vw;
+        height: 120vh;
+    }
+    .community-section-title {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .community-animation-container {
+        background: var(--secondary-500);
+        width: 98vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        overflow: hidden;
+        height: 65vh;
+    }
+    .community-section-title {
+        font-size: 22px;
+        margin-top: 20%;
+    }
+    .community-scroll {
+        height: 100vh;
+    }
 }

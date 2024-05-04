@@ -11,10 +11,9 @@ const ReceiptCard = ({ company, scrollPercentage, receipt }) => {
         left: company == "uber" ? 40 : -40,
       }}
       whileInView={{
-        transform: company == "uber" ? "rotate(0deg)" : "rotate(0deg)",
+        transform: company == "uber" ? scrollPercentage >= 0.1 ? "rotate(0deg)" : "" : scrollPercentage >= 0.1 ? "rotate(0deg)": "",
         left: company == "uber" ? 0 : 0,
       }}
-      viewport={{amount: 0.8}}
       className="compare-card community"
     >
       <div className="community-receipt-logo-wrapper">

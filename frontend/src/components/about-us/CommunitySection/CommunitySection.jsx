@@ -78,7 +78,7 @@ const CommunitySection = () => {
   return (
     <div style={{ height: '3000px', position: 'relative' }}>
       <div className="scrollContainerCommunity">
-        <motion.div initial={{width: '95vw'}} whileInView={{width: '100vw', borderRadius: 0}} viewport={{amount: 0}} className='scrollPathCommunity shocker-scroll' offset={0}>
+        <motion.div initial={{width: '95vw'}} whileInView={{width: '100vw', borderRadius: 0}} viewport={{amount: 0}} className='scrollPathCommunity community-scroll' offset={0}>
           <div className='community-section'>
             <h1 className='community-section-title'>
             <span className='title-blue'>Real community = 50% equity!</span> <br />

@@ -8,7 +8,7 @@ import CompareAnimation from "./CompareAnimation/CompareAnimation";
 const CardsReveal = () => {
   const { device } = useDevice();
   return (
-    <motion.section id="about-cards-reveal">
+    <motion.div id="about-cards-reveal">
       <motion.div className="about-cards-reveal">
         <motion.div
           className="reveal-card card1"
@@ -737,7 +737,7 @@ const CardsReveal = () => {
           </div>
         </motion.div>
       </motion.div>
-    </motion.section>
+    </motion.div>
   );
 };
 

@@ -113,3 +113,99 @@
     width: 100%;
     border-top: 1px dotted rgba(237, 237, 237, 1);
 }
+@media screen and (max-width: 1200px) {
+    .compare-card {
+        width: 180px;
+        height: 500px;
+        padding: 10% 4%;
+        background-size: cover;
+        background-position: center;
+        margin-right: 10px;
+    }
+    .selling-fees-text {
+        font-size: 14px;
+        text-align: center;
+    }
+    .compare-tick svg{
+        width: 20px;
+        height: auto;
+    }
+    .compare-logo svg {
+        width: auto;
+        height: 25px;
+    }
+    .selling-fees-number {
+        font-size: 16px;
+    }
+    .compare-marketplace-operations-head {
+        font-size: 12px !important;
+    }
+    .compare-marketplace-percent {
+        color: rgba(18, 18, 18, 1);
+        font-family: var(--font-open-sans);
+        font-weight: 700;
+        font-size: 10px;
+    }
+    .compare-marketplace-title {
+        font-size: 10px;
+    }
+    .operations-image {
+        width: auto;
+        height: 100px;
+    }
+    .compare-marketplace-highlight-text {
+        font-size: 10px;
+        text-align: center;
+    }
+    .dema-large-card {
+        width: 300px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .compare-card {
+        width: 180px;
+        height: 500px;
+        padding: 10% 4%;
+        background-size: cover;
+        background-position: center;
+        margin-right: 10px;
+    }
+    .selling-fees-text {
+        font-size: 14px;
+        text-align: center;
+    }
+    .compare-tick svg{
+        width: 20px;
+        height: auto;
+    }
+    .compare-logo svg {
+        width: auto;
+        height: 25px;
+    }
+    .selling-fees-number {
+        font-size: 16px;
+    }
+    .compare-marketplace-operations-head {
+        font-size: 12px !important;
+    }
+    .compare-marketplace-percent {
+        color: rgba(18, 18, 18, 1);
+        font-family: var(--font-open-sans);
+        font-weight: 700;
+        font-size: 10px;
+    }
+    .compare-marketplace-title {
+        font-size: 10px;
+    }
+    .operations-image {
+        width: auto;
+        height: 100px;
+    }
+    .compare-marketplace-highlight-text {
+        font-size: 10px;
+        text-align: center;
+    }
+    .dema-large-card {
+        width: 300px;
+    }
+}

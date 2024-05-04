@@ -48,6 +48,12 @@ h1 span {
     rotate: 220deg;
 }
 
+@media screen and (max-width: 1200px) {
+    .about-hero-banner {
+        width: 40vw;
+        height: auto;
+    }
+}
 @media screen and (max-width: 768px) {
     .about-hero {
         flex-direction: column;
@@ -61,5 +67,6 @@ h1 span {
     }
     .about-hero-banner {
         width: 100%;
+        height: auto;
     }
 }

@@ -20,21 +20,28 @@
 }
 .card1 {
     background: linear-gradient(180deg, #E7FFFA 0%, rgba(242, 251, 249, 0) 100%);
+    overflow: hidden;
 }
 .card2 {
     background: linear-gradient(180deg, #F2F0D5 0%, rgba(239, 247, 255, 1) 100%);
     position: sticky;
     top: 0px;
+    overflow: hidden;
+
 }
 .card3 {
     background: linear-gradient(180deg, rgba(222, 226, 250, 1) 0%, rgba(239, 247, 255, 1) 100%);
     position: sticky;
     top: 0px;
+    overflow: hidden;
+
 }
 .card4 {
     background: linear-gradient(180deg, rgba(250, 204, 201, 1) 0%, rgba(239, 247, 255, 1) 100%);
     position: sticky;
     top: 0px;
+    overflow: hidden;
+
 }
 .card1-left, .card2-left, .card3-left {
     width: 50%;
@@ -44,6 +51,7 @@
     align-items: center;
     justify-content: center;
     gap: 20px;
+    overflow: hidden;
 }
 .card1-left h1 {
     text-align: center;
@@ -66,6 +74,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    overflow: hidden;
 }
 .card2-right {
     background: #EFEC9B;
@@ -79,7 +88,9 @@
 .text-decentralize {
     color: rgba(166, 160, 0, 1);
 }
-
+@media screen and (max-width: 1200px) {
+    
+}
 @media screen and (max-width: 768px) {
     .card1 {
         flex-direction: column-reverse;
@@ -106,5 +117,14 @@
     .about-cards-reveal {
         gap: 20px;
         /* border-radius: 0; */
+    }
+    .card1-left p {
+        text-align: left;
+    }
+    .card1-left, .card2-left, .card3-left {
+        padding: 5% 5%;
+    }
+    .card1-right, .card2-right, .card3-right {
+        padding: 5% 5%;
     }
 }

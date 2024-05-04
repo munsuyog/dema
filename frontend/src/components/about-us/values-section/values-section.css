@@ -1,6 +1,5 @@
 #values-section {
-    /* background: linear-gradient(180deg, #E7FFFA 0%, rgba(242, 251, 249, 0) 100%); */
-
+    padding: 0 15%;
 }
 .values-title-section {
     position: relative;
@@ -16,7 +15,7 @@
 .values-title-section h2{
     /* text-align: center; */
     color: white;
-    font-size: 48px;
+    font-size: 36px;
 }
 .values-title-section span {
     position: relative;
@@ -31,25 +30,17 @@
     justify-content: space-evenly;
     flex-direction: column;
 }
-@media screen and (max-width: 1250px) {
-    .values-container {
-        flex-direction: column;
-        align-items: center;
-        gap: 50px;
-    }
 
-}
 @media screen and (max-width:768px) {
+    .values-title-section h2{
+        color: white;
+        font-size: 20px;
+    }
     #values-section {
         padding: 0;
     }
     .value {
         gap: 5px;
-    }
-    .values-container {
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
     }
     .values-title-arrow {
         display: none;

@@ -44,3 +44,65 @@
     font-size: 14px;
     font-weight: 600;
 }
+@media screen and (max-width: 1200px) {
+    .community-receipt-logo svg {
+        width: auto;
+        height: 30px;
+    }
+    .community-receipt-tick svg {
+        width: 20px;
+        height: auto;
+    }
+    .community-receipt-network-title {
+        font-size: 12px;
+    }
+    .community-receipt-network-image {
+        height: 40px;
+        width: auto;
+    }
+    .community-receipt-network-number {
+        font-size: 11px;
+        text-align: center;
+        font-weight: 600;
+    }
+    .community-receipt-cash-incentives-title {
+        font-weight: 500;
+        font-size: 14px;
+    }
+    .community-receipt-cash-incentives-number {
+        font-weight: 700;
+        font-size: 14px;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 768px) {
+    .community-receipt-logo svg {
+        width: auto;
+        height: 30px;
+    }
+    .community-receipt-tick svg {
+        width: 20px;
+        height: auto;
+    }
+    .community-receipt-network-title {
+        font-size: 12px;
+    }
+    .community-receipt-network-image {
+        height: 40px;
+        width: auto;
+    }
+    .community-receipt-network-number {
+        font-size: 11px;
+        text-align: center;
+        font-weight: 600;
+    }
+    .community-receipt-cash-incentives-title {
+        font-weight: 500;
+        font-size: 14px;
+    }
+    .community-receipt-cash-incentives-number {
+        font-weight: 700;
+        font-size: 14px;
+        text-align: center;
+    }
+}
