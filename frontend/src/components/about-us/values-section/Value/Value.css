@@ -1,0 +1,20 @@
+.value {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.value-title {
+    font-size: 80px;
+    cursor: default;
+    user-select: none;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    transition: color 0.3s ease;
+    position: relative;
+}
+.value-content {
+    width: 25%;
+    font-weight: 600;
+    font-size: 15px;
+    transition: all 0.5s ease;
+}

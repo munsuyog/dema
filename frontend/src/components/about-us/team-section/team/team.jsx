@@ -1,9 +1,9 @@
 import React from "react";
 import "./team.css";
 
-const TeamCard = ({ info }) => {
+const TeamCard = ({ info, secondary }) => {
   return (
-    <div className="team-card">
+    <div className="team-card" style={secondary ? {background: 'var(--primary-500)'} : {}}>
       <div className="team-profile">
         {info.attributes.avatar.data && (
           <img
@@ -15,9 +15,9 @@ const TeamCard = ({ info }) => {
         )}
       </div>
       <div className="team-info-container">
-        <p className="team-info-name">{info.attributes.name}</p>
-        <p className="team-info-position">{info.attributes.position}</p>
-        <a href={info.attributes.linkedin}>
+        <p className="team-info-name" style={secondary ? {color: 'black'} : {}}>{info.attributes.name}</p>
+        <p className="team-info-position" style={secondary ? {color: 'black'} : {}}>{info.attributes.position}</p>
+        {/* <a href={info.attributes.linkedin}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="48"
@@ -54,8 +54,7 @@ const TeamCard = ({ info }) => {
               </clipPath>
             </defs>
           </svg>
-        </a>
-        <div className="team-bottom-line"></div>
+        </a> */}
       </div>
     </div>
   );

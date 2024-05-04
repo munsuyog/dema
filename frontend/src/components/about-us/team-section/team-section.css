@@ -42,6 +42,7 @@
     display: flex;
     justify-content: space-evenly;
     width: 100%;
+    margin-top: 5%;
 }
 .team-triangle-vector {
     position: absolute;

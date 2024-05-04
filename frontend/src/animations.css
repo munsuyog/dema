@@ -96,7 +96,7 @@ add class scrollPath to start using the scrollbased animation
 
 */
 
-.scrollContainer {
+.scrollContainer, .scrollContainerCommunity {
     width: 100%;
     position: sticky;
     transition: top 1s ease;

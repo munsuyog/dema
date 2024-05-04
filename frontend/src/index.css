@@ -141,7 +141,7 @@ h4 {
   font-family: var(--font-open-sans);
 }
 .title-blue {
-  color: var(--secondary-500);
+  color: var(--secondary-500) !important;
 }
 .title-green {
   color: var(--primary-500);

@@ -3,11 +3,11 @@ import {motion} from 'framer-motion'
 import CompareCard from './CompareCard/CompareCard'
 import { amazonReceipt, demaReceipt } from './Receipt'
 
-const CompareAnimation = () => {
+const CompareAnimation = ({scrollPercentage}) => {
   return (
     <motion.div className='compare-animation'>
-      <CompareCard company="amazon" receipts={amazonReceipt} />
-      <CompareCard company="dema" receipts={demaReceipt} />
+      <CompareCard scrollPercentage={scrollPercentage} company="amazon" receipts={amazonReceipt} />
+      <CompareCard scrollPercentage={scrollPercentage} company="dema" receipts={demaReceipt} />
     </motion.div>
   )
 }

@@ -1,9 +1,9 @@
 import CardsReveal from '../components/about-us/CardsReveal/CardsReveal'
-import CommunitySection from '../components/about-us/community-section/community-section'
+import CommunitySection from '../components/about-us/CommunitySection/CommunitySection'
 import AboutHero from '../components/about-us/hero-section/hero-section'
 import MissionSection from '../components/about-us/mission-section/mission-section'
 import Roadmap from '../components/about-us/roadmap/roadmap'
-import ShockerSection from '../components/about-us/shocker-section/shocker-section'
+import ShockerSection from '../components/about-us/ShockerSection/ShockerSection'
 import TeamSection from '../components/about-us/team-section/team-section'
 import ValuesSection from '../components/about-us/values-section/values-section'
 import Footer from '../components/common/footer/footer'
@@ -17,10 +17,10 @@ const AboutUs = () => {
     <Navbar />
     <AboutHero />
     <CardsReveal />
-    <ShockerSection />
     <CommunitySection />
-    <MissionSection />
+    <ShockerSection />
     <ValuesSection />
+    <MissionSection />
     <TeamSection />
     <Footer />
     </DeviceProvider>

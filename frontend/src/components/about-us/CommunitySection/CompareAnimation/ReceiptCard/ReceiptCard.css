@@ -1,0 +1,46 @@
+.community-receipt-logo svg {
+    width: auto;
+    height: 40px;
+}
+.compare-card.community {
+    justify-content: space-around;
+}
+.community-receipt-tick svg {
+    width: 30px;
+    height: auto;
+}
+.community-receipt-logo-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.community-receipt-cash-incentives-title {
+    font-weight: 500;
+    font-size: 18px;
+}
+.community-receipt-cash-incentives-number {
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+}
+.community-receipt-network-title {
+    font-weight: 600;
+}
+.community-receipt-network-wrapper {
+    display: flex;
+    gap: 30px;
+}
+.community-receipt-network {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.community-receipt-network-image {
+    height: 60px;
+    width: auto;
+}
+.community-receipt-network-number {
+    font-size: 14px;
+    font-weight: 600;
+}

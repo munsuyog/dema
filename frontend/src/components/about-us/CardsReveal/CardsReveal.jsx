@@ -736,22 +736,6 @@ const CardsReveal = () => {
             </svg>
           </div>
         </motion.div>
-        <motion.div
-          className="reveal-card card4"
-          whileInView={{ position: "sticky", top: 0 }}
-        >
-          <div className="card3-left">
-            <h1>
-              <span className="title-blue">Shocker</span> 🙀 Marketplaces can run on 3%.
-            </h1>
-            <p>
-            Charging just enough to run an efficient marketplace reduces fees by {">"}90%.
-            </p>
-          </div>
-          <div className="card4-right">
-            <CompareAnimation />
-          </div>
-        </motion.div>
       </motion.div>
     </motion.section>
   );

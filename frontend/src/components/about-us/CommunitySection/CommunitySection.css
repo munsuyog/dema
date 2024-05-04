@@ -1,0 +1,34 @@
+.community-scroll {
+    position: relative;
+    background: linear-gradient(180deg, #E7FFFA 0%, rgba(242, 251, 249, 0) 100%);
+
+    width: 95vw;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+    height: 120vh;
+}
+.community-section-title {
+    /* color: white; */
+    font-size: 36px;
+}
+.community-section {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title-orange {
+    color: #f84f39;
+}
+.community-animation-container {
+    background: var(--secondary-500);
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+}
+.scrollPath {
+    position: sticky;
+    top: 0;
+}

@@ -75,7 +75,7 @@ const TeamSection = () => {
         </div>
         <div className='teams-container'>
             {teams && teams.map((team, index) => (
-                <TeamCard info={team} key={index} />
+                <TeamCard info={team} key={index} secondary={index % 2 != 0 ? true : false} />
             ))}
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72" fill="none" className='team-triangle-vector'>
