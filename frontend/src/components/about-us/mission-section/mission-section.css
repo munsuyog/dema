@@ -1,18 +1,9 @@
-#mission-section {
-    background: linear-gradient(rgba(231, 255, 250, 1),rgba(231, 255, 250, 0));
 
-}
 .mission-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(rgba(231, 255, 250, 1),rgba(231, 255, 250, 0));
     padding-top: 3%;
-}
-.mission-section h2 {
-    display: flex;
-    align-items: center;
-    position: relative;
 }
 .mission-title-arrow {
     position: absolute;
@@ -29,10 +20,11 @@
 }
 .missions-container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     width: 100%;
     margin-top: 5%;
     margin-bottom: 3%;
+    gap: 20px;
 }
 .mission {
     width: 330px;
@@ -61,6 +53,9 @@
 }
 .mission-sticky:nth-child(2) {
     flex-direction: column-reverse;
+}
+.mission-title-section h1 {
+    text-align: center;
 }
 
 @media screen and (max-width: 1250px) {

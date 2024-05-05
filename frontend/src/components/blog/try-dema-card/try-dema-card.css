@@ -82,6 +82,9 @@
 }
 
 @media screen and (max-width: 768px) {
+    #try-dema-card {
+        overflow: hidden;
+    }
     .try-dema-card {
         flex-direction: column;
         padding-top: 50%;

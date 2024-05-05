@@ -87,7 +87,6 @@
     display: flex;
     flex-direction: column;
     gap: 0.5vw;
-    /* gap: 10px; */
 }
 .point {
     display: flex;
@@ -252,8 +251,8 @@
         font-size: 10px;
     }
     .card {
-        width: 140px;
-        height: 140px;
+        width: 145px;
+        height: 145px;
         padding: 10px;
     }
     .card img {
@@ -271,5 +270,8 @@
     .dema-cart-vector svg {
         width: 30px;
         height: 30px;
+    }
+    .bullet-points {
+        gap: 0px;
     }
 }

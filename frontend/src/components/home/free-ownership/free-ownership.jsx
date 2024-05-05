@@ -73,7 +73,7 @@ const FreeOwnership = () => {
             help <span className="title-blue">build it </span> & get <br />
             to <span className="title-blue">own it for </span>{" "}
             <span className="title-free">
-              <CircleSquiggle width={"200%"} style={{left: -10, top: 0, width: '120%'}} time="3s"  d="M142.408 59.1107C98.255 67.6411 8.94169 74.6452 4.91618 34.4178C1.93227 4.59936 58.5 2.45193 93.9999 4.9763C129.5 7.50067 148.505 22.5154 150.968 39.3737C154.996 66.9348 126.534 78.0488 116.708 77.1963" viewBox="0 0 155 82" color="#3830C9" />
+              <CircleSquiggle width={"200%"} style={{left: -10, top: 0, width: '130%'}} time="3s"  d="M142.408 59.1107C98.255 67.6411 8.94169 74.6452 4.91618 34.4178C1.93227 4.59936 58.5 2.45193 93.9999 4.9763C129.5 7.50067 148.505 22.5154 150.968 39.3737C154.996 66.9348 126.534 78.0488 116.708 77.1963" viewBox="0 0 155 82" color="#3830C9" />
               free<span className="title-blue">!</span>
             </span>
           </h1>
@@ -171,9 +171,9 @@ const FreeOwnership = () => {
             <motion.div initial={{opacity: 0}} whileInView={{opacity:1}} viewport={{once:true}} transition={{duration: 2, delay: 2}} className="free-ownership-skewed-btn">
               <SkewedButton
                 text="Even sellers can get in on the action"
-                fontSize={device != 'desktop' ? "12px" : "0.7vw"}
-                width={device!= 'desktop' ? "140px" : "8.5vw"}
-                height={device != 'desktop' ? "60px" : "3vw"}
+                fontSize={device != 'desktop' ? "10px" : "0.7vw"}
+                width={device!= 'desktop' ? "125px" : "8.5vw"}
+                height={device != 'desktop' ? "50px" : "3vw"}
               />
             </motion.div>
           </div>

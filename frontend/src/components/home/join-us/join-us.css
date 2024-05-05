@@ -31,6 +31,9 @@
 
 @media screen and (max-width: 768px) {
     #join-us-section h2 {
+        font-size: 18px !important;
+    }
+    #join-us-section h3 {
         font-size: 16px !important;
     }
     #join-us-section {

@@ -2,12 +2,14 @@ import React, { useEffect, useState } from 'react';
 import './items-section.css';
 import { TypeAnimation } from 'react-type-animation';
 import { useInView } from "react-intersection-observer";
+import { useDevice } from '../../../utils/DeviceContext';
 
 
 const ItemsSection = () => {
     const {ref, inView} = useInView({threshold: 0.2});
     const [itemIndex, setItemIndex] = useState(0); // State to track the current item index
     const [itemText, setItemText] = useState(null); // State to track the current item text
+    const {device} = useDevice();
 
     const items = [
         "Electronics",
@@ -72,7 +74,7 @@ const ItemsSection = () => {
                                                      cursor={true}
                                                      repeat={false}
                                                      speed={200}
-                                                     style={{ fontWeight: 700, display: 'inline-block', fontFamily: 'var(--font-open-sans)', fontSize: 30, textAlign: 'center', zIndex: 1, position: 'relative' }}
+                                                     style={{ fontWeight: 700, display: 'inline-block', fontFamily: 'var(--font-open-sans)', fontSize: device == 'mobile' ? 20 : 30, textAlign: 'center', zIndex: 1, position: 'relative' }}
                                                    />
                             )}
                             <div className='top-line'></div>

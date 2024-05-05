@@ -17,8 +17,8 @@ const AboutUs = () => {
     <Navbar />
     <AboutHero />
     <CardsReveal />
-    <CommunitySection />
     <ShockerSection />
+    <CommunitySection />
     <ValuesSection />
     <MissionSection />
     <TeamSection />

@@ -1,0 +1,33 @@
+.mission-card {
+    background-color: #f84f39;
+    border-radius: 30px;
+    flex-direction: column;
+    width: 100%;
+    min-height: 500px;
+    text-decoration: none;
+    transition: all .2s;
+    display: flex;
+    overflow: hidden;
+}
+.mission-card-header {
+    background-color: rgba(255, 255, 255, .1);
+    width: 100%;
+    min-height: auto;
+    padding: 30px 45px;
+}
+.mission-card-container {
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    min-height: 300px;
+    padding: 30px 45px 40px;
+    display: flex;
+}
+.mission-title-highlight {
+    color: white !important;
+}
+.mission-card-container p {
+    font-weight: 500;
+}

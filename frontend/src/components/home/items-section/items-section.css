@@ -147,7 +147,10 @@
 @media screen and (max-width: 768px) {
     #items-section {
         height: 600px;
-        margin-top: -60px;
+        margin-top: -70px;
+    }
+    #items-section::before {
+        bottom: -20px; /* Adjust as needed */
     }
     .items-section {
         height: 600px;
@@ -180,7 +183,7 @@
     }
     .bottom-line {
         top: 80px;
-        height:85px;
+        height:100px;
     }
     .circle-top-left {
         top: -30px;

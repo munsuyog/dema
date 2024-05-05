@@ -2,7 +2,7 @@ import React from 'react'
 import './StrikeText.css'
 import AnimatedSVG from '../../AnimatedSvg/AnimatedSvg'
 
-const StrikeText = () => {
+const StrikeText = ({style}) => {
   return (
     <AnimatedSVG
     xmlns="http://www.w3.org/2000/svg"
@@ -11,6 +11,7 @@ const StrikeText = () => {
     height="65"
     viewBox="0 0 219 65"
     fill="none"
+    style={style}
   >
     <path
         time={"3s"}

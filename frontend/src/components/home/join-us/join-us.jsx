@@ -1,31 +1,10 @@
-"use client";
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./join-us.css";
 import ButtonSecondary from "../../common/button-secondary/button-secondary";
+import { useDevice } from "../../../utils/DeviceContext";
 
 const JoinUs = ({downloadBtn}) => {
-  const [isMobile, setMobile] = useState(false);
-
-  useEffect(() => {
-    const handleResize = () => {
-      // Pause animation if screen width is less than 768px
-      if (visualViewport.width < 768) {
-        setMobile(true);
-      } else {
-        setMobile(false);
-      }
-    };
-
-    // Initial call to set animation state
-    handleResize();
-
-    // Event listener for window resize
-    window.addEventListener("resize", handleResize);
-
-    // Cleanup on component unmount
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
+  const {device} = useDevice();
   return (
     <section id="join-us-section">
       <div className="join-us-section section-padding">
@@ -38,7 +17,7 @@ const JoinUs = ({downloadBtn}) => {
       <svg
         style={{ position: "absolute", bottom: 0, zIndex: -1 }}
         width="100%"
-        viewBox="0 0 1577 500"
+        viewBox={device == "mobile" ? "0 0 1577 650" :"0 0 1577 500"}
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >

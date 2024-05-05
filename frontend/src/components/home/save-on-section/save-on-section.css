@@ -63,11 +63,11 @@
 .save-on-feature-title.highlight {
     color: var(--secondary-500);
     font-family: var(--font-open-sans);
-    font-size: 20px;
+    font-size: 22px;
     transition: color 500ms ease;
 }
 .save-on-feature-title {
-    font-size: 20px;
+    font-size: 22px;
     font-family: var(--font-open-sans);
     font-weight: 600;
 }
@@ -183,6 +183,15 @@
 }
 
 @media screen and (max-width: 768px) {
+    .save-on-feature-number-container svg {
+        width: 60px;
+        height: auto;
+    }
+    .save-on-feature-number, .save-on-feature-number-highlight {
+        top: 15px;
+        left: 25px;
+        font-size: 18px;
+    }
     .save-on-section {
         padding-top: 5%;
     }
@@ -222,15 +231,16 @@
     }
     .save-on-video-container {
         width: 100%;
-        min-height: 250px;
+        min-height: 300px;
     }
     .save-on-video {
-        width: 110%;
-        min-height: 250px;
-    }
-    .save-on-video video {
         width: 100%;
-        min-height: 250px;
+        height: auto;  
+  }
+    .save-on-video img {
+        width: 100%;
+        min-height: 300px;
+        /* min-height: 250px; */
     }
     .discount-coupon {
         width: 200px;

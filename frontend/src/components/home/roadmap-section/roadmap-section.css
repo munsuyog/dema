@@ -53,8 +53,12 @@
 }
 
 @media screen and (max-width: 768px) {
+    .roadmap-section {
+        overflow: hidden;
+    }
     .roadmap-section-title {
         font-size: 24px !important;
+        opacity: 1;
     }
     .priority-squiggle {
         width: 145px;

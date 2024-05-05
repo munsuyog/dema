@@ -57,8 +57,7 @@ const HeroSection = () => {
             </span>{" "}
             <span className="title-anywhere">anywhere<span className="relative"><img src="/images/home/hero-section/title-star.svg" width={22} height={25} className="title-star anywhere" alt="vector" /></span></span><br/> Get{" "}
             <span className="title-free-ownership">
-              <CircleSquiggle color="#11C57A" />
-
+              <CircleSquiggle color="#11C57A" style={{width: '110%', height: 'auto', left: -12, top: -8}} />
               <strong>
               <span className="title-free">Free </span>{" "}
               <span className="title-ownership"> Ownership</span>

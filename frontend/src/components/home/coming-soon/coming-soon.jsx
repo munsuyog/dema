@@ -1,14 +1,8 @@
-"use client";
-import React, { useRef } from "react";
+import React from "react";
 import "./coming-soon.css";
-import {motion} from 'framer-motion'
-import { useInView } from "framer-motion";
-import CircleSquiggle from "../../common/SVGs/CircleSquiggle/CircleSquiggle";
 import GradientArrow from "../../common/SVGs/GradientArrow/GradientArrow";
 
-
 const ComingSoon = () => {
-  const ref = useRef()
   return (
     <section id="coming-soon">
       <div className="fixed-width">

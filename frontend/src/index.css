@@ -102,15 +102,15 @@ h1 {
   font-size: 48px;
 }
 h2 {
-  font-size: 40px;
+  font-size: 38px;
   font-family: var(--font-open-sans);
 }
 h3 {
-  font-size: 36px;
+  font-size: 34px;
   font-family: var(--font-open-sans);
 }
 h4 {
-  font-size: 24px;
+  font-size: 22px;
   font-family: var(--font-open-sans);
 }
 .paragraph-regular {
@@ -159,7 +159,7 @@ h4 {
 p {
   font-family: var(--font-open-sans);
   line-height: 30px;
-  font-size: 16px;
+  font-size: 15px;
 }
 @media screen and (max-width: 1200px) {
   p {
@@ -167,7 +167,7 @@ p {
      line-height: 22.8px;
   }
   h1 {
-    font-size: 28px
+    font-size: 28px;
   }
   h2 {
     font-size: 24px;
@@ -194,7 +194,7 @@ p {
   }
   p {
     font-size: 14px;
-     line-height: 22.8px;
+     line-height: 25.8px;
 
   }
   h1 {

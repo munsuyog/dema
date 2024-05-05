@@ -1,0 +1,6 @@
+@media screen and (max-width: 768px) {
+    .gradient-arrow {
+        width: 80px;
+        height: 80px;
+    }
+}

@@ -78,6 +78,9 @@
     display: flex;
 }
 @media screen and (max-width: 768px) {
+    #learn-section {
+        overflow: hidden;
+    }
     .learn-section {
         flex-direction: column-reverse;
     }

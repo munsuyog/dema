@@ -159,6 +159,9 @@
     right: 20px;
 }
 @media screen and (max-width: 768px) {
+    #grow-with-us {
+        overflow: hidden;
+    }
     .grow-with-us-title {
         font-size: 24px;
         padding-left: 20%;

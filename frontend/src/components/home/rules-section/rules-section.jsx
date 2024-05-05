@@ -51,7 +51,7 @@ const RulesSection = () => {
             Rules decided by{" "}
             <span className="title-operator">
               Operator{" "}
-              <StrikeText />
+              <StrikeText style={device == 'mobile' ? {width: '100%', height: 'auto', bottom: 0} : {}} />
             </span>{" "}
             <span className="title-you">You!</span>
           </h1>

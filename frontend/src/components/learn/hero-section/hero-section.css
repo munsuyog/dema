@@ -29,6 +29,7 @@
 }
 .learn-hero-banner {
     width: 50%;
+    height: 600px;
 }
 .learn-hero-badge {
     display: inline-flex;
@@ -45,7 +46,7 @@
     font-weight: 600;
 }
 .learn-hero-subtitle {
-    font-size: 20px;
+    font-size: 16px;
     color: #0d0d0d;
     font-family: var(--font-open-sans);
 }
@@ -59,6 +60,9 @@
     position: absolute;
     right: 47%;
     top: 25%;
+}
+.learn-title-badge-wrapper {
+    margin-bottom: 2%;
 }
 
 @media screen and (max-width: 768px) {

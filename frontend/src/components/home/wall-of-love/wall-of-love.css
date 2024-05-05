@@ -91,6 +91,9 @@
     100% { transform: translate(1px, -2px) rotate(-20deg); }
   }
 @media screen and (max-width: 768px) {
+    #wall-of-love {
+        overflow: hidden;
+    }
     .section-title h2 {
         font-size: 24px;
     }

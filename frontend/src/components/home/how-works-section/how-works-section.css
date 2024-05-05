@@ -158,6 +158,9 @@
 }
 
 @media screen and (max-width: 768px) {
+    #how-works-section {
+        overflow: hidden;
+    }
     #how-works-section::before {
         bottom: -50px;
     }
