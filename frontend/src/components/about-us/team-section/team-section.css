@@ -24,6 +24,7 @@
     justify-content: center;
     width: 100%;
     margin-top: 5%;
+    flex-wrap: wrap;
 }
 .team-triangle-vector {
     position: absolute;

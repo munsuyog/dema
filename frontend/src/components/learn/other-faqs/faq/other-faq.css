@@ -112,9 +112,18 @@
         align-items: center;
     }
     .learn-other-subfaq-answer {
-        line-height: 22.8px;
+        line-height: 25px;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
     .learn-other-subfaq-question {
-        line-height: 22.8px;
+        line-height: 25px;
+    }
+    .learn-other-subfaq-leaf-arrow {
+        display: none;
+    }
+    .learn-other-faq {
+        width: 100%;
+        padding: 2% 5%;
     }
 }

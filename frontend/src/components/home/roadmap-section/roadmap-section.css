@@ -71,4 +71,8 @@
     .roadmap-section::before {
         transform: rotate(0deg);
     }
+    .roadmap-section-title{
+        left: 15%;
+        top: 5%;
+    }
 }

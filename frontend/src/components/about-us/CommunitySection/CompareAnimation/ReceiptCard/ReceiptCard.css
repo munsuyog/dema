@@ -86,6 +86,7 @@
     }
     .community-receipt-network-title {
         font-size: 12px;
+        text-align: center;
     }
     .community-receipt-network-image {
         height: 40px;

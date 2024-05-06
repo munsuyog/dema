@@ -15,7 +15,7 @@ const CompareCard = ({ company, receipts, scrollPercentage }) => {
   const [imageSrc, setImageSrc] = useState(null);
   console.log(imageSrc);
 
-  useEffect(() => {
+useEffect(() => {
     if (showOperations && inView) {
         if (
             scrollPercentage >= receipts.SellersPay.thresholdFrom &&

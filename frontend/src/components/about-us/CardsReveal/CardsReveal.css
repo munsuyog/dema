@@ -11,7 +11,7 @@
 }
 .reveal-card {
     width: 95vw;
-    height: 95vh;
+    height: 100vh;
     position: relative;
     border-radius: 50px;
     display: flex;

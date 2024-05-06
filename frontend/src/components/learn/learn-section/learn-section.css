@@ -45,6 +45,7 @@
     font-family: var(--font-open-sans);
     font-weight: 700;
     font-size: 16px;
+    cursor: pointer;
 }
 .learn-section-nav {
     display: none;
@@ -112,5 +113,8 @@
     }
     .learn-section-nav-title-wrapper h4 {
         font-size: 20px;
+    }
+    .learn-section-nav {
+        position: static;
     }
 }

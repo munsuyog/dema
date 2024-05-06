@@ -10,7 +10,7 @@
     overflow: hidden;
 }
 .mission-card-header {
-    background-color: rgba(255, 255, 255, .1);
+    background-color: rgba(255, 255, 255, .2);
     width: 100%;
     min-height: auto;
     padding: 30px 45px;
@@ -30,4 +30,5 @@
 }
 .mission-card-container p {
     font-weight: 500;
+    /* color: white; */
 }

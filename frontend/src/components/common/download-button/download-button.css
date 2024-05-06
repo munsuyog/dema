@@ -161,7 +161,7 @@
         opacity: 1;
     }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
     .download-btn-front {
         width: 100px;
         height: 48px;

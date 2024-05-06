@@ -9,7 +9,7 @@ const MissionCard = ({mission}) => {
             <h2 dangerouslySetInnerHTML={{__html: mission.title}}></h2>
         </div>
         <div className='mission-card-container'>
-            <p>{mission.desc}</p>
+            <p style={mission.background == 'var(--primary-500)' ? {color: 'black'} : {}}>{mission.desc}</p>
         </div>
     </motion.div>
   )

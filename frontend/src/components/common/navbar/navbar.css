@@ -83,10 +83,13 @@
         font-size: 14px;
     }
     .navbar_center {
-        margin-right: 15%;
+        margin-right: 16%;
     }
     #navbar {
         height: 100px;
+    }
+    .navbar_right {
+        right: 10px;
     }
 }
 @media screen and (min-width: 1600px) {

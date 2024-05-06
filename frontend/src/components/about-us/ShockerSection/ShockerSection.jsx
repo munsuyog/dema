@@ -74,7 +74,7 @@ const ShockerSection = () => {
   }, []);
 
   return (
-    <div style={{ height: '3000px', position: 'relative' }}>
+    <div style={{ height: '4000px', position: 'relative' }}>
       <div className='scrollContainer'>
         <motion.div initial={{width: '95vw'}} whileInView={{width: '100vw', borderRadius: 0}} viewport={{amount: 0}} className='scrollPath shocker-scroll' offset={0}>
           <div className='shocker-section'>

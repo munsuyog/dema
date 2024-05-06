@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import "./Value.css";
+import { useDevice } from "../../../../utils/DeviceContext";
 
 const Value = ({ value, index }) => {
   const [hoveredTitle, setHoveredTitle] = useState(null);
+  const {device} = useDevice();
   const [visible, setVisible] = useState(false);
   const colors = [
     "red",
@@ -14,18 +16,22 @@ const Value = ({ value, index }) => {
   const [currentColorIndex, setCurrentColorIndex] = useState(0);
   const handleMouseEnter = (index) => {
     // Generate a random index for color selection
-    const randomColorIndex = Math.floor(Math.random() * colors.length);
-    setHoveredTitle(index);
-    setCurrentColorIndex(randomColorIndex);
-    setVisible(true);
+    if(device == 'desktop') {
+        const randomColorIndex = Math.floor(Math.random() * colors.length);
+        setHoveredTitle(index);
+        setCurrentColorIndex(randomColorIndex);
+        setVisible(true);
+    }
   };
 
   // Event handler for when the mouse leaves the title element
   const handleMouseLeave = (index) => {
     // Reset the color index to 0 (black)
-    setCurrentColorIndex(0);
-    setHoveredTitle(index);
-    setVisible(false);
+    if(device == 'desktop') {
+        setCurrentColorIndex(0);
+        setHoveredTitle(index);
+        setVisible(false);
+    }
   };
   return (
     <div className="value">

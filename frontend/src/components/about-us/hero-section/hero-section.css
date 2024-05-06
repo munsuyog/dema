@@ -1,12 +1,13 @@
 #about-hero {
-    background: rgba(239, 247, 255, 1);
+    background: linear-gradient(180deg, #eaf6ff 0%, rgba(242, 251, 249, 0) 100%);
     position: relative;
     margin-bottom: 10%;
 }
 .about-hero {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
     padding-bottom: 5%;
     padding-top: 5%;
 }
@@ -31,14 +32,23 @@ h1 span {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 50%;
+    width: 100%;
 }
 .about-hero-title-section p {
-    font-size: 18px;
-    width: 85%;
+    font-size: 20px;
+    width: 100%;
+    line-height: 30px;
+    padding: 0 20%;
+    text-align: center;
+}
+.about-hero-title-section h1 {
+    text-align: center;
+    font-size: 60px;
 }
 .about-badge-wrapper {
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 .about-badge-squiggle {
     position: absolute;
@@ -46,8 +56,13 @@ h1 span {
     top: 10px;
     transform: scaleX(-1);
     rotate: 220deg;
+    display: none;
 }
 
+.about-btn-wrapper {
+    display: flex;
+    justify-content: center;
+}
 @media screen and (max-width: 1200px) {
     .about-hero-banner {
         width: 40vw;
@@ -60,13 +75,19 @@ h1 span {
     }
     .about-hero-title-section {
         width: 100%;
+        gap: 10px
     }
     .about-hero-title-section p {
         font-size: 14px;
-        line-height: 22.8px;
+        line-height: 25.8px;
+        width: 100%;
+        padding: 0 5%;
     }
     .about-hero-banner {
         width: 100%;
         height: auto;
+    }
+    .about-hero-title-section h1 {
+        font-size: 30px;
     }
 }

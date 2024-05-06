@@ -8,11 +8,11 @@
     height: 120vh;
 }
 .community-section-title {
-    /* color: white; */
+    margin-bottom: 2%;
     font-size: 36px;
 }
 .community-section {
-    padding: 5%;
+    padding: 2%;
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -99,7 +99,7 @@ const AboutHero = () => {
           </span>
         </h1>
         <p>We got tired of marketplace intermediaries, buzzwords, rising prices, higher selling costs, captive walled gardens & increasingly less seamless experiences.</p>
-        <div>
+        <div className="about-btn-wrapper">
         <ButtonPrimary text="Learn more" fontSize={device != "desktop" ? "12px" : "16px"} />
       </div>
       </div>

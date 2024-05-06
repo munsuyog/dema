@@ -23,11 +23,13 @@ const Navbar = ({downloadBtn}) => {
         setMenuOpen(false);
       }
     };
-
+    document.addEventListener('scroll', handleOutsideClick)
     document.addEventListener('mousedown', handleOutsideClick);
 
     return () => {
       document.removeEventListener('mousedown', handleOutsideClick);
+      document.removeEventListener('scroll', handleOutsideClick)
+
     };
   }, []);
 
@@ -42,7 +44,6 @@ const Navbar = ({downloadBtn}) => {
           <img src='/images/common/navbar/downArrow.svg' width={12} height={8} alt='downArrow' className={`nav-arrow ${menuOpen ? 'open' : ''}`} />
         </div>
         <div className={`navbar_menu ${menuOpen ? 'open' : ''}`} onMouseLeave={closeMenu}>
-          <a href="#" className='navbar_menu_title'>Protocol</a>
           <a href='/learn' className='navbar_menu_title'>Learn</a>
           <a href='/about-us' className='navbar_menu_title'>About</a>
           <a href='/blog' className='navbar_menu_title'>Blog</a>

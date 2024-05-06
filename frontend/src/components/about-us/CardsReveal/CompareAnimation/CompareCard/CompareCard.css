@@ -31,6 +31,8 @@
 }
 .compare-animation {
     display: flex;
+    justify-content: center;
+    gap: 10px;
 }
 .compare-logo svg {
     width: 100px;
@@ -99,7 +101,7 @@
 }
 .compare-marketplace-highlight-text {
     font-size: 12px;
-    font-weight: 800;
+    font-weight: 600;
     color: var(--primary-500);
 }
 .compare-marketplace-highlight {
@@ -120,7 +122,6 @@
         padding: 10% 4%;
         background-size: cover;
         background-position: center;
-        margin-right: 10px;
     }
     .selling-fees-text {
         font-size: 14px;
@@ -138,7 +139,7 @@
         font-size: 16px;
     }
     .compare-marketplace-operations-head {
-        font-size: 12px !important;
+        font-size: 10px !important;
     }
     .compare-marketplace-percent {
         color: rgba(18, 18, 18, 1);
@@ -168,7 +169,6 @@
         padding: 10% 4%;
         background-size: cover;
         background-position: center;
-        margin-right: 10px;
     }
     .selling-fees-text {
         font-size: 14px;
@@ -184,9 +184,6 @@
     }
     .selling-fees-number {
         font-size: 16px;
-    }
-    .compare-marketplace-operations-head {
-        font-size: 12px !important;
     }
     .compare-marketplace-percent {
         color: rgba(18, 18, 18, 1);
@@ -204,6 +201,7 @@
     .compare-marketplace-highlight-text {
         font-size: 10px;
         text-align: center;
+        font-weight: 500;
     }
     .dema-large-card {
         width: 300px;
