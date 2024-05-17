@@ -2,7 +2,7 @@ import TitleBadge from "../../common/title-badge/title-badge";
 import React from "react";
 import "./hero-section.css";
 import ButtonPrimary from "../../common/button-primary/button-primary";
-import { useDevice } from "../../../utils/DeviceContext";
+import { useDevice } from "../../../contexts/DeviceContext";
 import AnimatedSVG from "../../common/AnimatedSvg/AnimatedSvg";
 
 const AboutHero = () => {

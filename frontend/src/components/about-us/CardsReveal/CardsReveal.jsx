@@ -1,7 +1,7 @@
 import React from "react";
 import "./CardsReveal.css";
 import { delay, motion } from "framer-motion";
-import { useDevice } from "../../../utils/DeviceContext";
+import { useDevice } from "../../../contexts/DeviceContext";
 import ButtonPrimary from "../../common/button-primary/button-primary";
 import CompareAnimation from "./CompareAnimation/CompareAnimation";
 

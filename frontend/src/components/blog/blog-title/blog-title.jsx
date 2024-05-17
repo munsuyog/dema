@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import TypingAnimation from "./typing-animation";
-import { useDevice } from "../../../utils/DeviceContext";
+import { useDevice } from "../../../contexts/DeviceContext";
 
 const BlogTitleSection = () => {
   const [isMobile, setMobile] = useState(null);

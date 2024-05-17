@@ -31,6 +31,38 @@
     left: 30%;
     top: 30%;
 }
+.slick-arrow {
+    z-index: 1;
+    background: #3830C9 !important;
+    color: white !important;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+
+  }
+  .slick-prev::before, .slick-next::before {
+    font-size: 16px !important;
+  }
+  .slick-prev {
+    left: -40px !important;
+    width: 30px !important;
+    height: 30px !important;
+  }
+  
+  .slick-next {
+    right: -40px !important;
+    width: 30px !important;
+    height: 30px !important;
+  }
+  
+  .slick-dots li button:before {
+    color: #3830C9 !important;
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color: #3830C9 !important;
+  }
+  
 
 @media screen and (max-width: 1250px) {
     .teams-container {
@@ -51,8 +83,13 @@
         flex-direction: column;
         gap: 20px;
         align-items: center;
+        width: 90%;
     }
     .team-triangle-vector {
         display: none;
+    }
+    .slick-slide div:first-child {
+        display: flex;
+        justify-content: center;
     }
 }

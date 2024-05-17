@@ -1,9 +1,9 @@
 'use client'
 import React, { useState, useEffect, useRef } from 'react';
-import './navbar.css';
+import './Navbar.css';
 import DownloadButton from '../download-button/download-button';
 
-const Navbar = ({downloadBtn}) => {
+const Navbar = ({downloadBtn, noFixedWidth}) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const navbarRef = useRef(null);
 
@@ -34,7 +34,7 @@ const Navbar = ({downloadBtn}) => {
   }, []);
 
   return (
-    <div id='navbar'>
+    <div id='navbar' style={noFixedWidth ? {maxWidth: 'none'} : {}}>
       <div>
         <a href="/"><img className='navbar_logo' src='/images/common/navbar/logomark.svg' width={58.8} height={33.6} alt='logo' /></a>
       </div>
@@ -50,7 +50,7 @@ const Navbar = ({downloadBtn}) => {
         </div>
       </div>
       <div>
-        <div className='navbar_right'>
+        <div className='navbar_right' style={noFixedWidth ? {right: '20px'}: {}}>
           <DownloadButton downloadBtn={downloadBtn} />
         </div>
       </div>

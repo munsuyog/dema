@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./mission-section.css";
 import { getMissions } from "../../../utils/strapi-cms";
 import ButtonPrimary from "../../../components/common/button-primary/button-primary";
-import { useDevice } from "../../../utils/DeviceContext";
+import { useDevice } from "../../../contexts/DeviceContext";
 import StickyNote from "./StickyNote/StickyNote";
 import { motion } from "framer-motion";
 import MissionCard from "./MissionCard/MissionCard";

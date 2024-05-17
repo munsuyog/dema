@@ -8,18 +8,10 @@
     padding: 2%;
     border-radius: 10px;
     height: 250px;
+    margin-left: 10px;
+    margin-right: 10px;
+    justify-content: space-around;
 }
-/* .team-profile {
-    background-color: var(--primary-500);
-    display: flex;
-    align-items: flex-end;
-    border-radius: 60px;
-    overflow: hidden;
-    width: 120px;
-    height: 120px;
-    z-index: 1;
-    justify-content: center;
-} */
 .team-info-name {
     font-size: 22px;
     font-weight: 700;
@@ -41,7 +33,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* gap: 20px; */
 }
 @media screen and (max-width: 1250px) {
     .team-card {

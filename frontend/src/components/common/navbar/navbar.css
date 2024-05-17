@@ -1,5 +1,5 @@
 #navbar {
-    padding: 2% 3%;
+    padding: 2% 3% ;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -76,17 +76,17 @@
 
 @media screen and (max-width: 768px) {
     .navbar_logo {
-        width: 80px !important;
+        width: 70px !important;
         height: auto;
     }
     .navbar_menu_title {
-        font-size: 14px;
+        font-size: 12px;
     }
     .navbar_center {
         margin-right: 16%;
     }
     #navbar {
-        height: 100px;
+        height: 80px;
     }
     .navbar_right {
         right: 10px;
@@ -94,6 +94,9 @@
 }
 @media screen and (min-width: 1600px) {
     .navbar_right {
-        right: 10%;
+        right: 10%
+    }
+    #navbar {
+    padding: 2% 3% 2% 0%;
     }
 }

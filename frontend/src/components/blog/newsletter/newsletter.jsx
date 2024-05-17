@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import "./newsletter.css";
 import ButtonPrimary from "../../../components/common/button-primary/button-primary";
-import { useDevice } from "../../../utils/DeviceContext";
+import { useDevice } from "../../../contexts/DeviceContext";
 
 const NewsletterSection = () => {
   const [isMobile, setMobile] = useState(false);

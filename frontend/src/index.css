@@ -184,7 +184,7 @@ p {
 }
 @media screen and (max-width: 768px) {
   .section-padding {
-    padding: 5% 4%;
+    padding: 5% 5%;
   }
   body, html {
     overflow-x: visible;

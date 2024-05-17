@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Value.css";
-import { useDevice } from "../../../../utils/DeviceContext";
+import { useDevice } from "../../../../contexts/DeviceContext";
 
 const Value = ({ value, index }) => {
   const [hoveredTitle, setHoveredTitle] = useState(null);

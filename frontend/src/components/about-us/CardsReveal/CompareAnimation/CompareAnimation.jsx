@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import {motion} from 'framer-motion'
 import CompareCard from './CompareCard/CompareCard'
 import { amazonReceipt, demaReceipt } from './Receipt'
-import { useDevice } from '../../../../utils/DeviceContext'
+import { useDevice } from '../../../../contexts/DeviceContext'
 import CompareCardMobile from './CompareCard/CompareCardMobile'
 
 const CompareAnimation = ({scrollPercentage}) => {

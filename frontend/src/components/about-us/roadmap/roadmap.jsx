@@ -2,7 +2,7 @@ import React, { useRef, useEffect, useState } from "react";
 import "./roadmap.css";
 import { animated, useSpring } from "react-spring";
 import ButtonPrimary from "../../../components/common/button-primary/button-primary";
-import { useDevice } from "../../../utils/DeviceContext";
+import { useDevice } from "../../../contexts/DeviceContext";
 
 const Roadmap = () => {
   const scrollContainerRef = useRef(null);
