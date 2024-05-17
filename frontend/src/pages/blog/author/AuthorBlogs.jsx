@@ -3,7 +3,7 @@ import NewsletterSection from '../../../components/blog/newsletter/newsletter';
 import RecentBlogs from '../../../components/blog/recent-blogs/recent-blogs';
 import TryDemaCard from '../../../components/blog/try-dema-card/try-dema-card';
 import Footer from '../../../components/common/footer/footer';
-import Navbar from '../../../components/common/Navbar/Navbar';
+import Navbar from '../../../components/common/NavbarComponent/NavbarComponent';
 import { DeviceProvider } from '../../../contexts/DeviceContext';
 import React from 'react'
 import {useParams} from 'react-router-dom'

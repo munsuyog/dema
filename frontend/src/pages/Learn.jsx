@@ -1,4 +1,4 @@
-import Navbar from '../components/common/Navbar/Navbar'
+import Navbar from '../components/common/NavbarComponent/NavbarComponent'
 import LearnHero from '../components/learn/hero-section/hero-section'
 import LearnSection from '../components/learn/learn-section/learn-section'
 import Footer from '../components/common/footer/footer'

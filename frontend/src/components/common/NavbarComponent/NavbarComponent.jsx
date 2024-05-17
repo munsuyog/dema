@@ -1,6 +1,6 @@
 'use client'
 import React, { useState, useEffect, useRef } from 'react';
-import './Navbar.css';
+import './NavbarComponent.css';
 import DownloadButton from '../download-button/download-button';
 
 const Navbar = ({downloadBtn, noFixedWidth}) => {
