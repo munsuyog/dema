@@ -1,6 +1,6 @@
 import React from "react";
 import "./JoinUs.css";
-import ButtonSecondary from "../../common/button-secondary/button-secondary";
+import ButtonSecondary from "../../common/ButtonSecondary/ButtonSecondary";
 import { useDevice } from "../../../contexts/DeviceContext";
 
 const JoinUs = ({ downloadBtn }) => {

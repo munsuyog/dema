@@ -1,8 +1,8 @@
-import BlogCards from '../../../components/blog/blog-cards/blog-cards';
-import NewsletterSection from '../../../components/blog/newsletter/newsletter';
-import RecentBlogs from '../../../components/blog/recent-blogs/recent-blogs';
-import TryDemaCard from '../../../components/blog/try-dema-card/try-dema-card';
-import Footer from '../../../components/common/footer/footer';
+import BlogCards from '../../../components/blog/BlogCards/BlogCards';
+import NewsletterSection from '../../../components/blog/NewsletterComponent/NewsletterComponent';
+import RecentBlogs from '../../../components/blog/RecentBlogs/RecentBlogs';
+import TryDemaCard from '../../../components/blog/TryDemaCard/TryDemaCard';
+import Footer from '../../../components/common/FooterComponent/FooterComponent';
 import Navbar from '../../../components/common/NavbarComponent/NavbarComponent';
 import { DeviceProvider } from '../../../contexts/DeviceContext';
 import React from 'react'

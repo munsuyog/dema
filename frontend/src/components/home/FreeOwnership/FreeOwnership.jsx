@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./FreeOwnership.css";
 import { motion } from "framer-motion";
-import SkewedButton from "../../common/skewed-button/skewed-button";
+import SkewedButton from "../../common/SkewedButton/SkewedButton";
 import { useDevice } from "../../../contexts/DeviceContext";
 import CircleSquiggle from "../../common/SVGs/CircleSquiggle/CircleSquiggle";
 

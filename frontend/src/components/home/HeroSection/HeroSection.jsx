@@ -3,6 +3,7 @@ import "./HeroSection.css";
 import ProductCarousel from "./ProductCarousel/ProductCarousel";
 import { homeSVGs } from "../../../constants/VectorSVGs";
 import CircleSquiggle from "../../common/SVGs/CircleSquiggle/CircleSquiggle";
+import ButtonPrimary from "../../common/ButtonPrimary/ButtonPrimary";
 
 const HeroSection = () => {
   return (
@@ -108,6 +109,7 @@ const HeroSection = () => {
               Price.
             </h1>
           </div>
+          <ButtonPrimary bgColor="var(--secondary-500)" color="#fff" text="Try It" width="15%" />
         </div>
         <ProductCarousel />
       </div>

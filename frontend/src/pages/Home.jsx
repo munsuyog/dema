@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import Footer from "../components/common/footer/footer"
+import Footer from '../components/common/FooterComponent/FooterComponent'
 import Navbar from "../components/common/NavbarComponent/NavbarComponent";
 import ComingSoon from "../components/home/ComingSoon/ComingSoon";
 import FreeOwnership from "../components/home/FreeOwnership/FreeOwnership";

@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './NavbarComponent.css';
-import DownloadButton from '../download-button/download-button';
+import DownloadButton from '../DownloadButton/DownloadButton';
 
 const Navbar = ({downloadBtn, noFixedWidth}) => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -39,7 +39,7 @@ const Navbar = ({downloadBtn, noFixedWidth}) => {
       </div>
       <div className='navbar_center' ref={navbarRef}>
         <div className='navbar_toggle' onClick={toggleMenu} onMouseEnter={openMenu}>
-          <span className='navbar_menu_title'>Explore</span>
+          <span className='navbar_menu_title_main'>Explore</span>
           <img src='/images/common/navbar/downArrow.svg' width={12} height={8} alt='downArrow' className={`nav-arrow ${menuOpen ? 'open' : ''}`} />
         </div>
         <div className={`navbar_menu ${menuOpen ? 'open' : ''}`} onMouseLeave={closeMenu}>

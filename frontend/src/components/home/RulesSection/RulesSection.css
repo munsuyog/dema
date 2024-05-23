@@ -24,7 +24,7 @@
     position: relative;
 }
 .rule {
-    width: 30%;
+    width: 32%;
     height: 417px;
     position: relative;
     /* z-index: 0; */
@@ -124,7 +124,7 @@
 }
 @media screen and (min-width: 1200px) {
     .rule:hover {
-        width: 32%;
+        width: 33%;
         height: 496px;
         background-color: var(--secondary-500);
         color: white !important;

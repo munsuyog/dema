@@ -1,6 +1,6 @@
 import React from "react";
 import "./FaqCard.css";
-import ButtonPrimary from "../../../common/button-primary/button-primary";
+import ButtonPrimary from "../../../common/ButtonPrimary/ButtonPrimary";
 import { useDevice } from "../../../../contexts/DeviceContext";
 
 const FaqCard = ({ tab, theme }) => {

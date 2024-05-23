@@ -5,7 +5,7 @@ import MissionSection from '../components/about-us/MissionSection/MissionSection
 import ShockerSection from '../components/about-us/ShockerSection/ShockerSection'
 import TeamSection from '../components/about-us/TeamSection/TeamSection'
 import ValuesSection from '../components/about-us/ValuesSection/ValuesSection'
-import Footer from '../components/common/footer/footer'
+import Footer from '../components/common/FooterComponent/FooterComponent'
 import Navbar from '../components/common/NavbarComponent/NavbarComponent'
 import { DeviceProvider } from '../contexts/DeviceContext'
 import React from 'react'

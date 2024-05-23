@@ -60,9 +60,9 @@ const ValuesSection = () => {
     <motion.section id="values-section">
       <div className="values-section section-padding fixed-width">
         <div className="values-title-section">
-          <h1>
-            <span className="title-blue">We Care About</span>
-          </h1>
+          <h2>
+            <span className="title-blue">We Care About...</span>
+          </h2>
         </div>
         <div className="values-container">
           {/* {values && values.map((value, index) => (

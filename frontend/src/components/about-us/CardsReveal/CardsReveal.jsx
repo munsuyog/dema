@@ -2,7 +2,7 @@ import React from "react";
 import "./CardsReveal.css";
 import { delay, motion } from "framer-motion";
 import { useDevice } from "../../../contexts/DeviceContext";
-import ButtonPrimary from "../../common/button-primary/button-primary";
+import ButtonPrimary from "../../common/ButtonPrimary/ButtonPrimary";
 import CompareAnimation from "./CompareAnimation/CompareAnimation";
 
 const CardsReveal = () => {
@@ -23,7 +23,7 @@ const CardsReveal = () => {
             position: "sticky",
             top: 0,
             width: "95vw",
-            borderRadius: device !="desktop" ? 10 : 50,
+            borderRadius: device !="desktop" ? 10 : 30,
           }}
           viewport={{ amount: 0.5 }}
         >

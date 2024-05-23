@@ -24,6 +24,7 @@
     width: 100%;
     border-radius: 8px;
     border: 0.5px solid rgba(20, 13, 49, 0.1);
+    letter-spacing: 0;
 }
 .learn-section-nav-title.active {
     background-color: var(--secondary-500);

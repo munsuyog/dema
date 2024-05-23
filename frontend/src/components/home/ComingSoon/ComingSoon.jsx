@@ -1,6 +1,7 @@
 import React from "react";
 import "./ComingSoon.css";
 import GradientArrow from "../../common/SVGs/GradientArrow/GradientArrow";
+import SkewedButton from "../../common/SkewedButton/SkewedButton";
 
 const ComingSoon = () => {
   return (
@@ -9,11 +10,12 @@ const ComingSoon = () => {
         <div className="shop-anywhere">
           <div className="shop-anywhere-flex">
             <div className="shop-anywhere-container">
-              <div className="shop-anywhere-wrapper">
+              {/* <div className="shop-anywhere-wrapper">
                 <div className="shop-anywhere-box">
                   <span>Shop Anywhere</span>
                 </div>
-              </div>
+              </div> */}
+              <SkewedButton text="Shop Anywhere" />
               <span className="shop-anywhere-squiggle">
               <GradientArrow />
               </span>

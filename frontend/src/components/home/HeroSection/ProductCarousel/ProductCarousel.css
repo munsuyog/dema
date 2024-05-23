@@ -117,6 +117,7 @@
     font-family: var(--font-open-sans);
     font-weight: 500;
     line-height: 1.9;
+    letter-spacing: 0.5px;
 }
 .product-bought-info-text_location {
     color: var(--secondary-500);

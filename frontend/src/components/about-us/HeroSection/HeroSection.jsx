@@ -1,7 +1,7 @@
-import TitleBadge from "../../common/title-badge/title-badge";
+import TitleBadge from "../../common/TitleBadge/TitleBadge";
 import React from "react";
 import "./HeroSection.css";
-import ButtonPrimary from "../../common/button-primary/button-primary";
+import ButtonPrimary from "../../common/ButtonPrimary/ButtonPrimary";
 import { useDevice } from "../../../contexts/DeviceContext";
 import AnimatedSVG from "../../common/AnimatedSvg/AnimatedSvg";
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '../components/common/NavbarComponent/NavbarComponent'
-import Footer from '../components/common/footer/footer'
+import Footer from '../components/common/FooterComponent/FooterComponent'
 import Tos from '../components/tos/Tos'
 
 const Privacy = () => {

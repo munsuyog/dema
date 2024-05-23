@@ -13,7 +13,7 @@
     width: 95vw;
     height: 100vh;
     position: relative;
-    border-radius: 50px;
+    border-radius: 30px;
     display: flex;
     overflow: hidden;
     z-index: 0; /* Set a default z-index for all cards */
@@ -53,6 +53,9 @@
     gap: 20px;
     overflow: hidden;
 }
+.card1-left p, .card2-left p, .card3-left p {
+    font-size: 14px;
+}
 .card1-left h1 {
     text-align: center;
 }
@@ -61,9 +64,6 @@
 }
 .card3-left h1 {
     text-align: center;
-}
-.card1-left p {
-    text-align: justify;
 }
 .card1-right, .card2-right, .card3-right, .card4-right {
     width: 50%;

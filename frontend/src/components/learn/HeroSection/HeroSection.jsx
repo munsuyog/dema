@@ -1,7 +1,7 @@
 import React from 'react'
 import './HeroSection.css'
-import ButtonPrimary from '../../common/button-primary/button-primary'
-import TitleBadge from '../../common/title-badge/title-badge'
+import ButtonPrimary from '../../common/ButtonPrimary/ButtonPrimary'
+import TitleBadge from '../../common/TitleBadge/TitleBadge'
 import { useDevice } from '../../../contexts/DeviceContext'
 
 const LearnHero = () => {
