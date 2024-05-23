@@ -62,7 +62,7 @@ const ShockerSection = () => {
       };
     }
 
-    const scrollPathController = new ScrollPathController(document.querySelector(".scrollContainer"));
+    const scrollPathController = new ScrollPathController(document.querySelector(".scrollContainerShocker"));
 
     window.addEventListener("scroll", scrollPathController.updatePathOnScroll);
     window.addEventListener("resize", scrollPathController.calculateSpeedFactor);
@@ -75,7 +75,7 @@ const ShockerSection = () => {
 
   return (
     <div style={{ height: '4000px', position: 'relative' }}>
-      <div className='scrollContainer'>
+      <div className='scrollContainerShocker'>
         <motion.div initial={{width: '95vw'}} whileInView={{width: '100vw', borderRadius: 0}} viewport={{amount: 0}} className='scrollPath shocker-scroll' offset={0}>
           <div className='shocker-section'>
             <h1 className='shocker-section-title'>

@@ -1,10 +1,7 @@
 import React, { useEffect, useState } from "react";
-import "./mission-section.css";
+import "./MissionSection.css";
 import { getMissions } from "../../../utils/strapi-cms";
-import ButtonPrimary from "../../../components/common/button-primary/button-primary";
 import { useDevice } from "../../../contexts/DeviceContext";
-import StickyNote from "./StickyNote/StickyNote";
-import { motion } from "framer-motion";
 import MissionCard from "./MissionCard/MissionCard";
 import CircleSquiggle from "../../common/SVGs/CircleSquiggle/CircleSquiggle";
 
@@ -27,6 +24,7 @@ const MissionSection = () => {
     {
       title: `<span class="mission-title-highlight">Remove</span><br /> massive fees`,
       desc: "Removing excessive fees is essential for fairness and accessibility. These fees often create barriers, particularly for those with limited financial means. Eliminating them promotes equality and encourages innovation for more affordable services.",
+      background: "#FF6B6B"
     },
     {
       title: `Enable <br /><span class="mission-title-highlight">savings+</span><br/> on autopilot`,

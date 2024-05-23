@@ -1,8 +1,8 @@
 import React, { useEffect, useState, useRef } from "react";
-import "./learn-section.css";
+import "./LearnSection.css";
 import { getFAQS, getOtherFAQS } from "../../../utils/strapi-cms";
-import FaqContainer from "../faq-container/faq-container";
-import OtherFAQs from "../other-faqs/other-faqs";
+import FaqContainer from "../FaqContainer/FaqContainer";
+import OtherFAQs from "../OtherFaqs/OtherFaqs";
 
 const LearnSection = () => {
   const [faqs, setFaqs] = useState([]);
@@ -93,13 +93,13 @@ const LearnSection = () => {
               }}
             >
               <div className="learn-faq-points-title-section">
-                <h3>
+                <h2>
                   Learn about{" "}
                   <span className="title-dema">
                     d<span className="title-blue">e</span>ma
                   </span>
                   ’s protocol
-                </h3>
+                </h2>
                 <svg
                   width="75"
                   height="64"

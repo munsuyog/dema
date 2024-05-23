@@ -78,7 +78,7 @@ const SaveOnSection = () => {
                   width={210}
                   height={110}
                   strokeWidth={4}
-                  style={{ left: '-8%', top: '-50%', width: "115%" }}
+                  style={{ left: '-8%', top: '-55%', width: "115%" }}
                   viewBox="0 0 129 36"
                   d={
                     "M118.787 25.4992C81.1898 29.779 5.29712 34.1174 2.5064 17.2323C-0.982 -3.87399 121.865 -0.305283 126.357 17.0511C129.346 28.5999 105.023 33.7244 96.6988 33.5179"
@@ -187,8 +187,8 @@ const SaveOnSection = () => {
             </div>
             <div className="discount-coupon-desktop">
               <motion.div
-                initial={{ x: -50, opacity: 0 }}
-                whileInView={{ x: 0, opacity: 1 }}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.5 }}
                 viewport={{ once: true }}
                 className="discount-coupon"

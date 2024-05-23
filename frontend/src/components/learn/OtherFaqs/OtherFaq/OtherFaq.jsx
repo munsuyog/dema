@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './other-faq.css'
+import './OtherFaq.css'
 
 const OtherFAQ = ({faq}) => {
     const [isOpen, setIsOpen] = useState(false);

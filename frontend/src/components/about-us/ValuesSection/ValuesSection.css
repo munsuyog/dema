@@ -12,11 +12,6 @@
     transform: scale(-1);
     width: 60px;
 }
-.values-title-section h2{
-    /* text-align: center; */
-    color: white;
-    font-size: 36px;
-}
 .values-title-section span {
     position: relative;
 }

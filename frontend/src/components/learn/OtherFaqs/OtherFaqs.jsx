@@ -1,13 +1,13 @@
 import React from 'react'
-import './other-faqs.css'
-import OtherFAQ from './faq/other-faq'
+import './OtherFaqs.css'
+import OtherFAQ from './OtherFaq/OtherFaq'
 import {motion}  from 'framer-motion'
 
 const OtherFAQs = ({faq}) => {
   return (
     <div className='learn-other-faqs' id='other-faqs'>
         <div className='learn-other-faqs-title-wrapper'>
-        <h3>Other FAQs</h3>
+        <h2>Other FAQs</h2>
         <motion.svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="100"

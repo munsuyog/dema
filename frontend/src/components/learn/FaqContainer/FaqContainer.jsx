@@ -1,13 +1,12 @@
 import React, { useState } from "react";
-import "./faq-container.css";
-import FaqCard from "./faq-card/faq-card";
+import "./FaqContainer.css";
+import FaqCard from "./FaqCard/FaqCard";
 
 const FaqContainer = ({ faq, theme }) => {
   const [isOpen, setIsOpen] = useState(true);
   const title = faq.attributes.title;
   const highlightedWord = faq.attributes.highlightWord;
 
-  // Function to wrap "dema" in the title with the title-dema class
   const wrapDema = (text) => {
     return text.replace(
       /\b(d)(e)(m)(a)\b/gi,
@@ -15,7 +14,6 @@ const FaqContainer = ({ faq, theme }) => {
     );
   };
 
-  // Function to highlight the specified word
   const highlightWord = (text, word) => {
     if(!word) {
       return text;
@@ -54,7 +52,6 @@ const FaqContainer = ({ faq, theme }) => {
     }
   };
 
-  // Apply the wrapping and highlighting
   const processedTitle = wrapDema(highlightWord(title, highlightedWord));
 
 if(!faq.attributes.isPointsFAQ) {
@@ -74,7 +71,7 @@ if(!faq.attributes.isPointsFAQ) {
       <div className="learn-faq-header">
         <div className="learn-faq-header-title-section">
           <div className="learn-faq-title-wrapper">
-            <h3 dangerouslySetInnerHTML={{ __html: processedTitle }}></h3>
+            <h2 dangerouslySetInnerHTML={{ __html: processedTitle }}></h2>
             <p
               className="paragraph-regular"
               dangerouslySetInnerHTML={{
@@ -131,7 +128,7 @@ if(!faq.attributes.isPointsFAQ) {
         : "linear-gradient(to bottom,rgba(239, 247, 255, 1),rgba(239, 247, 255, 0) 70%)"
     }`,}}>
       <div className="learn-faq-points-title-section">
-        <h3 dangerouslySetInnerHTML={{__html: wrapDema(highlightWordPoints(faq.attributes.title, highlightedWord))}}></h3>
+        <h2 dangerouslySetInnerHTML={{__html: wrapDema(highlightWordPoints(faq.attributes.title, highlightedWord))}}></h2>
         <svg width="75" height="64" viewBox="0 0 75 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="learn-faq-points-title-vector">
           <path d="M43.0231 37.6838C41.9632 38.455 41.6586 38.3623 41.3891 37.1977C41.3328 36.9521 41.2322 36.6853 41.0724 36.4976C40.5548 35.8841 40.0576 34.4905 40.0874 33.7245C40.0931 33.5189 40.0454 33.2173 39.9076 33.1162C38.9656 32.4129 39.0125 31.3129 38.7359 30.3444C38.3996 29.163 38.109 27.9667 37.6962 26.8153C37.3898 25.9623 37.2948 25.0613 37.0199 24.233C36.6445 23.1074 35.9482 22.0866 35.3872 21.0173C35.321 20.8943 35.2712 20.7656 35.2226 20.631C34.8654 19.6248 34.4706 18.623 34.1685 17.6006C33.8573 16.549 33.8052 15.5139 34.9383 14.6543C35.0603 15.3207 35.1698 15.9298 35.2906 16.6019C35.5193 16.6183 35.8805 16.6435 36.5853 16.6904C36.1023 17.078 35.8455 17.2869 35.5674 17.5097C35.9431 17.6868 36.2989 17.8569 36.836 18.1096C36.7358 18.4174 36.5856 18.8792 36.4473 19.3129C37.2149 19.2328 37.3723 19.6541 37.0109 21.0058C37.6474 20.8807 38.1099 20.8293 37.7425 21.7665C37.6237 22.0614 37.2509 22.891 38.2611 22.8788C38.3808 22.8759 38.5004 23.1101 38.6218 23.2321C38.4368 23.3889 38.2553 23.5433 38.1481 23.6338C38.7738 25.1297 39.4284 26.6923 40.1364 28.3813C39.5801 28.8725 40.0374 29.3642 40.6663 29.809C40.3821 30.0913 40.171 30.3005 40.1946 30.2749C40.8366 31.1144 41.3994 31.8497 42.003 32.6388C41.6095 32.9475 41.3539 33.1506 41.0547 33.3872C41.2667 33.4397 41.4296 33.4791 41.685 33.5435C41.5195 33.7832 41.3788 33.9916 41.1424 34.3384C42.4566 34.288 42.6486 34.8075 42.4142 35.8844C42.2989 36.414 42.7975 37.0753 43.0207 37.6803L43.0231 37.6838Z" fill="#323232"/>
           <path d="M25.0843 27.4553C26.1248 27.7106 27.0064 28.9578 26.8609 29.8553C28.5928 29.793 27.2924 31.2415 27.9463 31.8312C28.6972 31.5957 29.0845 32.0123 29.356 32.8126C29.5178 33.2864 30.0263 33.6336 30.3373 34.065C30.5539 34.3616 30.7117 34.707 30.8789 35.0361C31.1077 35.4811 30.9928 36.1415 31.7501 36.2447C31.9013 36.2665 32.1571 36.714 32.1193 36.7641C31.1749 37.8933 32.2476 37.5776 32.7707 37.8244C33.0293 37.9472 33.0436 38.5885 33.2004 39.1161C33.8817 39.1733 34.8468 39.246 33.6644 40.5667C34.3072 40.5888 34.7705 40.6075 35.1588 40.62C35.3153 40.9712 35.4567 41.292 35.5658 41.5331C35.1522 41.8802 34.7508 42.3605 34.2346 42.5832C34.0136 42.6779 33.2871 42.277 33.259 42.0432C33.1553 41.2439 32.6469 40.8663 32.1429 40.3346C31.4685 39.6222 31.1242 38.6124 30.556 37.7849C30.046 37.0453 29.4419 36.3624 28.8412 35.6924C28.5811 35.3991 27.8518 35.3229 28.4978 34.7224C28.1665 34.375 27.7763 34.0611 27.512 33.6697C26.6657 32.4144 25.87 31.1208 25.0355 29.8528C24.8376 29.554 24.4926 29.3466 24.3276 29.0363C23.8757 28.193 23.4649 27.3277 23.0811 26.4498C22.8968 26.026 22.8031 25.563 22.6577 25.0834C23.2014 24.9788 23.6759 24.8843 24.0224 24.8184L25.468 27.0017C25.4326 27.0401 25.2756 27.2238 25.0762 27.4505L25.0843 27.4553Z" fill="#323232"/>

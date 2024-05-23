@@ -69,7 +69,7 @@ const HeroSection = () => {
               <span className="title-free-ownership">
                 <CircleSquiggle
                   color="#11C57A"
-                  style={{ width: "110%", height: "auto", left: -12, top: -8 }}
+                  style={{ width: "110%", height: "auto", left: -15, top: -10 }}
                 />
                 <strong>
                   <span className="title-free">Free </span>{" "}

@@ -21,11 +21,11 @@ const Tos = ({page, title}) => {
       };
   return (
     <section className='tos-section section-padding fixed-width'>
-        <h1 className='tos-heading' >{title}</h1>
+        <h2 className='tos-heading' >{title}</h2>
         {tos && tos.data && tos.data.map((tos, index) => (
           <div>
             {tos.attributes.title && (
-            <h3 className='tos-title'>{tos.attributes.title}</h3>
+            <h4 className='tos-title'>{tos.attributes.title}</h4>
             )}
             <Markdown className="tos-body">{tos.attributes.body}</Markdown>
           </div>

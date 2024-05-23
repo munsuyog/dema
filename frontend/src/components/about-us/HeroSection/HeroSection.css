@@ -31,19 +31,20 @@ h1 span {
 .about-hero-title-section {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 20px;
     width: 100%;
 }
 .about-hero-title-section p {
-    font-size: 20px;
-    width: 100%;
+    /* font-size: 20px; */
+    width: 80%;
     line-height: 30px;
     padding: 0 20%;
     text-align: center;
 }
 .about-hero-title-section h1 {
     text-align: center;
-    font-size: 60px;
+    /* font-size: 60px; */
 }
 .about-badge-wrapper {
     position: relative;
@@ -62,6 +63,10 @@ h1 span {
 .about-btn-wrapper {
     display: flex;
     justify-content: center;
+}
+.about-hero-banner {
+    width: 40%;
+    height: auto;
 }
 @media screen and (max-width: 1200px) {
     .about-hero-banner {

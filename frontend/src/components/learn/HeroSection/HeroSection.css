@@ -49,6 +49,7 @@
     font-size: 16px;
     color: #0d0d0d;
     font-family: var(--font-open-sans);
+    line-height: 35px;
 }
 .learn-hero-title-section {
     display: flex;

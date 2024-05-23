@@ -1,9 +1,20 @@
-import React from 'react';
-import './blog-card.css';
+import React from "react";
+import "./blog-card.css";
 
 const BlogCard = ({ blog, setCategory }) => {
   const months = [
-    'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
   ];
 
   const randomSvg = [
@@ -24,22 +35,22 @@ const BlogCard = ({ blog, setCategory }) => {
     `<svg width="29" height="32" viewBox="0 0 29 32" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M25.3323 16.6178C24.8941 16.3676 24.4457 16.163 23.995 16C24.4457 15.837 24.8941 15.6324 25.3323 15.3822C28.4233 13.6152 29.8369 10.3099 28.4903 8C27.1437 5.69012 23.5467 5.2507 20.4565 7.01767C20.0183 7.26788 19.6152 7.55054 19.2479 7.85558C19.3306 7.38759 19.3758 6.90105 19.3758 6.39985C19.3758 2.86514 17.1925 0 14.5 0C11.8075 0 9.62421 2.86514 9.62421 6.39985C9.62421 6.90105 9.66944 7.38759 9.75209 7.85558C9.38483 7.55054 8.98169 7.26788 8.54347 7.01767C5.45332 5.2507 1.85632 5.69012 0.509688 8C-0.836943 10.3099 0.577527 13.6144 3.66768 15.3822C4.10591 15.6324 4.55426 15.837 5.00496 16C4.55426 16.163 4.10591 16.3676 3.66768 16.6178C0.576747 18.3848 -0.836943 21.6901 0.509688 24C1.85632 26.3099 5.45332 26.7493 8.54347 24.9823C8.98169 24.7321 9.38483 24.4495 9.75209 24.1444C9.66944 24.6124 9.62421 25.0989 9.62421 25.6002C9.62421 29.1349 11.8075 32 14.5 32C17.1925 32 19.3758 29.1349 19.3758 25.6002C19.3758 25.0989 19.3306 24.6124 19.2479 24.1444C19.6152 24.4495 20.0183 24.7313 20.4565 24.9823C23.5475 26.7493 27.1445 26.3099 28.4903 24C29.8369 21.6894 28.4233 18.3848 25.3323 16.6178Z" fill="#DCD3FF"/>
     </svg>
-    `
-  ]
+    `,
+  ];
 
   const date = new Date(blog.attributes.updatedAt);
   const day = date.getDate();
   const month = months[date.getMonth()];
   const year = date.getFullYear();
 
-  const tags = blog.attributes.tags.split(",")
+  const tags = blog.attributes.tags.split(",");
   const highlightWord = (text, word) => {
     if (!word) {
       return text;
     } else {
-      const words = word.split(';').map(w => w.trim());
+      const words = word.split(";").map((w) => w.trim());
       let highlightedText = text;
-      words.forEach(w => {
+      words.forEach((w) => {
         highlightedText = highlightedText.replace(
           new RegExp(
             `(${w.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")})([?.!,;:"]?)`,
@@ -54,28 +65,50 @@ const BlogCard = ({ blog, setCategory }) => {
   const randomIndex = Math.floor(Math.random() * randomSvg.length);
   const randomSvgElement = randomSvg[randomIndex];
   return (
-    <div className='blog-card'>
-      <a href={`/blog/${blog.attributes.slug}`} className='blog-card-title-wrapper'>
-      <h3 className='title-blue'>
-        <span dangerouslySetInnerHTML={{__html: highlightWord(blog.attributes.title, blog.attributes.highlightWord)}}></span>
-        <span className='blog-card-title-svg' dangerouslySetInnerHTML={{__html: randomSvgElement}}></span>
-      </h3>
+    <div className="blog-card">
+      <a
+        href={`/blog/${blog.attributes.slug}`}
+        className="blog-card-title-wrapper"
+      >
+        <h2 className="title-blue">
+          <span
+            dangerouslySetInnerHTML={{
+              __html: highlightWord(
+                blog.attributes.title,
+                blog.attributes.highlightWord
+              ),
+            }}
+          ></span>
+          <span
+            className="blog-card-title-svg"
+            dangerouslySetInnerHTML={{ __html: randomSvgElement }}
+          ></span>
+        </h2>
 
         <p>{`${month} ${day}, ${year}`}</p>
       </a>
-      <div className='blog-card-summary-wrapper'>
+      <div className="blog-card-summary-wrapper">
         <a href={`/blog/${blog.attributes.slug}`}>
-        <img src={`http://154.53.59.178:30002${blog.attributes.featuredImage.data.attributes.url}`} width={848} height={485} alt='blog-card-image' className='blog-card-image' />
-        <p dangerouslySetInnerHTML={{__html: blog.attributes.summary}}></p>
+          <img
+            src={`http://154.53.59.178:30002${blog.attributes.featuredImage.data.attributes.url}`}
+            width={848}
+            height={485}
+            alt="blog-card-image"
+            className="blog-card-image"
+          />
+          <p dangerouslySetInnerHTML={{ __html: blog.attributes.summary }}></p>
         </a>
-        <div className='blog-card-tags-wrapper'>
-        {
-            tags && (tags.map((tag, index) => (
-                <div key={index} className='blog-card-tag' onClick={() => setCategory(tag)}>
-                    {tag}
-                </div>
-            )))
-        }
+        <div className="blog-card-tags-wrapper">
+          {tags &&
+            tags.map((tag, index) => (
+              <div
+                key={index}
+                className="blog-card-tag"
+                onClick={() => setCategory(tag)}
+              >
+                {tag}
+              </div>
+            ))}
         </div>
       </div>
     </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import "./team.css";
+import "./TeamCard.css";
 
 const TeamCard = ({ info, secondary }) => {
   return (

@@ -1,9 +1,12 @@
+.tos-section {
+    max-width: 1300px;
+}
 .tos-heading {
     color: var(--secondary-500);
     text-align: center;
     margin-top: 5%;
     margin-bottom: 5%;
-    font-weight: 600;
+    font-weight: 700;
 }
 .tos-lastupdated {
     margin-bottom: 5%;
@@ -13,15 +16,28 @@
 .tos-title {
     margin-top: 2%;
     margin-bottom: 2%;
-    font-weight: 600 !important;
+    font-weight: 700 !important;
 }
 .tos-body p, li {
     font-size: 16px;
     font-family: var(--font-open-sans);
-    line-height: 30px;
+    line-height: 35px;
     margin-top: 1%;
     margin-bottom: 1%;
+    text-align: justify;
 }
 ul {
     margin-left: 2%;
+}
+
+@media screen and (max-width: 768px) {
+    .tos-body p, li {
+        font-size: 14px !important;
+        line-height: 30px;
+    }
+    .tos-title {
+        font-size: 16px;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
 }

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./values-section.css";
+import "./ValuesSection.css";
 import { getValues } from "../../../utils/strapi-cms";
 import Value from "./Value/Value";
 import { motion } from "framer-motion";
@@ -60,9 +60,9 @@ const ValuesSection = () => {
     <motion.section id="values-section">
       <div className="values-section section-padding fixed-width">
         <div className="values-title-section">
-          <h2>
+          <h1>
             <span className="title-blue">We Care About</span>
-          </h2>
+          </h1>
         </div>
         <div className="values-container">
           {/* {values && values.map((value, index) => (

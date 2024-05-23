@@ -45,6 +45,7 @@
     margin-top: 1%;
     opacity: 0;
     max-height: 0;
+    overflow: hidden;
     animation: dropdownAnimReverse 0.5s ease;
 }
 .learn-other-subfaq-answer-wrapper.active {

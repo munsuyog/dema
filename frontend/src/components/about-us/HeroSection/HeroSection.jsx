@@ -1,6 +1,6 @@
 import TitleBadge from "../../common/title-badge/title-badge";
 import React from "react";
-import "./hero-section.css";
+import "./HeroSection.css";
 import ButtonPrimary from "../../common/button-primary/button-primary";
 import { useDevice } from "../../../contexts/DeviceContext";
 import AnimatedSVG from "../../common/AnimatedSvg/AnimatedSvg";
@@ -103,9 +103,7 @@ const AboutHero = () => {
         <ButtonPrimary text="Learn more" fontSize={device != "desktop" ? "12px" : "16px"} />
       </div>
       </div>
-      <div>
         <img src="/images/about/hero-section/hero-banner.svg" width={594} height={482} alt="hero-banner" className="about-hero-banner" />
-      </div>
       </div>
     </section>
   );

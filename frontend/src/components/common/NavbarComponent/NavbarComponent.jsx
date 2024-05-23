@@ -1,4 +1,3 @@
-'use client'
 import React, { useState, useEffect, useRef } from 'react';
 import './NavbarComponent.css';
 import DownloadButton from '../download-button/download-button';
@@ -34,7 +33,7 @@ const Navbar = ({downloadBtn, noFixedWidth}) => {
   }, []);
 
   return (
-    <div id='navbar' style={noFixedWidth ? {maxWidth: 'none'} : {}}>
+    <div id='navbar' style={noFixedWidth ? {maxWidth: 'none', padding: '2% 5%'} : {}}>
       <div>
         <a href="/"><img className='navbar_logo' src='/images/common/navbar/logomark.svg' width={58.8} height={33.6} alt='logo' /></a>
       </div>

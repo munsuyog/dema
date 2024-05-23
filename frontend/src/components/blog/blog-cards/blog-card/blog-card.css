@@ -41,6 +41,7 @@
     border-radius: 20px;
     border: 1px solid rgba(1, 67, 190, 0.1);
     color: white;
+    cursor: pointer;
 }
 .blog-card-tags-wrapper {
     display: flex;
@@ -54,7 +55,7 @@
     font-size: 14px;
     margin-top: 1%;
 }
-.blog-card-title-wrapper h3 {
+.blog-card-title-wrapper h2 {
     position: relative;
 }
 .blog-card-title-svg {
@@ -84,7 +85,7 @@
     .blog-card-summary-wrapper p {
         font-size: 14px;
         color: rgba(13, 13, 13, 0.8);
-        line-height: 28.8px;
+        line-height: 28px;
     }
     .blog-card-image {
         width: 100%;

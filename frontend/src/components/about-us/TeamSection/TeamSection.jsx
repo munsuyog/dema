@@ -1,20 +1,20 @@
 import React, { useEffect, useState } from "react";
-import "./team-section.css";
+import "./TeamSection.css";
 import { motion } from "framer-motion";
 import { getTeams } from "../../../utils/strapi-cms";
-import TeamCard from "./team/team";
 import CircleSquiggle from "../../common/SVGs/CircleSquiggle/CircleSquiggle";
 import { useDevice } from "../../../contexts/DeviceContext";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import TeamCard from "./TeamCard/TeamCard";
 
 const TeamSection = () => {
   const {device} = useDevice();
   const [teams, setTeams] = useState(null);
 
   var settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: device == 'mobile' ? 1 : 4,

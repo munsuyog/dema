@@ -51,7 +51,7 @@
 }
 .dotted-squiggle {
     position: absolute;
-    bottom: -160px;
+    bottom: -200px;
     left: 35%;
 }
 .save-on-container {
@@ -80,6 +80,11 @@
 }
 .save-on-features-container {
     width: 50%;
+}
+.save-on-features {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 .save-on-feature-number-container {
     position: relative;
