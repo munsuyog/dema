@@ -176,6 +176,9 @@ p {
 a {
   letter-spacing: 0.5px;
 }
+th, td {
+  font-family: var(--font-open-sans);
+}
 @media screen and (max-width: 1200px) {
   p {
     font-size: 14px;

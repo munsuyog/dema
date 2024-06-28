@@ -7,7 +7,7 @@ import ButtonPrimary from "../../common/ButtonPrimary/ButtonPrimary";
 import { useDevice } from "../../../contexts/DeviceContext";
 
 const HeroSection = () => {
-  const {device} = useDevice();
+  const { device } = useDevice();
   return (
     <section id="hero-section" className="section-padding">
       <div className="hero-section fixed-width">
@@ -111,7 +111,13 @@ const HeroSection = () => {
               Price.
             </h1>
           </div>
-          <ButtonPrimary bgColor="var(--secondary-500)" color="#fff" text="Try It" fontSize={device == "mobile" ? "14px" : "16px"} width={device == "mobile" ? "30%" : "15%"} />
+          <ButtonPrimary
+            bgColor="var(--secondary-500)"
+            color="#fff"
+            text="Try It"
+            fontSize={device == "mobile" ? "14px" : "16px"}
+            width={device == "mobile" ? "30%" : "15%"}
+          />
         </div>
         <ProductCarousel />
       </div>
